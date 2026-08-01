@@ -78,10 +78,22 @@
     return { portrait: "4 / 5", square: "1 / 1", landscape: "5 / 4", tall: "3 / 4.4" }[kind] || "4 / 5";
   }
 
-  function media(obra, ratio) {
+  // ruta a la miniatura (~600px) a partir de la imagen completa
+  function thumbSrc(obra) {
+    return obra.imagen.replace("assets/obras/", "assets/obras/thumb/");
+  }
+
+  function media(obra, ratio, opts) {
+    opts = opts || {};
     if (obra.imagen) {
-      return `<img src="${esc(obra.imagen)}" alt="${esc(obra.titulo)}" loading="lazy"
-        onerror="this.outerHTML=window.__ph(${JSON.stringify(JSON.stringify(obra)).replace(/"/g, "&quot;")}, '${ratio}')" />`;
+      const src = opts.thumb ? thumbSrc(obra) : obra.imagen;
+      // si falla la miniatura, cae a la imagen completa; si falla la completa, al lienzo generado
+      const onerr = opts.thumb
+        ? `this.onerror=function(){this.outerHTML=window.__ph(${JSON.stringify(JSON.stringify(obra)).replace(/"/g, "&quot;")}, '${ratio}')};this.src='${esc(obra.imagen)}'`
+        : `this.outerHTML=window.__ph(${JSON.stringify(JSON.stringify(obra)).replace(/"/g, "&quot;")}, '${ratio}')`;
+      const loading = opts.eager ? "eager" : "lazy";
+      return `<img src="${esc(src)}" alt="${esc(obra.titulo)}" loading="${loading}" decoding="async"
+        onerror="${onerr}" />`;
     }
     return placeholder(obra, ratio);
   }
@@ -95,7 +107,7 @@
     return `
       <a class="art-card reveal" href="#/obra/${obra.id}" data-reveal>
         <div class="art-plus">+</div>
-        <div class="frame" ${styleFrame}>${media(obra, ratio)}</div>
+        <div class="frame" ${styleFrame}>${media(obra, ratio, { thumb: true })}</div>
         <div class="art-meta">
           <div class="art-title">${esc(obra.titulo)}</div>
           <div class="art-sub">${esc(obra.tecnica)}${obra.anio ? `<span class="dot">/</span>${obra.anio}` : ""}</div>
@@ -390,7 +402,7 @@
         <div class="mega-thumbs">
           ${picks.map((o) => `
             <a class="mega-thumb" href="#/obra/${o.id}">
-              <div class="mega-frame">${media(o, "portrait")}</div>
+              <div class="mega-frame">${media(o, "portrait", { thumb: true, eager: true })}</div>
               <span class="mega-cap">${esc(o.titulo)}</span>
             </a>`).join("")}
         </div>
