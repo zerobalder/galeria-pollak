@@ -293,6 +293,27 @@
       </section>`;
   }
 
+  /* Recortes ampliados de la propia obra (usa la imagen 1800px como fondo) */
+  function detailCropsHTML(obra) {
+    const spots = [
+      { pos: "38% 30%", label: "Detalle I" },
+      { pos: "62% 52%", label: "Detalle II" },
+      { pos: "50% 74%", label: "Detalle III" },
+    ];
+    return `
+      <section class="work-details reveal" data-reveal>
+        <div class="section-eyebrow">La obra de cerca</div>
+        <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem)">La pincelada, en detalle</h2>
+        <div class="detail-crops">
+          ${spots.map((s) => `
+            <div class="detail-crop" data-crop
+                 style="background-image:url('${esc(obra.imagen)}');background-position:${s.pos}">
+              <span>${s.label}</span>
+            </div>`).join("")}
+        </div>
+      </section>`;
+  }
+
   /* ============================================================
      VISTA: OBRA (detalle)
      ============================================================ */
@@ -326,9 +347,12 @@
           </div>
         </div>
 
-        <!-- Foto obra, ancho completo, altura variable -->
-        <div class="work-hero reveal in" id="workHero" data-zoom>
-          ${media(obra, "landscape")}
+        <!-- Foto obra sobre "muro" de galería, con zoom al pasar el cursor -->
+        <div class="work-stage reveal in">
+          <div class="work-hero" id="workHero" data-zoom>
+            ${media(obra, "landscape")}
+            ${obra.imagen ? `<span class="work-hero-hint">Pasa el cursor para acercar · clic para ampliar</span>` : ""}
+          </div>
         </div>
 
         <div class="wrap">
@@ -352,6 +376,8 @@
               <a class="chip" style="margin-top:24px;display:inline-block" href="mailto:${esc(ARTIST.email)}?subject=Consulta%20por%20la%20obra%20${encodeURIComponent(obra.titulo)}">Consultar disponibilidad</a>
             </aside>
           </div>
+
+          ${obra.imagen ? detailCropsHTML(obra) : ""}
         </div>
 
         ${similares.length ? `
@@ -595,13 +621,27 @@
       });
     }
 
-    // Zoom en la obra (detalle) -> lightbox
+    // Obra (detalle): lupa al pasar el cursor + clic para ampliar
     const hero = app.querySelector("[data-zoom]");
     if (hero) {
       const id = parseHash()[1];
       const obra = obraPorId(id);
+      const himg = hero.querySelector("img");
       hero.addEventListener("click", () => openLightbox(obra, obra.detalles || []));
-      // miniaturas de detalle
+      if (himg) {
+        hero.addEventListener("mouseenter", () => hero.classList.add("zoom"));
+        hero.addEventListener("mouseleave", () => hero.classList.remove("zoom"));
+        hero.addEventListener("mousemove", (e) => {
+          const r = hero.getBoundingClientRect();
+          const x = ((e.clientX - r.left) / r.width) * 100;
+          const y = ((e.clientY - r.top) / r.height) * 100;
+          himg.style.transformOrigin = `${x}% ${y}%`;
+        });
+      }
+      // recortes "la obra de cerca" -> abren la obra completa
+      app.querySelectorAll("[data-crop]").forEach((c) =>
+        c.addEventListener("click", () => openLightbox(obra, obra.detalles || [])));
+      // miniaturas de detalle (si la obra las define)
       app.querySelectorAll(".detail-strip .thumb").forEach((th) => {
         th.addEventListener("click", () => openLightbox(obra, obra.detalles || [], parseInt(th.dataset.detail, 10) + 1));
       });

@@ -34,6 +34,7 @@ while ($listener.IsListening) {
       $ctype = if ($mime.ContainsKey($ext)) { $mime[$ext] } else { "application/octet-stream" }
       $bytes = [System.IO.File]::ReadAllBytes($path)
       $ctx.Response.ContentType = $ctype
+      $ctx.Response.Headers.Add("Cache-Control", "no-store, no-cache, must-revalidate")
       $ctx.Response.ContentLength64 = $bytes.Length
       $ctx.Response.OutputStream.Write($bytes, 0, $bytes.Length)
     } else {
