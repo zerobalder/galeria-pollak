@@ -367,8 +367,78 @@
   function buildNav() {
     const nav = document.getElementById("mainnav");
     nav.innerHTML =
-      CATEGORIAS.map((c) => `<a href="#/categoria/${c.slug}" data-nav>${esc(c.nombre)}</a>`).join("") +
+      CATEGORIAS.map((c) => `<a href="#/categoria/${c.slug}" data-nav data-cat="${c.slug}">${esc(c.nombre)}</a>`).join("") +
       `<a href="#/sobre" data-nav>Sobre</a>`;
+    buildMega();
+    wireMega();
+  }
+
+  /* Panel del mega menú por categoría (hasta 6 miniaturas, priorizando destacadas) */
+  function megaPanel(cat) {
+    const obras = obrasDeCategoria(cat.slug);
+    const picks = obras.filter((o) => o.destacada)
+      .concat(obras.filter((o) => !o.destacada))
+      .slice(0, 6);
+    return `
+      <div class="mega-panel" data-panel="${cat.slug}">
+        <div class="mega-aside">
+          <div class="mega-eyebrow">Serie</div>
+          <h3 class="mega-title">${esc(cat.nombre)}</h3>
+          <p class="mega-desc">${esc(cat.descripcion)}</p>
+          <a class="mega-link" href="#/categoria/${cat.slug}">Ver las ${obras.length} obras <span>→</span></a>
+        </div>
+        <div class="mega-thumbs">
+          ${picks.map((o) => `
+            <a class="mega-thumb" href="#/obra/${o.id}">
+              <div class="mega-frame">${media(o, "portrait")}</div>
+              <span class="mega-cap">${esc(o.titulo)}</span>
+            </a>`).join("")}
+        </div>
+      </div>`;
+  }
+
+  function buildMega() {
+    const mega = document.getElementById("mega");
+    if (!mega) return;
+    mega.innerHTML = `<div class="mega-inner wrap">${CATEGORIAS.map(megaPanel).join("")}</div>`;
+  }
+
+  function wireMega() {
+    const header = document.getElementById("siteHeader");
+    const mega = document.getElementById("mega");
+    if (!header || !mega) return;
+    const nav = document.getElementById("mainnav");
+    let hideTimer;
+
+    const open = (slug) => {
+      clearTimeout(hideTimer);
+      mega.querySelectorAll(".mega-panel").forEach((p) =>
+        p.classList.toggle("active", p.dataset.panel === slug));
+      header.classList.add("mega-open");
+      mega.setAttribute("aria-hidden", "false");
+    };
+    const close = () => {
+      hideTimer = setTimeout(() => {
+        header.classList.remove("mega-open");
+        mega.setAttribute("aria-hidden", "true");
+      }, 130);
+    };
+
+    nav.querySelectorAll("a[data-cat]").forEach((a) => {
+      a.addEventListener("mouseenter", () => open(a.dataset.cat));
+      a.addEventListener("focus", () => open(a.dataset.cat));
+    });
+    nav.querySelectorAll("a:not([data-cat])").forEach((a) =>
+      a.addEventListener("mouseenter", close));
+    header.addEventListener("mouseleave", close);
+    mega.addEventListener("mouseenter", () => clearTimeout(hideTimer));
+    mega.addEventListener("click", () => header.classList.remove("mega-open"));
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  }
+
+  function closeMega() {
+    const header = document.getElementById("siteHeader");
+    if (header) header.classList.remove("mega-open");
   }
 
   function buildFooter() {
@@ -425,6 +495,7 @@
     afterRender();
     setActiveNav(a, b);
     closeMobileNav();
+    closeMega();
   }
 
   function viewSobre() {

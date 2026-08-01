@@ -37,16 +37,19 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Barra superior -->
-  <header class="topbar" id="topbar">
-    <a href="#/" class="brand">
-      <span class="brand-name">Peter Pollak</span>
-      <span class="brand-sub">Pintura</span>
-    </a>
-    <nav class="mainnav" id="mainnav"></nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
+  <!-- Barra superior + mega menú -->
+  <header class="site-header" id="siteHeader">
+    <div class="topbar" id="topbar">
+      <a href="#/" class="brand">
+        <span class="brand-name">Peter Pollak</span>
+        <span class="brand-sub">Pintura</span>
+      </a>
+      <nav class="mainnav" id="mainnav"></nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mega" id="mega" aria-hidden="true"></div>
   </header>
 
   <!-- Barra de progreso de scroll -->

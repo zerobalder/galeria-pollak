@@ -83,11 +83,15 @@ a { color: inherit; text-decoration: none; }
   transition: width 0.1s linear;
 }
 
-/* ---------- Topbar ---------- */
-.topbar {
+/* ---------- Header + Topbar ---------- */
+.site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
+}
+.topbar {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,6 +99,83 @@ a { color: inherit; text-decoration: none; }
   transition: background 0.4s var(--ease), padding 0.4s var(--ease), border-color 0.4s;
   border-bottom: 1px solid transparent;
 }
+/* Cuando el mega menú está abierto, la barra se vuelve sólida y se funde con el panel */
+.site-header.mega-open .topbar {
+  background: color-mix(in srgb, var(--bg) 96%, #000);
+  backdrop-filter: blur(18px);
+  padding: 12px var(--gutter);
+  border-bottom-color: transparent;
+}
+
+/* ---------- Mega menú ---------- */
+.mega {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  background: color-mix(in srgb, var(--bg) 96%, #000);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid transparent;
+  transition: max-height 0.5s var(--ease), opacity 0.35s var(--ease), border-color 0.4s;
+}
+.site-header.mega-open .mega {
+  max-height: 62vh;
+  opacity: 1;
+  border-bottom-color: var(--line);
+}
+.mega-panel {
+  display: none;
+  grid-template-columns: minmax(200px, 250px) 1fr;
+  gap: clamp(24px, 4vw, 56px);
+  padding: 30px 0 40px;
+  align-items: start;
+}
+.mega-panel.active { display: grid; animation: megaIn 0.45s var(--ease); }
+@keyframes megaIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.mega-aside { padding-top: 6px; }
+.mega-eyebrow {
+  font-size: 0.64rem; letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--accent-soft); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px;
+}
+.mega-eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--accent); }
+.mega-title {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.05;
+}
+.mega-desc { color: var(--ink-soft); font-size: 0.9rem; margin-top: 12px; max-width: 34ch; }
+.mega-link {
+  display: inline-flex; align-items: center; gap: 9px; margin-top: 20px;
+  font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink);
+}
+.mega-link span { transition: transform 0.3s var(--ease); color: var(--accent-soft); }
+.mega-link:hover span { transform: translateX(5px); }
+.mega-thumbs {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(10px, 1.2vw, 16px);
+}
+.mega-thumb { display: block; }
+.mega-frame {
+  aspect-ratio: 4 / 5; overflow: hidden; background: var(--panel);
+  position: relative;
+}
+.mega-frame img, .mega-frame .placeholder {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.7s var(--ease);
+}
+.mega-thumb:hover .mega-frame img, .mega-thumb:hover .mega-frame .placeholder { transform: scale(1.07); }
+.mega-cap {
+  display: block; margin-top: 9px;
+  font-size: 0.74rem; color: var(--ink-soft);
+  line-height: 1.25;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  transition: color 0.3s;
+}
+.mega-thumb:hover .mega-cap { color: var(--ink); }
+@media (max-width: 1080px) { .mega-thumbs { grid-template-columns: repeat(4, minmax(0, 1fr)); } .mega-thumb:nth-child(n+5) { display: none; } }
+@media (max-width: 780px) { .mega { display: none; } }
 .topbar.scrolled {
   background: color-mix(in srgb, var(--bg) 82%, transparent);
   backdrop-filter: blur(14px);
