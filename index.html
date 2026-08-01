@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter Pollak — Catálogo de obra</title>
+  <meta name="description" content="Catálogo de pintura de Peter Pollak: paisajes, retratos y abstracción." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="topbar" id="topbar">
+    <a href="#/" class="brand">
+      <span class="brand-name">Peter Pollak</span>
+      <span class="brand-sub">Pintura</span>
+    </a>
+    <nav class="mainnav" id="mainnav"></nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Contenido dinámico (home / categoría / obra) -->
+  <main id="app"></main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer"></footer>
+
+  <!-- Lightbox / visor de imágenes -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Anterior">&#8249;</button>
+    <div class="lightbox-stage" id="lightboxStage"></div>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Siguiente">&#8250;</button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

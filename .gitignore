@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.vercel
+*.log
+
+# Originales en alta (1.2 GB) — no versionar; las optimizadas viven en assets/obras/
+assets/_extract/
+assets/*.zip
+
+.vercel

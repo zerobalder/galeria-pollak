@@ -1,0 +1,574 @@
+/* ============================================================
+   GALERÍA — motor de la aplicación (SPA por hash, sin build)
+   ============================================================ */
+(function () {
+  "use strict";
+
+  const app = document.getElementById("app");
+  const footerEl = document.getElementById("footer");
+
+  /* ---------- Utilidades ---------- */
+  const $ = (sel, ctx = document) => ctx.querySelector(sel);
+  const bySlug = (slug) => CATEGORIAS.find((c) => c.slug === slug);
+  const obrasDeCategoria = (slug) => OBRAS.filter((o) => o.categoria === slug);
+  const obraPorId = (id) => OBRAS.find((o) => o.id === id);
+  const esc = (s) => String(s).replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
+
+  /* Paleta pseudo-aleatoria estable a partir del id (para placeholders) */
+  function hash(str) {
+    let h = 0;
+    for (let i = 0; i < str.length; i++) h = (h << 5) - h + str.charCodeAt(i) | 0;
+    return Math.abs(h);
+  }
+
+  /* Genera un "lienzo" SVG con carácter pictórico si la obra no tiene imagen.
+     Cada obra recibe una paleta y composición consistente (según su id). */
+  function placeholder(obra, ratio) {
+    const h = hash(obra.id);
+    const paletas = [
+      ["#c66a3d", "#e5b17a", "#7a3b26", "#f0d9b8"],
+      ["#2f4f52", "#89b0a5", "#16302f", "#d7e4dd"],
+      ["#7a5a86", "#c9a2c4", "#3b2a44", "#ecdcec"],
+      ["#5d6b3a", "#b3c07a", "#33401f", "#e6ecc9"],
+      ["#b5462f", "#e59a6b", "#5c2418", "#f4d6bd"],
+      ["#37506e", "#8faac9", "#1d2c40", "#d4e0ee"],
+    ];
+    const p = paletas[h % paletas.length];
+    const seed = h % 997;
+    const strokes = [];
+    let s = seed;
+    const rnd = () => { s = (s * 9301 + 49297) % 233280; return s / 233280; };
+    // Trazos gestuales
+    for (let i = 0; i < 7; i++) {
+      const y = 10 + rnd() * 80;
+      const w = 6 + rnd() * 26;
+      const col = p[Math.floor(rnd() * p.length)];
+      strokes.push(`<rect x="${rnd() * 20 - 10}" y="${y}" width="120" height="${w}" fill="${col}" opacity="${0.25 + rnd() * 0.5}" transform="rotate(${rnd() * 8 - 4} 50 ${y})"/>`);
+    }
+    // Mancha central
+    const cx = 30 + rnd() * 40, cy = 30 + rnd() * 40, r = 12 + rnd() * 20;
+    strokes.push(`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${p[0]}" opacity="0.55"/>`);
+    const [rw, rh] = ratioDims(ratio);
+    const svg =
+      `<svg class="placeholder" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(obra.titulo)}">
+        <defs>
+          <linearGradient id="g${h}" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="${p[3]}"/>
+            <stop offset="1" stop-color="${p[1]}"/>
+          </linearGradient>
+          <filter id="paint${h}"><feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="2" seed="${seed}"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter>
+        </defs>
+        <rect width="100" height="100" fill="url(#g${h})"/>
+        <g filter="url(#paint${h})">${strokes.join("")}</g>
+        <rect width="100" height="100" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/>
+      </svg>`;
+    return svg;
+  }
+  function ratioDims(ratio) {
+    if (ratio === "portrait") return [4, 5];
+    if (ratio === "landscape") return [5, 4];
+    return [1, 1];
+  }
+  /* Da a cada obra una relación de aspecto estable para el masonry */
+  function obraRatio(obra) {
+    const kinds = ["portrait", "square", "landscape", "portrait", "tall"];
+    return kinds[hash(obra.id) % kinds.length];
+  }
+  function aspectFor(kind) {
+    return { portrait: "4 / 5", square: "1 / 1", landscape: "5 / 4", tall: "3 / 4.4" }[kind] || "4 / 5";
+  }
+
+  function media(obra, ratio) {
+    if (obra.imagen) {
+      return `<img src="${esc(obra.imagen)}" alt="${esc(obra.titulo)}" loading="lazy"
+        onerror="this.outerHTML=window.__ph(${JSON.stringify(JSON.stringify(obra)).replace(/"/g, "&quot;")}, '${ratio}')" />`;
+    }
+    return placeholder(obra, ratio);
+  }
+  // expuesto para el onerror de imágenes rotas
+  window.__ph = (o, r) => placeholder(typeof o === "string" ? JSON.parse(o) : o, r);
+
+  /* ---------- Componente: tarjeta de obra ---------- */
+  function artCard(obra, opts = {}) {
+    const ratio = opts.masonry ? obraRatio(obra) : "portrait";
+    const styleFrame = opts.masonry ? `style="aspect-ratio:${aspectFor(ratio)}"` : "";
+    return `
+      <a class="art-card reveal" href="#/obra/${obra.id}" data-reveal>
+        <div class="art-plus">+</div>
+        <div class="frame" ${styleFrame}>${media(obra, ratio)}</div>
+        <div class="art-meta">
+          <div class="art-title">${esc(obra.titulo)}</div>
+          <div class="art-sub">${esc(obra.tecnica)}${obra.anio ? `<span class="dot">/</span>${obra.anio}` : ""}</div>
+        </div>
+      </a>`;
+  }
+
+  function rowGrid(obras, opts) {
+    return `<div class="row-grid">${obras.map((o) => artCard(o, opts)).join("")}</div>`;
+  }
+
+  /* ============================================================
+     VISTA: HOME
+     ============================================================ */
+  function viewHome() {
+    const destacadas = OBRAS.filter((o) => o.destacada);
+    const heroObra = destacadas[0] || OBRAS[0];
+
+    const bandas = TEMATICAS.slice(0, 2).map((t, i) => {
+      const obras = OBRAS.filter((o) => o.tematica === t).slice(0, 4);
+      if (!obras.length) return "";
+      return sectionRow(`Temática`, t, obras, `#/tema/${encodeURIComponent(t)}`, i);
+    }).join("");
+
+    const bandasTec = TECNICAS.slice(0, 2).map((t) => {
+      const obras = OBRAS.filter((o) => o.tecnica === t).slice(0, 4);
+      if (!obras.length) return "";
+      return sectionRow(`Técnica`, t, obras, `#/tecnica/${encodeURIComponent(t)}`);
+    }).join("");
+
+    return `
+      <!-- HERO: fotos artista / contexto -->
+      <section class="hero">
+        <div class="hero-canvas">${media(heroObra, "landscape")}</div>
+        <div class="hero-inner wrap">
+          <h1 class="hero-name reveal in">${esc(ARTIST.nombre.split(" ")[0])} <em>${esc(ARTIST.nombre.split(" ").slice(1).join(" "))}</em></h1>
+          <div class="hero-meta reveal in" data-delay="1">
+            <span>${esc(ARTIST.disciplina)}</span>
+            <span>${esc(ARTIST.ciudad)}</span>
+            <span>${esc(ARTIST.anios)}</span>
+          </div>
+        </div>
+        <div class="scroll-cue">Desliza</div>
+      </section>
+
+      <!-- OBRAS DESTACADAS -->
+      <section class="section wrap">
+        <div class="section-head reveal" data-reveal>
+          <div>
+            <div class="section-eyebrow">Selección</div>
+            <h2 class="section-title">Obras destacadas</h2>
+          </div>
+          <p class="section-lead">Una muestra de las piezas que mejor resumen el trabajo del taller en los últimos años.</p>
+        </div>
+        ${rowGrid(destacadas)}
+      </section>
+
+      <!-- DECLARACIÓN DE ARTISTA -->
+      <section class="statement wrap">
+        <blockquote class="reveal" data-reveal>${esc(ARTIST.bio).replace("la luz", "<em>la luz</em>")}</blockquote>
+        <cite class="reveal" data-reveal data-delay="1">— ${esc(ARTIST.nombre)}</cite>
+      </section>
+
+      <!-- CATEGORÍAS / SECCIONES -->
+      <section class="section wrap">
+        <div class="section-head reveal" data-reveal>
+          <div>
+            <div class="section-eyebrow">Explorar</div>
+            <h2 class="section-title">Cuerpos de obra</h2>
+          </div>
+          <p class="section-lead">La obra agrupada en las series que la organizan.</p>
+        </div>
+        <div class="cat-band">
+          ${CATEGORIAS.map((c, i) => catTile(c, i)).join("")}
+        </div>
+      </section>
+
+      <!-- OBRAS POR TEMÁTICA -->
+      ${bandas}
+      <!-- OBRAS POR TÉCNICA -->
+      ${bandasTec}
+    `;
+  }
+
+  function sectionRow(eyebrow, titulo, obras, href, i) {
+    return `
+      <section class="section wrap">
+        <div class="section-head reveal" data-reveal>
+          <div>
+            <div class="section-eyebrow">${esc(eyebrow)}</div>
+            <h2 class="section-title">${esc(titulo)}</h2>
+          </div>
+          <a class="back-link" href="${href}" style="margin:0">Ver todo <span>→</span></a>
+        </div>
+        ${rowGrid(obras)}
+      </section>`;
+  }
+
+  function catTile(c, i) {
+    const obras = obrasDeCategoria(c.slug);
+    const cover = obras[0] || OBRAS[0];
+    return `
+      <a class="cat-tile reveal" data-reveal data-delay="${i % 4}" href="#/categoria/${c.slug}">
+        ${media(cover, "landscape")}
+        <span class="cat-tile-count">${obras.length} obras</span>
+        <div class="cat-tile-body">
+          <div class="cat-tile-name">${esc(c.nombre)}</div>
+          <div class="cat-tile-desc">${esc(c.descripcion)}</div>
+        </div>
+      </a>`;
+  }
+
+  /* ============================================================
+     VISTA: CATEGORÍA (sección) — masonry + filtros + bandas
+     ============================================================ */
+  function viewCategoria(slug) {
+    const cat = bySlug(slug);
+    if (!cat) return viewNotFound();
+    const obras = obrasDeCategoria(slug);
+
+    return `
+      <section class="page-head wrap">
+        <div class="crumbs reveal in">
+          <a href="#/">Inicio</a><span class="sep">/</span><span>${esc(cat.nombre)}</span>
+        </div>
+        <h1 class="page-title reveal in">${esc(cat.nombre)}</h1>
+        <p class="page-lead reveal in" data-delay="1">${esc(cat.descripcion)}</p>
+      </section>
+
+      <section class="wrap" style="padding-bottom:clamp(64px,9vw,120px)">
+        <div class="filters reveal" data-reveal id="catFilters">
+          <button class="chip active" data-filter="all">Todo · ${obras.length}</button>
+          ${TECNICAS.filter((t) => obras.some((o) => o.tecnica === t))
+            .map((t) => `<button class="chip" data-filter="${esc(t)}">${esc(t)}</button>`).join("")}
+        </div>
+        <div class="masonry" id="catGrid">
+          ${obras.map((o) => artCard(o, { masonry: true })).join("")}
+        </div>
+      </section>
+
+      ${otrasSecciones(slug)}
+    `;
+  }
+
+  /* Bandas "por temática" y "por técnica" del wireframe de categoría */
+  function otrasSecciones(slugActual) {
+    const tema = TEMATICAS.map((t) => {
+      const obras = OBRAS.filter((o) => o.tematica === t && o.categoria !== slugActual).slice(0, 4);
+      return obras.length >= 3 ? { t, obras } : null;
+    }).filter(Boolean)[0];
+
+    let out = "";
+    if (tema) out += sectionRow("También en · temática", tema.t, tema.obras, `#/tema/${encodeURIComponent(tema.t)}`);
+    return out;
+  }
+
+  /* ============================================================
+     VISTA: filtrado por temática o técnica (páginas de eje)
+     ============================================================ */
+  function viewEje(tipo, valor) {
+    const key = tipo === "tema" ? "tematica" : "tecnica";
+    const obras = OBRAS.filter((o) => o[key] === valor);
+    const etiqueta = tipo === "tema" ? "Temática" : "Técnica";
+    if (!obras.length) return viewNotFound();
+    return `
+      <section class="page-head wrap">
+        <div class="crumbs reveal in"><a href="#/">Inicio</a><span class="sep">/</span><span>${esc(etiqueta)}</span></div>
+        <h1 class="page-title reveal in">${esc(valor)}</h1>
+        <p class="page-lead reveal in" data-delay="1">${obras.length} obras agrupadas por ${etiqueta.toLowerCase()}.</p>
+      </section>
+      <section class="wrap" style="padding-bottom:clamp(64px,9vw,130px)">
+        <div class="masonry">${obras.map((o) => artCard(o, { masonry: true })).join("")}</div>
+      </section>`;
+  }
+
+  /* ============================================================
+     VISTA: OBRA (detalle)
+     ============================================================ */
+  function viewObra(id) {
+    const obra = obraPorId(id);
+    if (!obra) return viewNotFound();
+    const cat = bySlug(obra.categoria);
+    const similares = OBRAS.filter(
+      (o) => o.id !== id && (o.categoria === obra.categoria || o.tematica === obra.tematica)
+    ).slice(0, 4);
+
+    const ficha = [
+      ["Año", obra.anio],
+      ["Categoría", cat ? cat.nombre : "—"],
+      ["Temática", obra.tematica],
+      ["Técnica", obra.tecnica],
+      ["Medidas", obra.medidas],
+    ].filter(([, v]) => v !== "" && v !== null && v !== undefined);
+
+    const detalles = (obra.detalles && obra.detalles.length)
+      ? obra.detalles
+      : []; // sin detalles definidos -> tira vacía
+
+    return `
+      <article class="work">
+        <div class="wrap">
+          <div class="crumbs reveal in">
+            <a href="#/">Inicio</a><span class="sep">/</span>
+            <a href="#/categoria/${obra.categoria}">${cat ? esc(cat.nombre) : ""}</a><span class="sep">/</span>
+            <span>${esc(obra.titulo)}</span>
+          </div>
+        </div>
+
+        <!-- Foto obra, ancho completo, altura variable -->
+        <div class="work-hero reveal in" id="workHero" data-zoom>
+          ${media(obra, "landscape")}
+        </div>
+
+        <div class="wrap">
+          <div class="work-body">
+            <div>
+              <h1 class="work-title reveal" data-reveal>${esc(obra.titulo)}</h1>
+              <p class="work-desc reveal" data-reveal data-delay="1">${esc(obra.descripcion || "")}</p>
+              ${detalles.length ? `
+                <div class="detail-strip reveal" data-reveal>
+                  ${detalles.map((d, i) => `<img class="thumb" src="${esc(d)}" alt="Detalle ${i + 1}" data-detail="${i}" loading="lazy">`).join("")}
+                </div>` : ""}
+              <a class="back-link" href="#/categoria/${obra.categoria}"><span>←</span> Volver a ${cat ? esc(cat.nombre) : "la serie"}</a>
+            </div>
+
+            <!-- Ficha técnica -->
+            <aside class="reveal" data-reveal data-delay="1">
+              <div class="section-eyebrow" style="margin-bottom:18px">Ficha técnica</div>
+              <dl class="spec">
+                ${ficha.map(([k, v]) => `<div class="row"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}
+              </dl>
+              <a class="chip" style="margin-top:24px;display:inline-block" href="mailto:${esc(ARTIST.email)}?subject=Consulta%20por%20la%20obra%20${encodeURIComponent(obra.titulo)}">Consultar disponibilidad</a>
+            </aside>
+          </div>
+        </div>
+
+        ${similares.length ? `
+        <section class="section wrap">
+          <div class="section-head reveal" data-reveal>
+            <div><div class="section-eyebrow">Seguir mirando</div><h2 class="section-title">Obras similares</h2></div>
+          </div>
+          ${rowGrid(similares)}
+        </section>` : ""}
+      </article>
+    `;
+  }
+
+  function viewNotFound() {
+    return `<section class="page-head wrap" style="min-height:70vh">
+      <div class="crumbs in"><a href="#/">Inicio</a></div>
+      <h1 class="page-title in">Perdido en el<br>taller</h1>
+      <p class="page-lead in">No encontramos esa obra. <a href="#/" style="color:var(--accent-soft)">Volver al inicio →</a></p>
+    </section>`;
+  }
+
+  /* ============================================================
+     NAV + FOOTER (se construyen una vez)
+     ============================================================ */
+  function buildNav() {
+    const nav = document.getElementById("mainnav");
+    nav.innerHTML =
+      CATEGORIAS.map((c) => `<a href="#/categoria/${c.slug}" data-nav>${esc(c.nombre)}</a>`).join("") +
+      `<a href="#/sobre" data-nav>Sobre</a>`;
+  }
+
+  function buildFooter() {
+    footerEl.innerHTML = `
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-name">${esc(ARTIST.nombre)}</div>
+            <p class="footer-tag">${esc(ARTIST.disciplina)} · ${esc(ARTIST.ciudad)}. Consultas de obra, exhibiciones y prensa.</p>
+          </div>
+          <div>
+            <h4>Series</h4>
+            <ul>${CATEGORIAS.map((c) => `<li><a href="#/categoria/${c.slug}">${esc(c.nombre)}</a></li>`).join("")}</ul>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <ul>
+              <li><a href="mailto:${esc(ARTIST.email)}">${esc(ARTIST.email)}</a></li>
+              <li><a href="${esc(ARTIST.instagram)}" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© ${new Date().getFullYear()} ${esc(ARTIST.nombre)}. Todas las obras son propiedad del artista.</span>
+          <span>Catálogo — hecho con luz y trementina</span>
+        </div>
+      </div>`;
+  }
+
+  /* ============================================================
+     ROUTER
+     ============================================================ */
+  function parseHash() {
+    const h = location.hash.replace(/^#\/?/, "");
+    const parts = h.split("/").filter(Boolean).map(decodeURIComponent);
+    return parts;
+  }
+
+  function render() {
+    const parts = parseHash();
+    let html;
+    const [a, b] = parts;
+
+    if (!a) html = viewHome();
+    else if (a === "categoria" && b) html = viewCategoria(b);
+    else if (a === "obra" && b) html = viewObra(b);
+    else if (a === "tema" && b) html = viewEje("tema", b);
+    else if (a === "tecnica" && b) html = viewEje("tecnica", b);
+    else if (a === "sobre") html = viewSobre();
+    else html = viewNotFound();
+
+    app.innerHTML = html;
+    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+    afterRender();
+    setActiveNav(a, b);
+    closeMobileNav();
+  }
+
+  function viewSobre() {
+    return `
+      <section class="page-head wrap">
+        <div class="crumbs reveal in"><a href="#/">Inicio</a><span class="sep">/</span><span>Sobre</span></div>
+        <h1 class="page-title reveal in">Sobre<br>la obra</h1>
+      </section>
+      <section class="wrap" style="padding-bottom:clamp(80px,10vw,140px)">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:start" class="about-grid">
+          <div class="reveal" data-reveal style="aspect-ratio:4/5;overflow:hidden;background:var(--panel)">
+            ${ARTIST.retrato ? `<img src="${esc(ARTIST.retrato)}" alt="${esc(ARTIST.nombre)}" style="width:100%;height:100%;object-fit:cover" onerror="this.outerHTML=window.__ph(${JSON.stringify(JSON.stringify({ id: 'retrato', titulo: ARTIST.nombre })).replace(/"/g, '&quot;')},'portrait')">` : placeholder({ id: "retrato", titulo: ARTIST.nombre }, "portrait")}
+          </div>
+          <div class="reveal" data-reveal data-delay="1">
+            <p style="font-family:var(--serif);font-size:clamp(1.4rem,3vw,2.1rem);line-height:1.35;font-weight:300">${esc(ARTIST.bio)}</p>
+            <p style="margin-top:26px;color:var(--ink-soft)">${esc(ARTIST.nombre)} vive y trabaja en ${esc(ARTIST.ciudad)}. Su obra se mueve entre el paisaje, el retrato y la abstracción, siempre atenta a cómo la luz transforma la materia.</p>
+            <div class="filters" style="margin-top:34px">
+              ${TEMATICAS.map((t) => `<a class="chip" href="#/tema/${encodeURIComponent(t)}">${esc(t)}</a>`).join("")}
+            </div>
+            <a class="chip active" style="margin-top:10px;display:inline-block" href="mailto:${esc(ARTIST.email)}">Escribir al taller</a>
+          </div>
+        </div>
+      </section>`;
+  }
+
+  function setActiveNav(a, b) {
+    document.querySelectorAll("#mainnav a").forEach((el) => {
+      const href = el.getAttribute("href");
+      el.classList.toggle("active", href === `#/categoria/${b}` && a === "categoria");
+    });
+  }
+
+  /* ============================================================
+     POST-RENDER: reveal on scroll, filtros, lightbox, topbar
+     ============================================================ */
+  let io;
+  function afterRender() {
+    // Reveal on scroll
+    if (io) io.disconnect();
+    const items = app.querySelectorAll(".reveal:not(.in)");
+    io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    items.forEach((el) => io.observe(el));
+
+    // Filtros de categoría
+    const filters = app.querySelector("#catFilters");
+    if (filters) {
+      filters.addEventListener("click", (e) => {
+        const btn = e.target.closest(".chip");
+        if (!btn) return;
+        filters.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
+        btn.classList.add("active");
+        const f = btn.dataset.filter;
+        app.querySelectorAll("#catGrid .art-card").forEach((card) => {
+          const show = f === "all" || card.dataset.tecnica === f;
+          card.style.display = show ? "" : "none";
+        });
+      });
+      // etiquetar cada card con su técnica para filtrar
+      app.querySelectorAll("#catGrid .art-card").forEach((card) => {
+        const id = card.getAttribute("href").split("/").pop();
+        const o = obraPorId(id);
+        if (o) card.dataset.tecnica = o.tecnica;
+      });
+    }
+
+    // Zoom en la obra (detalle) -> lightbox
+    const hero = app.querySelector("[data-zoom]");
+    if (hero) {
+      const id = parseHash()[1];
+      const obra = obraPorId(id);
+      hero.addEventListener("click", () => openLightbox(obra, obra.detalles || []));
+      // miniaturas de detalle
+      app.querySelectorAll(".detail-strip .thumb").forEach((th) => {
+        th.addEventListener("click", () => openLightbox(obra, obra.detalles || [], parseInt(th.dataset.detail, 10) + 1));
+      });
+    }
+  }
+
+  /* ---------- Lightbox ---------- */
+  const lb = document.getElementById("lightbox");
+  const lbStage = document.getElementById("lightboxStage");
+  const lbCap = document.getElementById("lightboxCaption");
+  let lbImages = [], lbIndex = 0;
+
+  function openLightbox(obra, detalles, start = 0) {
+    // conjunto de imágenes: la obra principal + detalles
+    lbImages = [{ src: obra.imagen, obra }].concat(
+      (detalles || []).map((d) => ({ src: d, obra, detalle: true }))
+    );
+    lbIndex = Math.min(start, lbImages.length - 1);
+    lb.classList.add("open");
+    lb.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    showLb();
+  }
+  function showLb() {
+    const item = lbImages[lbIndex];
+    const inner = item.src
+      ? `<img src="${esc(item.src)}" alt="${esc(item.obra.titulo)}" onerror="this.outerHTML=window.__ph(${JSON.stringify(JSON.stringify(item.obra)).replace(/"/g, "&quot;")},'landscape')">`
+      : placeholder(item.obra, "landscape");
+    lbStage.innerHTML = inner;
+    lbCap.textContent = `${item.obra.titulo} — ${item.obra.tecnica}, ${item.obra.anio}${item.detalle ? " · detalle" : ""}`;
+    const multi = lbImages.length > 1;
+    document.getElementById("lightboxPrev").style.display = multi ? "" : "none";
+    document.getElementById("lightboxNext").style.display = multi ? "" : "none";
+  }
+  function closeLightbox() {
+    lb.classList.remove("open");
+    lb.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  function lbMove(d) { lbIndex = (lbIndex + d + lbImages.length) % lbImages.length; showLb(); }
+
+  document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+  document.getElementById("lightboxPrev").addEventListener("click", () => lbMove(-1));
+  document.getElementById("lightboxNext").addEventListener("click", () => lbMove(1));
+  lb.addEventListener("click", (e) => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener("keydown", (e) => {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowLeft") lbMove(-1);
+    if (e.key === "ArrowRight") lbMove(1);
+  });
+
+  /* ---------- Topbar scroll + progreso + nav móvil ---------- */
+  const topbar = document.getElementById("topbar");
+  const progress = document.getElementById("scrollProgress");
+  function onScroll() {
+    const y = window.scrollY;
+    topbar.classList.toggle("scrolled", y > 40);
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = docH > 0 ? (y / docH) * 100 + "%" : "0%";
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  const menuToggle = document.getElementById("menuToggle");
+  const mainnav = document.getElementById("mainnav");
+  menuToggle.addEventListener("click", () => {
+    const open = mainnav.classList.toggle("open");
+    document.body.classList.toggle("nav-open", open);
+  });
+  function closeMobileNav() {
+    mainnav.classList.remove("open");
+    document.body.classList.remove("nav-open");
+  }
+
+  /* ---------- Init ---------- */
+  buildNav();
+  buildFooter();
+  window.addEventListener("hashchange", render);
+  render();
+  onScroll();
+})();
