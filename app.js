@@ -107,6 +107,16 @@
     return `<div class="row-grid">${obras.map((o) => artCard(o, opts)).join("")}</div>`;
   }
 
+  /* Carrusel horizontal (home + obras similares) */
+  function slider(obras, opts) {
+    return `
+      <div class="slider" data-slider>
+        <button class="slider-nav prev" data-dir="-1" aria-label="Anterior">&#8249;</button>
+        <div class="slider-track">${obras.map((o) => artCard(o, opts)).join("")}</div>
+        <button class="slider-nav next" data-dir="1" aria-label="Siguiente">&#8250;</button>
+      </div>`;
+  }
+
   /* ============================================================
      VISTA: HOME
      ============================================================ */
@@ -150,7 +160,7 @@
           </div>
           <p class="section-lead">Una muestra de las piezas que mejor resumen el trabajo del taller en los últimos años.</p>
         </div>
-        ${rowGrid(destacadas)}
+        ${slider(destacadas)}
       </section>
 
       <!-- DECLARACIÓN DE ARTISTA -->
@@ -190,7 +200,7 @@
           </div>
           <a class="back-link" href="${href}" style="margin:0">Ver todo <span>→</span></a>
         </div>
-        ${rowGrid(obras)}
+        ${slider(obras)}
       </section>`;
   }
 
@@ -337,7 +347,7 @@
           <div class="section-head reveal" data-reveal>
             <div><div class="section-eyebrow">Seguir mirando</div><h2 class="section-title">Obras similares</h2></div>
           </div>
-          ${rowGrid(similares)}
+          ${slider(similares)}
         </section>` : ""}
       </article>
     `;
@@ -461,6 +471,24 @@
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
     items.forEach((el) => io.observe(el));
+
+    // Sliders horizontales (home + similares)
+    app.querySelectorAll("[data-slider]").forEach((sl) => {
+      const track = sl.querySelector(".slider-track");
+      const prev = sl.querySelector(".slider-nav.prev");
+      const next = sl.querySelector(".slider-nav.next");
+      const step = () => Math.max(track.clientWidth * 0.82, 280);
+      const update = () => {
+        const max = track.scrollWidth - track.clientWidth - 2;
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= max;
+      };
+      prev.addEventListener("click", () => track.scrollBy({ left: -step(), behavior: "smooth" }));
+      next.addEventListener("click", () => track.scrollBy({ left: step(), behavior: "smooth" }));
+      track.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update, { passive: true });
+      update();
+    });
 
     // Filtros de categoría
     const filters = app.querySelector("#catFilters");
