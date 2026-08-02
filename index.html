@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>try{var t=localStorage.getItem('pp-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   <title>Peter Pollak — Catálogo de obra</title>
   <meta name="description" content="Catálogo de obra del pintor Peter Pollak (Chile, 1971–2026): marinas, paisajes, figura, escenas y dibujos. Más de 270 pinturas y dibujos del natural." />
   <link rel="canonical" href="https://peterpollak-cl.vercel.app/" />
@@ -44,13 +45,19 @@
         <span class="brand-name">Peter Pollak</span>
         <span class="brand-sub">Pintura</span>
       </a>
-      <nav class="mainnav" id="mainnav"></nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="topbar-right">
+        <nav class="mainnav" id="mainnav"></nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema"></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
     <div class="mega" id="mega" aria-hidden="true"></div>
   </header>
+
+  <!-- Etiqueta que sigue al cursor sobre las obras -->
+  <div class="cursor-label" id="cursorLabel" aria-hidden="true">Ver</div>
 
   <!-- Barra de progreso de scroll -->
   <div class="scroll-progress" id="scrollProgress"></div>

@@ -92,8 +92,8 @@
         ? `this.onerror=function(){this.outerHTML=window.__ph(${JSON.stringify(JSON.stringify(obra)).replace(/"/g, "&quot;")}, '${ratio}')};this.src='${esc(obra.imagen)}'`
         : `this.outerHTML=window.__ph(${JSON.stringify(JSON.stringify(obra)).replace(/"/g, "&quot;")}, '${ratio}')`;
       const loading = opts.eager ? "eager" : "lazy";
-      return `<img src="${esc(src)}" alt="${esc(obra.titulo)}" loading="${loading}" decoding="async"
-        onerror="${onerr}" />`;
+      return `<img class="pic" src="${esc(src)}" alt="${esc(obra.titulo)}" loading="${loading}" decoding="async"
+        onload="this.classList.add('loaded')" onerror="${onerr}" />`;
     }
     return placeholder(obra, ratio);
   }
@@ -134,7 +134,7 @@
      ============================================================ */
   function viewHome() {
     const destacadas = OBRAS.filter((o) => o.destacada);
-    const heroObra = destacadas[0] || OBRAS[0];
+    const heroObras = (destacadas.length ? destacadas : OBRAS).slice(0, 4);
 
     const bandas = TEMATICAS.slice(0, 2).map((t, i) => {
       const obras = OBRAS.filter((o) => o.tematica === t).slice(0, 4);
@@ -149,15 +149,22 @@
     }).join("");
 
     return `
-      <!-- HERO: fotos artista / contexto -->
+      <!-- HERO: obras destacadas en crossfade -->
       <section class="hero">
-        <div class="hero-canvas">${media(heroObra, "landscape")}</div>
+        <div class="hero-canvas" id="heroCanvas">
+          ${heroObras.map((o, i) => `<div class="hero-slide${i === 0 ? " active" : ""}">${media(o, "landscape")}</div>`).join("")}
+        </div>
         <div class="hero-inner wrap">
           <h1 class="hero-name reveal in">${esc(ARTIST.nombre.split(" ")[0])} <em>${esc(ARTIST.nombre.split(" ").slice(1).join(" "))}</em></h1>
           <div class="hero-meta reveal in" data-delay="1">
             <span>${esc(ARTIST.disciplina)}</span>
             <span>${esc(ARTIST.ciudad)}</span>
             <span>${esc(ARTIST.anios)}</span>
+          </div>
+          <div class="hero-stats reveal in" data-delay="2">
+            <span><b>${OBRAS.length}</b> obras</span><span class="sep">·</span>
+            <span><b>${CATEGORIAS.length}</b> series</span><span class="sep">·</span>
+            <span>del natural, 1971 — 2026</span>
           </div>
         </div>
         <div class="scroll-cue">Desliza</div>
@@ -529,6 +536,10 @@
     else html = viewNotFound();
 
     app.innerHTML = html;
+    // transición de entrada
+    app.classList.remove("page-in");
+    void app.offsetWidth;
+    app.classList.add("page-in");
     window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
     afterRender();
     setActiveNav(a, b);
@@ -581,8 +592,16 @@
     }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
     items.forEach((el) => io.observe(el));
 
+    // imágenes ya cacheadas: marcarlas cargadas para el fundido
+    app.querySelectorAll("img.pic").forEach((i) => {
+      if (i.complete && i.naturalWidth > 0) i.classList.add("loaded");
+    });
+
     // recolecta objetivos de parallax de la vista recién renderizada
     collectFx();
+
+    // crossfade del hero
+    startHeroCycle();
 
     // Sliders horizontales (home + similares)
     app.querySelectorAll("[data-slider]").forEach((sl) => {
@@ -707,7 +726,7 @@
   function collectFx() {
     fxTargets = [];
     if (reducedMotion()) return;
-    const heroBg = app.querySelector(".hero-canvas img, .hero-canvas .placeholder");
+    const heroBg = app.querySelector(".hero-canvas");
     if (heroBg) fxTargets.push({ el: heroBg, type: "heroBg" });
     const heroInner = app.querySelector(".hero-inner");
     if (heroInner) fxTargets.push({ el: heroInner, type: "heroText" });
@@ -723,7 +742,7 @@
     for (const t of fxTargets) {
       if (t.type === "heroBg") {
         if (y < vh * 1.2) {
-          t.el.style.transform = `translate3d(0, ${(y * 0.4).toFixed(1)}px, 0) scale(${(1 + Math.min(y, 1000) * 0.00025).toFixed(4)})`;
+          t.el.style.transform = `translate3d(0, ${(y * 0.4).toFixed(1)}px, 0)`;
         }
       } else if (t.type === "heroText") {
         if (y < vh * 1.2) {
@@ -767,7 +786,70 @@
     document.body.classList.remove("nav-open");
   }
 
+  /* ---------- Hero: crossfade entre destacadas ---------- */
+  let heroTimer = null;
+  function startHeroCycle() {
+    if (heroTimer) { clearInterval(heroTimer); heroTimer = null; }
+    const canvas = app.querySelector("#heroCanvas");
+    if (!canvas || reducedMotion()) return;
+    const slides = canvas.querySelectorAll(".hero-slide");
+    if (slides.length < 2) return;
+    let idx = 0;
+    heroTimer = setInterval(() => {
+      slides[idx].classList.remove("active");
+      idx = (idx + 1) % slides.length;
+      const next = slides[idx];
+      next.classList.add("active");
+      const img = next.querySelector("img, .placeholder");
+      if (img) { img.style.animation = "none"; void img.offsetWidth; img.style.animation = ""; }
+    }, 5200);
+  }
+
+  /* ---------- Tema claro / oscuro ---------- */
+  const SUN_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>`;
+  const MOON_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg>`;
+  function currentTheme() {
+    const attr = document.documentElement.getAttribute("data-theme");
+    if (attr) return attr;
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  }
+  function renderThemeIcon() {
+    const btn = document.getElementById("themeToggle");
+    if (btn) btn.innerHTML = currentTheme() === "light" ? MOON_SVG : SUN_SVG;
+  }
+  function initTheme() {
+    const btn = document.getElementById("themeToggle");
+    renderThemeIcon();
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      const next = currentTheme() === "light" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("pp-theme", next); } catch (e) {}
+      renderThemeIcon();
+    });
+  }
+
+  /* ---------- Cursor "Ver" que sigue el mouse sobre las obras ---------- */
+  function initCursorLabel() {
+    const label = document.getElementById("cursorLabel");
+    if (!label) return;
+    if (window.matchMedia && window.matchMedia("(pointer: coarse)").matches) return;
+    let raf = false, lx = 0, ly = 0, active = false;
+    document.addEventListener("mousemove", (e) => {
+      lx = e.clientX; ly = e.clientY;
+      const over = e.target.closest && e.target.closest(".art-card");
+      if (over && !active) { active = true; label.classList.add("show"); }
+      else if (!over && active) { active = false; label.classList.remove("show"); }
+      if (!raf) {
+        raf = true;
+        requestAnimationFrame(() => { label.style.left = lx + "px"; label.style.top = ly + "px"; raf = false; });
+      }
+    }, { passive: true });
+  }
+
   /* ---------- Init ---------- */
+  initTheme();
+  initCursorLabel();
   buildNav();
   buildFooter();
   window.addEventListener("hashchange", render);

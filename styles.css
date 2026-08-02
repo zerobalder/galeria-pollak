@@ -26,9 +26,9 @@
   --gutter: clamp(20px, 5vw, 72px);
 }
 
-/* Modo claro (papel) opcional según preferencia del sistema */
+/* Paleta modo claro (papel), reutilizada por preferencia del sistema y por el toggle */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
     --bg:        #f4efe6;
     --bg-soft:   #ece5d8;
     --panel:     #ffffff;
@@ -39,6 +39,23 @@
     --line-soft: rgba(35,32,28,0.07);
     --accent:    #bd4c2a;
   }
+}
+:root[data-theme="light"] {
+  --bg:        #f4efe6;
+  --bg-soft:   #ece5d8;
+  --panel:     #ffffff;
+  --ink:       #23201c;
+  --ink-soft:  #5f584d;
+  --ink-faint: #8f8578;
+  --line:      rgba(35,32,28,0.14);
+  --line-soft: rgba(35,32,28,0.07);
+  --accent:    #bd4c2a;
+}
+/* transición suave al cambiar de tema */
+body, .topbar, .mega, .art-card, .cat-tile, .footer, .chip {
+  transition-property: background-color, color, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: var(--ease);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -217,6 +234,48 @@ a { color: inherit; text-decoration: none; }
 .mainnav a:hover, .mainnav a.active { color: var(--ink); }
 .mainnav a:hover::after, .mainnav a.active::after { width: 100%; }
 
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2.6vw, 34px);
+}
+.theme-toggle {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: none;
+  cursor: pointer;
+  display: grid; place-items: center;
+  color: var(--ink-soft);
+  flex: 0 0 auto;
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease), transform 0.4s var(--ease);
+}
+.theme-toggle:hover { color: var(--ink); border-color: var(--ink-faint); transform: rotate(18deg); }
+.theme-toggle svg { width: 17px; height: 17px; display: block; }
+
+/* Etiqueta que sigue al cursor sobre las obras */
+.cursor-label {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 1500;
+  padding: 11px 17px;
+  border-radius: 100px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.64rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: opacity 0.25s var(--ease), transform 0.3s var(--ease);
+  will-change: transform, opacity;
+}
+.cursor-label.show { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+@media (hover: none), (pointer: coarse), (max-width: 780px) { .cursor-label { display: none; } }
+/* En desktop el cursor "Ver" reemplaza al signo + de las tarjetas */
+@media (hover: hover) and (pointer: fine) { .art-plus { display: none; } }
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -290,6 +349,35 @@ main { min-height: 60vh; }
   width: 100%; height: 100%;
   object-fit: cover;
 }
+/* Crossfade entre obras destacadas + leve Ken Burns */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.6s var(--ease);
+}
+.hero-slide.active { opacity: 1; }
+.hero-slide img, .hero-slide .placeholder {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transform: scale(1.03);
+}
+.hero-slide.active img, .hero-slide.active .placeholder {
+  animation: kenburns 14s ease-out forwards;
+}
+@keyframes kenburns { from { transform: scale(1.03); } to { transform: scale(1.14); } }
+.hero-stats {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px 16px;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.hero-stats b { color: var(--accent-soft); font-weight: 500; }
+.hero-stats .sep { color: var(--line); }
 .hero::after {
   content: "";
   position: absolute; inset: 0; z-index: 1;
@@ -891,9 +979,31 @@ main { min-height: 60vh; }
 .hero-canvas img, .hero-canvas .placeholder { will-change: transform; }
 .hero-inner { will-change: transform, opacity; }
 
+/* Transición al cambiar de vista (router) */
+.page-in { animation: pageIn 0.55s var(--ease); }
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Carga de imágenes con fundido (blur-up) */
+img.pic { opacity: 0; transition: opacity 0.8s var(--ease); }
+img.pic.loaded { opacity: 1; }
+
+/* Frame uniforme sutil en todas las obras (cohesión de catálogo) */
+.art-card .frame, .mega-frame, .detail-crop {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.28);
+}
+:root[data-theme="light"] .art-card .frame,
+:root[data-theme="light"] .mega-frame,
+:root[data-theme="light"] .detail-crop {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; filter: none; transition: none; }
+  img.pic { opacity: 1 !important; }
   .hero-canvas img, .hero-canvas .placeholder, .hero-inner,
   .cat-tile > img, .cat-tile > .placeholder { transform: none !important; }
 }
