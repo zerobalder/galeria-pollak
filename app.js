@@ -358,7 +358,10 @@
         <div class="work-stage reveal in">
           <div class="work-hero" id="workHero" data-zoom>
             ${media(obra, "landscape")}
-            ${obra.imagen ? `<span class="work-hero-hint">Pasa el cursor para acercar · clic para ampliar</span>` : ""}
+            ${obra.imagen ? `<button class="work-zoom-btn" id="workZoomBtn" type="button" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>
+              <span class="wz-label">Acercar</span>
+            </button>` : ""}
           </div>
         </div>
 
@@ -649,11 +652,30 @@
       const id = parseHash()[1];
       const obra = obraPorId(id);
       const himg = hero.querySelector("img");
+      const zbtn = hero.querySelector("#workZoomBtn");
+      let zoomEnabled = false;
+
+      if (zbtn) {
+        const zlabel = zbtn.querySelector(".wz-label");
+        zbtn.addEventListener("click", (e) => {
+          e.stopPropagation();               // no abrir el lightbox al togglear
+          zoomEnabled = !zoomEnabled;
+          zbtn.classList.toggle("active", zoomEnabled);
+          zbtn.setAttribute("aria-pressed", zoomEnabled ? "true" : "false");
+          hero.classList.toggle("zoomable", zoomEnabled);
+          if (zlabel) zlabel.textContent = zoomEnabled ? "Alejar" : "Acercar";
+          if (!zoomEnabled) hero.classList.remove("zoom");
+        });
+      }
+
+      // clic en la pintura (no en el botón) abre el lightbox a pantalla completa
       hero.addEventListener("click", () => openLightbox(obra, obra.detalles || []));
+
       if (himg) {
-        hero.addEventListener("mouseenter", () => hero.classList.add("zoom"));
+        hero.addEventListener("mouseenter", () => { if (zoomEnabled) hero.classList.add("zoom"); });
         hero.addEventListener("mouseleave", () => hero.classList.remove("zoom"));
         hero.addEventListener("mousemove", (e) => {
+          if (!zoomEnabled) return;
           const r = hero.getBoundingClientRect();
           const x = ((e.clientX - r.left) / r.width) * 100;
           const y = ((e.clientY - r.top) / r.height) * 100;
