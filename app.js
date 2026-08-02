@@ -581,6 +581,9 @@
     }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
     items.forEach((el) => io.observe(el));
 
+    // recolecta objetivos de parallax de la vista recién renderizada
+    collectFx();
+
     // Sliders horizontales (home + similares)
     app.querySelectorAll("[data-slider]").forEach((sl) => {
       const track = sl.querySelector(".slider-track");
@@ -694,6 +697,52 @@
     if (e.key === "ArrowRight") lbMove(1);
   });
 
+  /* ---------- Parallax / efectos de scroll ---------- */
+  const reducedMotion = () =>
+    window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  let fxTargets = [];
+  let fxTicking = false;
+
+  function collectFx() {
+    fxTargets = [];
+    if (reducedMotion()) return;
+    const heroBg = app.querySelector(".hero-canvas img, .hero-canvas .placeholder");
+    if (heroBg) fxTargets.push({ el: heroBg, type: "heroBg" });
+    const heroInner = app.querySelector(".hero-inner");
+    if (heroInner) fxTargets.push({ el: heroInner, type: "heroText" });
+    app.querySelectorAll(".cat-tile > img, .cat-tile > .placeholder")
+      .forEach((el) => fxTargets.push({ el, type: "media", speed: 0.05 }));
+    updateFx();
+  }
+
+  function updateFx() {
+    const y = window.scrollY;
+    const vh = window.innerHeight;
+    const vc = vh / 2;
+    for (const t of fxTargets) {
+      if (t.type === "heroBg") {
+        if (y < vh * 1.2) {
+          t.el.style.transform = `translate3d(0, ${(y * 0.4).toFixed(1)}px, 0) scale(${(1 + Math.min(y, 1000) * 0.00025).toFixed(4)})`;
+        }
+      } else if (t.type === "heroText") {
+        if (y < vh * 1.2) {
+          t.el.style.transform = `translate3d(0, ${(y * 0.22).toFixed(1)}px, 0)`;
+          t.el.style.opacity = Math.max(0, 1 - y / (vh * 0.78)).toFixed(3);
+        }
+      } else {
+        const r = t.el.getBoundingClientRect();
+        const center = r.top + r.height / 2;
+        t.el.style.transform = `translate3d(0, ${((vc - center) * t.speed).toFixed(1)}px, 0)`;
+      }
+    }
+    fxTicking = false;
+  }
+
+  function onScrollFx() {
+    if (!fxTicking) { fxTicking = true; requestAnimationFrame(updateFx); }
+  }
+
   /* ---------- Topbar scroll + progreso + nav móvil ---------- */
   const topbar = document.getElementById("topbar");
   const progress = document.getElementById("scrollProgress");
@@ -702,8 +751,10 @@
     topbar.classList.toggle("scrolled", y > 40);
     const docH = document.documentElement.scrollHeight - window.innerHeight;
     progress.style.width = docH > 0 ? (y / docH) * 100 + "%" : "0%";
+    onScrollFx();
   }
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScrollFx, { passive: true });
 
   const menuToggle = document.getElementById("menuToggle");
   const mainnav = document.getElementById("mainnav");

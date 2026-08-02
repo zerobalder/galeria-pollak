@@ -535,17 +535,17 @@ main { min-height: 60vh; }
   cursor: pointer;
   background: var(--panel);
 }
-.cat-tile .placeholder, .cat-tile img {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
+.cat-tile > .placeholder, .cat-tile > img {
+  position: absolute;
+  left: 0; top: -11%;
+  width: 100%; height: 122%;
   object-fit: cover;
-  transition: transform 1s var(--ease);
+  will-change: transform;   /* parallax: JS fija translateY */
 }
 .cat-tile::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(180deg, transparent 30%, rgba(8,6,5,0.82));
 }
-.cat-tile:hover .placeholder, .cat-tile:hover img { transform: scale(1.05); }
 .cat-tile-body { position: relative; z-index: 2; }
 .cat-tile-name {
   font-family: var(--serif);
@@ -869,19 +869,33 @@ main { min-height: 60vh; }
 /* ---------- Animaciones de aparición al hacer scroll ---------- */
 .reveal {
   opacity: 0;
-  transform: translateY(34px);
-  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
-  will-change: opacity, transform;
+  transform: translateY(42px);
+  filter: blur(7px);
+  transition: opacity 0.95s var(--ease), transform 0.95s var(--ease), filter 0.95s var(--ease);
+  will-change: opacity, transform, filter;
 }
-.reveal.in { opacity: 1; transform: none; }
+.reveal.in { opacity: 1; transform: none; filter: none; }
 .reveal[data-delay="1"] { transition-delay: 0.08s; }
 .reveal[data-delay="2"] { transition-delay: 0.16s; }
 .reveal[data-delay="3"] { transition-delay: 0.24s; }
 .reveal[data-delay="4"] { transition-delay: 0.32s; }
 
+/* Revelado escalonado dentro de filas/carruseles/bandas */
+.row-grid > *:nth-child(2), .slider-track > *:nth-child(2), .cat-band > *:nth-child(2) { transition-delay: 0.07s; }
+.row-grid > *:nth-child(3), .slider-track > *:nth-child(3), .cat-band > *:nth-child(3) { transition-delay: 0.14s; }
+.row-grid > *:nth-child(4), .slider-track > *:nth-child(4), .cat-band > *:nth-child(4) { transition-delay: 0.21s; }
+.row-grid > *:nth-child(5), .slider-track > *:nth-child(5) { transition-delay: 0.28s; }
+.row-grid > *:nth-child(6), .slider-track > *:nth-child(6) { transition-delay: 0.35s; }
+
+/* Parallax (posición la fija JS con transform) */
+.hero-canvas img, .hero-canvas .placeholder { will-change: transform; }
+.hero-inner { will-change: transform, opacity; }
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .reveal { opacity: 1; transform: none; filter: none; transition: none; }
+  .hero-canvas img, .hero-canvas .placeholder, .hero-inner,
+  .cat-tile > img, .cat-tile > .placeholder { transform: none !important; }
 }
 
 /* ---------- Responsive nav ---------- */
