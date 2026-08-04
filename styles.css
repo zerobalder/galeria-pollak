@@ -618,6 +618,13 @@ main { min-height: 60vh; }
   color: var(--bg);
   border-color: var(--ink);
 }
+.chip-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.chip-wa svg { width: 16px; height: 16px; color: #25d366; flex: 0 0 auto; }
+.chip.active.chip-wa svg { color: #128c3e; }
 
 /* ---------- Bandas de categorías (home) ---------- */
 .cat-band {

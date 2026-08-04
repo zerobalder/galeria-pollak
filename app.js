@@ -14,6 +14,12 @@
   const obraPorId = (id) => OBRAS.find((o) => o.id === id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
 
+  // Enlace a WhatsApp con mensaje prellenado
+  const waLink = (texto) => {
+    const num = (ARTIST.whatsapp || "").replace(/\D/g, "");
+    return `https://wa.me/${num}?text=${encodeURIComponent(texto)}`;
+  };
+
   /* Paleta pseudo-aleatoria estable a partir del id (para placeholders) */
   function hash(str) {
     let h = 0;
@@ -383,7 +389,11 @@
               <dl class="spec">
                 ${ficha.map(([k, v]) => `<div class="row"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}
               </dl>
-              <a class="chip" style="margin-top:24px;display:inline-block" href="mailto:${esc(ARTIST.email)}?subject=Consulta%20por%20la%20obra%20${encodeURIComponent(obra.titulo)}">Consultar disponibilidad</a>
+              <a class="chip chip-wa" style="margin-top:24px" target="_blank" rel="noopener"
+                 href="${waLink(`Hola, quisiera consultar la disponibilidad y el precio de la obra «${obra.titulo}»${obra.anio ? " (" + obra.anio + ")" : ""}.`)}">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.19-1.58-1.19-3.02s.75-2.14 1.02-2.43c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.89 2.16.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.29.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.61-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.65.78 1.94.92.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg>
+                Consultar disponibilidad y precio
+              </a>
             </aside>
           </div>
 
@@ -504,6 +514,7 @@
           <div>
             <h4>Contacto</h4>
             <ul>
+              <li><a href="${waLink("Hola, quisiera consultar sobre las obras de Peter Pollak.")}" target="_blank" rel="noopener">WhatsApp · ${esc(ARTIST.telefono)}</a></li>
               <li><a href="mailto:${esc(ARTIST.email)}">${esc(ARTIST.email)}</a></li>
               <li><a href="${esc(ARTIST.instagram)}" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
@@ -567,7 +578,10 @@
             <div class="filters" style="margin-top:34px">
               ${TEMATICAS.map((t) => `<a class="chip" href="#/tema/${encodeURIComponent(t)}">${esc(t)}</a>`).join("")}
             </div>
-            <a class="chip active" style="margin-top:10px;display:inline-block" href="mailto:${esc(ARTIST.email)}">Escribir al taller</a>
+            <a class="chip active chip-wa" style="margin-top:10px" target="_blank" rel="noopener" href="${waLink("Hola, quisiera consultar sobre las obras de Peter Pollak.")}">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.19-1.58-1.19-3.02s.75-2.14 1.02-2.43c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.89 2.16.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.29.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.61-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.65.78 1.94.92.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg>
+              Escribir por WhatsApp
+            </a>
           </div>
         </div>
       </section>`;

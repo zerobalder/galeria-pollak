@@ -152,6 +152,7 @@ $ARTIST = [ordered]@{
   anios="Obra 1971 — 2026";
   bio="Pinto lo que veo y lo que recuerdo: el mar y los lagos del sur, la gente en sus faenas, el cuerpo del natural. Cada cuadro intenta detener la luz un instante antes de que se disuelva.";
   retrato="assets/retrato.jpg"; email="hola@peterpollak.cl"; instagram="https://instagram.com/";
+  telefono="+56 9 7791 7211"; whatsapp="56977917211";
 }
 $TEMATICAS = @("Marina","Paisaje","Figura","Costumbrista")
 $TECNICAS  = @("Óleo","Dibujo","Bosquejo","Lápiz")
