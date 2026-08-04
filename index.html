@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>try{var t=localStorage.getItem('pp-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('pp-theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
   <title>Peter Pollak — Catálogo de obra</title>
   <meta name="description" content="Catálogo de obra del pintor Peter Pollak (Chile, 1971–2026): marinas, paisajes, figura, escenas y dibujos. Más de 270 pinturas y dibujos del natural." />
   <link rel="canonical" href="https://peterpollak-cl.vercel.app/" />
@@ -41,9 +41,10 @@
   <!-- Barra superior + mega menú -->
   <header class="site-header" id="siteHeader">
     <div class="topbar" id="topbar">
-      <a href="#/" class="brand">
-        <span class="brand-name">Peter Pollak</span>
+      <a href="#/" class="brand" aria-label="Peter Pollak — Inicio">
+        <span class="brand-logo" aria-hidden="true"></span>
         <span class="brand-sub">Pintura</span>
+        <span class="sr-only">Peter Pollak</span>
       </a>
       <div class="topbar-right">
         <nav class="mainnav" id="mainnav"></nav>
