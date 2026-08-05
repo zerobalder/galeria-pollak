@@ -23,6 +23,17 @@
     return `https://wa.me/${num}?text=${encodeURIComponent(texto)}`;
   };
 
+  // ---- Restauración de scroll: al volver atrás, quedar donde estaba ----
+  const scrollByHash = {};
+  const pendingRestore = new Set();
+  const hashKey = () => location.hash || "#/";
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  // fija el scroll cubriendo cualquier elemento que sea el contenedor de scroll
+  const scrollToY = (y) => {
+    window.scrollTo(0, y);
+    if (document.scrollingElement) document.scrollingElement.scrollTop = y;
+  };
+
   /* Paleta pseudo-aleatoria estable a partir del id (para placeholders) */
   function hash(str) {
     let h = 0;
@@ -563,7 +574,15 @@
     app.classList.remove("page-in");
     void app.offsetWidth;
     app.classList.add("page-in");
-    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+    // scroll: restaurar si volvemos a una vista guardada, si no, arriba
+    const key = hashKey();
+    if (pendingRestore.has(key) && scrollByHash[key] != null) {
+      const y = scrollByHash[key];
+      pendingRestore.delete(key);
+      requestAnimationFrame(() => requestAnimationFrame(() => scrollToY(y)));
+    } else {
+      scrollToY(0);
+    }
     afterRender();
     setActiveNav(a, b);
     closeMobileNav();
@@ -893,6 +912,17 @@
   }
 
   /* ---------- Init ---------- */
+  // Guardar la posición de scroll al hacer clic en un enlace interno de una vista
+  // (obras, categorías, similares…) para poder restaurarla al volver atrás.
+  app.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest('a[href^="#/"]');
+    if (a && app.contains(a)) {
+      const key = hashKey();
+      scrollByHash[key] = window.scrollY;
+      pendingRestore.add(key);
+    }
+  }, true);
+
   initTheme();
   initCursorLabel();
   buildNav();

@@ -69,7 +69,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;   /* evita scroll horizontal sin volver al body un contenedor de scroll */
 }
 
 /* Grano sutil de lienzo sobre todo el sitio */
