@@ -116,6 +116,7 @@
     return `
       <a class="art-card reveal" href="#/obra/${obra.id}" data-reveal>
         <div class="art-plus">+</div>
+        ${obra.vendido ? `<span class="art-badge">Vendido</span>` : ""}
         <div class="frame" ${styleFrame}>${media(obra, ratio, { thumb: true })}</div>
         <div class="art-meta">
           <div class="art-title">${esc(obra.titulo)}</div>
@@ -344,9 +345,9 @@
     const ficha = [
       ["Año", obra.anio],
       ["Categoría", cat ? cat.nombre : "—"],
-      ["Temática", obra.tematica],
       ["Técnica", obra.tecnica],
       ["Medidas", obra.medidas],
+      ["Estado", obra.vendido ? "Vendida" : "Disponible"],
     ].filter(([, v]) => v !== "" && v !== null && v !== undefined);
 
     const detalles = (obra.detalles && obra.detalles.length)
@@ -392,11 +393,16 @@
               <dl class="spec">
                 ${ficha.map(([k, v]) => `<div class="row"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}
               </dl>
+              ${obra.vendido ? `
+              <div class="vendido-note" style="margin-top:24px">
+                <span class="vendido-dot"></span> Obra vendida — ya no disponible
+                <a class="vendido-sub" href="${waLink(`Hola, vi «${obra.titulo}» (vendida) y me gustaría consultar por obras similares disponibles.`)}" target="_blank" rel="noopener">Consultar obras similares →</a>
+              </div>` : `
               <a class="chip chip-wa" style="margin-top:24px" target="_blank" rel="noopener"
                  href="${waLink(`Hola, quisiera consultar la disponibilidad y el precio de la obra «${obra.titulo}»${obra.anio ? " (" + obra.anio + ")" : ""}.`)}">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.19-1.58-1.19-3.02s.75-2.14 1.02-2.43c.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.89 2.16.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.29.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.61-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.65.78 1.94.92.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg>
                 Consultar disponibilidad y precio
-              </a>
+              </a>`}
             </aside>
           </div>
 
