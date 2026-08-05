@@ -1,5 +1,5 @@
 # Originales en alta resolución y material de trabajo (no se despliegan)
 assets/_extract/
 assets/*.zip
-generar-catalogo.ps1
-servidor.ps1
+*.ps1
+*.mjs
