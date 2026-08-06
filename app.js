@@ -445,7 +445,7 @@
   function buildNav() {
     const nav = document.getElementById("mainnav");
     nav.innerHTML =
-      CATEGORIAS.map((c) => `<a href="#/categoria/${c.slug}" data-nav data-cat="${c.slug}">${esc(c.nombre)}</a>`).join("") +
+      CATEGORIAS.map((c) => `<a href="#/categoria/${c.slug}" data-nav data-cat="${c.slug}">${esc(c.nav || c.nombre)}</a>`).join("") +
       `<a href="#/sobre" data-nav>Sobre</a>`;
     buildMega();
     wireMega();
@@ -602,7 +602,7 @@
           </div>
           <div class="reveal" data-reveal data-delay="1">
             <p style="font-family:var(--serif);font-size:clamp(1.4rem,3vw,2.1rem);line-height:1.35;font-weight:300">${esc(ARTIST.bio)}</p>
-            <p style="margin-top:26px;color:var(--ink-soft)">${esc(ARTIST.nombre)} vive y trabaja en ${esc(ARTIST.ciudad)}. Su obra se mueve entre el paisaje, el retrato y la abstracción, siempre atenta a cómo la luz transforma la materia.</p>
+            <p style="margin-top:26px;color:var(--ink-soft)">${esc(ARTIST.nombre)} vive y trabaja en ${esc(ARTIST.ciudad)}. Su obra se mueve entre el paisaje, el retrato y la abstracción; siempre invita a la reflexión, atenta a cómo la luz transforma la materia.</p>
             <div class="filters" style="margin-top:34px">
               ${TEMATICAS.map((t) => `<a class="chip" href="#/tema/${encodeURIComponent(t)}">${esc(t)}</a>`).join("")}
             </div>

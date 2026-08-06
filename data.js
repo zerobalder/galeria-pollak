@@ -1,10 +1,10 @@
 /* Generado automaticamente desde las fotos del catalogo. Editable a mano. */
 const ARTIST = {
     "nombre":  "Peter Pollak",
-    "disciplina":  "Pintor",
-    "ciudad":  "Temuco · Santiago, Chile",
+    "disciplina":  "Arquitecto y Pintor",
+    "ciudad":  "Colina · Santiago, Chile",
     "anios":  "Obra 1971 — 2026",
-    "bio":  "Pinto lo que veo y lo que recuerdo: el mar y los lagos del sur, la gente en sus faenas, el cuerpo del natural. Cada cuadro intenta detener la luz un instante antes de que se disuelva.",
+    "bio":  "Pinto lo que veo y lo que recuerdo: el mar y los lagos del sur, la gente en sus faenas, el cuerpo del natural. Cada cuadro invita a la contemplación e intenta detener la luz un instante antes de que se disuelva.",
     "retrato":  "assets/retrato.jpg",
     "email":  "hola@peterpollak.cl",
     "instagram":  "https://instagram.com/",
@@ -16,42 +16,50 @@ const TECNICAS = ["Óleo","Lápiz","Acuarela","Dibujo"];
 const CATEGORIAS = [
     {
         "slug": "marinas",
-        "nombre": "Marinas",
+        "nombre": "Paisajes Marinos",
+        "nav": "Marinos",
         "descripcion": "El mar, las playas, los botes y veleros —del sur de Chile al Caribe."
     },
     {
         "slug": "paisajes",
-        "nombre": "Paisajes",
-        "descripcion": "Cordillera, altiplano, ríos y desiertos: del Atacama a la Patagonia."
+        "nombre": "Paisajes Agrestes",
+        "nav": "Agrestes",
+        "descripcion": "Cordillera, campo y desierto: del Atacama a la Patagonia."
     },
     {
         "slug": "lagos",
-        "nombre": "Lagos",
+        "nombre": "Paisajes Lacustres",
+        "nav": "Lacustres",
         "descripcion": "El lago Caburgua y el sur lacustre: muelles, botes, árboles y neblina."
     },
     {
         "slug": "retratos",
         "nombre": "Retratos",
+        "nav": "Retratos",
         "descripcion": "Rostros y personajes pintados del natural: retratos y oficios."
     },
     {
         "slug": "desnudos",
         "nombre": "Desnudos",
+        "nav": "Desnudos",
         "descripcion": "El cuerpo del natural: desnudos y estudios de figura."
     },
     {
         "slug": "escenas",
-        "nombre": "Escenas",
-        "descripcion": "Faenas, mercados, obras públicas y escenas de la vida y el trabajo."
+        "nombre": "Paisajes Urbanos",
+        "nav": "Urbanos",
+        "descripcion": "La ciudad y el trabajo: obras públicas, mercados, calles y faenas."
     },
     {
         "slug": "acuarelas",
         "nombre": "Acuarelas",
+        "nav": "Acuarelas",
         "descripcion": "Acuarelas de viaje: playas, mercados y escenas del Caribe."
     },
     {
         "slug": "dibujos",
         "nombre": "Dibujos",
+        "nav": "Dibujos",
         "descripcion": "Apuntes a lápiz del natural, muchos base de óleos posteriores."
     }
 ];
