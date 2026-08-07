@@ -6,7 +6,7 @@ const ARTIST = {
     "anios":  "Obra 1971 — 2026",
     "bio":  "Pinto lo que veo y lo que recuerdo: el mar y los lagos del sur, la gente en sus faenas, el cuerpo del natural. Cada cuadro invita a la contemplación e intenta detener la luz un instante antes de que se disuelva.",
     "retrato":  "assets/retrato.jpg",
-    "email":  "hola@peterpollak.cl",
+    "email":  "phpollak@gmail.com",
     "instagram":  "https://www.instagram.com/peterpollak.cl",
     "telefono":  "+56 9 7791 7211",
     "whatsapp":  "56977917211"
