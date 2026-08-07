@@ -131,7 +131,7 @@
         <div class="frame" ${styleFrame}>${media(obra, ratio, { thumb: true })}</div>
         <div class="art-meta">
           <div class="art-title">${esc(obra.titulo)}</div>
-          <div class="art-sub">${esc(obra.tecnica)}${obra.anio ? `<span class="dot">/</span>${obra.anio}` : ""}</div>
+          <div class="art-sub"><span class="art-nro">№ ${nroCatalogo(obra)}</span><span class="dot">·</span>${esc(obra.tecnica)}${obra.anio ? `<span class="dot">/</span>${obra.anio}` : ""}</div>
         </div>
       </a>`;
   }
@@ -201,6 +201,18 @@
           <p class="section-lead">Una muestra de las piezas que mejor resumen el trabajo del taller en los últimos años.</p>
         </div>
         ${slider(destacadas)}
+      </section>
+
+      <!-- CURATORÍA -->
+      <section class="curatoria wrap">
+        <div class="section-eyebrow reveal" data-reveal>Curatoría</div>
+        <div class="curatoria-body reveal" data-reveal data-delay="1">
+          ${CURATORIA.parrafos.map((p) => `<p>${p}</p>`).join("")}
+        </div>
+        <cite class="curatoria-cite reveal" data-reveal data-delay="1">
+          ${esc(CURATORIA.autor)}, ${esc(CURATORIA.credencial)}<br>
+          <span>${esc(CURATORIA.lugar)} · ${esc(CURATORIA.anio)}</span>
+        </cite>
       </section>
 
       <!-- DECLARACIÓN DE ARTISTA -->
@@ -389,6 +401,7 @@
         <div class="wrap">
           <div class="work-body">
             <div>
+              <div class="work-nro reveal" data-reveal>№ ${nroCatalogo(obra)}</div>
               <h1 class="work-title reveal" data-reveal>${esc(obra.titulo)}</h1>
               <p class="work-desc reveal" data-reveal data-delay="1">${esc(obra.descripcion || "")}</p>
               ${detalles.length ? `
@@ -664,6 +677,28 @@
       track.addEventListener("scroll", update, { passive: true });
       window.addEventListener("resize", update, { passive: true });
       update();
+
+      // Scrub: mover el mouse sobre el slider lo desplaza lentamente (solo desktop)
+      if (!(window.matchMedia && window.matchMedia("(pointer: coarse)").matches)) {
+        let target = null, raf = null;
+        const ease = () => {
+          if (target == null) { raf = null; return; }
+          const cur = track.scrollLeft;
+          const d = target - cur;
+          if (Math.abs(d) < 0.5) { track.scrollLeft = target; raf = null; return; }
+          track.scrollLeft = cur + d * 0.07;
+          raf = requestAnimationFrame(ease);
+        };
+        track.addEventListener("mousemove", (e) => {
+          const max = track.scrollWidth - track.clientWidth;
+          if (max <= 4) { target = null; return; }
+          const r = track.getBoundingClientRect();
+          const ratio = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+          target = ratio * max;
+          if (!raf) raf = requestAnimationFrame(ease);
+        }, { passive: true });
+        track.addEventListener("mouseleave", () => { target = null; });
+      }
     });
 
     // Filtros de categoría

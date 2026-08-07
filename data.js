@@ -7,9 +7,23 @@ const ARTIST = {
     "bio":  "Pinto lo que veo y lo que recuerdo: el mar y los lagos del sur, la gente en sus faenas, el cuerpo del natural. Cada cuadro invita a la contemplación e intenta detener la luz un instante antes de que se disuelva.",
     "retrato":  "assets/retrato.jpg",
     "email":  "hola@peterpollak.cl",
-    "instagram":  "https://instagram.com/",
+    "instagram":  "https://www.instagram.com/peterpollak.cl",
     "telefono":  "+56 9 7791 7211",
     "whatsapp":  "56977917211"
+};
+const CURATORIA = {
+    "autor": "Nathanael Price",
+    "credencial": "PhD Art History",
+    "lugar": "London, UK",
+    "anio": "2025",
+    "parrafos": [
+        "A los historiadores y críticos del arte les gusta trazar comparaciones y conexiones entre artistas y sus obras. Esto puede parecer un ejercicio ocioso, pero más allá de rastrear la influencia de un artista sobre otro, existe un valor en identificar y reconocer a aquellos cuyo efecto se logra a través de modos de expresión similares; artistas que han encontrado medios de representación, de comunicación, con una validez universal. Estos artistas conversan en un lenguaje visual que pocos pueden hablar, pero que todos pueden comprender. Ese, al fin y al cabo, es el poder del arte.",
+        "En esta colección de pinturas recientes de Peter Pollak, las huellas universales son abundantes. En la geometría iluminada por el sol de <em>Mi Taller de Verano</em> —una terraza techada con vista al lago y a la montaña— se perciben ecos del venerable pintor inglés David Hockney (1937–). Pero mientras Hockney hoy en día prefiere el medio digital, Pollak siempre ha favorecido la tactilidad de la espátula; para él, el óleo ofrece tanta textura como color, y eso añade otra dimensión a su obra.",
+        "Tomemos, por ejemplo, los audaces planos de color texturizados de <em>Velero Fondo Amarillo</em> y <em>Velero Cielo Anaranjado</em>. Estas obras, a primera vista, tienen una cualidad alegre y fauvista, pero hay algo ominoso en los densos atardeceres encendidos que se expresa con franqueza en su serie <em>LA Fire</em>. Allí, la conflagración es real, y los edificios condenados se perfilan en un impasto oscuro que recuerda la textura de la madera carbonizada.",
+        "Pero la profundidad emocional de los paisajes y composiciones figurativas de Pollak no depende del dramatismo del tema. En <em>El Baño de las Ninfas</em>, dos desnudos reclinados flotan junto a árboles desnudos y blancos como espinas de pescado. Visto desde un extraño punto de vista aéreo, la serenidad de la escena se ve perturbada por la misma cualidad onírica que distingue al aclamado pintor escocés Peter Doig (1959–) de los paisajistas tradicionales.",
+        "Existen más paralelos con Doig en el interés por los botes, un tema recurrente para Peter Pollak a lo largo de las cinco décadas desde que tomó por primera vez la espátula. Sus embarcaciones adquieren una particular carga poética cuando yacen varadas y vacías, como en <em>Veleros en la Playa</em> o <em>Garza Perdida en la Playa</em>, donde una garza, igualmente encallada, aporta un matiz surrealista.",
+        "En otras obras de esta colección, Pollak presenta una visión de <em>La Minga</em> (el traslado físico de una casa mediante esfuerzo comunitario) que eleva una práctica cultural indígena chilena al rango de alegoría, en la manera del maestro del Renacimiento del Norte Pieter Bruegel (c.1525–69). Si existe un hilo conductor en las conexiones que aquí se trazan entre la obra de Pollak y los demás pintores que evocan, es que todos ofrecen imágenes de una simplicidad engañosa que, sin embargo, capturan la complejidad de la realidad humana."
+    ]
 };
 const TEMATICAS = ["Paisaje","Figura","Escena","Acuarela"];
 const TECNICAS = ["Óleo","Lápiz","Acuarela","Dibujo"];
@@ -86,7 +100,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1002-hombre.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre cartón · 70 × 50 cm",
         "vendido": true
     },
@@ -664,7 +678,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1047-veleros-oriente.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre cartón · 77 × 104 cm"
     },
     {
@@ -737,7 +751,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1053-calle-de-san-perdo-de-atacama.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
     },
     {
@@ -774,7 +788,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1056-salar-uyuni-isla-incahuasi.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
     },
     {
@@ -906,7 +920,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1067-mujeres-en-playa.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela · 80 × 60 cm"
     },
     {
@@ -1663,7 +1677,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1131-un-comienzo-realjado.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
     },
     {
@@ -1748,7 +1762,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1139-navegando-frente-al-faro.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
     },
     {
@@ -1964,7 +1978,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1158-a-fire.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
     },
     {
@@ -2024,7 +2038,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1163-la-garza-perdida-en-la-playa.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
     },
     {
@@ -2108,7 +2122,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1170-bailarina.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
     },
     {
@@ -2144,7 +2158,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1174-arboles-en-el-lago.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
         "vendido": true
     },
@@ -2169,7 +2183,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1176-tornero.jpg",
-        "destacada": true,
+        "destacada": false,
         "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
     },
     {
@@ -2205,7 +2219,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "120 × 150 cm",
         "imagen": "assets/obras/1179-pesca-industrial.jpg",
-        "destacada": true,
+        "destacada": false,
         "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm"
     },
     {
@@ -2229,7 +2243,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "120 × 150 cm",
         "imagen": "assets/obras/1181-calle-de-santiago-del-1900.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm"
     },
     {
@@ -2265,7 +2279,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "89.5 × 73 cm",
         "imagen": "assets/obras/1184-veleros-en-la-playa.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre cartón, técnica espátula · 89.5 × 73 cm"
     },
     {
@@ -2289,7 +2303,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "150 × 120 cm",
         "imagen": "assets/obras/1186-oscuro-tras-el-rio.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm"
     },
     {
@@ -2325,7 +2339,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "150 × 120 cm",
         "imagen": "assets/obras/1189-muelle-en-el-lago.jpg",
-        "destacada": true,
+        "destacada": false,
         "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm"
     },
     {
@@ -2349,7 +2363,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "150 × 120 cm",
         "imagen": "assets/obras/1191-pueblo-frente-al-mar.jpg",
-        "destacada": true,
+        "destacada": false,
         "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm"
     },
     {
@@ -2361,7 +2375,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "150 × 220 cm",
         "imagen": "assets/obras/1192-puesta-de-sol-en-chicureo.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 150 × 220 cm"
     },
     {
@@ -2505,7 +2519,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1204-rocas-de-orilla-marcando-nuveles-del-lago.jpg",
-        "destacada": true,
+        "destacada": false,
         "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
     },
     {
@@ -2613,7 +2627,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1213-autoretrato.jpg",
-        "destacada": true,
+        "destacada": false,
         "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
     },
     {
@@ -2673,7 +2687,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1218-mujer-entre-las-rocas.jpg",
-        "destacada": true,
+        "destacada": false,
         "descripcion": "Óleo sobre cartón, técnica espátula · 100 × 70 cm"
     },
     {
@@ -2685,7 +2699,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1219-remanso-en-el-trafanpulli.jpg",
-        "destacada": true,
+        "destacada": false,
         "descripcion": "Óleo sobre cartón, técnica espátula · 70 × 100 cm"
     },
     {
@@ -2709,7 +2723,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "80 × 100 cm",
         "imagen": "assets/obras/1221-mar-patagonico.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre cartón, técnica espátula · 80 × 100 cm"
     },
     {
@@ -2757,7 +2771,7 @@ const OBRAS = [
         "tecnica": "Óleo",
         "medidas": "100 × 80 cm",
         "imagen": "assets/obras/1225-bote-en-el-lago.jpg",
-        "destacada": false,
+        "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 100 × 80 cm"
     },
     {
