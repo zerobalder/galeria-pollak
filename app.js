@@ -605,8 +605,8 @@
   function viewSobre() {
     return `
       <section class="page-head wrap">
-        <div class="crumbs reveal in"><a href="#/">Inicio</a><span class="sep">/</span><span>Sobre</span></div>
-        <h1 class="page-title reveal in">Sobre<br>la obra</h1>
+        <div class="crumbs reveal in"><a href="#/">Inicio</a><span class="sep">/</span><span>El artista</span></div>
+        <h1 class="page-title reveal in">Sobre<br>el artista</h1>
       </section>
       <section class="wrap" style="padding-bottom:clamp(80px,10vw,140px)">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:start" class="about-grid">
