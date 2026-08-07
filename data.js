@@ -204,7 +204,7 @@ const OBRAS = [
     },
     {
         "id": "1011-puertecito1975",
-        "titulo": "Puertecito1975",
+        "titulo": "Puertecito San Antonio",
         "anio": 1975,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -240,7 +240,7 @@ const OBRAS = [
     },
     {
         "id": "1014-sanantonio",
-        "titulo": "SanAntonio",
+        "titulo": "Puertecito San Antonio",
         "anio": 1998,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -298,7 +298,7 @@ const OBRAS = [
     },
     {
         "id": "1018-dibujo2002",
-        "titulo": "Dibujo2002",
+        "titulo": "Mujer tendida, dibujo original",
         "anio": 2002,
         "categoria": "desnudos",
         "tematica": "Figura",
@@ -454,7 +454,7 @@ const OBRAS = [
     },
     {
         "id": "1030-pescadores-en-el-rio",
-        "titulo": "Pescadores en el rio",
+        "titulo": "Pescadores en el río",
         "anio": 2023,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -478,7 +478,7 @@ const OBRAS = [
     },
     {
         "id": "1032-pescadores-rio-tolten",
-        "titulo": "Pescadores rio Tolten",
+        "titulo": "Pescadores río Toltén",
         "anio": 2023,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -538,7 +538,7 @@ const OBRAS = [
     },
     {
         "id": "1037-rio-cruces",
-        "titulo": "Rio cruces",
+        "titulo": "Río cruces",
         "anio": 2023,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -659,7 +659,7 @@ const OBRAS = [
     },
     {
         "id": "1046-velero-fondo-aamarillo",
-        "titulo": "Velero fondo aamarillo",
+        "titulo": "Velero fondo amarillo",
         "anio": 2023,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -744,7 +744,7 @@ const OBRAS = [
     },
     {
         "id": "1053-calle-de-san-perdo-de-atacama",
-        "titulo": "Calle de San Perdo de Atacama",
+        "titulo": "Calle de San Pedro de Atacama",
         "anio": 2023,
         "categoria": "escenas",
         "tematica": "Escena",
@@ -793,7 +793,7 @@ const OBRAS = [
     },
     {
         "id": "1057-desbudo-sobre-cama-dibujo-original",
-        "titulo": "Desbudo sobre cama dibujo original",
+        "titulo": "Desnudo sobre cama dibujo original",
         "anio": 2002,
         "categoria": "desnudos",
         "tematica": "Figura",
@@ -937,7 +937,7 @@ const OBRAS = [
     },
     {
         "id": "1069-caburgua-con-ninos",
-        "titulo": "Caburgua con ninos",
+        "titulo": "Caburgua con niños",
         "anio": 2024,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -961,7 +961,7 @@ const OBRAS = [
     },
     {
         "id": "1071-nino-en-playa-bajo-sompra",
-        "titulo": "Nino en playa bajo sompra",
+        "titulo": "Niño en playa bajo sombra",
         "anio": 2024,
         "categoria": "retratos",
         "tematica": "Figura",
@@ -973,7 +973,7 @@ const OBRAS = [
     },
     {
         "id": "1072-nino-jugando-en-el-agua",
-        "titulo": "Nino jugando en el agua",
+        "titulo": "Niño jugando en el agua",
         "anio": 2024,
         "categoria": "retratos",
         "tematica": "Figura",
@@ -985,7 +985,7 @@ const OBRAS = [
     },
     {
         "id": "1073-alimentndo-los-peces-en-cultivo-salmones-estero-tocoihue",
-        "titulo": "Alimentndo los peces en Cultivo Salmones Estero Tocoihue",
+        "titulo": "Alimentando los peces en Cultivo Salmones Estero Tocoihue",
         "anio": 2024,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -1178,7 +1178,7 @@ const OBRAS = [
     },
     {
         "id": "1089-familiaa-en-la-playa",
-        "titulo": "Familiaa en la playa",
+        "titulo": "Familia en la playa",
         "anio": 2024,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -1202,7 +1202,7 @@ const OBRAS = [
     },
     {
         "id": "1091-rio-puelo",
-        "titulo": "Rio Puelo",
+        "titulo": "Río Puelo",
         "anio": 2024,
         "categoria": "paisajes",
         "tematica": "Paisaje",
@@ -1346,7 +1346,7 @@ const OBRAS = [
     },
     {
         "id": "1102-escena-campo-y-rio",
-        "titulo": "Escena campo y rio",
+        "titulo": "Escena campo y río",
         "anio": 2024,
         "categoria": "acuarelas",
         "tematica": "Acuarela",
@@ -1670,7 +1670,7 @@ const OBRAS = [
     },
     {
         "id": "1131-un-comienzo-realjado",
-        "titulo": "Un comienzo realjado",
+        "titulo": "Un comienzo relajado",
         "anio": 2024,
         "categoria": "escenas",
         "tematica": "Escena",
@@ -1694,7 +1694,7 @@ const OBRAS = [
     },
     {
         "id": "1133-arbol-quemado-en-el-lago",
-        "titulo": "Arbol quemado en el lago",
+        "titulo": "Árbol quemado en el lago",
         "anio": 2024,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -1706,7 +1706,7 @@ const OBRAS = [
     },
     {
         "id": "1134-rio-de-lava-volcanica",
-        "titulo": "Rio de lava volcanica",
+        "titulo": "Río de lava volcánica",
         "anio": 2024,
         "categoria": "paisajes",
         "tematica": "Paisaje",
@@ -1779,7 +1779,7 @@ const OBRAS = [
     },
     {
         "id": "1142-un-lago-en-el-volcan",
-        "titulo": "Un lago en el volcan",
+        "titulo": "Un lago en el volcán",
         "anio": 2024,
         "categoria": "paisajes",
         "tematica": "Paisaje",
@@ -1899,7 +1899,7 @@ const OBRAS = [
     },
     {
         "id": "1152-sefora-buscando-la-pose",
-        "titulo": "Sefora buscando la pose",
+        "titulo": "Señora buscando la pose",
         "anio": 2024,
         "categoria": "desnudos",
         "tematica": "Figura",
@@ -1911,7 +1911,7 @@ const OBRAS = [
     },
     {
         "id": "1153-rio-en-las-montanas",
-        "titulo": "Rio en las montañas",
+        "titulo": "Río en las montañas",
         "anio": 2025,
         "categoria": "paisajes",
         "tematica": "Paisaje",
@@ -1923,7 +1923,7 @@ const OBRAS = [
     },
     {
         "id": "1154-obra-1154",
-        "titulo": "Obra 1154",
+        "titulo": "Contrastes",
         "anio": 2025,
         "categoria": "desnudos",
         "tematica": "Figura",
@@ -1947,7 +1947,7 @@ const OBRAS = [
     },
     {
         "id": "1156-fin-del-mundo-en-el-artico",
-        "titulo": "Fin del mundo en el artico",
+        "titulo": "Fin del mundo en el ártico",
         "anio": 2025,
         "categoria": "paisajes",
         "tematica": "Paisaje",
@@ -2151,7 +2151,7 @@ const OBRAS = [
     },
     {
         "id": "1174-arboles-en-el-lago",
-        "titulo": "Arboles en el lago",
+        "titulo": "Árboles en el lago",
         "anio": 2025,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -2164,7 +2164,7 @@ const OBRAS = [
     },
     {
         "id": "1175-arboles-en-el-lago",
-        "titulo": "Arboles en el lago",
+        "titulo": "Árboles en el lago",
         "anio": 2025,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -2296,7 +2296,7 @@ const OBRAS = [
     },
     {
         "id": "1186-oscuro-tras-el-rio",
-        "titulo": "Oscuro tras el rio",
+        "titulo": "Bosque oscuro tras el río",
         "anio": 2025,
         "categoria": "paisajes",
         "tematica": "Paisaje",
@@ -2512,7 +2512,7 @@ const OBRAS = [
     },
     {
         "id": "1204-rocas-de-orilla-marcando-nuveles-del-lago",
-        "titulo": "Rocas de orilla marcando nuveles del lago",
+        "titulo": "Rocas de orilla marcando niveles del lago",
         "anio": 2026,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -2536,7 +2536,7 @@ const OBRAS = [
     },
     {
         "id": "1205-rocas-en-el-rio",
-        "titulo": "Rocas en el rio",
+        "titulo": "Rocas en el río",
         "anio": 2026,
         "categoria": "escenas",
         "tematica": "Escena",
@@ -2548,7 +2548,7 @@ const OBRAS = [
     },
     {
         "id": "1206-rio-correntoso",
-        "titulo": "Rio correntoso",
+        "titulo": "Río correntoso",
         "anio": 2026,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -2572,7 +2572,7 @@ const OBRAS = [
     },
     {
         "id": "1209-rio-con-rocas",
-        "titulo": "Rio con rocas",
+        "titulo": "Río con rocas",
         "anio": 2026,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -2632,7 +2632,7 @@ const OBRAS = [
     },
     {
         "id": "1214-vista-al-volcan-villarica",
-        "titulo": "Vista al volcan Villarica",
+        "titulo": "Vista al volcán Villarrica",
         "anio": 2026,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -2644,7 +2644,7 @@ const OBRAS = [
     },
     {
         "id": "1215-mujer-desnuda-en-la-cabana",
-        "titulo": "Mujer desnuda en la cabana",
+        "titulo": "Mujer desnuda en la cabaña",
         "anio": 2026,
         "categoria": "desnudos",
         "tematica": "Figura",
@@ -2716,7 +2716,7 @@ const OBRAS = [
     },
     {
         "id": "1221-mar-patagonico",
-        "titulo": "Mar patagonico",
+        "titulo": "Mar patagónico",
         "anio": 2026,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -2776,7 +2776,7 @@ const OBRAS = [
     },
     {
         "id": "1226-arboles-en-la-nieve",
-        "titulo": "Arboles en la nieve",
+        "titulo": "Árboles en la nieve",
         "anio": 2026,
         "categoria": "paisajes",
         "tematica": "Paisaje",

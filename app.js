@@ -150,6 +150,29 @@
       </div>`;
   }
 
+  /* Scrub: mover el mouse sobre un contenedor horizontal lo desplaza lentamente (desktop) */
+  function attachScrub(track) {
+    if (window.matchMedia && window.matchMedia("(pointer: coarse)").matches) return;
+    let target = null, raf = null;
+    const ease = () => {
+      if (target == null) { raf = null; return; }
+      const cur = track.scrollLeft;
+      const d = target - cur;
+      if (Math.abs(d) < 0.5) { track.scrollLeft = target; raf = null; return; }
+      track.scrollLeft = cur + d * 0.07;
+      raf = requestAnimationFrame(ease);
+    };
+    track.addEventListener("mousemove", (e) => {
+      const max = track.scrollWidth - track.clientWidth;
+      if (max <= 4) { target = null; return; }
+      const r = track.getBoundingClientRect();
+      const ratio = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+      target = ratio * max;
+      if (!raf) raf = requestAnimationFrame(ease);
+    }, { passive: true });
+    track.addEventListener("mouseleave", () => { target = null; });
+  }
+
   /* ============================================================
      VISTA: HOME
      ============================================================ */
@@ -459,7 +482,7 @@
     const nav = document.getElementById("mainnav");
     nav.innerHTML =
       CATEGORIAS.map((c) => `<a href="#/categoria/${c.slug}" data-nav data-cat="${c.slug}">${esc(c.nav || c.nombre)}</a>`).join("") +
-      `<a href="#/sobre" data-nav>Sobre</a>`;
+      `<a href="#/sobre" data-nav>Sobre mí</a>`;
     buildMega();
     wireMega();
   }
@@ -467,9 +490,7 @@
   /* Panel del mega menú por categoría (hasta 6 miniaturas, priorizando destacadas) */
   function megaPanel(cat) {
     const obras = obrasDeCategoria(cat.slug);
-    const picks = obras.filter((o) => o.destacada)
-      .concat(obras.filter((o) => !o.destacada))
-      .slice(0, 6);
+    const picks = obras.filter((o) => o.destacada).concat(obras.filter((o) => !o.destacada));
     return `
       <div class="mega-panel" data-panel="${cat.slug}">
         <div class="mega-aside">
@@ -479,9 +500,9 @@
           <a class="mega-link" href="#/categoria/${cat.slug}">Ver las ${obras.length} obras <span>→</span></a>
         </div>
         <div class="mega-thumbs">
-          ${picks.map((o) => `
+          ${picks.map((o, i) => `
             <a class="mega-thumb" href="#/obra/${o.id}">
-              <div class="mega-frame">${media(o, "portrait", { thumb: true, eager: true })}</div>
+              <div class="mega-frame">${media(o, "portrait", { thumb: true, eager: i < 6 })}</div>
               <span class="mega-cap">${esc(o.titulo)}</span>
             </a>`).join("")}
         </div>
@@ -498,6 +519,7 @@
     const header = document.getElementById("siteHeader");
     const mega = document.getElementById("mega");
     if (!header || !mega) return;
+    mega.querySelectorAll(".mega-thumbs").forEach(attachScrub);
     const nav = document.getElementById("mainnav");
     let hideTimer;
 
@@ -605,8 +627,8 @@
   function viewSobre() {
     return `
       <section class="page-head wrap">
-        <div class="crumbs reveal in"><a href="#/">Inicio</a><span class="sep">/</span><span>El artista</span></div>
-        <h1 class="page-title reveal in">Sobre<br>el artista</h1>
+        <div class="crumbs reveal in"><a href="#/">Inicio</a><span class="sep">/</span><span>Sobre mí</span></div>
+        <h1 class="page-title reveal in">Sobre<br>mí</h1>
       </section>
       <section class="wrap" style="padding-bottom:clamp(80px,10vw,140px)">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:start" class="about-grid">
@@ -678,27 +700,7 @@
       window.addEventListener("resize", update, { passive: true });
       update();
 
-      // Scrub: mover el mouse sobre el slider lo desplaza lentamente (solo desktop)
-      if (!(window.matchMedia && window.matchMedia("(pointer: coarse)").matches)) {
-        let target = null, raf = null;
-        const ease = () => {
-          if (target == null) { raf = null; return; }
-          const cur = track.scrollLeft;
-          const d = target - cur;
-          if (Math.abs(d) < 0.5) { track.scrollLeft = target; raf = null; return; }
-          track.scrollLeft = cur + d * 0.07;
-          raf = requestAnimationFrame(ease);
-        };
-        track.addEventListener("mousemove", (e) => {
-          const max = track.scrollWidth - track.clientWidth;
-          if (max <= 4) { target = null; return; }
-          const r = track.getBoundingClientRect();
-          const ratio = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
-          target = ratio * max;
-          if (!raf) raf = requestAnimationFrame(ease);
-        }, { passive: true });
-        track.addEventListener("mouseleave", () => { target = null; });
-      }
+      attachScrub(track);
     });
 
     // Filtros de categoría
