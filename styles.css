@@ -415,8 +415,8 @@ main { min-height: 60vh; }
   letter-spacing: -0.02em;
 }
 .hero-name em {
-  font-style: italic;
-  color: var(--accent-soft);
+  font-style: normal;
+  color: inherit;
 }
 .hero-meta {
   display: flex;
