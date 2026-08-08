@@ -322,7 +322,7 @@
             .map((t) => `<button class="chip" data-filter="${esc(t)}">${esc(t)}</button>`).join("")}
         </div>
         <div class="masonry" id="catGrid">
-          ${obras.map((o) => artCard(o, { masonry: true })).join("")}
+          ${obras.map((o) => artCard(o)).join("")}
         </div>
       </section>
 
@@ -357,7 +357,7 @@
         <p class="page-lead reveal in" data-delay="1">${obras.length} obras agrupadas por ${etiqueta.toLowerCase()}.</p>
       </section>
       <section class="wrap" style="padding-bottom:clamp(64px,9vw,130px)">
-        <div class="masonry">${obras.map((o) => artCard(o, { masonry: true })).join("")}</div>
+        <div class="masonry">${obras.map((o) => artCard(o)).join("")}</div>
       </section>`;
   }
 
