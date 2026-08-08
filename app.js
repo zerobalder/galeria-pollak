@@ -10,9 +10,14 @@
   /* ---------- Utilidades ---------- */
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const bySlug = (slug) => CATEGORIAS.find((c) => c.slug === slug);
-  // nº de catálogo (prefijo del id) — es cronológico: mayor = más reciente
+  // nº de catálogo (prefijo del id)
   const nroCatalogo = (o) => parseInt(o.id, 10) || 0;
-  const porRecientes = (arr) => arr.slice().sort((a, b) => nroCatalogo(b) - nroCatalogo(a));
+  // orden cronológico: primero por año (reciente→antiguo), luego por nº de catálogo
+  const porRecientes = (arr) => arr.slice().sort((a, b) => {
+    const ay = a.anio || 0, by = b.anio || 0;
+    if (by !== ay) return by - ay;
+    return nroCatalogo(b) - nroCatalogo(a);
+  });
   const obrasDeCategoria = (slug) => porRecientes(OBRAS.filter((o) => o.categoria === slug));
   const obraPorId = (id) => OBRAS.find((o) => o.id === id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));

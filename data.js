@@ -442,7 +442,7 @@ const OBRAS = [
     },
     {
         "id": "1030-obras-publicas-5-1",
-        "titulo": "Obras Publicas 5-1",
+        "titulo": "Obras Públicas 5-1",
         "anio": 2024,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -502,7 +502,7 @@ const OBRAS = [
     },
     {
         "id": "1034-sofia-caburgua-2",
-        "titulo": "Sofia Caburgua 2",
+        "titulo": "Sofía Caburgua 2",
         "anio": 2023,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -514,7 +514,7 @@ const OBRAS = [
     },
     {
         "id": "1035-sofia-caburgua",
-        "titulo": "Sofia Caburgua",
+        "titulo": "Sofía Caburgua",
         "anio": 2023,
         "categoria": "lagos",
         "tematica": "Paisaje",
@@ -1034,7 +1034,7 @@ const OBRAS = [
     },
     {
         "id": "1077-angelmo",
-        "titulo": "Angelmo",
+        "titulo": "Angelmó",
         "anio": 2024,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -1418,7 +1418,7 @@ const OBRAS = [
     },
     {
         "id": "1109-bahia-fishguard-uk",
-        "titulo": "Bahia Fishguard UK",
+        "titulo": "Bahía Fishguard UK",
         "anio": 2024,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -1646,7 +1646,7 @@ const OBRAS = [
     },
     {
         "id": "1128-obras-publica-4-1",
-        "titulo": "Obras Publica 4-1",
+        "titulo": "Obras Pública 4-1",
         "anio": 2024,
         "categoria": "escenas",
         "tematica": "Escena",
@@ -2428,7 +2428,7 @@ const OBRAS = [
     },
     {
         "id": "1197-bahia-con-playa",
-        "titulo": "Bahia con playa",
+        "titulo": "Bahía con playa",
         "anio": 2025,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -2476,7 +2476,7 @@ const OBRAS = [
     },
     {
         "id": "1201-bahia-mar-dia-sol",
-        "titulo": "Bahia mar dia sol",
+        "titulo": "Bahía mar día sol",
         "anio": 2025,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -2488,7 +2488,7 @@ const OBRAS = [
     },
     {
         "id": "1202-bahia-mar-dia-nublado",
-        "titulo": "Bahia mar dia nublado",
+        "titulo": "Bahía mar día nublado",
         "anio": 2025,
         "categoria": "marinas",
         "tematica": "Paisaje",
@@ -2596,7 +2596,7 @@ const OBRAS = [
     },
     {
         "id": "1211-al-aterdecer",
-        "titulo": "Al aterdecer",
+        "titulo": "Al atardecer",
         "anio": 2026,
         "categoria": "marinas",
         "tematica": "Paisaje",
