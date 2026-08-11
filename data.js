@@ -94,7 +94,7 @@ const OBRAS = [
     },
     {
         "id": "1002-hombre",
-        "titulo": "Hombre",
+        "titulo": "Hombre bosquejo",
         "anio": 1971,
         "categoria": "retratos",
         "tematica": "Figura",
@@ -837,7 +837,7 @@ const OBRAS = [
     },
     {
         "id": "1056-salar-uyuni-isla-incahuasi",
-        "titulo": "Salar uyuni isla Incahuasi",
+        "titulo": "Salar Uyuni, isla Incahuasi",
         "anio": 2023,
         "categoria": "paisajes",
         "tematica": "Paisaje",
@@ -980,7 +980,7 @@ const OBRAS = [
     },
     {
         "id": "1067-mujeres-en-playa",
-        "titulo": "Mujeres en playa",
+        "titulo": "Dos mujeres en playa",
         "anio": 2023,
         "categoria": "retratos",
         "tematica": "Figura",
@@ -2120,7 +2120,7 @@ const OBRAS = [
     },
     {
         "id": "1158-a-fire",
-        "titulo": "A Fire",
+        "titulo": "LA Fire",
         "anio": 2025,
         "categoria": "escenas",
         "tematica": "Escena",
@@ -2979,7 +2979,7 @@ const OBRAS = [
     },
     {
         "id": "1225-bote-en-el-lago",
-        "titulo": "Bote en el lago",
+        "titulo": "Bote en el lago 2",
         "anio": 2026,
         "categoria": "lagos",
         "tematica": "Paisaje",
