@@ -22,6 +22,10 @@
   const obraPorId = (id) => OBRAS.find((o) => o.id === id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
 
+  // texto largo -> párrafos <p> (respeta saltos de línea, escapa HTML)
+  const parrafos = (t) => String(t).split(/\n+/).map((p) => p.trim()).filter(Boolean)
+    .map((p) => `<p>${esc(p)}</p>`).join("");
+
   // Enlace a WhatsApp con mensaje prellenado
   const waLink = (texto) => {
     const num = (ARTIST.whatsapp || "").replace(/\D/g, "");
@@ -432,6 +436,7 @@
               <div class="work-nro reveal" data-reveal>№ ${nroCatalogo(obra)}</div>
               <h1 class="work-title reveal" data-reveal>${esc(obra.titulo)}</h1>
               <p class="work-desc reveal" data-reveal data-delay="1">${esc(obra.descripcion || "")}</p>
+              ${obra.texto ? `<div class="work-text reveal" data-reveal data-delay="2">${parrafos(obra.texto)}</div>` : ""}
               ${detalles.length ? `
                 <div class="detail-strip reveal" data-reveal>
                   ${detalles.map((d, i) => `<img class="thumb" src="${esc(d)}" alt="Detalle ${i + 1}" data-detail="${i}" loading="lazy">`).join("")}

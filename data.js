@@ -89,7 +89,8 @@ const OBRAS = [
         "imagen": "assets/obras/1001-desnudo.jpg",
         "destacada": false,
         "descripcion": "Óleo sobre cartón · 70 × 50 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Mujer Desnuda 3\" es una obra que explora la forma y la belleza del cuerpo femenino a través de una representación artística íntima y evocadora. La pintura se centra en la figura de una mujer desnuda, capturando la esencia de la vulnerabilidad y la fuerza de la feminidad. La técnica de óleo sobre cartón permite una riqueza de color y textura, que da vida a la piel y resalta las curvas del cuerpo. La paleta de colores puede incluir tonos cálidos y suaves, que evocan una sensación de calidez y cercanía, así como sombras que añaden profundidad y dimensión a la figura. La composición puede enfocarse en la postura de la mujer, que puede ser relajada y contemplativa, sugiriendo un momento de introspección. La forma en que la luz incide sobre el cuerpo puede crear un juego de luces y sombras que resalta la belleza de la figura y acentúa su expresividad. La atmósfera de la obra transmite una sensación de intimidad y conexión, invitando al espectador a reflexionar sobre la belleza del cuerpo humano y la complejidad de la experiencia femenina. \"Mujer Desnuda 3\" no solo es una representación visual, sino también una celebración de la forma y la individualidad, recordando la importancia de la autoaceptación y la apreciación de la belleza en todas sus formas."
     },
     {
         "id": "1002-hombre",
@@ -102,7 +103,8 @@ const OBRAS = [
         "imagen": "assets/obras/1002-hombre.jpg",
         "destacada": true,
         "descripcion": "Óleo sobre cartón · 70 × 50 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Hombre Bosquejo\" es una obra que presenta un estudio artístico de la figura masculina, capturando la esencia de la forma humana a través de un enfoque expresivo y dinámico. La pintura se centra en la figura de un hombre, explorando su postura y expresión de manera que invita al espectador a contemplar la complejidad del ser humano. La técnica de óleo sobre cartón permite una rica aplicación de color y textura, que da vida a la figura masculina. La paleta de colores puede incluir tonos terrosos y sombreados, que enfatizan las características del rostro y el cuerpo, creando un efecto tridimensional que resalta la anatomía del sujeto. La composición puede mostrar al hombre en una postura que sugiere movimiento o reflexión, lo que añade una dimensión emocional a la obra. Los detalles, aunque pueden ser mínimos, están cuidadosamente elegidos para transmitir la personalidad y el carácter del individuo representado. La atmósfera de la obra sugiere una sensación de introspección y fuerza, invitando al espectador a reflexionar sobre la identidad y la experiencia masculina. \"Hombre Bosquejo\" no solo es una representación visual de la figura humana, sino también una reflexión sobre la complejidad de la condición humana y la diversidad de la experiencia personal."
     },
     {
         "id": "1003-mujer",
@@ -115,7 +117,8 @@ const OBRAS = [
         "imagen": "assets/obras/1003-mujer.jpg",
         "destacada": false,
         "descripcion": "Óleo sobre cartón · 70 × 50 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Mujer\" es una obra que captura la esencia de la figura femenina a través de una representación artística que combina la expresión y la elegancia. La pintura se centra en la figura de una mujer, destacando su forma y características de una manera que invita al espectador a apreciar la belleza y complejidad del ser femenino. La técnica de óleo sobre cartón permite una rica paleta de colores que da vida a la piel y a las características faciales de la figura. Los tonos cálidos y suaves pueden evocar una sensación de calidez y cercanía, mientras que las sombras sutiles añaden profundidad y volumen, resaltando la delicadeza de la forma. La composición puede mostrar a la mujer en una postura que sugiere tanto gracia como introspección, capturando un momento de reflexión o contemplación. Los detalles en el cabello y en la vestimenta, aunque puedan ser mínimos, están cuidadosamente elaborados para transmitir la personalidad y el carácter de la figura. La atmósfera de la obra evoca una sensación de intimidad y conexión, invitando al espectador a reflexionar sobre la experiencia femenina y la diversidad de emociones que acompañan a la vida de una mujer. \"Mujer\" no solo es una representación visual de la figura femenina, sino también una celebración de la individualidad y la fortaleza que se encuentra en la feminidad."
     },
     {
         "id": "1004-bote-en-playa",
@@ -127,7 +130,8 @@ const OBRAS = [
         "medidas": "",
         "imagen": "assets/obras/1004-bote-en-playa.jpg",
         "destacada": false,
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Velero en Playa\" es una obra que captura la esencia de un día tranquilo en la costa, donde un elegante velero descansa en la arena. La pintura invita al espectador a sumergirse en la serenidad del entorno marítimo, evocando una sensación de paz y contemplación. La composición se centra en el velero, que puede estar representado con detalles vívidos que resaltan su forma y color, contrastando con el suave dorado de la arena. La paleta de colores probablemente incluye tonos cálidos y refrescantes, con azules profundos que representan el mar y el cielo, complementados por los cálidos tonos de la playa. El fondo podría incluir un horizonte despejado, donde el cielo se encuentra con el mar, sugiriendo una atmósfera de tranquilidad y libertad. Elementos como las suaves olas que rompen en la orilla y la vegetación que rodea la playa añaden profundidad y carácter a la obra. La atmósfera de la pintura transmite una sensación de relajación y disfrute de la naturaleza, recordando al espectador la belleza de los días pasados junto al mar y la conexión íntima que se puede sentir en esos momentos. \"Velero en Playa\" no solo es una representación visual de un paisaje costero, sino también una celebración de la paz y la libertad que ofrece la vida junto al mar."
     },
     {
         "id": "1005-camino-agreste",
@@ -140,7 +144,8 @@ const OBRAS = [
         "imagen": "assets/obras/1005-camino-agreste.jpg",
         "destacada": false,
         "descripcion": "Óleo sobre cartón, técnica espátula · 80 × 60 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Camino Agreste\" es una obra que invita al espectador a explorar la belleza y la rusticidad de un paisaje natural. La pintura captura la esencia de un camino sinuoso que se adentra en un entorno agreste, evocando una sensación de aventura y conexión con la naturaleza. La composición puede estar llena de texturas que representan la vegetación circundante, con árboles robustos y arbustos que flanquean el camino. La paleta de colores puede incluir tonos terrosos y verdes, que evocan la riqueza de la flora local, junto con matices de azul o gris que sugieren un cielo abierto y despejado. El camino, que se extiende hacia el horizonte, puede simbolizar un viaje tanto físico como emocional, invitando al espectador a imaginar su propia travesía a través de este paisaje. La atmósfera de la obra puede transmitir una sensación de paz y contemplación, recordando la belleza simple de la vida al aire libre y la importancia de la conexión con el entorno natural. \"Camino Agreste\" no solo es una representación visual de un paisaje, sino también una celebración de la exploración y la aventura que nos ofrece la naturaleza, evocando la curiosidad y el deseo de descubrir lo desconocido."
     },
     {
         "id": "1006-huaso",
@@ -152,7 +157,8 @@ const OBRAS = [
         "medidas": "61 × 45 cm",
         "imagen": "assets/obras/1006-huaso.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre madera · 61 × 45 cm"
+        "descripcion": "Óleo sobre madera · 61 × 45 cm",
+        "texto": "\"Huaso\" es una obra que celebra la rica cultura y tradiciones del campo chileno, representando a un huaso, figura emblemática de la vida rural. La pintura captura la esencia del personaje, vestido con trajes típicos, que refleja la identidad y el orgullo del pueblo chileno. La técnica de óleo sobre madera permite una aplicación vibrante de color, que da vida a los detalles del vestuario y la expresión del huaso. La paleta de colores puede incluir tonos terrosos y cálidos, evocando el paisaje rural y la conexión con la tierra, junto con matices más brillantes que destacan elementos específicos del atuendo, como el sombrero, las botas y los adornos típicos. La composición puede mostrar al huaso en una postura que sugiere movimiento o interacción con su entorno, quizás con un fondo que represente el paisaje chileno, como campos, montañas o animales de granja. Esto no solo contextualiza al personaje, sino que también añade un sentido de lugar y tradición a la obra. La atmósfera de la pintura transmite una sensación de orgullo y pertenencia, invitando al espectador a apreciar la belleza de la cultura rural y la vida sencilla. \"Huaso\" no solo es una representación visual de un personaje cultural, sino también una celebración de la identidad y las raíces que forman parte de la rica herencia chilena."
     },
     {
         "id": "1007-machi",
@@ -164,7 +170,8 @@ const OBRAS = [
         "medidas": "70 × 52 cm",
         "imagen": "assets/obras/1007-machi.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre madera · 70 × 52 cm"
+        "descripcion": "Óleo sobre madera · 70 × 52 cm",
+        "texto": "\"Machi\" es una obra que rinde homenaje a la figura tradicional del machi, un líder espiritual y chamán en la cultura mapuche. La pintura captura la esencia de este personaje, envolviendo al espectador en un aura de respeto y reverencia hacia las tradiciones ancestrales. La técnica de óleo sobre madera permite una rica expresión de color y textura, que da vida a los detalles del vestuario del machi, posiblemente adornado con elementos simbólicos que representan su conexión con la espiritualidad y la naturaleza. La paleta de colores puede incluir tonos vibrantes que evocan la tierra y la cultura mapuche, combinando verdes, marrones y rojos que reflejan el entorno natural. La composición puede mostrar al machi en una postura que sugiere autoridad y serenidad, quizás sosteniendo un objeto ceremonial o rodeado de símbolos que representan su papel como curador y guía espiritual. El fondo puede incluir elementos del paisaje mapuche, como montañas o bosques, que añaden un sentido de lugar y conexión con la tierra. La atmósfera de la obra transmite una sensación de sabiduría y conexión con las raíces culturales, invitando al espectador a reflexionar sobre la importancia de las tradiciones y la espiritualidad en la vida de las comunidades indígenas. \"Machi\" no solo es una representación visual de un líder cultural, sino también una celebración de la identidad y la herencia que forman parte del rico patrimonio mapuche."
     },
     {
         "id": "1008-botes-en-la-playa",
@@ -176,7 +183,8 @@ const OBRAS = [
         "medidas": "90 × 120 cm",
         "imagen": "assets/obras/1008-botes-en-la-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 120 cm",
+        "texto": "\"Botes en la Playa\" es una obra que evoca la esencia de un día soleado en la costa, donde varias embarcaciones descansan sobre la arena, esperando su próximo viaje. La pintura captura la tranquilidad y la belleza del entorno marítimo, invitando al espectador a sumergirse en la atmósfera relajante de la playa. La técnica de espátula utilizada en esta obra permite crear texturas ricas y vibrantes, que dan vida a los botes y a las suaves olas que rompen en la orilla. La paleta de colores es luminosa y alegre, con intensos azules y turquesas que representan el agua, combinados con cálidos tonos dorados y beige que evocan la arena y la luz del sol. En la composición, los botes, pintados en una variedad de colores, se alinean a lo largo de la playa, algunos inclinados suavemente hacia un lado, lo que sugiere un momento de pausa en la actividad pesquera. El fondo puede incluir un cielo despejado, con suaves nubes que añaden un toque de serenidad, y una línea de vegetación que se asoma al borde de la playa, complementando el paisaje. La atmósfera de la obra transmite una sensación de paz y felicidad, evocando la alegría de pasar un día en la costa y la conexión con la naturaleza. \"Botes en la Playa\" no solo es una representación visual de un paisaje marítimo, sino también una celebración de la vida junto al mar, recordando al espectador la importancia de disfrutar de los momentos simples y la belleza del entorno natural."
     },
     {
         "id": "1009-puertecito",
@@ -188,7 +196,8 @@ const OBRAS = [
         "medidas": "90 × 100 cm",
         "imagen": "assets/obras/1009-puertecito.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 100 cm",
+        "texto": "\"Puertecito San Antonio\" (1009)”La obra de Pollak captura una escena industrial y marítima en el puerto de San Antonio. Se centra en un grupo de embarcaciones de madera, probablemente pesqueras, que se encuentran fuera del agua, posiblemente en un astillero o zona de reparaciones. La atmósfera es sobria y rústica, evocando la naturaleza del trabajo portuario. Composición y Elementos Primer Plano: Destacan los cascos de dos o tres botes grandes de madera. El bote central, en un ángulo que parece mirar hacia el espectador, muestra detalles de su cabina grisácea y su estructura desgastada. Las líneas de los botes crean un dinamismo diagonal que guía la vista hacia el centro de la imagen. Segundo Plano: Se observa una gran estructura industrial de color oscuro (posiblemente un hangar o bodega) con una serie de vigas o andamios metálicos en color rojo óxido que forman patrones geométricos en \"X\". Esta estructura contrasta fuertemente con los tonos claros de los botes. Fondo: El cielo es de un tono gris pálido o blanquecino, lo que sugiere un día nublado o la luz difusa de la costa, evitando sombras marcadas y manteniendo una iluminación uniforme. Técnica y Color Técnica de Espátula: La pintura presenta una textura rica y palpable. El uso de la espátula es evidente en la aplicación de capas gruesas de pintura, lo que otorga a los botes una apariencia robusta y realza la sensación de madera vieja y superficies metálicas oxidadas. Paleta de Colores: Predominan los tonos tierra, grises y beige. Los colores son principalmente neutros y apagados, lo que refuerza el carácter documental e histórico de la escena. El rojo ladrillo de las estructuras metálicas al fondo rompe la monotonía cromática, añadiendo un punto de interés visual necesario. Atmósfera y Estil La obra tiene un carácter nostálgico y realista. No busca idealizar el puerto, sino retratar su faceta más cruda y trabajadora. Hay una quietud pesada en la escena; los botes, despojados de su elemento (el mar), se convierten en objetos escultóricos que cuentan historias de años de navegación y labor."
     },
     {
         "id": "1010-puertecito",
@@ -200,7 +209,8 @@ const OBRAS = [
         "medidas": "63 × 120 cm",
         "imagen": "assets/obras/1010-puertecito.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 63 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 63 × 120 cm",
+        "texto": "\"Puertecito San Antonio\" (1010), Esta obra de Pollak ofrece una mirada íntima y serena a un rincón del puerto de San Antonio. A diferencia de otras versiones más industriales, esta pieza se centra en la quietud de las embarcaciones menores descansando sobre la orilla, capturando un momento de pausa en la actividad marítima. La composición destaca por su horizontalidad y su atmósfera melancólica. Composición y Elementos Primer Plano: En el centro y hacia la derecha, se observan tres botes pequeños. Uno de ellos está volcado (quilla al sol), mostrando un color azul profundo que se convierte en el foco visual de la obra. A su lado, un bote de madera clara reposa de forma paralela, y junto a este, se distinguen dos boyas o flotadores de un color rojizo oscuro que aportan un contrapunto cromático. Segundo Plano y Fondo: El agua y el muelle se funden en una serie de planos horizontales. Al fondo, se insinúan estructuras portuarias y muros en tonos grisáceos y azulados, ejecutados con pinceladas más abstractas que sugieren la arquitectura del puerto sin definir detalles minuciosos. Suelo/Orilla: Los botes descansan sobre una superficie de tonos arena y beige, aplicada con manchas de color planas que simulan la textura del cemento o la arena mojada. Técnica y Color Técnica de Espátula y Pincelada Gruesa: La obra está ejecutada con una técnica impresionista-moderna. El uso de la espátula es evidente en las superficies planas de los botes y el agua, creando una textura rica y una sensación de solidez. Paleta de Colores: Predominan los azules fríos, verdes azulados y grises. Esta gama fría domina la mayor parte del lienzo, evocando la humedad y el clima costero. El uso del azul cobalto en el bote volcado y los tonos tierra/rojizos en las boyas y el interior del bote de madera equilibran la composición. Atmósfera y Estilo La pintura transmite una profunda sensación de paz y soledad. No hay figuras humanas presentes, lo que refuerza la idea de un momento de descanso. La luz es tenue y difusa, típica de un amanecer o un día nublado en la costa central de Chile, lo que otorga a la escena un carácter introspectivo y poético."
     },
     {
         "id": "1011-puertecito1975",
@@ -212,7 +222,8 @@ const OBRAS = [
         "medidas": "70 × 120 cm",
         "imagen": "assets/obras/1011-puertecito1975.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 120 cm",
+        "texto": "\"Puertecito San Antonio\" (1011) Esta obra de Pollak ofrece una vista panorámica y pintoresca de un sector del puerto de San Antonio, destacando la interacción entre la arquitectura costera y la vida marítima. A diferencia de las versiones anteriores, esta pieza presenta una mayor riqueza de elementos, mostrando una flotilla de embarcaciones agrupadas frente a una serie de construcciones que escalan la orilla, capturando la esencia vibrante y cotidiana del puerto. Composición y Elementos Primer Plano: El agua ocupa la parte inferior, pintada con un azul profundo y saturado que refleja la luz del día. Se observan varias barcas de pescadores (pangas) de distintos colores (verdes, azules y blancos) alineadas y flotando cerca del muelle, lo que genera una sensación de actividad y comunidad. Segundo Plano: Destaca una serie de edificaciones construidas sobre lo que parece ser un muro de piedra o una elevación natural. La estructura principal es una casa de tonos crema o beige con techos a dos aguas, rodeada de otras construcciones en tonos rojizos, terracota y madera, que crean un interesante contraste cromático con el azul del mar. Fondo: El cielo se presenta en un tono azul muy claro con nubes difusas, sugiriendo un día despejado y luminoso que realza los colores de toda la escena. Técnica y Color Técnica de Espátula e Impaste: La obra muestra un uso generoso de la pintura. La técnica de espátula es muy evidente en la representación de las casas y el agua, creando planos de color con mucha textura que otorgan solidez a las estructuras y movimiento al mar. Paleta de Colores: Es una de las versiones más coloridas. El contraste entre el azul intenso del agua, el verde de los botes y el rojo/terracota de los edificios laterales crea una composición armónica y llena de vida. Los tonos tierra y beige de la casa central equilibran la intensidad de los colores primarios. Atmósfera y Estilo La pintura transmite una atmósfera de vitalidad y arraigo. Refleja el carácter típico de los puertos chilenos, donde la arquitectura se adapta a la geografía y el mar es el centro de todo. El estilo es un realismo expresivo que, a través de la mancha y la textura, logra capturar no solo la imagen, sino la energía del lugar."
     },
     {
         "id": "1012-hombre-sentado",
@@ -224,7 +235,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1012-hombre-sentado.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela · 70 × 50 cm",
+        "texto": "\"Hombre Sentado\" es una obra que captura la esencia de la contemplación y la introspección a través de la representación de un hombre en una postura relajada. La pintura evoca un sentido de calma y reflexión, invitando al espectador a sumergirse en el mundo interior del personaje. La técnica de óleo sobre tela permite una rica aplicación de color y textura, que da vida a la figura del hombre. La paleta de colores puede incluir tonos cálidos y suaves que resaltan la piel y la vestimenta, así como sombras que aportan profundidad y dimensión a la imagen. La composición puede mostrar al hombre sentado de manera que su postura y expresión sugieren un momento de pausa, quizás mirando hacia la distancia o sumido en sus pensamientos. Los detalles del entorno, aunque pueden ser sutiles, pueden contribuir a la atmósfera general, sugiriendo un espacio íntimo que refleja la personalidad del personaje. La atmósfera de la obra transmite una sensación de tranquilidad y reflexión, invitando al espectador a considerar los momentos de quietud en la vida. \"Hombre Sentado\" no solo es una representación visual de una figura humana, sino también una exploración de la experiencia humana y la importancia de detenerse para reflexionar en medio del ajetreo de la vida diaria."
     },
     {
         "id": "1013-caribe",
@@ -236,7 +248,8 @@ const OBRAS = [
         "medidas": "130 × 90 cm",
         "imagen": "assets/obras/1013-caribe.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 130 × 90 cm"
+        "descripcion": "Óleo sobre tela · 130 × 90 cm",
+        "texto": "\"Mujer en Caribe\" es una obra vibrante y evocadora que captura la esencia de la vida caribeña a través de la representación de una mujer en un entorno tropical. La pintura irradia una sensación de alegría y libertad, reflejando la belleza del paisaje y la cultura de la región. La técnica de óleo sobre tela permite una rica paleta de colores, llena de tonos brillantes y saturados que dan vida a la figura femenina y al entorno caribeño. Los azules intensos del mar y los verdes exuberantes de la vegetación contrastan con los colores cálidos de la piel de la mujer y su vestimenta, creando una composición visualmente impactante. La mujer puede estar representada en una pose que sugiere movimiento, quizás bailando o disfrutando de la brisa del mar, lo que añade un sentido de dinamismo a la obra. Los detalles del entorno, como palmeras, flores tropicales y el cielo despejado, complementan la figura y crean una atmósfera de felicidad y celebración. La atmósfera de la obra transmite una sensación de vitalidad y conexión con la naturaleza, invitando al espectador a experimentar la calidez y la energía del Caribe. \"Mujer en Caribe\" no solo es una representación visual de una figura femenina en un paisaje tropical, sino también una celebración de la cultura y la alegría que se encuentran en la vida caribeña."
     },
     {
         "id": "1014-sanantonio",
@@ -248,7 +261,8 @@ const OBRAS = [
         "medidas": "90 × 120 cm",
         "imagen": "assets/obras/1014-sanantonio.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 120 cm",
+        "texto": "\"Puertecito San Antonio\" (1014) Esta obra de Pollak presenta una escena portuaria serena y equilibrada, enfocándose en la relación entre distintas embarcaciones que flotan sobre las aguas del puerto de San Antonio. A diferencia de las versiones más panorámicas, esta pieza opta por un plano más cerrado y cercano, permitiendo apreciar la materialidad de los botes y el tratamiento casi abstracto del agua. Composición y Elementos Primer Plano: Destacan tres embarcaciones principales dispuestas de forma escalonada. A la izquierda, un pequeño bote blanco (panga) resalta por su luminosidad, contrastando con el agua oscura. A la derecha, una barca de color rojo oscuro o terracota añade profundidad cromática. Detrás de ambos, se encuentra una lancha más grande en tonos madera y beige, que parece cargar algunos troncos o materiales. Segundo Plano: En la parte superior, se insinúan las sombras y los cascos de otras embarcaciones mayores, pintadas en tonos verdes y negros profundos, que sirven para enmarcar la escena y dar una sensación de puerto lleno y activo. El Agua: Ocupa la mayor parte del lienzo, tratada con pinceladas cortas y variadas que capturan el reflejo de la luz y el movimiento suave del mar en el puerto. Técnica y Color Técnica de Espátula e Impaste: La obra muestra un uso magistral de la textura. Las capas de pintura son gruesas, especialmente en los cascos de los botes, lo que les otorga una cualidad casi tridimensional. El agua está trabajada con una técnica que mezcla pinceladas y espátula para crear una superficie vibrante. Paleta de Colores: Predomina una gama de azules verdosos y turquesas oscuros en el agua. Este fondo frío hace que los elementos cálidos —el bote rojo, la madera beige y el blanco puro del bote pequeño— resalten con fuerza, creando un equilibrio visual muy armonioso. Atmósfera y Estilo La pintura transmite una atmósfera de tranquilidad y solidez. No hay figuras humanas visibles, lo que permite que el espectador se concentre en la belleza funcional de los botes. Es un realismo contemporáneo que valora la textura y el color por encima del detalle fotográfico, capturando la esencia del puerto a través de su luz y sus formas características."
     },
     {
         "id": "1015-musa",
@@ -282,7 +296,8 @@ const OBRAS = [
         "medidas": "90 × 120 cm",
         "imagen": "assets/obras/1016-musa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 90 × 120 cm"
+        "descripcion": "Óleo sobre tela · 90 × 120 cm",
+        "texto": "\"Musa 2\" es una obra artística que explora la inspiración y la creatividad a través de la representación de una figura femenina que encarna el concepto de musa. La pintura evoca un sentido de misticismo y belleza, invitando al espectador a sumergirse en la esencia de la inspiración artística. La técnica de óleo sobre tela permite una rica y profunda aplicación de color, que da vida a la figura de la musa. La paleta de colores puede incluir tonos vibrantes y variados, resaltando la energía y la pasión que emana de la figura, así como un juego de luces y sombras que aporta profundidad y matices a la composición. La figura puede ser representada en una postura que sugiere movimiento o contemplación, quizás rodeada de elementos que simbolizan la creatividad, como pinceles, instrumentos musicales o naturaleza. Esto crea un diálogo visual entre la musa y los elementos que inspiran a los artistas. La atmósfera de la obra transmite una sensación de admiración y reverencia por el proceso creativo, invitando al espectador a reflexionar sobre la relación entre el artista y su fuente de inspiración. \"Musa 2\" no solo es una representación visual de una figura femenina, sino también una celebración de la creatividad, el arte y el poder inspirador que reside en la figura de la musa."
     },
     {
         "id": "1017-mujer-tendida-en-playa",
@@ -294,7 +309,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1017-mujer-tendida-en-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Mujer Tendida en Playa\" es una obra que captura un momento de relajación y tranquilidad en un entorno costero. La pintura evoca una sensación de paz y contemplación, retratando a una mujer en una postura relajada sobre la arena, disfrutando de la calidez del sol y la brisa marina. La técnica de espátula utilizada en esta obra permite crear texturas suaves y envolventes, que dan vida a la piel de la mujer y a la suave arena que la rodea. La paleta de colores es cálida y acogedora, con tonos dorados y beige que representan la arena, contrastados con los ricos azules del mar y el cielo, creando un ambiente armonioso y sereno. En la composición, la figura de la mujer está cuidadosamente integrada en el paisaje, con detalles que sugieren su conexión con el entorno. La luz del sol ilumina su figura, creando sombras suaves y resaltando la tranquilidad del momento. Puede haber elementos adicionales en el fondo, como el suave oleaje del mar y algunas palmeras, que enmarcan la escena y añaden un toque tropical. La atmósfera de la obra transmite una sensación de descanso y satisfacción, evocando la belleza de pasar un día en la playa y disfrutar de la naturaleza. \"Mujer Tendida en Playa\" no solo es una representación visual de un momento de ocio, sino también una celebración de la libertad y la conexión con el entorno natural, recordando al espectador la importancia de tomarse un tiempo para relajarse y disfrutar de la vida."
     },
     {
         "id": "1018-dibujo2002",
@@ -306,7 +322,8 @@ const OBRAS = [
         "medidas": "53 × 65 cm",
         "imagen": "assets/obras/1018-dibujo2002.jpg",
         "destacada": false,
-        "descripcion": "Dibujo sobre papel · 53 × 65 cm"
+        "descripcion": "Dibujo sobre papel · 53 × 65 cm",
+        "texto": "\"Mujer Tendida\" es una obra que captura la belleza y la serenidad de la figura femenina en una postura relajada. Este dibujo original presenta una interpretación artística que invita a la contemplación y reflexión sobre la forma humana y la intimidad del momento. La técnica utilizada en el dibujo sobre papel permite un enfoque detallado y expresivo, donde las líneas y sombras se combinan para dar forma a la figura de la mujer. La paleta de grises, negros y blancos puede enfatizar la suavidad de las curvas y los contornos, creando un efecto visual que resalta la delicadeza y la elegancia del cuerpo humano. La composición puede mostrar a la mujer en una posición que sugiere descanso y tranquilidad, quizás con una expresión serena que refleja un estado de paz. Los detalles del entorno pueden ser sutiles, enfocándose en la figura principal, lo que permite al espectador conectar emocionalmente con la obra. La atmósfera del dibujo transmite una sensación de calma y vulnerabilidad, invitando al espectador a apreciar la belleza de la figura femenina en un momento de reposo. \"Mujer Tendida\" no solo es una representación visual de una figura humana, sino también una exploración de la intimidad y la conexión que existe entre el artista y su sujeto."
     },
     {
         "id": "1018-mujer-tendida-2-dibujo-original",
@@ -318,7 +335,8 @@ const OBRAS = [
         "medidas": "53 × 65 cm",
         "imagen": "assets/obras/1018-mujer-tendida-2-dibujo-original.jpg",
         "destacada": false,
-        "descripcion": "Dibujo sobre papel · 53 × 65 cm"
+        "descripcion": "Dibujo sobre papel · 53 × 65 cm",
+        "texto": "\"Mujer Tendida\" es una obra que captura la belleza y la serenidad de la figura femenina en una postura relajada. Este dibujo original presenta una interpretación artística que invita a la contemplación y reflexión sobre la forma humana y la intimidad del momento. La técnica utilizada en el dibujo sobre papel permite un enfoque detallado y expresivo, donde las líneas y sombras se combinan para dar forma a la figura de la mujer. La paleta de grises, negros y blancos puede enfatizar la suavidad de las curvas y los contornos, creando un efecto visual que resalta la delicadeza y la elegancia del cuerpo humano. La composición puede mostrar a la mujer en una posición que sugiere descanso y tranquilidad, quizás con una expresión serena que refleja un estado de paz. Los detalles del entorno pueden ser sutiles, enfocándose en la figura principal, lo que permite al espectador conectar emocionalmente con la obra. La atmósfera del dibujo transmite una sensación de calma y vulnerabilidad, invitando al espectador a apreciar la belleza de la figura femenina en un momento de reposo. \"Mujer Tendida\" no solo es una representación visual de una figura humana, sino también una exploración de la intimidad y la conexión que existe entre el artista y su sujeto."
     },
     {
         "id": "1019-mujer-tendida-bosquejo-a-color",
@@ -330,7 +348,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1019-mujer-tendida-bosquejo-a-color.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón · 77 × 104 cm",
+        "texto": "\"Mujer Tendida - Bosquejo a Color\" es una obra que representa la figura femenina en una postura relajada, capturando la esencia de la tranquilidad y la introspección. Este bosquejo a color se distingue por su frescura y expresión, mostrando una interpretación artística que combina técnica y emoción. La técnica de óleo sobre cartón permite una vibrante aplicación de color, donde los tonos cálidos y suaves pueden contrastar con matices más profundos, creando un efecto visual que resalta la forma y la belleza de la figura. La paleta de colores puede incluir una variedad de matices que evocan la piel, la luz y el entorno, aportando una sensación de vida y movimiento a la obra. La composición puede mostrar a la mujer tendida de forma que su postura y expresión sugieran un momento de reposo y reflexión, quizás rodeada de un fondo abstracto que complementa la figura sin distraer la atención. Este enfoque permite al espectador conectar emocionalmente con la obra, apreciando la belleza de la forma humana en un estado de paz. La atmósfera de la obra transmite una sensación de calma y serenidad, invitando al espectador a contemplar la relación entre el cuerpo y el espacio. \"Mujer Tendida - Bosquejo a Color\" no solo es una representación visual de una figura femenina, sino también una exploración de la conexión entre el arte, la naturaleza y el estado de contemplación."
     },
     {
         "id": "1020-mujer-sentada-dibujo-original",
@@ -342,7 +361,8 @@ const OBRAS = [
         "medidas": "53 × 65 cm",
         "imagen": "assets/obras/1020-mujer-sentada-dibujo-original.jpg",
         "destacada": false,
-        "descripcion": "Dibujo sobre papel · 53 × 65 cm"
+        "descripcion": "Dibujo sobre papel · 53 × 65 cm",
+        "texto": "\"Mujer Sentada\" es una obra que captura la esencia de la figura femenina en una postura contemplativa. Este dibujo original destaca por su simplicidad y elegancia, ofreciendo una interpretación íntima de la belleza y la humanidad. La técnica utilizada en el dibujo sobre papel permite un tratamiento delicado de las líneas y las sombras, aportando profundidad y carácter a la figura. La paleta de tonos puede incluir grises sutiles y negros, que enfatizan las curvas y la postura de la mujer, creando un efecto visual que resalta su presencia y serenidad. La composición puede mostrar a la mujer sentada en una posición que sugiere tranquilidad y reflexión, quizás con una expresión que invita a la contemplación. El fondo puede ser minimalista, enfocándose en la figura principal y permitiendo que el espectador se conecte emocionalmente con la obra. La atmósfera del dibujo transmite una sensación de paz y vulnerabilidad, invitando al espectador a apreciar la belleza de la figura femenina en un momento de reposo. \"Mujer Sentada\" no solo es una representación visual de una figura humana, sino también una exploración de la intimidad y la conexión que existe entre el artista y su sujeto."
     },
     {
         "id": "1021-mujer-sentada-bosquejo-a-color",
@@ -354,7 +374,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1021-mujer-sentada-bosquejo-a-color.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón · 77 × 104 cm",
+        "texto": "\"Mujer Sentada - Bosquejo a Color\" es una obra que captura la esencia de la figura femenina en una postura relajada y contemplativa. Este bosquejo a color destaca por su vivacidad y expresión, mostrando una interpretación artística que combina técnica y emoción de manera efectiva. La técnica de óleo sobre cartón permite una rica y dinámica aplicación de color, donde los tonos pueden variar desde los cálidos y suaves hasta los más vibrantes, creando un efecto visual que resalta la belleza de la figura y su entorno. La paleta de colores puede incluir matices que evocan la luz natural y la suavidad de la piel, aportando vida y profundidad a la obra. La composición puede mostrar a la mujer sentada en una posición que sugiere tranquilidad y reflexión, quizás rodeada de un fondo abstracto o elementos que complementan la figura sin distraer la atención. Esto permite al espectador conectar emocionalmente con la obra, apreciando la belleza de la forma humana en un estado de paz. La atmósfera de la obra transmite una sensación de calma y contemplación, invitando al espectador a reflexionar sobre la conexión entre el cuerpo, el espacio y la introspección. \"Mujer Sentada - Bosquejo a Color\" no solo es una representación visual de una figura femenina, sino también una celebración de la creatividad y la expresión artística en su forma más pura."
     },
     {
         "id": "1022-barcos-caribe",
@@ -366,7 +387,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1022-barcos-caribe.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Barcos Caribe\" es una vibrante obra que captura la esencia de la vida en el mar caribeño, representando una flotilla de coloridos barcos navegando en aguas cristalinas. La pintura evoca una sensación de libertad y aventura, invitando al espectador a sumergirse en la calidez y la alegría del entorno tropical. La técnica de espátula utilizada en esta obra permite crear texturas ricas y dinámicas, que dan vida a las olas y a los detalles de los barcos. La paleta de colores es luminosa y alegre, con intensos azules y turquesas que representan el océano, contrastados con los colores vibrantes de los barcos, que pueden incluir tonos rojos, amarillos y verdes, evocando la alegría del ambiente caribeño. En la composición, los barcos están dispuestos de manera que sugieren movimiento y vitalidad, algunos navegando con velas desplegadas, mientras que otros descansan en la orilla. El fondo puede incluir un cielo despejado y soleado, con suaves nubes blancas que añaden un toque de serenidad a la escena. La atmósfera de la obra transmite una sensación de felicidad y despreocupación, evocando la diversión y la belleza de un día en el Caribe. \"Barcos Caribe\" no solo es una representación visual de una escena marítima, sino también una celebración de la vida junto al mar, recordando al espectador la magia de los paisajes tropicales y la conexión con el océano."
     },
     {
         "id": "1025-mujer-tendida-sobre-cama",
@@ -378,7 +400,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1025-mujer-tendida-sobre-cama.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón · 77 × 104 cm",
+        "texto": "\"Mujer Tendida sobre Cama\" es una obra que captura un momento de intimidad y serenidad, representando a una figura femenina en una postura relajada sobre una cama. Este óleo sobre cartón destaca por su habilidad para transmitir emociones y sensaciones a través de la representación de la figura humana. La técnica del óleo permite una rica aplicación de color, donde los tonos pueden variar desde suaves y cálidos hasta profundos y oscuros, creando un efecto visual que resalta tanto la figura como el entorno. La paleta de colores puede incluir matices que evocan la piel y los textiles de la cama, aportando textura y profundidad a la obra. La composición puede mostrar a la mujer en una posición que sugiere descanso y contemplación, quizás con una expresión que denote paz y tranquilidad. El entorno, que incluye detalles de la cama y el ambiente circundante, puede complementar la figura, creando una atmósfera acogedora y relajante. La atmósfera de la obra transmite una sensación de calma y vulnerabilidad, invitando al espectador a reflexionar sobre la conexión entre el cuerpo y el espacio privado. \"Mujer Tendida sobre Cama\" no solo es una representación visual de una figura femenina, sino también una exploración de la intimidad, la vulnerabilidad y la belleza de los momentos cotidianos en la vida"
     },
     {
         "id": "1025-mujer-tomando-sol",
@@ -390,7 +413,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1025-mujer-tomando-sol.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón · 77 × 104 cm",
+        "texto": "\"Mujer Tendida sobre Cama\" es una obra que captura un momento de intimidad y serenidad, representando a una figura femenina en una postura relajada sobre una cama. Este óleo sobre cartón destaca por su habilidad para transmitir emociones y sensaciones a través de la representación de la figura humana. La técnica del óleo permite una rica aplicación de color, donde los tonos pueden variar desde suaves y cálidos hasta profundos y oscuros, creando un efecto visual que resalta tanto la figura como el entorno. La paleta de colores puede incluir matices que evocan la piel y los textiles de la cama, aportando textura y profundidad a la obra. La composición puede mostrar a la mujer en una posición que sugiere descanso y contemplación, quizás con una expresión que denote paz y tranquilidad. El entorno, que incluye detalles de la cama y el ambiente circundante, puede complementar la figura, creando una atmósfera acogedora y relajante. La atmósfera de la obra transmite una sensación de calma y vulnerabilidad, invitando al espectador a reflexionar sobre la conexión entre el cuerpo y el espacio privado. \"Mujer Tendida sobre Cama\" no solo es una representación visual de una figura femenina, sino también una exploración de la intimidad, la vulnerabilidad y la belleza de los momentos cotidianos en la vida"
     },
     {
         "id": "1026-costa-valdivia",
@@ -402,7 +426,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1026-costa-valdivia.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Costa Valdivia\" es una obra que captura la esencia del paisaje costero de Valdivia, mostrando la majestuosidad y la belleza natural de su entorno. La pintura evoca una sensación de paz y conexión con el mar, invitando al espectador a disfrutar de la serenidad que emana de esta escena costera. La técnica de espátula utilizada en esta obra permite crear texturas vibrantes y ricas, que dan vida a las olas del océano y a la vegetación que rodea la costa. La paleta de colores es variada y luminosa, con tonos azules y verdes que representan el agua y la flora circundante, complementados por cálidos matices que evocan la luz del sol y la arena. En la composición, se pueden observar elementos típicos del paisaje costero, como las suaves olas rompiendo en la orilla, las rocas cubiertas de algas y la vegetación que se asoma al borde del agua. La luz del sol ilumina la escena, creando un juego de luces y sombras que añade profundidad y calidez al ambiente. La atmósfera de la obra transmite una sensación de tranquilidad y contemplación, evocando la belleza de un día en la costa y la importancia de la conexión con el entorno natural. \"Costa Valdivia\" no solo es una representación visual de un paisaje marítimo, sino también una celebración de la vida junto al mar, recordando al espectador la riqueza de los paisajes chilenos y la magia de la naturaleza."
     },
     {
         "id": "1027-caburgua-2",
@@ -414,7 +439,8 @@ const OBRAS = [
         "medidas": "77 × 102 cm",
         "imagen": "assets/obras/1027-caburgua-2.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 102 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 102 cm",
+        "texto": "\"Caburgua 2\" es una obra que captura la impresionante belleza del paisaje de la Laguna Caburgua, mostrando su serenidad y esplendor natural. Esta pintura evoca una conexión profunda con la naturaleza, invitando al espectador a contemplar la tranquilidad y la paz que emana de este entorno lacustre. La técnica de espátula utilizada en esta obra permite crear texturas ricas y palpables, que dan vida tanto a la superficie del agua como a la vegetación circundante. La paleta de colores es fresca y vibrante, con azules profundos que representan el agua cristalina de la laguna, complementados por verdes exuberantes que simbolizan la flora y los árboles que rodean la escena. En la composición, se pueden observar elementos característicos del paisaje, como la suave ondulación del agua, los reflejos de luz que se capturan en la superficie y la densa vegetación que se asoma a la orilla. La luz del sol ilumina la escena, creando un juego de luces y sombras que añade profundidad y calidez al ambiente. La atmósfera de la obra transmite una sensación de calma y contemplación, evocando la belleza de un día en la naturaleza y la importancia de la conexión con el entorno. \"Caburgua 2\" no solo es una representación visual de un paisaje lacustre, sino también una celebración de la vida junto al agua, recordando al espectador la magia y la tranquilidad que se encuentran en los rincones más hermosos de la naturaleza."
     },
     {
         "id": "1028-sl-e-foster",
@@ -426,7 +452,8 @@ const OBRAS = [
         "medidas": "77 × 96 cm",
         "imagen": "assets/obras/1028-sl-e-foster.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 77 × 96 cm"
+        "descripcion": "Óleo sobre cartón · 77 × 96 cm",
+        "texto": "\"SL E Foster\" es una obra contemporánea que destaca por su enfoque único y su uso vibrante del color. Esta pintura en óleo sobre cartón presenta una interpretación artística que invita a la reflexión y el análisis, capturando la atención del espectador con su composición dinámica. La técnica del óleo permite una rica y profunda aplicación de color, donde los tonos pueden variar desde los más sutiles y apagados hasta los más intensos y vibrantes. Esta variedad de matices no solo aporta vida a la obra, sino que también crea un juego de luces y sombras que añade profundidad y textura a la superficie. La composición puede incluir una figura central o abstracta que evoca emociones y sensaciones, rodeada de formas y colores que complementan el tema principal. El uso de líneas y texturas puede dar a la obra una sensación de movimiento, sugiriendo una narrativa que invita al espectador a explorar más allá de lo visible. La atmósfera de \"SL E Foster\" puede transmitir una sensación de modernidad y experimentación, reflejando la continuidad del arte contemporáneo y su capacidad para comunicar ideas complejas a través de la forma y el color. Esta obra no solo es una representación visual, sino también una exploración de la identidad, la emoción y la conexión entre el arte y el espectador."
     },
     {
         "id": "1029-botes-en-playa",
@@ -438,7 +465,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1029-botes-en-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Botes en Playa\" es una obra que captura la vibrante y animada atmósfera de una playa, donde varios botes de colores descansan sobre la arena. La pintura evoca una sensación de verano y libertad, invitando al espectador a sumergirse en la calidez del sol y la frescura del mar. La técnica de espátula utilizada en esta obra permite crear texturas ricas y dinámicas, destacando los detalles de los botes y la arena. La paleta de colores es alegre y luminosa, con intensos azules y turquesas que representan el océano, combinados con cálidos tonos amarillos y naranjas que evocan la luz del sol y la calidez de la arena. En la composición, los botes están dispuestos de manera que sugieren movimiento y vida, algunos inclinados como si estuvieran listos para zarpar, mientras que otros reposan tranquilamente. El fondo puede incluir un cielo despejado, con suaves nubes blancas que añaden un toque de serenidad a la escena. La atmósfera de la obra transmite una sensación de alegría y despreocupación, evocando la diversión y la aventura que se experimenta en un día de playa. \"Botes en Playa\" no solo es una representación visual de un momento costero, sino también una celebración de la vida al aire libre y la belleza del océano, recordando al espectador la importancia de disfrutar de la naturaleza y los momentos de esparcimiento"
     },
     {
         "id": "1030-obras-publicas-5-1",
@@ -450,7 +478,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1030-obras-publicas-5-1.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Pescadores en el Río\" es una obra que captura la esencia de la vida ribereña, mostrando a un grupo de pescadores inmersos en la actividad de pesca en un entorno natural. Esta pintura evoca una sensación de conexión con la naturaleza y la tradición, reflejando la importancia de la pesca como sustento y actividad comunitaria. La técnica de espátula utilizada en esta obra permite crear texturas ricas y vibrantes, que dan vida a la superficie del agua y a los elementos del paisaje circundante. La paleta de colores es variada y dinámica, con tonos azules y verdes que representan el río y la vegetación, complementados por los cálidos colores de la tierra y las figuras de los pescadores. En la composición, los pescadores son retratados en diversas posturas, algunos lanzando sus redes, otros observando el agua con paciencia mientras esperan la captura. El entorno natural, con sus árboles y la suave corriente del río, crea un ambiente de calma y armonía, resaltando la interacción entre el hombre y la naturaleza. La atmósfera de la obra transmite una sensación de tranquilidad y laboriosidad, evocando la conexión profunda que los pescadores tienen con su entorno. \"Pescadores en el Río\" no solo es una representación visual de una escena de pesca, sino también una celebración de las tradiciones locales y la belleza de la vida junto al agua, recordando al espectador la riqueza de nuestras costumbres y el valor de la naturaleza."
     },
     {
         "id": "1030-pescadores-en-el-rio",
@@ -462,7 +491,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1030-pescadores-en-el-rio.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Pescadores en el Río\" es una obra que captura la esencia de la vida ribereña, mostrando a un grupo de pescadores inmersos en la actividad de pesca en un entorno natural. Esta pintura evoca una sensación de conexión con la naturaleza y la tradición, reflejando la importancia de la pesca como sustento y actividad comunitaria. La técnica de espátula utilizada en esta obra permite crear texturas ricas y vibrantes, que dan vida a la superficie del agua y a los elementos del paisaje circundante. La paleta de colores es variada y dinámica, con tonos azules y verdes que representan el río y la vegetación, complementados por los cálidos colores de la tierra y las figuras de los pescadores. En la composición, los pescadores son retratados en diversas posturas, algunos lanzando sus redes, otros observando el agua con paciencia mientras esperan la captura. El entorno natural, con sus árboles y la suave corriente del río, crea un ambiente de calma y armonía, resaltando la interacción entre el hombre y la naturaleza. La atmósfera de la obra transmite una sensación de tranquilidad y laboriosidad, evocando la conexión profunda que los pescadores tienen con su entorno. \"Pescadores en el Río\" no solo es una representación visual de una escena de pesca, sino también una celebración de las tradiciones locales y la belleza de la vida junto al agua, recordando al espectador la riqueza de nuestras costumbres y el valor de la naturaleza."
     },
     {
         "id": "1031-caburgua",
@@ -474,7 +504,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1031-caburgua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Caburgua\" es una obra que captura la impresionante belleza del paisaje lacustre, representando la serenidad y el esplendor natural de la Laguna Caburgua. La pintura evoca una sensación de paz y tranquilidad, invitando al espectador a sumergirse en la majestuosidad del entorno. La técnica de espátula utilizada en esta obra permite crear texturas ricas y dinámicas, resaltando la superficie del agua y la vegetación que la rodea. La paleta de colores es refrescante y vibrante, con azules profundos que representan el agua cristalina de la laguna, combinados con verdes exuberantes que simbolizan la flora y los árboles circundantes. En la composición, se pueden apreciar elementos característicos del paisaje, como la suave ondulación del agua, los reflejos de la luz en la superficie y la densa vegetación que se asoma a la orilla. La luz del sol ilumina la escena, creando un juego de luces y sombras que añade profundidad y calidez al ambiente. La atmósfera de la obra transmite una sensación de calma y contemplación, evocando la belleza de un día en la naturaleza y la importancia de la conexión con el entorno. \"Caburgua\" no solo es una representación visual de un paisaje lacustre, sino también una celebración de la vida junto al agua, recordando al espectador la magia y la tranquilidad que se pueden encontrar en los rincones más hermosos de la naturaleza."
     },
     {
         "id": "1032-pescadores-rio-tolten",
@@ -486,7 +517,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1032-pescadores-rio-tolten.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Pescadores Río Toltén\" es una obra que captura la esencia de la vida junto a este hermoso río, mostrando a un grupo de pescadores en plena actividad. La pintura evoca una sensación de conexión con la naturaleza y la tradición, celebrando la cultura local y las prácticas que han sido parte de la vida de la comunidad. La técnica de espátula utilizada en esta obra permite crear texturas vibrantes y ricas, que dan vida tanto a la superficie del agua como a los elementos del paisaje circundante. La paleta de colores es variada y dinámica, con matices de azules y verdes que representan el río y la vegetación, complementados por los tonos cálidos de la tierra y las figuras de los pescadores. En la composición, los pescadores son representados en diferentes posturas, algunos lanzando sus redes y otros esperando pacientemente la captura. El entorno natural, con sus árboles frondosos y las suaves corrientes del río, crea un ambiente de paz y armonía, resaltando la belleza del lugar y la interacción entre el hombre y la naturaleza. La atmósfera de la obra transmite una sensación de tranquilidad y laboriosidad, evocando la importancia de las tradiciones y el sustento que ofrecen los ríos. \"Pescadores Río Toltén\" no solo es una representación visual de una escena de pesca, sino también una celebración de la vida rural y la conexión con el entorno, recordando al espectador la riqueza de nuestras tradiciones y la belleza de la naturaleza."
     },
     {
         "id": "1033-zapallar",
@@ -498,7 +530,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1033-zapallar.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Zapallar\" es una obra que captura la esencia del paisaje costero, mostrando la belleza natural de la localidad de Zapallar. La pintura evoca una sensación de serenidad y conexión con el mar, invitando al espectador a disfrutar de la tranquilidad de la costa. La técnica de espátula utilizada en esta obra permite crear texturas ricas y dinámicas, que dan vida tanto al agua como a la vegetación circundante. La paleta de colores es vibrante, con intensos azules y verdes que representan el océano y la flora local, junto con tonos cálidos que evocan la luz del sol sobre la arena y las rocas. En la composición, se pueden apreciar elementos característicos del paisaje costero, como el suave vaivén de las olas, las formaciones rocosas y la exuberante vegetación que rodea la costa. La luz del sol ilumina la escena, creando reflejos en el agua y acentuando la belleza de la naturaleza. La atmósfera de la obra transmite una sensación de paz y contemplación, evocando la belleza de un día en la playa y la importancia de la conexión con el entorno natural. \"Zapallar\" no solo es una representación visual de un paisaje costero, sino también una celebración de la vida junto al mar, recordando al espectador la magia de los lugares donde la tierra se encuentra con el océano."
     },
     {
         "id": "1034-sofia-caburgua-2",
@@ -510,7 +543,8 @@ const OBRAS = [
         "medidas": "96 × 155 cm",
         "imagen": "assets/obras/1034-sofia-caburgua-2.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 96 × 155 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 96 × 155 cm",
+        "texto": "\"Niña en Muelle 2\" es una obra que captura la esencia de la infancia, mostrando a una niña sentada en un muelle, inmersa en la belleza del paisaje acuático que la rodea. Esta pintura evoca una sensación de asombro y conexión con la naturaleza, invitando al espectador a recordar la simplicidad y la alegría de los momentos pasados junto al agua. La técnica de espátula utilizada en esta obra aporta texturas ricas y vibrantes, que dan vida tanto a la figura de la niña como al entorno que la envuelve. La paleta de colores es cálida y luminosa, con tonos que reflejan la luz del sol y la frescura del día, resaltando la alegría y la despreocupación del momento. En la composición, la niña está retratada en una pose contemplativa, quizás mirando hacia el horizonte o jugando con pequeños objetos que encuentra en el muelle. El muelle, con su madera desgastada y el suave movimiento de las olas, crea un ambiente acogedor y nostálgico, evocando un espacio de exploración y aventura. La atmósfera de la obra transmite una sensación de paz y felicidad, capturando la belleza de los días de verano junto al agua. \"Niña en Muelle 2\" no solo es una representación visual de una niña en un entorno natural, sino también una celebración de la curiosidad infantil y la conexión con el mundo que nos rodea, recordando al espectador la importancia de apreciar los momentos sencillos de la vida."
     },
     {
         "id": "1035-sofia-caburgua",
@@ -522,7 +556,8 @@ const OBRAS = [
         "medidas": "96 × 155 cm",
         "imagen": "assets/obras/1035-sofia-caburgua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 96 × 155 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 96 × 155 cm",
+        "texto": "\"Niña en Muelle 1\" es una conmovedora obra que captura la inocencia y la curiosidad de la niñez, retratando a una niña sentada en un muelle que se adentra en un paisaje acuático. La pintura evoca una profunda conexión con la naturaleza y la alegría de los momentos simples, invitando al espectador a recordar su propia infancia. La técnica de espátula utilizada en esta obra permite crear texturas vibrantes y ricas, que dan vida tanto a la figura de la niña como al entorno circundante. La paleta de colores es cálida y acogedora, con tonos que reflejan la luz del sol y la calidez del día, resaltando la alegría y la despreocupación de este momento. En la composición, la niña está representada con una expresión de asombro, mirando hacia el agua o quizás jugando con los reflejos. El muelle, con su madera desgastada y su proximidad al agua, añade un sentido de profundidad y contexto a la escena, evocando un lugar de exploración y aventura. La atmósfera de la obra transmite una sensación de paz y felicidad, evocando la belleza de los días de verano pasados junto al agua. \"Niña en Muelle 1\" no solo es una representación visual de una niña en un entorno natural, sino también una celebración de la infancia, la curiosidad y la conexión con el mundo que nos rodea."
     },
     {
         "id": "1036-bote-en-caburgua",
@@ -534,7 +569,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1036-bote-en-caburgua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Bote en Caburgua\" es una obra que captura la esencia de la tranquilidad en un entorno lacustre, presentando un bote tradicional anclado en las serenas aguas de la Laguna Caburgua. Esta pintura evoca una sensación de paz y conexión con la naturaleza, invitando al espectador a sumergirse en la belleza del paisaje. La técnica de espátula utilizada en esta pintura permite crear texturas ricas y vibrantes, resaltando tanto la superficie del agua como los detalles del bote. La paleta de colores es rica y variada, con azules y verdes que representan las aguas cristalinas de la laguna, combinados con colores cálidos que reflejan la madera del bote. En la composición, el bote se presenta en un momento de calma, reflejando la luz del sol y el paisaje circundante en su superficie. Este reflejo añade un elemento de profundidad y serenidad a la escena, creando una conexión visual entre el bote y su entorno natural. La atmósfera de la obra transmite una sensación de introspección y tranquilidad, evocando la belleza del paisaje y la paz que se experimenta al estar en contacto con la naturaleza. \"Bote en Caburgua\" no solo es una representación visual de una embarcación en el agua, sino también una celebración de la vida junto a la laguna, recordando al espectador la importancia de apreciar los momentos de calma en un mundo agitado."
     },
     {
         "id": "1037-rio-cruces",
@@ -546,7 +582,8 @@ const OBRAS = [
         "medidas": "77 × 90 cm",
         "imagen": "assets/obras/1037-rio-cruces.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 90 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 90 cm",
+        "texto": "\"Río Cruces\" es una obra que captura la belleza serena de un paisaje fluvial, donde el río fluye suavemente a través de un entorno natural exuberante. Esta pintura evoca una sensación de tranquilidad y conexión con la naturaleza, invitando al espectador a sumergirse en la paz del paisaje. La técnica de espátula utilizada en esta obra permite crear texturas vibrantes y dinámicas, resaltando tanto la superficie del agua como la vegetación circundante. La paleta de colores es rica y variada, con tonos verdes que representan la vegetación, azules profundos que reflejan el agua y toques de color que sugieren flores o plantas a lo largo de la orilla. En la composición, el río serpentea a través del paisaje, flanqueado por árboles y arbustos que añaden un sentido de profundidad y riqueza al entorno. La luz del sol puede filtrarse a través del follaje, creando sombras suaves y reflejos brillantes en la superficie del agua, lo que añade un toque de magia a la escena. La atmósfera de la obra transmite una sensación de paz y contemplación, evocando la belleza de un rincón natural donde el tiempo parece detenerse. \"Río Cruces\" no solo es una representación visual de un paisaje fluvial, sino también una celebración de la naturaleza en su estado más puro, recordando al espectador la importancia de cuidar y apreciar nuestros entornos naturales"
     },
     {
         "id": "1038-veleros-cielo-gris",
@@ -559,7 +596,8 @@ const OBRAS = [
         "imagen": "assets/obras/1038-veleros-cielo-gris.jpg",
         "destacada": false,
         "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Veleros Cielo Gris\" es una obra que captura la esencia de un día nublado en el mar, donde varios veleros navegan bajo un cielo cubierto de tonalidades grises y plateadas. Esta pintura evoca una atmósfera de calma y reflexión, resaltando la belleza de la naturaleza en su estado más sereno y sutil. La técnica de espátula permite crear texturas ricas y dinámicas, que añaden profundidad tanto a las nubes como a la superficie del agua. La paleta de colores se centra en tonos grises, azules y blancos, creando un efecto de armonía y sofisticación, mientras que los veleros, con sus velas en diferentes posiciones, aportan un sentido de movimiento y vida a la escena. En la composición, los veleros parecen deslizándose suavemente sobre las aguas tranquilas, sugiriendo una conexión íntima entre las embarcaciones y su entorno natural. La luz suave que se filtra a través de las nubes proporciona un efecto luminoso, reflejándose en el agua y creando un ambiente sereno y contemplativo. La atmósfera de la obra invita a la introspección, evocando la paz que se puede encontrar en la navegación bajo un cielo gris, donde el tiempo parece detenerse. \"Veleros Cielo Gris\" no solo es una representación visual de barcos en el océano, sino también una celebración de la calma y la belleza del paisaje marítimo, recordando al espectador la importancia de encontrar tranquilidad en la naturaleza"
     },
     {
         "id": "1039-veleros-cielo-anaranjado",
@@ -571,7 +609,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1039-veleros-cielo-anaranjado.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Veleros Cielo Anaranjado\" es una obra que captura la magia de un atardecer en el mar, donde varios veleros navegan bajo un cielo que se tiñe de tonos anaranjados y dorados. Esta pintura evoca una sensación de calma y belleza, resaltando la conexión entre el agua y el cielo en un momento fugaz y espectacular. La técnica de espátula utilizada permite crear texturas ricas y vibrantes que dan vida tanto a las nubes iluminadas por el sol poniente como a las suaves olas del mar. La paleta de colores es cálida y envolvente, con intensos naranjas, amarillos y dorados que contrastan con los tonos más frescos del agua, creando un efecto visual impresionante. En la composición, los veleros se muestran en pleno movimiento, con sus velas desplegadas capturando la brisa marina. Este dinamismo sugiere una sensación de libertad y aventura, mientras que el fondo anaranjado del cielo añade un toque de serenidad y asombro al paisaje. La atmósfera de la obra invita a la contemplación, evocando la belleza efímera de un atardecer y la paz que se experimenta al navegar en estas condiciones. \"Veleros Cielo Anaranjado\" no solo es una representación visual de barcos en el océano, sino también una celebración de la naturaleza y la emoción de la navegación al atardecer, un momento en el que el día se despide con esplendor."
     },
     {
         "id": "1040-veleros-varados",
@@ -583,7 +622,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1040-veleros-varados.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "Veleros Varados\" es una obra que captura un momento de quietud y reflexión en la vida marina, presentando varios veleros que descansan en la orilla, atrapados por la marea baja. La escena evoca una mezcla de serenidad y melancolía, invitando al espectador a contemplar la relación entre el hombre y el mar. La técnica de espátula utilizada en esta pintura permite crear texturas vibrantes y un efecto visual dinámico, resaltando tanto la superficie del agua como los detalles de los veleros. La paleta de colores incluye tonos azules y verdes que representan el agua, junto con colores cálidos que adornan los barcos, creando un contraste atractivo entre la calma del mar y la vivacidad de las embarcaciones. En la composición, los veleros se presentan en diferentes posiciones, algunos inclinados, otros con las velas aún desplegadas, sugiriendo la historia de su navegación y el momento de pausa en su viaje. La luz del sol puede iluminar la escena, reflejándose en el agua y acentuando los detalles de los barcos y la arena. La atmósfera de la obra transmite una sensación de paz y contemplación, evocando la belleza del paisaje costero y la tranquilidad que proporciona estar en contacto con la naturaleza. \"Veleros Varados\" no solo es una representación visual de embarcaciones en reposo, sino también una reflexión sobre el paso del tiempo y la conexión entre el ser humano y el océano."
     },
     {
         "id": "1041-bote-antiguo-caburgua",
@@ -595,7 +635,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1041-bote-antiguo-caburgua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Bote Antiguo Caburgua\" es una obra que captura la esencia de la vida en el agua a través de la representación de una embarcación tradicional. Este bote, con su diseño clásico, evoca memorias de tiempos pasados y la conexión humana con los entornos acuáticos. La técnica de espátula empleada en la pintura permite crear texturas ricas y dinámicas que dan vida tanto al bote como a las suaves ondulaciones del agua. La paleta de colores incluye tonos cálidos que reflejan la madera envejecida del bote, contrastados con los frescos tonos azules y verdes que representan las aguas tranquilas de la Laguna Caburgua. En la composición, el bote se presenta en un momento de calma, anclado en el agua serena, capturando la luz del sol que se refleja sobre su superficie. Este efecto no solo resalta la belleza del bote, sino que también invita al espectador a contemplar la serenidad del entorno natural. La atmósfera de la obra emana tranquilidad y nostalgia, sugiriendo historias de navegaciones pasadas y la conexión con la naturaleza. \"Bote Antiguo Caburgua\" no es solo una representación visual de una embarcación; es una celebración de la historia, la tradición y la belleza del paisaje acuático, evocando una profunda apreciación por la vida junto al agua."
     },
     {
         "id": "1041-mujer-en-la-playa",
@@ -607,7 +648,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1041-mujer-en-la-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Bote Antiguo Caburgua\" es una obra que captura la esencia de la vida en el agua a través de la representación de una embarcación tradicional. Este bote, con su diseño clásico, evoca memorias de tiempos pasados y la conexión humana con los entornos acuáticos. La técnica de espátula empleada en la pintura permite crear texturas ricas y dinámicas que dan vida tanto al bote como a las suaves ondulaciones del agua. La paleta de colores incluye tonos cálidos que reflejan la madera envejecida del bote, contrastados con los frescos tonos azules y verdes que representan las aguas tranquilas de la Laguna Caburgua. En la composición, el bote se presenta en un momento de calma, anclado en el agua serena, capturando la luz del sol que se refleja sobre su superficie. Este efecto no solo resalta la belleza del bote, sino que también invita al espectador a contemplar la serenidad del entorno natural. La atmósfera de la obra emana tranquilidad y nostalgia, sugiriendo historias de navegaciones pasadas y la conexión con la naturaleza. \"Bote Antiguo Caburgua\" no es solo una representación visual de una embarcación; es una celebración de la historia, la tradición y la belleza del paisaje acuático, evocando una profunda apreciación por la vida junto al agua."
     },
     {
         "id": "1042-veleros-vela-roja",
@@ -619,7 +661,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1042-veleros-vela-roja.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Veleros Vela Roja\" es una obra que captura la emoción de la navegación en un entorno marino vibrante. La pintura presenta varios veleros en movimiento, destacándose una impresionante vela roja que ondea al viento, simbolizando aventura y libertad en el mar abierto. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que resalta la dinámica de las olas y el movimiento de los veleros. La paleta de colores es intensa, con azules profundos que representan el océano, contrastados por el rojo brillante de las velas y posiblemente toques de blanco que añaden luminosidad y energía a la escena. En la composición, los veleros se muestran navegando con confianza, sugiriendo un momento de alegría y conexión con la naturaleza. El cielo puede estar despejado o salpicado de nubes, creando un fondo que acentúa el dramatismo de las velas y el movimiento del agua. La atmósfera de la obra transmite una sensación de emoción y aventura, invitando al espectador a imaginar la experiencia de navegar en mar abierto, sintiendo la brisa y el sonido de las olas. \"Veleros Vela Roja\" no solo es una representación visual de barcos en el agua, sino que también celebra la energía del mar y la alegría de la navegación, evocando la pasión por la exploración y la conexión con el entorno natural."
     },
     {
         "id": "1043-bote-caburgua",
@@ -631,7 +674,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1043-bote-caburgua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Bote Caburgua\" es una obra que captura la esencia de la vida en el agua, presentando un bote que navega serenamente en un paisaje acuático. La pintura evoca la belleza y la tranquilidad de un entorno natural, posiblemente inspirado en la pintoresca Laguna Caburgua, famosa por sus aguas cristalinas y rodeada de naturaleza exuberante. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que resalta tanto la superficie del agua como los detalles del bote. La paleta de colores es variada, con tonos de azul y verde que representan el agua, complementados por los cálidos colores del bote que añaden un toque de vida y carácter a la escena. En la composición, el bote se presenta en un momento de calma, flotando suavemente en el agua, lo que sugiere una conexión íntima con la naturaleza. La superficie del agua puede estar reflejando la luz del sol y la vegetación circundante, creando un efecto visual que invita a la contemplación. La atmósfera de la obra transmite una sensación de paz y serenidad, invitando al espectador a imaginar la experiencia de navegar en un entorno tan hermoso y natural. \"Bote Caburgua\" no solo es una representación visual de un bote en el agua, sino que también celebra la conexión entre el ser humano y la naturaleza, resaltando la belleza de los paisajes acuáticos y la tranquilidad que ofrecen."
     },
     {
         "id": "1044-velero-vela-azul",
@@ -643,7 +687,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1044-velero-vela-azul.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Velero Vela Azul\" es una obra que captura la esencia de la navegación y la serenidad del mar. La pintura presenta un velero con una impresionante vela azul que se despliega majestuosamente, contrastando con el fondo claro del cielo y el agua, creando una escena que evoca libertad y tranquilidad. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que resalta las suaves olas del mar y la dinámica de la vela ondeando al viento. La paleta de colores incluye tonos de azul que simbolizan tanto el océano como la vela, complementados por blancos y cremosos que aportan luminosidad y profundidad a la composición. En la escena, el velero se muestra navegando con confianza, sugiriendo un momento de calma y conexión con la naturaleza. El cielo despejado puede estar salpicado de nubes suaves, lo que añade una sensación de espacio y apertura, invitando al espectador a experimentar la vastedad del mar. La atmósfera de la obra transmite una sensación de paz y aventura, invitando a imaginar la experiencia de navegar en aguas tranquilas, disfrutando del sonido de las olas y la brisa marina. \"Velero Vela Azul\" no solo es una representación visual de un barco en el océano, sino que también celebra la alegría de la navegación y el esplendor del entorno natural."
     },
     {
         "id": "1045-velero-jamaica",
@@ -655,7 +700,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1045-velero-jamaica.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Velero Jamaica\" es una obra que captura la esencia de la navegación en un entorno tropical, donde un elegante velero se desplaza con gracia sobre aguas cálidas y vibrantes. La pintura evoca la belleza del mar caribeño, con un enfoque en los colores intensos y la luz que caracteriza esta región. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, realzando los detalles del velero y las suaves olas que lo rodean. La paleta de colores es brillante y alegre, con azules profundos que representan el océano, verdes que sugieren la vegetación circundante y posiblemente toques de color que reflejan la cultura vibrante de Jamaica. En la composición, el velero se presenta en movimiento, con sus velas desplegadas capturando el viento, lo que simboliza la libertad y la aventura. El fondo puede incluir elementos como un cielo despejado o nubes suaves, que añaden profundidad y contexto a la escena. La atmósfera de la obra transmite una sensación de relajación y alegría, invitando al espectador a imaginar la experiencia de navegar en aguas jamaicanas, disfrutando del sol y la brisa marina. \"Velero Jamaica\" no solo es una representación visual de un barco en el mar, sino que también celebra la conexión entre la navegación, la naturaleza y el espíritu vibrante de la cultura caribeña."
     },
     {
         "id": "1046-velero-fondo-aamarillo",
@@ -667,7 +713,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1046-velero-fondo-aamarillo.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Velero Fondo Amarillo\" es una obra que destaca por su vibrante simplicidad y el uso audaz del color. La pintura presenta un velero que se eleva majestuosamente sobre un fondo amarillo brillante, creando un contraste visual que captura la atención del espectador y evoca una sensación de calidez y energía. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que resalta tanto la superficie del agua como la forma dinámica del velero. La paleta de colores es predominantemente amarilla, que transmite luz y alegría, combinada con tonos más oscuros en el velero que le otorgan profundidad y definición. En la composición, el velero se presenta en una postura que sugiere movimiento, como si estuviera navegando a través de un mar imaginario. El fondo amarillo no solo actúa como un telón de fondo llamativo, sino que también simboliza la energía del sol y la vitalidad del entorno marino. La atmósfera de la obra transmite una sensación de libertad y aventura, invitando al espectador a soñar con la navegación y la exploración en el mar. \"Velero Fondo Amarillo\" no solo es una representación visual de un barco en el agua, sino que también celebra la alegría de la vida al aire libre y la conexión con la naturaleza."
     },
     {
         "id": "1047-veleros-oriente",
@@ -679,7 +726,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1047-veleros-oriente.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre cartón · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón · 77 × 104 cm",
+        "texto": "\"Veleros Oriente\" es una obra que captura la majestuosidad y la elegancia de los veleros navegando en aguas abiertas. La pintura presenta una escena vibrante donde varias embarcaciones con velas desplegadas se deslizan suavemente sobre un mar iluminado por la luz del sol, creando un espectáculo visual que evoca libertad y aventura. La técnica de óleo aplicada en esta obra permite una rica variedad de texturas y colores, lo que resalta las suaves olas del mar y la voluptuosidad de las velas ondeando al viento. La paleta de colores es dinámica, con tonos de azul profundo que representan el océano, combinados con blancos y cremosos que destacan las velas, y posiblemente toques de color en el casco de los veleros que añaden interés y vida a la escena. En la composición, se pueden observar detalles como la interacción de la luz con el agua, creando reflejos que dan un sentido de movimiento y profundidad. Las velas, con su forma característica, capturan la esencia de la navegación, sugiriendo la dirección del viento y el viaje que emprenden los navegantes. La atmósfera de la obra transmite una sensación de aventura y conexión con la naturaleza, invitando al espectador a imaginar la experiencia de navegar en alta mar y disfrutar de la belleza del entorno marino. \"Veleros Oriente\" no solo es una representación visual de la navegación, sino que también celebra la emoción de la exploración y la serenidad que se encuentra en el vasto océano"
     },
     {
         "id": "1049-playa",
@@ -692,7 +740,8 @@ const OBRAS = [
         "imagen": "assets/obras/1049-playa.jpg",
         "destacada": false,
         "descripcion": "Óleo sobre cartón, técnica espátula · 35 × 50 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Pescadores en Playa\" es una obra que captura la esencia de la vida costera y la labor de los pescadores en un entorno marino. La pintura presenta una escena vibrante donde se pueden ver a los pescadores trabajando en la playa, inmersos en la rutina diaria de la pesca. La técnica de espátula utilizada en esta obra permite una aplicación dinámica y texturizada del óleo, lo que realza los detalles de las olas rompiendo en la orilla, así como la textura de la arena y las redes de pesca. La paleta de colores es rica y variada, con tonos de azul que evocan la profundidad del mar, complementados por los cálidos marrones y amarillos de la playa y los pescadores. En la composición, se pueden observar detalles como las siluetas de los pescadores, sus movimientos y la interacción con el entorno. Las redes y los botes, si están presentes, añaden un sentido de actividad y propósito a la escena. La luz del sol, posiblemente reflejada en el agua, crea un ambiente cálido y acogedor. La atmósfera de la obra transmite una sensación de trabajo arduo y conexión con la naturaleza, invitando al espectador a apreciar la vida cotidiana de quienes dependen del mar para su sustento. \"Pescadores en Playa\" no solo es una representación visual de una actividad esencial, sino que también celebra la relación entre las personas y el mar, destacando la belleza y la simplicidad de la vida costera."
     },
     {
         "id": "1050-playa-con-velero",
@@ -704,7 +753,8 @@ const OBRAS = [
         "medidas": "50 × 77 cm",
         "imagen": "assets/obras/1050-playa-con-velero.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 50 × 77 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 50 × 77 cm",
+        "texto": "\"Playa con Velero\" es una obra que captura la belleza y la tranquilidad de una playa costera, donde la arena, el mar y el cielo se funden en una escena armoniosa. La pintura presenta una vista panorámica de una playa, con un venero de agua dulce como protagonista, añadiendo un elemento distintivo y natural a la escena. La técnica de espátula utilizada en esta obra permite una aplicación vibrante y textural del óleo, lo que realza la suavidad de la arena, la fluidez de las olas y el reflejo del cielo en el agua. La paleta de colores es cálida y luminosa, con tonos de azul, verde y dorado que evocan la calidez y la luz de un día soleado en la costa. En la composición, se pueden observar detalles como la presencia del venero, con su agua cristalina y refrescante, que contrasta con la vastedad del océano. La línea del horizonte se presenta suave y sinuosa, creando una sensación de tranquilidad y equilibrio. Tal vez algunas figuras disfrutando del entorno o elementos naturales como conchas o algas completen la escena, aportando un toque de vida y conexión con el lugar. La atmósfera de la obra transmite una sensación de serenidad y conexión con la naturaleza, invitando al espectador a imaginar momentos de relajación y contemplación en este entorno costero. \"Playa con Venero\" no solo es una representación visual de un lugar encantador, sino que también celebra la belleza y la armonía que se pueden encontrar en los espacios naturales."
     },
     {
         "id": "1050-1-pescadores-en-playa",
@@ -716,7 +766,8 @@ const OBRAS = [
         "medidas": "50 × 77 cm",
         "imagen": "assets/obras/1050-1-pescadores-en-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 50 × 77 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 50 × 77 cm",
+        "texto": "\"Playa con Velero\" es una obra que captura la belleza y la tranquilidad de una playa costera, donde la arena, el mar y el cielo se funden en una escena armoniosa. La pintura presenta una vista panorámica de una playa, con un venero de agua dulce como protagonista, añadiendo un elemento distintivo y natural a la escena. La técnica de espátula utilizada en esta obra permite una aplicación vibrante y textural del óleo, lo que realza la suavidad de la arena, la fluidez de las olas y el reflejo del cielo en el agua. La paleta de colores es cálida y luminosa, con tonos de azul, verde y dorado que evocan la calidez y la luz de un día soleado en la costa. En la composición, se pueden observar detalles como la presencia del venero, con su agua cristalina y refrescante, que contrasta con la vastedad del océano. La línea del horizonte se presenta suave y sinuosa, creando una sensación de tranquilidad y equilibrio. Tal vez algunas figuras disfrutando del entorno o elementos naturales como conchas o algas completen la escena, aportando un toque de vida y conexión con el lugar. La atmósfera de la obra transmite una sensación de serenidad y conexión con la naturaleza, invitando al espectador a imaginar momentos de relajación y contemplación en este entorno costero. \"Playa con Venero\" no solo es una representación visual de un lugar encantador, sino que también celebra la belleza y la armonía que se pueden encontrar en los espacios naturales."
     },
     {
         "id": "1051-cruzando-el-salar-de-uyuni",
@@ -728,7 +779,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1051-cruzando-el-salar-de-uyuni.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Cruzando el Salar de Uyuni\" es una obra que captura la inmensidad y la belleza surrealista del Salar de Uyuni, el desierto de sal más grande del mundo. La pintura presenta una escena donde un vehículo se aventura a cruzar la vasta llanura blanca, simbolizando la exploración y la conexión con la naturaleza. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que resalta las variaciones en la superficie del salar, así como el juego de luces y sombras que se refleja sobre la sal. La paleta de colores es predominantemente blanca y azul, evocando la claridad del cielo y la pureza del paisaje, con toques de color que podrían representar el vehículo y la vegetación escasa en los bordes. En la composición, se pueden observar detalles como el horizonte que parece extenderse infinitamente, creando una sensación de profundidad y grandeza. El vehículo en movimiento añade un elemento de dinamismo a la escena, sugiriendo la aventura y la exploración en este entorno único. La atmósfera de la obra transmite una sensación de libertad y asombro, invitando al espectador a imaginar la experiencia de cruzar el salar y contemplar la belleza austera de este paisaje desértico. \"Cruzando el Salar de Uyuni\" no solo es una representación visual de un viaje extraordinario, sino que también celebra la magnificencia de la naturaleza y la experiencia transformadora que ofrece este rincón del mundo."
     },
     {
         "id": "1052-entrada-a-valle-de-la-luna-san-pedro",
@@ -740,7 +792,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1052-entrada-a-valle-de-la-luna-san-pedro.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Entrada a Valle de la Luna, San Pedro de Atacama\" es una obra que captura la impresionante belleza y la mística del famoso Valle de la Luna, un paisaje singular en el desierto de Atacama. La pintura presenta una vista panorámica de la entrada al valle, donde las formaciones rocosas y las ondulaciones del terreno se combinan en un espectáculo visual que evoca la grandeza de la naturaleza. La técnica de espátula utilizada en esta obra permite una aplicación dinámica y texturizada del óleo, lo que resalta las formas y colores de las rocas, así como las sombras que juegan sobre la superficie del valle. La paleta de colores es cálida y terrosa, con tonos de marrón, rojo y dorado que reflejan la riqueza del desierto, complementados por azules y violetas que sugieren el cielo despejado y el crepúsculo. En la composición, se pueden observar detalles como las estructuras naturales que parecen esculpidas por el viento y el tiempo, creando un ambiente casi surrealista. La atmósfera de la obra transmite una sensación de asombro y tranquilidad, invitando al espectador a explorar este paisaje casi lunar y a conectarse con la inmensidad del entorno. \"Entrada a Valle de la Luna, San Pedro de Atacama\" no solo es una representación visual de un lugar extraordinario, sino que también celebra la belleza inhóspita del desierto y la experiencia única que ofrece esta región de Chile, donde la naturaleza se manifiesta en su forma más pura y asombrosa."
     },
     {
         "id": "1053-calle-de-san-perdo-de-atacama",
@@ -752,7 +805,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1053-calle-de-san-perdo-de-atacama.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Calle de San Pedro de Atacama\" es una obra que captura la esencia y el encanto del pueblo de San Pedro de Atacama, un lugar emblemático en el desierto chileno. La pintura presenta una escena vibrante de una calle típica del pueblo, donde se entrelazan la arquitectura tradicional y los colores cálidos del entorno desértico. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que resalta las paredes de adobe y las puertas de madera que caracterizan las construcciones locales. La paleta de colores es cálida y acogedora, con tonos terracota, ocres y amarillos que evocan la calidez del desierto, acentuados por el azul del cielo que se extiende sobre la escena. En la composición, se pueden observar detalles como las sombras proyectadas por los edificios, las plantas que adornan las entradas de las casas y quizás algunas figuras que caminan por la calle, añadiendo vida y movimiento al paisaje. Estos elementos contribuyen a crear una atmósfera de comunidad y conexión cultural. La obra transmite una sensación de nostalgia y autenticidad, invitando al espectador a sumergirse en la experiencia de caminar por las calles de San Pedro de Atacama y apreciar su rica historia y cultura. \"Calle de San Pedro de Atacama\" no solo es una representación visual de un lugar único, sino que también celebra la belleza del desierto y la vida en este rincón especial de Chile"
     },
     {
         "id": "1054-casa-flotante-con-botes",
@@ -764,7 +818,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1054-casa-flotante-con-botes.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "Casa Flotante con Botes\" es una obra que evoca la tranquilidad y la serenidad de la vida en el agua. La pintura presenta una escena encantadora donde una casa flotante se asienta suavemente sobre la superficie de un cuerpo de agua, rodeada de botes que añaden un toque de vida y movimiento al paisaje. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que realza tanto la naturaleza del agua como las características de la casa flotante. La paleta de colores es fresca y vibrante, con tonos de azul y verde que reflejan la calma del agua, complementados por colores cálidos que adornan la casa y los botes, sugiriendo un ambiente acogedor. En la composición, se pueden observar detalles como el reflejo de la casa en el agua, así como las suaves ondulaciones que crean un efecto de movimiento. Los botes, con sus diferentes formas y colores, añaden dinamismo a la escena y sugieren la posibilidad de aventura y exploración en este entorno acuático. La atmósfera de la obra transmite una sensación de paz y conexión con la naturaleza, invitando al espectador a imaginar momentos de relajación y disfrute en un entorno idílico. \"Casa Flotante con Botes\" no solo es una representación visual de un estilo de vida único, sino que también celebra la belleza y la tranquilidad que se puede encontrar en la vida junto al agua."
     },
     {
         "id": "1055-altiplano-en-moto",
@@ -777,7 +832,8 @@ const OBRAS = [
         "imagen": "assets/obras/1055-altiplano-en-moto.jpg",
         "destacada": false,
         "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Altiplano en Moto\" es una obra que captura la aventura y la libertad de explorar el vasto y majestuoso altiplano. La pintura presenta un paisaje impresionante, donde la inmensidad de las montañas y llanuras se combina con la emoción de un viaje en moto, representando la conexión entre el ser humano y la naturaleza. La técnica de espátula utilizada en esta obra permite una aplicación texturizada y vibrante del óleo, lo que realza las características del terreno accidentado y las variaciones de luz que juegan sobre la superficie del altiplano. La paleta de colores es rica y diversa, con tonos de marrón y verde que representan la vegetación escasa, contrastando con los azules intensos del cielo y las sombras de las montañas. En la composición, se puede observar detalles como la moto avanzando a través del paisaje, simbolizando la aventura y la exploración. Las formaciones rocosas y los valles profundos añaden un sentido de profundidad y perspectiva, mientras que las nubes en el cielo aportan un toque dramático y dinámico a la escena. La atmósfera de la obra transmite una sensación de libertad y descubrimiento, invitando al espectador a imaginar la experiencia de recorrer este entorno impresionante. \"Altiplano en Moto\" no solo es una representación visual de un viaje emocionante, sino que también celebra la belleza natural y la singularidad de esta región de gran altitud, resaltando la conexión entre el hombre y el majestuoso paisaje que lo rodea"
     },
     {
         "id": "1056-salar-uyuni-isla-incahuasi",
@@ -789,7 +845,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1056-salar-uyuni-isla-incahuasi.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Salar Uyuni Isla Incahuasi\" es una obra que captura la majestuosidad y la singularidad del Salar de Uyuni, el mayor desierto de sal del mundo, junto con la emblemática Isla Incahuasi. La pintura presenta un paisaje impresionante donde la vastedad del salar se extiende hasta donde alcanza la vista, con la isla como un destacado oasis en medio de este vasto mar blanco. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que resalta las variaciones en la superficie del salar y las formaciones rocosas de la isla. La paleta de colores es fresca y luminosa, con tonos de blanco y azul que representan la sal y el cielo, complementados por verdes y marrones que evocan la vegetación única que se encuentra en la isla. En la composición, se pueden distinguir detalles como los cactus que crecen en la Isla Incahuasi, sus formas distintivas contrastando con el entorno llano del salar. La atmósfera de la obra transmite una sensación de calma y asombro, invitando al espectador a reflexionar sobre la belleza austera y la magia del paisaje boliviano. La obra no solo es una representación visual de un lugar extraordinario, sino que también celebra la riqueza natural y cultural de la región, así como la experiencia única que ofrece el Salar de Uyuni. \"Salar Uyuni Isla Incahuasi\" invita al espectador a soñar con la vastedad del desierto y la tranquilidad que se encuentra en este rincón del mundo."
     },
     {
         "id": "1057-desbudo-sobre-cama-dibujo-original",
@@ -801,7 +858,8 @@ const OBRAS = [
         "medidas": "53 × 65 cm",
         "imagen": "assets/obras/1057-desbudo-sobre-cama-dibujo-original.jpg",
         "destacada": false,
-        "descripcion": "Dibujo sobre papel · 53 × 65 cm"
+        "descripcion": "Dibujo sobre papel · 53 × 65 cm",
+        "texto": "\"Desnudo sobre Cama\" es una obra que capta la esencia de la figura humana en un momento de intimidad y vulnerabilidad. Este dibujo original destaca por su delicadeza y capacidad para transmitir emociones a través de la representación del cuerpo desnudo. La técnica utilizada en el dibujo sobre papel permite un tratamiento cuidadoso de las líneas y las sombras, creando profundidad y realismo en la figura. Los matices de gris y negro pueden resaltar las curvas y la forma del cuerpo, mientras que la luz y la sombra aportan un efecto tridimensional que invita al espectador a explorar los detalles de la obra. La composición puede mostrar al sujeto en una postura que sugiere relajación y tranquilidad, quizás con una expresión que refleja un estado de paz. El entorno de la cama puede ser minimalista, lo que permite que la atención se centre en la figura principal y su conexión con el espacio. La atmósfera del dibujo transmite una sensación de calma y contemplación, invitando al espectador a reflexionar sobre la belleza de la forma humana y la intimidad de los momentos cotidianos. \"Desnudo sobre Cama\" no solo es una representación visual de la figura desnuda, sino también una exploración de la vulnerabilidad, la conexión con el cuerpo y la expresión artística en su forma más pura."
     },
     {
         "id": "1058-desnudo-sobre-cama",
@@ -813,7 +871,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1058-desnudo-sobre-cama.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón · 77 × 104 cm",
+        "texto": "\"Desnudo sobre Cama\" es una obra que capta la esencia de la figura humana en un momento de intimidad y vulnerabilidad. Este dibujo original destaca por su delicadeza y capacidad para transmitir emociones a través de la representación del cuerpo desnudo. La técnica utilizada en el dibujo sobre papel permite un tratamiento cuidadoso de las líneas y las sombras, creando profundidad y realismo en la figura. Los matices de gris y negro pueden resaltar las curvas y la forma del cuerpo, mientras que la luz y la sombra aportan un efecto tridimensional que invita al espectador a explorar los detalles de la obra. La composición puede mostrar al sujeto en una postura que sugiere relajación y tranquilidad, quizás con una expresión que refleja un estado de paz. El entorno de la cama puede ser minimalista, lo que permite que la atención se centre en la figura principal y su conexión con el espacio. La atmósfera del dibujo transmite una sensación de calma y contemplación, invitando al espectador a reflexionar sobre la belleza de la forma humana y la intimidad de los momentos cotidianos. \"Desnudo sobre Cama\" no solo es una representación visual de la figura desnuda, sino también una exploración de la vulnerabilidad, la conexión con el cuerpo y la expresión artística en su forma más pura."
     },
     {
         "id": "1059-mujer-con-cartera",
@@ -825,7 +884,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1059-mujer-con-cartera.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela · 80 × 60 cm",
+        "texto": "\"Mujer con Cartera\" es una obra que captura la esencia de la figura femenina en un momento de sofisticación y elegancia. Esta pintura en óleo sobre tela resalta por su uso vibrante del color y la atención al detalle, creando una representación visual que evoca tanto la belleza como la fuerza de la mujer. La técnica del óleo permite una rica y profunda aplicación de color, donde los tonos pueden variar desde los más sutiles y suaves hasta los más intensos y vibrantes. Esta variedad en la paleta de colores no solo da vida a la figura, sino que también establece una atmósfera que invita a la contemplación. La composición puede mostrar a la mujer sosteniendo una cartera, simbolizando no solo un accesorio de moda, sino también una representación de su autonomía y estilo personal. La postura y la expresión de la figura pueden reflejar confianza y elegancia, mientras que los detalles del fondo pueden complementar la escena, creando un contexto que refuerza el tema de la obra. La atmósfera de \"Mujer con Cartera\" transmite una sensación de modernidad y empoderamiento, animando al espectador a reflexionar sobre la identidad y la individualidad en el contexto contemporáneo. Esta obra no solo es una representación visual de una figura femenina, sino también una celebración de la feminidad, la moda y la expresión personal a través del arte."
     },
     {
         "id": "1060-caribe",
@@ -837,7 +897,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1060-caribe.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Caribe\" es una obra vibrante que captura la esencia y la belleza tropical de esta región paradisíaca. La pintura presenta un paisaje costero donde el mar turquesa se encuentra con la arena blanca y suave, evocando la calidez y el esplendor de un día soleado en el Caribe. La técnica de espátula utilizada en esta obra permite una aplicación texturizada del óleo, que realza la luz y el movimiento de las olas, así como la densidad de la vegetación exuberante que rodea la escena. La paleta de colores es rica y luminosa, con intensos azules y verdes que reflejan las aguas cristalinas, complementados por cálidos tonos dorados y naranjas que sugieren la luz del sol y la calidez de la arena. En la composición, se pueden observar detalles como palmeras que se balancean suavemente con la brisa, y tal vez algunas figuras disfrutando del entorno, añadiendo vida y dinamismo a la escena. Los elementos de fondo, como un cielo despejado o nubes esponjosas, contribuyen a crear una atmósfera de tranquilidad y felicidad. La atmósfera de la obra transmite una sensación de escapismo y alegría, invitando al espectador a imaginar momentos de relajación, diversión y conexión con la naturaleza en un entorno tropical. \"Caribe\" no solo es una representación visual de un destino turístico, sino que también celebra la rica cultura y la belleza natural que caracterizan a esta región del mundo."
     },
     {
         "id": "1061-chaise-longe-au-lac",
@@ -849,7 +910,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1061-chaise-longe-au-lac.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela · 70 × 100 cm",
+        "texto": "\"Chaise Longue au Lac\" es una obra que evoca la serenidad y el placer de disfrutar de un día relajante junto a un lago. La pintura presenta una escena tranquila donde una chaise longue se encuentra estratégicamente ubicada, ofreciendo una vista panorámica del entorno acuático y natural. La técnica utilizada en esta obra permite una rica aplicación del óleo, que resalta los colores vibrantes y la luz que juega sobre la superficie del agua. La paleta de colores es suave y armoniosa, con tonos de azul que reflejan el lago, combinados con verdes y marrones que representan la vegetación circundante y la calidez de la chaise longue. En la composición, se pueden observar detalles como el suave movimiento del agua, las sombras de los árboles que se asoman en la orilla, y quizás algunos elementos decorativos que adornan la chaise longue, como cojines o una bebida refrescante. Estos elementos añaden un toque de confort y sofisticación al ambiente. La atmósfera de la obra transmite una sensación de paz y relajación, invitando al espectador a imaginar momentos de descanso y contemplación en un entorno natural. \"Chaise Longue au Lac\" no solo es una representación visual de un momento de ocio, sino que también celebra la belleza de la naturaleza y la importancia de tomarse un tiempo para uno mismo en un mundo ajetreado"
     },
     {
         "id": "1062-valle-de-la-luna-atacama",
@@ -861,7 +923,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1062-valle-de-la-luna-atacama.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Valle de la Luna Atacama\" es una obra que captura la impresionante belleza y la singularidad del desierto chileno, específicamente el icónico Valle de la Luna. La pintura presenta un paisaje árido y surrealista, donde las formaciones rocosas y las dunas se combinan para crear un entorno casi lunar. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que realza las formas y sombras de las rocas, así como el juego de luces y sombras que se produce en esta vasta extensión. La paleta de colores es cálida y terrosa, con tonos de marrón, naranja y dorado que evocan la calidez del sol del desierto, complementados por sutiles azules y violetas que sugieren la profundidad del cielo. En la composición, se pueden observar detalles como las ondulaciones del terreno y las estructuras naturales que parecen esculpidas por el viento y el tiempo, creando un contraste fascinante entre la tierra y el cielo. La atmósfera de la obra transmite una sensación de misterio y asombro, invitando al espectador a reflexionar sobre la belleza inhóspita y la majestuosidad del paisaje desértico. \"Valle de la Luna Atacama\" no solo es una representación visual de un lugar extraordinario, sino que también celebra la diversidad natural de Chile y la conexión profunda que se puede experimentar en medio de un entorno tan único."
     },
     {
         "id": "1063-mercado",
@@ -873,7 +936,8 @@ const OBRAS = [
         "medidas": "70 × 92 cm",
         "imagen": "assets/obras/1063-mercado.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 70 × 92 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 70 × 92 cm",
+        "texto": "\"Mercado\" es una obra vibrante que captura la esencia de la vida cotidiana en un entorno de comercio. La pintura presenta una escena bulliciosa y colorida en un mercado, donde se entrelazan los aromas, colores y sonidos de un lugar lleno de energía y actividad. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, que aporta una sensación de dinamismo y movimiento a la escena. La paleta de colores es rica y variada, con tonos cálidos y frescos que representan los productos frescos, como frutas y verduras, junto a la vestimenta de los vendedores y compradores. En la composición, se pueden observar detalles como los puestos de venta repletos de productos, las expresiones de las personas que interactúan y el ambiente animado que caracteriza a un mercado. Los elementos de fondo, como las sombras de los edificios y la iluminación que filtra entre los puestos, añaden profundidad y contexto a la escena. La atmósfera de la obra transmite una sensación de comunidad y conexión, evocando la importancia de estos espacios en la vida diaria y en la cultura local. \"Mercado\" no solo es una representación visual de un lugar de intercambio, sino que también celebra la riqueza de las interacciones humanas y la diversidad de la vida."
     },
     {
         "id": "1064-mujer-desnuda-3-dibujo-original",
@@ -885,7 +949,8 @@ const OBRAS = [
         "medidas": "70 × 53 cm",
         "imagen": "assets/obras/1064-mujer-desnuda-3-dibujo-original.jpg",
         "destacada": false,
-        "descripcion": "Dibujo sobre papel · 70 × 53 cm"
+        "descripcion": "Dibujo sobre papel · 70 × 53 cm",
+        "texto": "\"Mujer Desnuda 3\" es una obra que captura la belleza y la vulnerabilidad de la figura femenina a través de un dibujo original sobre papel. Esta pieza destaca por su enfoque en la forma humana y la delicadeza de la representación, ofreciendo una interpretación íntima y reflexiva. La técnica utilizada en el dibujo permite una exploración detallada de las líneas y las sombras, creando un efecto visual que resalta las curvas y la postura del cuerpo desnudo. Los contrastes entre las luces y las sombras pueden aportar profundidad y realismo, invitando al espectador a apreciar la belleza natural de la figura. La composición puede mostrar a la mujer en una postura que sugiere calma y contemplación, quizás en un momento de introspección. La simplicidad del fondo permite que la atención se centre en la figura, lo que crea una conexión emocional entre la obra y el espectador. La atmósfera del dibujo transmite una sensación de serenidad y vulnerabilidad, animando a la reflexión sobre la intimidad y la conexión con el cuerpo. \"Mujer Desnuda 3\" no solo es una representación visual de la figura desnuda, sino también una exploración de la feminidad, la vulnerabilidad y la expresión artística en su forma más pura."
     },
     {
         "id": "1065-mujer-desnuda",
@@ -897,7 +962,8 @@ const OBRAS = [
         "medidas": "104 × 70 cm",
         "imagen": "assets/obras/1065-mujer-desnuda.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 104 × 70 cm"
+        "descripcion": "Óleo sobre cartón · 104 × 70 cm",
+        "texto": "\"Mujer Desnuda 3\" es una obra que explora la belleza y la complejidad de la figura femenina a través de una representación en óleo sobre cartón. Esta pintura destaca por su uso expresivo del color y la forma, ofreciendo una visión íntima y contemplativa de la figura desnuda. La técnica del óleo permite una rica y variada aplicación de color, donde se pueden observar matices que van desde los suaves y sutiles hasta los más intensos y dramáticos. Esta paleta de colores no solo da vida a la figura, sino que también crea una atmósfera que invita a la reflexión sobre la feminidad y la vulnerabilidad. La composición puede mostrar a la mujer en una postura que transmite calma y serenidad, con un enfoque en los detalles del cuerpo que resaltan su forma y belleza. El uso de luces y sombras aporta profundidad, sugiriendo volumen y movimiento, mientras que el fondo puede ser sutil para no distraer del tema central. La atmósfera de \"Mujer Desnuda 3\" transmite una sensación de intimidad y reflexión, animando al espectador a considerar la conexión entre el cuerpo y la identidad. Esta obra no solo es una representación visual de la figura desnuda, sino también una exploración de la vulnerabilidad, la autoaceptación y la expresión artística en su forma más pura"
     },
     {
         "id": "1066-velero-perdido-en-lago",
@@ -909,7 +975,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1066-velero-perdido-en-lago.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "\"Velero Perdido en Lago\" es una obra que captura la esencia de la soledad y la serenidad en un entorno natural. La pintura presenta un velero solitario que navega en las tranquilas aguas de un lago, rodeado de un paisaje que evoca la paz y la belleza de la naturaleza. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, aportando un efecto dinámico a las olas suaves y a la superficie del agua. La paleta de colores es suave y armónica, con tonos de azul que reflejan la profundidad del lago, complementados por verdes y grises que representan la vegetación y las montañas que rodean el paisaje. En la composición, el velero se destaca como un símbolo de aventura y exploración, mientras que la calma del entorno invita a la reflexión y la contemplación. Los detalles de la escena, como el reflejo del barco en el agua y la suave brisa que acaricia la superficie, añaden profundidad y un sentido de movimiento. La atmósfera de la obra transmite una sensación de tranquilidad y conexión con la naturaleza, recordando la belleza de los momentos de introspección y la importancia de encontrar paz en la soledad. \"Velero Perdido en Lago\" no solo es una representación visual de un instante efímero, sino que también evoca la búsqueda de la serenidad y la conexión con el entorno natural."
     },
     {
         "id": "1067-mujeres-en-playa",
@@ -921,7 +988,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1067-mujeres-en-playa.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela · 80 × 60 cm",
+        "texto": "\"Dos Mujeres en Playa\" es una obra vibrante que captura la esencia de la vida costera y la conexión entre dos figuras femeninas en un entorno natural. Esta pintura en óleo sobre tela destaca por su uso dinámico del color y la luz, creando una atmósfera alegre y relajante. La técnica del óleo permite una rica aplicación de color, donde los tonos cálidos del sol se combinan con los frescos matices del mar y la arena. La paleta de colores puede incluir azules brillantes, amarillos radiantes y tonos terracota, evocando la calidez de un día de verano en la playa. La composición muestra a las dos mujeres en diferentes posturas, quizás disfrutando del sol, conversando o jugando, lo que sugiere una conexión íntima y amigable. Los detalles de sus trajes de baño y las texturas de la arena y el agua añaden profundidad y realismo a la escena. La atmósfera de \"Dos Mujeres en Playa\" transmite una sensación de libertad y felicidad, invitando al espectador a sumergirse en la tranquilidad y el disfrute de la naturaleza. Esta obra no solo es una representación visual de un momento en la playa, sino también una celebración de la amistad, la alegría y la belleza de los momentos compartidos en el entorno natural."
     },
     {
         "id": "1068-playa-n-jamaica-corregida",
@@ -933,7 +1001,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1068-playa-n-jamaica-corregida.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Playa N Jamaica\" es una obra que evoca la vibrante belleza de un paraíso caribeño. La pintura presenta una escena donde las aguas cristalinas del mar se encuentran con la suave arena blanca, creando un entorno ideal para la relajación y el disfrute del sol. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, lo que aporta un efecto dinámico tanto a las olas como a la arena. La paleta de colores es luminosa y tropical, con intensos tonos de azul y verde que representan el agua, complementados por cálidos dorados y beige que destacan la arena brillante y los elementos naturales que adornan la playa. En la composición, se pueden observar detalles como palmeras que se mecen suavemente con la brisa, así como las suaves olas que rompen en la orilla, creando un ambiente de paz y tranquilidad. El cielo puede estar adornado con nubes esponjosas o un sol radiante, añadiendo un toque de luminosidad y serenidad a la escena. La atmósfera de la obra transmite una sensación de escape y felicidad, invitando al espectador a imaginar momentos de descanso y diversión bajo el sol jamaiquino. \"Playa N Jamaica\" no solo es una representación visual de un destino idílico, sino que también celebra la belleza de la naturaleza y la alegría que se encuentra en la experiencia de los entornos costeros."
     },
     {
         "id": "1069-caburgua-con-ninos",
@@ -945,7 +1014,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1069-caburgua-con-ninos.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
+        "texto": "\"Caburgua con Niños\" es una obra que captura la alegría y la inocencia de la infancia en un entorno natural maravilloso. La pintura representa a un grupo de niños jugando en las orillas del Lago Caburgua, rodeados de la belleza escénica que caracteriza a este emblemático lugar chileno. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, que aporta vida y dinamismo a la escena. La paleta de colores es alegre y vibrante, con tonos de azul que reflejan las aguas del lago, complementados por verdes y amarillos que representan la vegetación circundante y la energía de los niños. En la composición, se pueden observar a los niños interactuando, riendo y disfrutando del agua, lo que evoca una sensación de libertad y felicidad. Los detalles de la escena, como las olas suaves que acarician la orilla y los elementos naturales que enmarcan el paisaje, añaden profundidad y autenticidad al cuadro. La atmósfera de la obra transmite una conexión especial entre la naturaleza y la infancia, recordando la importancia de jugar al aire libre y disfrutar de los momentos simples de la vida. \"Caburgua con Niños\" no solo es una representación visual de un momento de alegría, sino que también celebra la belleza de la naturaleza y la felicidad que se encuentra en la exploración y el juego."
     },
     {
         "id": "1070-puesta-de-sol-en-puertecito",
@@ -957,7 +1027,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1070-puesta-de-sol-en-puertecito.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "Puesta de Sol en Puertecito\" es una obra que captura la mágica transición del día a la noche en un entorno costero idílico. La pintura presenta una escena donde el sol se oculta lentamente en el horizonte, bañando el cielo y el mar en una paleta de colores cálidos y vibrantes. La técnica de espátula utilizada en esta obra permite una aplicación texturizada del óleo, creando un efecto dinámico que resalta los reflejos del sol sobre las aguas tranquilas. La paleta de colores es rica y profunda, con intensos tonos de naranja, rojo y amarillo que se entrelazan en el cielo, contrastando con los azules y verdes del océano que se extiende hacia el horizonte. Los detalles de la composición pueden incluir siluetas de embarcaciones en la distancia y la suavidad de las olas que acarician la orilla, añadiendo un sentido de calma y serenidad a la escena. La vegetación costera, con sus formas orgánicas, enmarca el paisaje, aportando un toque de vida y autenticidad. La atmósfera de la obra evoca una sensación de paz y contemplación, invitando al espectador a sumergirse en la experiencia de un atardecer en la naturaleza. \"Puesta de Sol en Puertecito\" no solo es una representación visual de un momento efímero, sino que también celebra la belleza del entorno natural y la importancia de apreciar los pequeños placeres que nos ofrece la vida."
     },
     {
         "id": "1071-nino-en-playa-bajo-sompra",
@@ -969,7 +1040,8 @@ const OBRAS = [
         "medidas": "52 × 35 cm",
         "imagen": "assets/obras/1071-nino-en-playa-bajo-sompra.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 52 × 35 cm"
+        "descripcion": "Óleo sobre cartón · 52 × 35 cm",
+        "texto": "\"Niño en Playa Bajo Sombra\" es una obra encantadora que captura un momento de tranquilidad y alegría infantil en un entorno costero. Esta pintura en óleo sobre cartón destaca por su uso delicado del color y la luz, creando una atmósfera serena y acogedora. La técnica del óleo permite una rica variedad de matices, donde los tonos suaves y cálidos evocan la calidez del sol filtrándose a través de las sombras. La paleta puede incluir azules del mar, amarillos del sol y verdes de la vegetación, que se combinan para crear un ambiente veraniego y alegre. La composición muestra al niño disfrutando de la playa, posiblemente sentado o jugando en la sombra, lo que sugiere un momento de descanso y diversión. Los detalles en la vestimenta del niño y los elementos del entorno, como la arena y las olas, añaden profundidad y realismo a la escena. La atmósfera de \"Niño en Playa Bajo Sombra\" transmite una sensación de inocencia y felicidad, invitando al espectador a recordar la simplicidad y la alegría de la infancia. Esta obra no solo es una representación visual de un momento en la playa, sino también una celebración de la conexión entre los niños y la naturaleza, así como de la magia de los días de verano."
     },
     {
         "id": "1072-nino-jugando-en-el-agua",
@@ -981,7 +1053,8 @@ const OBRAS = [
         "medidas": "52 × 35 cm",
         "imagen": "assets/obras/1072-nino-jugando-en-el-agua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 52 × 35 cm"
+        "descripcion": "Óleo sobre cartón · 52 × 35 cm",
+        "texto": "\"Niño Jugando en el Agua\" es una obra encantadora que captura la esencia de la alegría infantil en un entorno acuático. Esta pintura en óleo sobre cartón destaca por su vibrante uso del color y su habilidad para transmitir la frescura y la diversión de un día de juego en el agua. La técnica del óleo permite una rica mezcla de tonos que evocan la claridad y el movimiento del agua. Los azules y verdes del líquido se combinan con los colores brillantes de la vestimenta del niño, creando un contraste que resalta la energía y el dinamismo de la escena. La composición muestra al niño sumergido en el agua, posiblemente chapoteando o jugando con las olas. Su expresión de alegría y asombro ante el entorno natural sugiere un momento de pura felicidad y libertad. Los detalles, como las salpicaduras de agua y la luz reflejada, añaden una sensación de movimiento y vida a la obra. La atmósfera de \"Niño Jugando en el Agua\" transmite una sensación de inocencia y felicidad, invitando al espectador a recordar la simplicidad de los momentos de juego y exploración en la infancia. Esta obra no solo es una representación visual de un instante divertido, sino también una celebración de la conexión entre los niños y la naturaleza, así como de la belleza de los días de verano"
     },
     {
         "id": "1073-alimentndo-los-peces-en-cultivo-salmones-estero-tocoihue",
@@ -993,7 +1066,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1073-alimentndo-los-peces-en-cultivo-salmones-estero-tocoihue.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Alimentando los Peces en Cultivo Salmones Estero Tocoihue\" es una obra que captura la esencia de la acuicultura en un entorno natural vibrante. La pintura presenta una escena donde un trabajador se dedica a alimentar a los salmones en un cultivo, rodeado de aguas cristalinas que reflejan la belleza del paisaje circundante. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, que aporta vida y movimiento a las olas y a los peces que nadan en el estero. La paleta de colores es fresca y variada, con tonos de azul y verde que representan el agua, complementados por la calidez de los tonos terrosos que destacan la vegetación y las instalaciones del cultivo. En la composición, se puede observar el movimiento de los peces bajo la superficie, así como la interacción entre el hombre y la naturaleza, simbolizando la conexión entre la actividad humana y el cuidado del medio ambiente. El fondo puede incluir detalles de montañas y flora nativa que enmarcan la escena, aportando profundidad y un sentido de lugar. La atmósfera de la obra transmite una sensación de armonía y sostenibilidad, invitando al espectador a reflexionar sobre la importancia de la acuicultura responsable y la conservación de los ecosistemas acuáticos. \"Alimentando los Peces en Cultivo Salmones Estero Tocoihue\" no solo es una representación visual de una práctica esencial, sino que también evoca la belleza de la vida acuática y la necesidad de equilibrar el desarrollo humano con la preservación de la naturaleza."
     },
     {
         "id": "1074-playa-caribe-con-muelle",
@@ -1006,7 +1080,8 @@ const OBRAS = [
         "imagen": "assets/obras/1074-playa-caribe-con-muelle.jpg",
         "destacada": false,
         "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "”Playa Caribe con muelle” esta obra de Pollak representa una escena costera de atmósfera serena y luminosa, donde el muelle se proyecta horizontalmente sobre aguas calmas de tonalidades turquesa y celeste. En primer plano, la amplia extensión de arena clara acoge figuras humanas dispuestas con naturalidad: cuerpos en reposo y en tránsito que aportan escala y ritmo a la composición, subrayando la relación cotidiana entre el ser humano y el paisaje. El tratamiento con espátula genera superficies planas y texturas sutiles que simplifican las formas sin perder expresividad. Al fondo, la línea de edificaciones bajas, palmeras y construcciones costeras establece un horizonte estable, mientras una pequeña embarcación a vela introduce un acento dinámico y narrativo. La paleta cromática, dominada por tonos suaves y cálidos, transmite una sensación de calma, ocio y contemplación, evocando el tiempo suspendido de una jornada de playa en el Caribe."
     },
     {
         "id": "1075-ensenada-lago-caburgua",
@@ -1018,7 +1093,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1075-ensenada-lago-caburgua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Ensenada Lago Caburgua\" es una obra que refleja la tranquila belleza de este lago chileno, conocido por sus aguas cristalinas y paisajes deslumbrantes. La pintura presenta una escena serena, donde la ensenada se despliega en un entorno natural, rodeada de vegetación exuberante y montañas que se elevan majestuosamente en el horizonte. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, aportando profundidad y realismo a la superficie del agua y a los elementos del paisaje. La paleta de colores es fresca y variada, con tonos de azul y verde que representan las aguas del lago, complementados por cálidos matices terrosos y verdes que reflejan la vegetación circundante. En la composición, se pueden observar detalles como las suaves olas que acarician la orilla y la flora nativa que enmarca la ensenada, creando un ambiente de paz y tranquilidad. El fondo puede incluir un cielo despejado que añade luminosidad y un toque de calma a la escena, invitando al espectador a sumergirse en esta experiencia natural. La atmósfera de la obra transmite una sensación de conexión con la naturaleza y un llamado a la contemplación, recordando la importancia de preservar estos espacios naturales. \"Ensenada Lago Caburgua\" no solo es una representación visual de un paisaje hermoso, sino que también evoca la serenidad y la belleza que se encuentran en la naturaleza, invitando al espectador a disfrutar de la paz que ofrece este entorno"
     },
     {
         "id": "1076-mujer-de-espalda-en-la-playa",
@@ -1030,7 +1106,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1076-mujer-de-espalda-en-la-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón · 77 × 104 cm",
+        "texto": "\"Mujer de Espalda en la Playa\" es una obra que evoca la serenidad y la introspección en un entorno costero. Esta pintura en óleo sobre cartón destaca por su uso delicado del color y la luz, creando una atmósfera nostálgica y contemplativa. La técnica del óleo permite una rica y sutil aplicación de colores, donde los tonos cálidos del atardecer o del mediodía se combinan con los frescos matices del mar y la arena. Esta paleta de colores no solo da vida a la figura, sino que también establece un ambiente que invita a la reflexión. La composición muestra a la mujer de espaldas, contemplando el vasto paisaje del mar. Su postura sugiere una conexión profunda con el entorno, invitando al espectador a imaginar sus pensamientos y emociones en ese momento. Los detalles de su cabello movido por la brisa y la textura de la arena añaden realismo y profundidad a la escena. La atmósfera de \"Mujer de Espalda en la Playa\" transmite una sensación de paz y contemplación, animando al espectador a reflexionar sobre la belleza de la naturaleza y la soledad enriquecedora que a veces se encuentra en momentos de quietud. Esta obra no solo es una representación visual de una figura femenina, sino también una exploración de la conexión entre el ser humano y el entorno natural, así como de la belleza de los momentos de introspección"
     },
     {
         "id": "1077-angelmo",
@@ -1042,7 +1119,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1077-angelmo.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Angelmo 1\" es una obra que captura la esencia vibrante y colorida de este famoso mercado costero, conocido por su rica cultura y tradiciones. La pintura presenta una escena dinámica y llena de vida, donde se entrelazan elementos del entorno, como los puestos de venta, las embarcaciones y la actividad de los pescadores, creando un ambiente animado y acogedor. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, que da vida a los diversos colores y formas presentes en la escena. La paleta de colores es cálida y variada, con tonos de azul y verde que representan el mar, combinados con colores vibrantes de los productos frescos y las embarcaciones que adornan el lugar. Los detalles de la composición, como las olas suaves que besan la orilla y las siluetas de personas interactuando en el mercado, añaden un sentido de movimiento y energía. El fondo puede incluir un cielo despejado o con nubes que aportan profundidad y un toque de luminosidad a la escena."
     },
     {
         "id": "1078-renahue-caburgua-playa-con-botes",
@@ -1054,7 +1132,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1078-renahue-caburgua-playa-con-botes.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "“Renahue, Caburgua, playa con botes”, obra de Pollak retrata la quietud del borde lacustre de Renahue, en Caburgua, donde los botes descansan varados entre piedras claras y aguas intensamente azules. La composición se estructura en planos horizontales: el primer plano dominado por la materia espesa aplicada con espátula, que da cuerpo y peso a las rocas y al casco del bote; el plano medio del lago, sereno y profundo; y al fondo, la presencia maciza de la cordillera, tratada con tonalidades verdes y grises que sugieren distancia y silencio. El uso de la espátula enfatiza la textura del paisaje, transformando la superficie en un relieve que transmite la fuerza contenida de la naturaleza del sur de Chile. El contraste entre la geometría simple de los botes y la irregularidad orgánica del entorno genera un equilibrio entre lo humano y lo natural. La escena invita a una contemplación pausada, evocando la calma, el aislamiento y la belleza austera del lago Caburgua."
     },
     {
         "id": "1079-marea-baja-en-pargua",
@@ -1066,7 +1145,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1079-marea-baja-en-pargua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Marea Baja en Pargua\" es una obra que captura la belleza serena y única de un paisaje costero durante la marea baja. La pintura presenta una escena donde las aguas se retiran, revelando la arena y las rocas, creando un entorno lleno de texturas y matices que invitan a explorar la vida marina. La técnica de espátula utilizada en esta obra permite una aplicación rica y dinámica del óleo, generando texturas que representan la superficie del agua y las formaciones rocosas. La paleta de colores es variada, con tonos de azul y verde que reflejan la claridad del agua, complementados por cálidos matices terrosos que representan la arena y la vegetación costera. En la composición, se pueden observar detalles como conchas marinas y algas que emergen con la retirada del agua, añadiendo un toque de vida y autenticidad al paisaje. El fondo puede incluir un cielo despejado o con nubes suaves, creando una atmósfera de tranquilidad y contemplación. La atmósfera de la obra transmite una sensación de calma y conexión con la naturaleza, invitando al espectador a apreciar la belleza y la diversidad de los ecosistemas costeros. \"Marea Baja en Pargua\" no solo es una representación visual de un momento en la costa, sino que también evoca una apreciación por la fragilidad de estos espacios naturales y la importancia de protegerlos."
     },
     {
         "id": "1080-puesta-de-sol-en-puertecillo",
@@ -1078,7 +1158,8 @@ const OBRAS = [
         "medidas": "77 × 104 cm",
         "imagen": "assets/obras/1080-puesta-de-sol-en-puertecillo.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 77 × 104 cm",
+        "texto": "\"Puesta de Sol en Puertecito\" es una obra que captura la mágica transición del día a la noche en este hermoso rincón costero de Chile. La pintura presenta una escena donde el sol se despliega en un espectáculo de colores vibrantes, iluminando el horizonte y reflejándose sobre las aguas tranquilas del mar. La técnica de espátula utilizada en esta obra permite una aplicación expresiva y dinámica del óleo, creando texturas que evocan la luz y el movimiento del agua. La paleta de colores es rica y cálida, con tonos de naranja, amarillo y púrpura que se entrelazan en el cielo, mientras que los azules profundos del océano contrastan con las cálidas tonalidades del atardecer. El paisaje puede incluir siluetas de rocas y vegetación costera que enmarcan la escena, añadiendo un sentido de profundidad y contexto. La atmósfera de la pintura es envolvente, transmitiendo una sensación de paz y asombro ante la belleza natural que se despliega ante los ojos del espectador. La obra invita a la contemplación, evocando la tranquilidad de un momento en la naturaleza y la fugacidad de la luz del día. \"Puesta de Sol en Puertecillo\" no solo es una representación visual de un atardecer espectacular, sino que también celebra la conexión entre el ser humano y el entorno natural, recordando la importancia de apreciar los momentos simples y hermosos de la vida"
     },
     {
         "id": "1081-plantas-acuaticas",
@@ -1090,7 +1171,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1081-plantas-acuaticas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "Plantas Acuáticas\" es una obra que celebra la belleza y la diversidad del mundo subacuático. La pintura presenta una escena vibrante y dinámica, donde diversas plantas acuáticas emergen de las aguas tranquilas, creando un entorno lleno de vida y color. La técnica de espátula utilizada en rica y texturizada del óleo, que da vida a las formas y matices de las plantas. La paleta de colores es fresca y contrastante, con verdes intensos que representan la vegetación, complementados por azules y turquesas que reflejan la claridad y profundidad del agua. Estos colores se mezclan de manera armoniosa, ofreciendo una sensación de movimiento y fluidez. Las plantas, con sus formas variadas y dinámicas, se convierten en el punto focal de la composición, simbolizando la resiliencia de la vida en el agua. El fondo puede incluir sutiles destellos de luz que se filtran a través de la superficie, añadiendo un efecto etéreo que realza la belleza del entorno. La atmósfera de la obra transmite una sensación de calma y reflexión, invitando al espectador a contemplar la riqueza de los ecosistemas acuáticos y su importancia para el equilibrio de la naturaleza. \"Plantas Acuáticas\" no solo es una representación visual de un entorno natural, sino que también evoca una profunda apreciación por la vida que prospera en nuestros cuerpos de agua, recordando la necesidad de proteger y conservar estos valiosos hábitats."
     },
     {
         "id": "1082-bote-en-playa-caburgua",
@@ -1102,7 +1184,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1082-bote-en-playa-caburgua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Bote en Playa Caburgua\" es una obra que captura la esencia tranquila y pintoresca de esta hermosa playa chilena. La pintura presenta un bote anclado en la arena dorada, evocando la serenidad del entorno y la conexión del ser humano con la naturaleza. La técnica de espátula utilizada en esta obra permite una aplicación rica y texturizada del óleo, que da vida tanto al bote como a la superficie de la playa. La paleta de colores es cálida y vibrante, con tonos de azules que reflejan el cielo y el agua, complementados por dorados y marrones que representan la arena y el bote, creando un contraste visual atractivo. El bote, con sus formas suaves y colores llamativos, se convierte en el punto focal de la composición, simbolizando momentos de descanso y exploración. El fondo puede incluir detalles como la vegetación costera, montañas en la distancia y un cielo despejado que añade luminosidad y amplitud a la escena. La atmósfera de la obra transmite una sensación de paz y libertad, invitando al espectador a disfrutar de la belleza del paisaje y recordar la importancia de conectarse con la naturaleza. \"Bote en Playa Caburgua\" no solo es una representación visual de un lugar especial, sino que también evoca sentimientos de nostalgia y el deseo de escapar a la tranquilidad de la playa."
     },
     {
         "id": "1083-desembocaduras-estero-renahue",
@@ -1114,7 +1197,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1083-desembocaduras-estero-renahue.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Desembocadura Estero Renahue\" es una obra que captura la belleza natural y la tranquilidad de esta desembocadura en un entorno sereno. La pintura presenta una escena donde el estero se encuentra con un cuerpo de agua más amplio, creando un paisaje que evoca la paz y la armonía de la naturaleza. La técnica de espátula utilizada en esta obra permite una aplicación expresiva del óleo, generando texturas que representan el suave movimiento del agua y la vegetación circundante. La paleta de colores es fresca y vibrante, con tonos de azul y verde que reflejan la calma del estero, complementados por cálidos matices terrosos que sugieren la tierra y la flora que rodea la escena. En la composición, se pueden observar detalles como juncos y plantas acuáticas que bordean la desembocadura, así como posiblemente algunos reflejos en el agua que añaden profundidad y dinamismo a la obra. El fondo puede incluir un cielo despejado o nublado, creando una atmósfera que invita a la contemplación y al disfrute del paisaje. La atmósfera de la obra transmite una sensación de serenidad y conexión con la naturaleza, invitando al espectador a apreciar la belleza de este rincón especial. \"Desembocadura Estero Renahue\" no solo es una representación visual de un entorno natural, sino que también celebra la importancia de los ecosistemas acuáticos y la necesidad de preservarlos para las futuras generaciones."
     },
     {
         "id": "1084-retrato-mujer",
@@ -1126,7 +1210,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1084-retrato-mujer.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela · 60 × 40 cm",
+        "texto": "\"Retrato de Mujer\" es una obra que captura la esencia y la personalidad de su sujeto a través de una representación detallada y conmovedora. Esta pintura en óleo sobre tela destaca por su habilidad para transmitir emociones y matices a través del uso del color y la luz. La técnica del óleo permite una rica aplicación de colores, donde los tonos de la piel, el cabello y los ojos se combinan de manera armónica. La paleta puede incluir matices cálidos y fríos que realzan las características faciales y expresan una profunda humanidad en la figura retratada. La composición se centra en la mujer, cuya expresión puede transmitir una variedad de emociones, desde la serenidad hasta la introspección. Los detalles en su vestimenta y el fondo pueden aportar contexto y profundidad a la obra, sugiriendo una historia o una narrativa que invita al espectador a explorar. La atmósfera de \"Retrato de Mujer\" evoca una conexión íntima entre el espectador y el sujeto, invitando a la reflexión sobre la identidad y la representación en el arte. Esta obra no solo es una representación visual de una figura femenina, sino también una exploración de la individualidad, la belleza y la complejidad de la experiencia humana."
     },
     {
         "id": "1085-lago-caburgua-playa-renahue",
@@ -1138,7 +1223,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1085-lago-caburgua-playa-renahue.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Lago Caburgua, Playa Renahue\" es una obra que captura la serenidad y la belleza natural de este icónico lago chileno. La pintura presenta una escena idílica donde las aguas tranquilas del lago se encuentran con la suave arena de la playa, creando un ambiente perfecto para la relajación y la conexión con la naturaleza. La técnica de espátula utilizada en esta obra permite una aplicación vibrante y texturizada del óleo, que da vida a la superficie del agua y a la arena. La paleta de colores es rica y variada, con tonos de azul que reflejan la calma del lago, combinados con cálidos matices dorados y marrones que representan la playa y la vegetación circundante. En la composición, se pueden apreciar elementos como árboles frondosos y montañas en el fondo que enmarcan el paisaje, añadiendo profundidad y un sentido de lugar. Quizás algunas figuras disfrutando del día se asomen a la orilla, creando un sentido de vida y actividad en la escena. La atmósfera de la obra transmite una sensación de paz y felicidad, invitando al espectador a sumergirse en la tranquilidad del entorno. \"Lago Caburgua, Playa Renahue\" no solo es una representación visual de un hermoso destino natural, sino que también evoca recuerdos de escapadas y momentos de conexión con la naturaleza, recordando la importancia de disfrutar y preservar estos espacios."
     },
     {
         "id": "1086-saltos-del-petrohue",
@@ -1150,7 +1236,8 @@ const OBRAS = [
         "medidas": "120 × 150 cm",
         "imagen": "assets/obras/1086-saltos-del-petrohue.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm",
+        "texto": "\"Saltos del Petrohué\" es una obra que captura la majestuosidad y la fuerza de esta impresionante cascada ubicada en el sur de Chile. La pintura presenta una vista panorámica de los saltos de agua que caen con vigor, rodeados de un entorno natural exuberante que resalta la belleza del paisaje. La técnica de espátula utilizada en esta obra permite una aplicación dinámica del óleo, creando texturas que reflejan el movimiento del agua y la rugosidad de las rocas. La paleta de colores es rica y variada, con tonos de azul y blanco que representan la espuma del agua, complementados por verdes intensos de la vegetación circundante y grises oscuros de las rocas, creando un contraste visual impactante. Los saltos de agua se convierten en el foco de la composición, simbolizando la fuerza de la naturaleza y su belleza inigualable. El fondo puede incluir detalles del paisaje, como árboles altos y montañas que enmarcan la escena, añadiendo profundidad y contexto al entorno. La atmósfera de la obra transmite una sensación de asombro y respeto por la naturaleza, invitando al espectador a contemplar la majestuosidad de los Saltos del Petrohué. Esta obra no solo es una representación visual de un fenómeno natural"
     },
     {
         "id": "1087-plantas-en-el-agua",
@@ -1162,7 +1249,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1087-plantas-en-el-agua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Plantas en el Agua 2\" es una obra que celebra la belleza y la diversidad del ecosistema acuático. La pintura presenta una escena donde las plantas acuáticas emergen delicadamente de las aguas tranquilas, creando un espectáculo visual que evoca la calma y la armonía de la naturaleza. La técnica de espátula utilizada en esta obra permite una aplicación rica y expresiva del óleo, creando texturas que dan vida a las hojas y tallos, así como al reflejo del agua. La paleta de colores es fresca y vibrante, con tonos de verde que predominan, complementados por matices azules y turquesas que reflejan la profundidad y la claridad del agua. Las plantas, con sus formas variadas y dinámicas, se convierten en el foco de la composición, simbolizando la resiliencia y la belleza del mundo natural. El fondo puede incluir destellos de luz que se filtran a través de la superficie del agua, creando un efecto luminoso que resalta la vitalidad del ambiente acuático. La atmósfera de la obra transmite una sensación de tranquilidad y contemplación, invitando al espectador a sumergirse en la serenidad del paisaje. \"Plantas en el Agua 2\" no solo es una representación visual de un entorno natural, sino que también evoca reflexiones sobre la importancia de los ecosistemas acuáticos y la necesidad de preservarlos para el bienestar de nuestro planeta."
     },
     {
         "id": "1088-retrato-de-mujer",
@@ -1174,7 +1262,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1088-retrato-de-mujer.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela · 60 × 40 cm",
+        "texto": "\"Retrato de Mujer 2\" es una obra que captura la esencia única de su sujeto a través de un retrato íntimo y expresivo. Esta pintura en óleo sobre tela se distingue por su habilidad para comunicar emociones y matices a través de una rica paleta de colores y una cuidadosa atención al detalle. La técnica del óleo permite una fusión suave de tonos que realzan las características faciales y la expresión de la mujer retratada. La paleta puede incluir colores cálidos y fríos, que no solo dan vida a la figura, sino que también crean una atmósfera evocadora que invita al espectador a conectarse con la obra. La composición se centra en la mujer, cuyas expresiones y posturas pueden reflejar una variedad de emociones, desde la contemplación hasta la confianza. Los detalles en su cabello, vestimenta y fondo añaden profundidad y contexto, sugiriendo una narrativa personal que invita a la interpretación. La atmósfera de \"Retrato de Mujer 2\" evoca una conexión profunda entre el espectador y el sujeto, invitando a reflexionar sobre la identidad, la feminidad y la complejidad de la experiencia humana. Esta obra no solo es un retrato visual de una figura femenina, sino también una exploración de la belleza, la individualidad y la fuerza que reside en cada mujer"
     },
     {
         "id": "1089-familiaa-en-la-playa",
@@ -1186,7 +1275,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1089-familiaa-en-la-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela · 70 × 100 cm",
+        "texto": "\"Familia en la Playa\" es una obra que captura la calidez y la alegría de un momento familiar compartido en un entorno costero. Esta pintura en óleo sobre tela destaca por su uso vibrante del color y la habilidad para transmitir la felicidad y la conexión entre los miembros de la familia. La técnica del óleo permite una rica y variada aplicación de colores, donde los tonos brillantes del sol, el mar y la arena se combinan para crear una atmósfera alegre y veraniega. La paleta de colores puede incluir azules intensos, amarillos radiantes y cálidos terracotas, evocando la energía y la vitalidad de un día en la playa. La composición muestra a la familia interactuando, ya sea jugando en la arena, nadando en el mar o simplemente disfrutando de la compañía unos de otros. Las expresiones de alegría y diversión en sus rostros transmiten un sentido de unidad y amor, invitando al espectador a compartir en su felicidad. La atmósfera de \"Familia en la Playa\" evoca una sensación de nostalgia y alegría, recordando momentos de conexión y diversión en el verano. Esta obra no solo es una representación visual de un día en la playa, sino también una celebración de la familia, la alegría de estar juntos y la belleza de crear recuerdos en la naturaleza."
     },
     {
         "id": "1090-retrato-xs",
@@ -1198,7 +1288,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1090-retrato-xs.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela · 70 × 50 cm",
+        "texto": "\"Retrato de Mujer 2.1\" es una obra que captura la esencia y la singularidad de su sujeto a través de un retrato íntimo y cautivador. Esta pintura en óleo sobre tela se caracteriza por su atención meticulosa a los detalles y su capacidad para transmitir emociones complejas. La técnica del óleo permite una rica y variada gama de colores, donde los tonos de la piel, el cabello y los ojos se mezclan de manera armoniosa. La paleta puede incluir matices cálidos y fríos que realzan la belleza del rostro de la mujer, creando una atmósfera que resalta su carácter y profundidad. La composición se centra en la mujer, cuya expresión puede reflejar una mezcla de introspección y fuerza. Los detalles en su mirada y en el fondo pueden aportar contexto y significado, sugiriendo una historia personal y emocional que invita al espectador a explorar. La atmósfera de \"Retrato de Mujer 2.1\" evoca una conexión íntima entre el espectador y el sujeto, invitando a reflexionar sobre la identidad y la experiencia femenina. Esta obra no solo es una representación visual de una figura femenina, sino también una exploración de la belleza, la resiliencia y la complejidad de la vida de cada mujer."
     },
     {
         "id": "1091-rio-puelo",
@@ -1210,7 +1301,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1091-rio-puelo.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Río Puelo\" es una obra que captura la majestuosidad y la serenidad de este hermoso río chileno. La pintura presenta una vista panorámica donde las aguas cristalinas del río fluyen suavemente entre un paisaje exuberante, evocando la belleza natural y la calma del entorno. La técnica de espátula utilizada en esta obra permite una aplicación vibrante del óleo, creando texturas que representan el movimiento del agua y la vegetación circundante. La paleta de colores es rica y variada, con tonos de azul y verde que reflejan la pureza del agua y la frescura de la vegetación, complementados por cálidos matices terrosos que sugieren la tierra y las rocas que enmarcan el río. El paisaje puede incluir elementos como árboles imponentes, montañas en el horizonte y tal vez algunas flores silvestres que añaden un toque de color y vida a la escena. El fondo se puede ver bañado por la luz del sol, creando un efecto luminoso que resalta la belleza del entorno natural. La atmósfera de la obra transmite una sensación de paz y conexión con la naturaleza, invitando al espectador a sumergirse en la tranquilidad del paisaje. \"Río Puelo\" no solo es una representación visual de un rincón especial de la naturaleza, sino que también evoca sentimientos de nostalgia y admiración, recordando la importancia de preservar estos espacios naturales para las futuras generaciones."
     },
     {
         "id": "1092-la-asistente-de-vuelo",
@@ -1222,7 +1314,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1092-la-asistente-de-vuelo.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
+        "texto": "\"La Asistente de Vuelo Copa 1\" es una obra que captura la esencia de la elegancia y el profesionalismo en el ámbito de la aviación. Esta pintura, realizada con la técnica de espátula, destaca por su textura dinámica y su manera única de aplicar el óleo, lo que aporta un efecto tridimensional y vibrante a la obra. La técnica de espátula permite una rica y variada aplicación de colores, creando un juego de luces y sombras que acentúa los detalles del uniforme de la asistente de vuelo. Los colores, que pueden incluir tonos azules, blancos y otros matices que evocan el cielo y la modernidad, se combinan para transmitir una sensación de frescura y profesionalismo. La composición se centra en la asistente de vuelo, quien es retratada con una postura que irradia confianza y amabilidad. Su expresión puede reflejar la dedicación y el cuidado que caracteriza a quienes trabajan en el servicio aéreo. Los detalles en su uniforme, junto con el fondo que sugiere el ambiente de un avión, invitan al espectador a imaginar la experiencia de volar y la importancia del servicio al cliente. La atmósfera de \"La Asistente de Vuelo Copa 1\" evoca un sentido de aventura y conexión global, recordando la labor esencial de quienes hacen posible que los viajes sean seguros y agradables. Esta obra no solo es una representación visual de una figura en el mundo de la aviación, sino también una celebración del compromiso y la dedicación de los profesionales que operan en este entorno."
     },
     {
         "id": "1093-botes-en-calbuco-con-marea-baja",
@@ -1234,7 +1327,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1093-botes-en-calbuco-con-marea-baja.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Botes en Calbuco en Marea Baja\" es una obra que captura la serenidad y la belleza del paisaje costero durante una marea baja. La pintura presenta una escena encantadora donde los botes quedan anclados en la arena expuesta, evocando la tranquilidad y el encanto de la vida marina en esta pintoresca localidad. La técnica de espátula utilizada en esta obra aporta una textura rica y dinámica, ideal para representar tanto el agua como la arena. La paleta de colores incluye tonos suaves de azul y verde que reflejan la calma del agua, junto con cálidos matices dorados y marrones que representan la arena y los botes, creando un contraste atractivo y armonioso. Los botes, dispuestos en diferentes posiciones, se convierten en el foco de la composición, simbolizando la vida cotidiana de la comunidad local y su conexión con el mar. La marea baja revela detalles del fondo marino y la arena, añadiendo un sentido de profundidad y contexto a la escena. El fondo puede incluir elementos del paisaje que rodean Calbuco, como montañas o vegetación, que enriquecen la narrativa visual y aportan una sensación de lugar. La atmósfera de la obra evoca una sensación de paz y reflexión, invitando al espectador a disfrutar de la belleza del momento y la simplicidad de la vida junto al agua. \"Botes en Calbuco en Marea Baja\" no solo es una representación visual de un instante en el tiempo, sino que también celebra la conexión entre la comunidad y su entorno natural, recordando la importancia de preservar estos paisajes costeros."
     },
     {
         "id": "1094-puerto-plata-rd",
@@ -1282,7 +1376,8 @@ const OBRAS = [
         "medidas": "33 × 22 cm",
         "imagen": "assets/obras/1097-asistente-vuelo-copa.jpg",
         "destacada": false,
-        "descripcion": "Acuarela · 33 × 22 cm"
+        "descripcion": "Acuarela · 33 × 22 cm",
+        "texto": "\"Asistente de Vuelo Copa 2\" es una obra que captura la gracia y la profesionalidad de una asistente de vuelo en un formato delicado y ligero. Esta pintura en acuarela se distingue por su fluidez y transparencia, características propias de esta técnica que permiten una representación suave y etérea del sujeto. La paleta de colores en acuarela puede incluir tonos frescos y vibrantes que reflejan el ambiente del cielo y la modernidad de la aviación. Los matices sutiles se mezclan para crear un efecto visual que evoca la ligereza y la movilidad asociadas con el vuelo. La composición se centra en la asistente de vuelo, quien es retratada con una expresión que puede transmitir amabilidad y profesionalismo. Los detalles de su uniforme y su postura sugieren un compromiso con el servicio al cliente, mientras que el uso de la acuarela da una sensación de calidez y accesibilidad. La atmósfera de \"Asistente de Vuelo Copa 2\" evoca un sentido de aventura y conexión, recordando la importancia de la atención y el cuidado en el viaje aéreo. Esta obra no solo es una representación visual de una figura en el mundo de la aviación, sino también una celebración del papel fundamental que juegan estos profesionales en la experiencia de volar."
     },
     {
         "id": "1097-asistente-vuelo-copa-2",
@@ -1294,7 +1389,8 @@ const OBRAS = [
         "medidas": "33 × 22 cm",
         "imagen": "assets/obras/1097-asistente-vuelo-copa-2.jpg",
         "destacada": false,
-        "descripcion": "Acuarela · 33 × 22 cm"
+        "descripcion": "Acuarela · 33 × 22 cm",
+        "texto": "\"Asistente de Vuelo Copa 2\" es una obra que captura la gracia y la profesionalidad de una asistente de vuelo en un formato delicado y ligero. Esta pintura en acuarela se distingue por su fluidez y transparencia, características propias de esta técnica que permiten una representación suave y etérea del sujeto. La paleta de colores en acuarela puede incluir tonos frescos y vibrantes que reflejan el ambiente del cielo y la modernidad de la aviación. Los matices sutiles se mezclan para crear un efecto visual que evoca la ligereza y la movilidad asociadas con el vuelo. La composición se centra en la asistente de vuelo, quien es retratada con una expresión que puede transmitir amabilidad y profesionalismo. Los detalles de su uniforme y su postura sugieren un compromiso con el servicio al cliente, mientras que el uso de la acuarela da una sensación de calidez y accesibilidad. La atmósfera de \"Asistente de Vuelo Copa 2\" evoca un sentido de aventura y conexión, recordando la importancia de la atención y el cuidado en el viaje aéreo. Esta obra no solo es una representación visual de una figura en el mundo de la aviación, sino también una celebración del papel fundamental que juegan estos profesionales en la experiencia de volar."
     },
     {
         "id": "1098-playa-sousa-rd",
@@ -1306,7 +1402,8 @@ const OBRAS = [
         "medidas": "24 × 33 cm",
         "imagen": "assets/obras/1098-playa-sousa-rd.jpg",
         "destacada": false,
-        "descripcion": "Acuarela · 24 × 33 cm"
+        "descripcion": "Acuarela · 24 × 33 cm",
+        "texto": "1098 Playa Sousa RD 2 2024 Acuarela"
     },
     {
         "id": "1099-velero-an-alta-mar-sousa-rd",
@@ -1318,7 +1415,8 @@ const OBRAS = [
         "medidas": "33 × 24 cm",
         "imagen": "assets/obras/1099-velero-an-alta-mar-sousa-rd.jpg",
         "destacada": false,
-        "descripcion": "Acuarela · 33 × 24 cm"
+        "descripcion": "Acuarela · 33 × 24 cm",
+        "texto": "1099 Velero an alta mar Sousa RD 2024 Acuarela"
     },
     {
         "id": "1100-mercado-santiago-de-los-caballeros",
@@ -1330,7 +1428,8 @@ const OBRAS = [
         "medidas": "24 × 33 cm",
         "imagen": "assets/obras/1100-mercado-santiago-de-los-caballeros.jpg",
         "destacada": false,
-        "descripcion": "Acuarela · 24 × 33 cm"
+        "descripcion": "Acuarela · 24 × 33 cm",
+        "texto": "1100 Mercado Santiago de los Caballeros Acuarela"
     },
     {
         "id": "1101-mercado-santiago-de-los-caballeros",
@@ -1378,7 +1477,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1104-mujer-en-el-mar.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Mujer en el Mar RD\" es una obra que captura la belleza y la libertad de una mujer en un entorno marino, evocando sensaciones de tranquilidad y conexión con la naturaleza. Utilizando la técnica de espátula, esta pintura en óleo sobre tela se distingue por su textura rica y expresiva, que aporta un dinamismo visual único. La técnica de espátula permite una aplicación audaz y enérgica del color, creando un juego de luces y sombras que resalta la figura de la mujer y el movimiento del agua. La paleta de colores puede incluir vibrantes azules, verdes y tonos cálidos que reflejan la luminosidad del mar y el cielo, evocando una atmósfera tropical y relajante. La composición se centra en la mujer, quien puede ser retratada en una pose que transmite libertad y serenidad, disfrutando del momento en el agua. Su expresión y gestos sugieren una conexión íntima con el entorno, invitando al espectador a compartir en su experiencia de paz y alegría. La atmósfera de \"Mujer en el Mar RD\" evoca una celebración de la belleza natural y la importancia de la conexión humana con el entorno. Esta obra no solo es una representación visual de una figura femenina en el océano, sino también una exploración de la libertad, la belleza y la armonía que se pueden encontrar en la naturaleza."
     },
     {
         "id": "1106-mujer-neanderthal",
@@ -1390,7 +1490,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1106-mujer-neanderthal.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
+        "texto": "\"Mujer Neanderthal\" es una obra que explora la representación de una figura ancestral a través de una técnica contemporánea. Esta pintura en óleo sobre tela, realizada con la técnica de espátula, se distingue por su enfoque audaz y texturizado, que aporta una profundidad y riqueza visual a la obra. La técnica de espátula permite una aplicación vibrante del color, creando un efecto casi escultórico que resalta los rasgos y detalles de la figura de la mujer Neanderthal. La paleta de colores puede incluir tonos terrosos y naturales que evocan el entorno primordial en el que vivió, así como matices que sugieren fuerza y resiliencia. La composición se centra en la mujer, quien es retratada con una expresión que puede transmitir tanto la sabiduría como la conexión con su entorno. Sus rasgos y postura sugieren una historia de supervivencia y adaptación, invitando al espectador a reflexionar sobre las raíces de la humanidad y la evolución. La atmósfera de \"Mujer Neanderthal\" evoca una profunda conexión con la historia y la naturaleza, recordando la complejidad de la experiencia humana a lo largo del tiempo. Esta obra no solo es una representación visual de una figura ancestral, sino también una exploración de la identidad, la fuerza y la herencia que compartimos como especie."
     },
     {
         "id": "1107-playa-sur-sosua",
@@ -1402,7 +1503,8 @@ const OBRAS = [
         "medidas": "90 × 120 cm",
         "imagen": "assets/obras/1107-playa-sur-sosua.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 90 × 120 cm"
+        "descripcion": "Óleo sobre tela · 90 × 120 cm",
+        "texto": "\"Playa Sur Sosúa 2 RD\" es una obra vibrante que captura la esencia tropical y el ambiente relajado de esta famosa playa dominicana. La pintura presenta una escena idílica donde el mar cristalino se encuentra con la suave arena dorada, creando un paisaje que evoca la calidez y la belleza del Caribe. La técnica de óleo utilizada en esta obra resalta los colores vivos y vibrantes que caracterizan el entorno. La paleta incluye matices de azules y verdes que reflejan la profundidad del agua, complementados por los cálidos tonos amarillos y dorados de la arena, que invitan a los espectadores a experimentar la calidez del sol. En la composición, se pueden apreciar elementos como palmeras que se mecen suavemente con la brisa, y quizás algunas figuras disfrutando del día, que aportan un sentido de vida y dinamismo a la escena. El fondo puede mostrar un cielo despejado con nubes esponjosas, añadiendo un toque de frescura y amplitud al paisaje. La atmósfera de la obra transmite una sensación de paz y felicidad, invitando al espectador a sumergirse en la tranquilidad y el deleite de un día en la playa. \"Playa Sur Sosúa 2 RD\" no solo es una representación visual de un hermoso destino, sino que también evoca recuerdos de vacaciones y escapadas, recordando la importancia de disfrutar de los momentos de relax y conexión con la naturaleza"
     },
     {
         "id": "1108-asistente-vuelo-copa",
@@ -1414,7 +1516,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1108-asistente-vuelo-copa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
+        "texto": "\"Asistente Vuelo Copa 4\" es una obra que captura la esencia del servicio aéreo y la elegancia de una asistente de vuelo en un entorno contemporáneo. Esta pintura, realizada en óleo sobre tela con la técnica de espátula, se destaca por su textura rica y dinámica, que aporta un efecto visual envolvente y atractivo. La técnica de espátula permite una aplicación audaz de colores, creando un juego de luces y sombras que resalta tanto la figura de la asistente como el contexto en el que se encuentra. La paleta de colores puede incluir tonos brillantes que evocan la modernidad de la aviación, así como matices más suaves que sugieren la calidez y la atención al detalle del servicio al cliente. En la composición, la asistente de vuelo es retratada en una postura que irradia confianza y amabilidad. Su expresión puede reflejar la dedicación y el compromiso que caracteriza a estos profesionales, invitando al espectador a sentir la conexión humana que se establece durante el viaje. Los detalles de su uniforme y el fondo que sugiere el ambiente del avión refuerzan la narrativa de profesionalismo y servicio. La atmósfera de \"Asistente Vuelo Copa 4\" evoca un sentido de modernidad y conexión global, recordando la importancia del servicio en el mundo de la aviación. Esta obra no solo es una representación visual de una figura en este ámbito, sino también una celebración del papel fundamental que juegan los asistentes de vuelo en la experiencia de volar"
     },
     {
         "id": "1109-bahia-fishguard-uk",
@@ -1426,7 +1529,8 @@ const OBRAS = [
         "medidas": "90 × 150 cm",
         "imagen": "assets/obras/1109-bahia-fishguard-uk.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 150 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 150 cm",
+        "texto": "\"Bahía Fishguard UK\" es una obra impresionante que captura la majestuosidad de esta pintoresca bahía en el Reino Unido. La pintura ofrece una vista panorámica que revela la belleza del paisaje costero, con agua cristalina y un ambiente sereno que invita a la contemplación. La técnica de espátula utilizada en esta obra permite una aplicación expresiva del óleo, creando texturas ricas que dan vida a las olas y a la superficie del agua. La paleta de colores es vibrante, con tonos de azul profundo y verde que reflejan el mar, combinados con matices cálidos que sugieren la luz del sol al atardecer, iluminando la escena con un resplandor dorado. En el primer plano, las embarcaciones pueden estar ancladas en la bahía, añadiendo un sentido de actividad y conexión con la vida marina. El fondo puede incluir la costa escarpada de Fishguard, con su vegetación exuberante y formaciones rocosas que enmarcan el paisaje, enriqueciendo la narrativa visual del entorno. La atmósfera de la obra evoca una sensación de paz y asombro ante la belleza natural, invitando al espectador a sumergirse en la tranquilidad de la bahía. \"Bahía Fishguard UK\" no solo es una representación visual de un entorno costero, sino que también celebra la conexión del ser humano con la naturaleza, recordando la importancia de estos lugares en nuestra experiencia y cultura"
     },
     {
         "id": "1110-camarera-restaurant-rd",
@@ -1438,7 +1542,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1110-camarera-restaurant-rd.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Camarera Restaurant RD\" es una obra que captura la vitalidad y el dinamismo del servicio en un entorno gastronómico. Esta pintura en óleo sobre tela, ejecutada con la técnica de espátula, se destaca por su textura vibrante y su manera expresiva de aplicar el color, lo que aporta un carácter único y atractivo a la obra. La técnica de espátula permite una rica y audaz aplicación de colores, creando un efecto visual que resalta la figura de la camarera y el ambiente del restaurant. La paleta de colores puede incluir tonos cálidos y acogedores que evocan la calidez de la hospitalidad, así como matices más frescos que sugieren una experiencia culinaria vibrante. En la composición, la camarera es retratada en una postura que irradia energía y profesionalismo. Su expresión puede transmitir amabilidad y dedicación, invitando al espectador a imaginar la experiencia de ser atendido en un entorno acogedor. Los detalles de su uniforme y el fondo que sugiere el ambiente del restaurant refuerzan la narrativa de servicio y atención al cliente. La atmósfera de \"Camarera Restaurant RD\" evoca una celebración de la gastronomía y la importancia de la hospitalidad en la cultura. Esta obra no solo es una representación visual de una profesional en el ámbito de la restauración, sino también una exploración de las conexiones humanas que se establecen a través de la comida y el servicio."
     },
     {
         "id": "1111-neanderthal-madre",
@@ -1450,7 +1555,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1111-neanderthal-madre.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Neanderthal Madre\" es una obra que explora la maternidad y la conexión familiar a través de la representación de una figura ancestral. Esta pintura, realizada en óleo sobre tela con la técnica de espátula, se caracteriza por su textura rica y expresiva, que aporta una dimensión única a la obra. La técnica de espátula permite una aplicación audaz de los colores, creando un juego de luces y sombras que resalta los rasgos de la madre Neanderthal y su entorno. La paleta de colores puede incluir tonos terrosos y naturales, evocando el ambiente primitivo en el que vivió esta figura, así como matices que sugieren calidez y protección. En la composición, la madre Neanderthal es retratada en una postura que irradia amor y cuidado, sosteniendo a su hijo con ternura. Su expresión transmite una profunda conexión emocional, invitando al espectador a reflexionar sobre la experiencia de la maternidad a lo largo de la historia. Los detalles en su figura y el fondo que sugiere el entorno natural refuerzan la narrativa de la vida y la supervivencia en tiempos ancestrales. La atmósfera de \"Neanderthal Madre\" evoca una celebración de la maternidad y la continuidad de la vida, recordando las raíces comunes que compartimos como humanos. Esta obra no solo es una representación visual de una figura maternal en la prehistoria, sino también una exploración de la fuerza, el amor y la humanidad que nos une a través del tiempo."
     },
     {
         "id": "1112-hombre-hablando-por-celular",
@@ -1462,7 +1568,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1112-hombre-hablando-por-celular.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Hombre hablando por celular\" es una obra que captura un momento cotidiano de la vida moderna a través de la representación de un hombre en comunicación. Esta pintura, realizada en óleo sobre tela con la técnica de espátula, se destaca por su textura vibrante y su enfoque dinámico, que aporta un carácter contemporáneo y relevante a la obra. La técnica de espátula permite una aplicación audaz y expresiva de los colores, creando un efecto visual que resalta tanto la figura del hombre como el entorno que lo rodea. La paleta de colores puede incluir tonos variados que evocan la energía de la vida urbana, así como matices que reflejan la intimidad de una conversación personal. En la composición, el hombre es retratado en una postura que sugiere concentración y conexión, sosteniendo su teléfono móvil con una expresión que puede transmitir emoción o interés. Los detalles de su vestimenta y el fondo que sugiere un ambiente urbano refuerzan la narrativa de la comunicación en la era digital. La atmósfera de \"Hombre hablando por celular\" evoca una reflexión sobre la interacción humana en la modernidad, recordando la importancia de la tecnología en nuestras vidas diarias. Esta obra no solo es una representación visual de un momento contemporáneo, sino también una exploración de las relaciones y conexiones que se forman a través de la comunicación en un mundo cada vez más interconectado."
     },
     {
         "id": "1113-botes-en-calbuco",
@@ -1474,7 +1581,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1113-botes-en-calbuco.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Botes en Calbuco 2\" es una obra que celebra la esencia del paisaje costero y la vida marina en esta encantadora localidad. La pintura presenta una serie de botes anclados en un entorno sereno, capturando la tranquilidad y la belleza del agua en un día despejado. La técnica de espátula utilizada en esta obra da lugar a una textura rica y vibrante, ideal para representar la superficie del agua y los botes con sus coloridos detalles. La paleta de colores incluye tonos de azul y verde que reflejan la calma del lago, combinados con matices cálidos en los botes que aportan un contraste atractivo y enfatizan la diversidad de la vida en el puerto. Los botes, en diferentes posiciones y orientaciones, se convierten en el foco de la composición, simbolizando la conexión entre la comunidad local y su entorno acuático. El fondo puede incluir elementos del paisaje, como las suaves colinas o las costas que rodean Calbuco, enriqueciendo la narrativa visual y ofreciendo un contexto al ambiente marítimo. La atmósfera de la obra transmite una sensación de paz y armonía, invitando al espectador a disfrutar de la belleza de la naturaleza y la simplicidad de la vida junto al agua. \"Botes en Calbuco 2\" no solo es una representación visual de un momento costero, sino que también evoca reflexiones sobre la cultura marítima y la importancia de la preservación de estos espacios naturales en la vida cotidiana de la comunidad"
     },
     {
         "id": "1114-muelle-con-aves-en-calbuco",
@@ -1486,7 +1594,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1114-muelle-con-aves-en-calbuco.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Muelle con Aves en Calbuco\" es una obra que captura la serenidad y la vida cotidiana en un entorno costero. La pintura presenta un muelle pintoresco, donde diversas aves se asientan y se mueven con gracia, creando una escena que evoca tranquilidad y conexión con la naturaleza. La técnica de espátula utilizada en esta obra aporta una textura rica y vibrante, que permite resaltar los detalles del muelle y las aves. La paleta de colores incluye tonos cálidos y frescos, desde los azules profundos del agua hasta los matices terrosos de la madera del muelle, complementados por los colores brillantes de las aves que añaden vida y dinamismo a la escena. El muelle se convierte en el punto focal de la composición, simbolizando el vínculo entre los seres humanos y el entorno natural. Las aves, con sus variadas formas y colores, aportan un sentido de movimiento y vitalidad, mientras que el fondo puede incluir detalles del paisaje costero de Calbuco, como montañas o vegetación, que enmarcan la escena y aportan contexto. La atmósfera de la obra invita al espectador a sumergirse en la paz del momento, evocando la belleza de la vida en la costa y la simplicidad de los instantes compartidos con la naturaleza. \"Muelle con Aves en Calbuco\" no solo es una representación visual de un paisaje costero, sino que también celebra la armonía entre el ser humano y el entorno, recordando la importancia de preservar estos espacios naturales."
     },
     {
         "id": "1115-retrato-sl",
@@ -1498,7 +1607,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1115-retrato-sl.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
+        "texto": "\"Retrato PB\" es una obra que captura la esencia única de un individuo a través de una representación artística profunda y emotiva. Esta pintura, realizada en óleo sobre tela con la técnica de espátula, se caracteriza por su textura rica y su aplicación dinámica del color, lo que aporta un carácter distintivo al retrato. La técnica de espátula permite una utilización audaz de los colores, creando un juego de luces y sombras que resalta los rasgos del sujeto y añade profundidad a la obra. La paleta de colores puede ser variada, reflejando tanto la personalidad del retratado como el ambiente que lo rodea, con matices que sugieren emoción y carácter. En la composición, el retrato se centra en la figura del individuo, quien es representado con una expresión que puede transmitir una gama de sentimientos, desde la introspección hasta la alegría. Los detalles en su rostro y el fondo que complementa la figura refuerzan la narrativa de la identidad personal y la conexión humana. La atmósfera de \"Retrato PB\" evoca una reflexión sobre la individualidad y la experiencia humana, recordando la importancia de cada persona en el tejido de nuestra sociedad. Esta obra no solo es una representación visual de un individuo, sino también una exploración de la esencia de la humanidad y la belleza de la diversidad."
     },
     {
         "id": "1116-retrato-pb",
@@ -1510,7 +1620,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1116-retrato-pb.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
+        "texto": "\"Retrato SL\" es una obra que captura la esencia y la singularidad de un individuo a través de una representación artística conmovedora. Esta pintura, elaborada en óleo sobre tela utilizando la técnica de espátula, se distingue por su textura rica y su aplicación expresiva del color, lo que confiere un carácter vibrante al retrato. La técnica de espátula permite una mezcla audaz de colores, creando un juego de luces y sombras que resalta los rasgos del sujeto y añade una profundidad emocional a la obra. La paleta de colores puede incluir tonos cálidos y frescos que reflejan la personalidad del retratado, así como matices que evocan una atmósfera íntima y contemplativa. En la composición, el retrato se enfoca en la figura del individuo, quien es representado con una expresión que puede abarcar una variedad de emociones, desde la serenidad hasta la curiosidad. Los detalles en su rostro y el fondo que complementa la figura refuerzan la narrativa de la identidad personal y la conexión con el mundo que lo rodea. La atmósfera de \"Retrato SL\" invita a una reflexión sobre la individualidad y la experiencia humana, recordando la importancia de cada persona en la narrativa colectiva. Esta obra no solo es una representación visual de un individuo, sino también una exploración de la esencia de la humanidad y la belleza de la diversidad en nuestras historias"
     },
     {
         "id": "1117-desnuda-en-la-playa",
@@ -1522,7 +1633,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1117-desnuda-en-la-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Desnuda en la playa\" es una obra que captura la esencia de la libertad y la conexión con la naturaleza a través de la representación de una figura femenina en un entorno costero. Esta pintura, realizada en óleo sobre tela con la técnica de espátula, se distingue por su textura rica y su uso audaz del color, lo que aporta una vitalidad única a la obra. La técnica de espátula permite una aplicación expresiva de los colores, creando un juego de luces y sombras que resalta las curvas del cuerpo y el entorno natural de la playa. La paleta de colores puede incluir tonos cálidos y frescos, evocando la luz del sol, la arena y el agua, y sugiriendo una atmósfera de serenidad y placer. En la composición, la figura desnuda es retratada de manera que irradia confianza y conexión con su entorno. Su postura puede transmitir una sensación de paz y libertad, invitando al espectador a reflexionar sobre la belleza de la forma humana en armonía con la naturaleza. Los detalles en el fondo, como las olas y la arena, complementan la figura y refuerzan la narrativa de un momento de introspección y disfrute. La atmósfera de \"Desnuda en la playa\" evoca una celebración de la naturaleza y la libertad personal, recordando la importancia de encontrar momentos de conexión con nuestro entorno. Esta obra no solo es una representación visual de una figura en un paisaje costero, sino también una exploración de la belleza, la vulnerabilidad y la fuerza inherente a la experiencia humana."
     },
     {
         "id": "1118-mellizas-tendidas",
@@ -1534,7 +1646,8 @@ const OBRAS = [
         "medidas": "90 × 150 cm",
         "imagen": "assets/obras/1118-mellizas-tendidas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 150 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 150 cm",
+        "texto": "\"Mellizas tendidas\" es una obra que celebra la intimidad y el vínculo único entre dos hermanas gemelas. Esta pintura, elaborada en óleo sobre tela utilizando la técnica de espátula, se caracteriza por su composición amplia y su rica textura, que aportan un carácter envolvente y emocional a la obra. La técnica de espátula permite una aplicación audaz y expresiva de los colores, creando un juego de luces y sombras que resalta las figuras de las mellizas y el entorno en el que se encuentran. La paleta de colores puede incluir tonos suaves y cálidos, evocando una atmósfera de ternura y conexión, así como matices que sugieren tranquilidad y armonía. En la composición, las mellizas son retratadas en una postura relajada, posiblemente tendidas sobre una superficie suave, lo que transmite una sensación de paz y confianza. Sus expresiones pueden reflejar alegría, complicidad y la profunda conexión emocional que comparten. Los detalles en sus rostros y el entorno que las rodea refuerzan la narrativa de la hermandad y la intimidad familiar. La atmósfera de \"Mellizas tendidas\" evoca una celebración de la infancia y la unión entre hermanos, recordando la belleza de las relaciones cercanas y el apoyo incondicional que se encuentra en la familia. Esta obra no solo es una representación visual de dos individuos, sino también una exploración de la intimidad, la alegría y el amor que caracterizan los lazos familiares."
     },
     {
         "id": "1119-noche-de-tormenta-en-el-lago",
@@ -1546,7 +1659,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1119-noche-de-tormenta-en-el-lago.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Noche de tormenta en el lago\" es una obra dramática que captura la intensidad y el misterio de una tormenta que se desata sobre un lago. La pintura evoca una atmósfera poderosa y emocional, donde los elementos de la naturaleza se encuentran en un momento de tensión y movimiento. La técnica de espátula utilizada en esta obra proporciona una textura rica y dinámica, ideal para representar las olas agitadas y la turbulencia del agua. La paleta de colores está dominada por tonos oscuros de azul, gris y negro, que reflejan la oscuridad del cielo tormentoso, contrastados con destellos de luz que podrían representar relámpagos o la luz de la luna, creando un juego visual impactante. El lago, en medio de la tormenta, se convierte en el centro de la composición, con sus aguas en movimiento que reflejan la agitación del clima. Las siluetas de árboles o montañas en el horizonte pueden añadir profundidad y contexto, acentuando la grandeza de la naturaleza en su estado más salvaje. La atmósfera de la obra transmite una mezcla de asombro y respeto por la fuerza de la naturaleza, invitando al espectador a contemplar la belleza y el peligro que coexisten en este escenario natural. \"Noche de tormenta en el lago\" no solo es una representación visual de un fenómeno meteorológico, sino que también evoca reflexiones sobre la vulnerabilidad humana frente a la majestuosidad de la naturaleza, recordando la conexión profunda que compartimos con nuestro entorno"
     },
     {
         "id": "1120-en-calbuco",
@@ -1558,7 +1672,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1120-en-calbuco.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Lanchones en Calbuco\" es una obra vibrante que captura la esencia del paisaje costero y la vida marítima en esta pintoresca localidad. La pintura presenta un grupo de lanchones, embarcaciones típicas de la región, ancladas en un entorno natural que evoca la tranquilidad y la belleza del mar. La técnica de espátula utilizada en esta obra otorga una textura rica y expresiva, ideal para representar las olas suaves y el movimiento del agua. La paleta de colores incluye variados tonos de azul y verde, que reflejan la profundidad del océano, así como acentos cálidos que sugieren la luz del sol sobre las embarcaciones y el paisaje circundante. Los lanchones, con sus formas distintivas y colores vibrantes, se convierten en el foco de la composición, simbolizando la conexión de la comunidad local con el mar. El fondo puede incluir detalles de montañas o costas que rodean Calbuco, enriqueciendo la narrativa visual y ofreciendo un contexto al entorno marítimo. La atmósfera de la obra evoca una sensación de calma y paz, invitando al espectador a sumergirse en la serenidad del paisaje. \"Lanchones en Calbuco\" no solo es una representación de la belleza del lugar, sino que también celebra la vida cotidiana de quienes habitan y trabajan en armonía con la naturaleza, recordando la importancia de la cultura marítima en la identidad de la región."
     },
     {
         "id": "1121-mujer-con-abrigo",
@@ -1570,7 +1685,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1121-mujer-con-abrigo.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Mujer con Abrigo\" es una obra que captura la elegancia y el misterio de una figura femenina en un entorno contemporáneo. Esta pintura, realizada en óleo sobre tela utilizando la técnica de espátula, se destaca por su textura rica y su aplicación vibrante del color, lo que aporta un carácter distintivo a la representación. La técnica de espátula permite una aplicación audaz de los colores, creando un juego de luces y sombras que resalta tanto el abrigo de la mujer como su figura. La paleta de colores puede incluir tonos oscuros y sofisticados, que evocan una sensación de elegancia y estilo, a la vez que se complementan con matices más cálidos que sugieren la calidez de la presencia femenina. En la composición, la mujer es retratada de manera que irradia confianza y poética introspección. Su postura y expresión pueden transmitir una mezcla de fortaleza y vulnerabilidad, invitando al espectador a reflexionar sobre su historia personal. Los detalles del abrigo y el fondo que la rodea refuerzan la narrativa de la identidad y la individualidad en un contexto urbano. La atmósfera de \"Mujer con Abrigo\" evoca una reflexión sobre la feminidad y el poder de la autoexpresión a través de la moda y la vestimenta. Esta obra no solo es una representación visual de una figura femenina, sino también una exploración de la complejidad y la belleza de las experiencias humanas en el mundo moderno."
     },
     {
         "id": "1122-mujer-con-bufanda",
@@ -1582,7 +1698,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1122-mujer-con-bufanda.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
+        "texto": "\"Mujer con Bufanda\" es una obra que captura la calidez y la elegancia de una figura femenina a través de la representación de su vestimenta y expresión. Esta pintura, realizada en óleo sobre tela utilizando la técnica de espátula, se destaca por su textura rica y su aplicación vibrante del color, lo que aporta un carácter acogedor y envolvente a la obra. La técnica de espátula permite una mezcla audaz de colores, creando un juego de luces y sombras que resalta la bufanda y la figura de la mujer. La paleta de colores puede incluir tonos cálidos y suaves, evocando una sensación de confort y sofisticación, mientras que los matices más fríos pueden sugerir la frescura de un día invernal. En la composición, la mujer es retratada con una postura que irradia confianza y serenidad. Su bufanda, que puede estar drapeada de manera elegante, añade un elemento de movimiento y textura, complementando su figura y destacando su estilo personal. Los detalles en su rostro y el fondo que la rodea refuerzan la narrativa de la individualidad y la autoexpresión. La atmósfera de \"Mujer con Bufanda\" evoca una celebración de la feminidad y la belleza en lo cotidiano, recordando la importancia de la moda como una forma de expresión personal. Esta obra no solo es una representación visual de una mujer, sino también una exploración de la conexión entre la vestimenta y la identidad en el contexto de la vida diaria."
     },
     {
         "id": "1123-torso-de-mujer-desnuda",
@@ -1594,7 +1711,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1123-torso-de-mujer-desnuda.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
+        "texto": "\"Mujer Desnuda\" es una obra que celebra la forma y la belleza del cuerpo femenino a través de una representación artística íntima y emotiva. Esta pintura, elaborada en óleo sobre tela utilizando la técnica de espátula, se distingue por su textura rica y su aplicación expresiva del color, lo que confiere una vibrante energía a la obra. La técnica de espátula permite una mezcla audaz de colores, creando un juego de luces y sombras que resalta las curvas y contornos del torso de la mujer. La paleta de colores puede incluir tonos cálidos y naturales que evocan la piel, así como matices que sugieren la suavidad y la delicadeza de la figura. Estos elementos trabajan juntos para transmitir una sensación de vulnerabilidad y fortaleza. En la composición, la mujer es retratada en una postura que irradia confianza y serenidad, invitando al espectador a apreciar la belleza de la forma humana en su estado más puro. Los detalles en su figura y el fondo que la rodea refuerzan la narrativa de la intimidad y la autoaceptación, creando un ambiente que celebra la individualidad. La atmósfera de \"Mujer Desnuda\" evoca una reflexión sobre la feminidad, la autoexpresión y la conexión con el cuerpo. Esta obra no solo es una representación visual de la belleza del cuerpo humano, sino también una exploración de la vulnerabilidad y el empoderamiento que se encuentran en la aceptación de uno mismo."
     },
     {
         "id": "1124-lago-en-noche-oscura",
@@ -1606,7 +1724,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1124-lago-en-noche-oscura.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Lago en noche oscura\" es una obra cautivadora que evoca la serenidad y el misterio de un paisaje nocturno. La pintura presenta un lago tranquilo bajo un cielo estrellado, capturando la atmósfera mágica y contemplativa de la noche. La técnica de espátula utilizada en esta obra da lugar a una textura rica y envolvente, que acentúa la profundidad del agua y el brillo de las estrellas. La paleta de colores es predominantemente oscura, con tonos de azules profundos y negros, salpicados de destellos de blanco y plateado que representan la luz de la luna y las estrellas reflejadas en la superficie del lago. El agua, calmada y serena, actúa como un espejo que refleja la belleza del entorno, creando una sensación de paz y quietud. La composición puede incluir siluetas de árboles o montañas en el horizonte, que añaden un sentido de profundidad y contexto al paisaje nocturno. El fondo de la obra, con su cielo estrellado, invita a la reflexión y la contemplación, evocando sentimientos de soledad y conexión con la naturaleza. \"Lago en noche oscura\" no solo es una representación visual de un momento en la noche, sino que también invita al espectador a experimentar la tranquilidad y el asombro que se encuentran en la oscuridad, recordando la belleza que a menudo se revela en los momentos más silenciosos."
     },
     {
         "id": "1125-mi-taller-de-verano",
@@ -1618,7 +1737,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1125-mi-taller-de-verano.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Mi taller de verano\" es una obra vibrante que invita al espectador a sumergirse en la creatividad y la inspiración que emanan de un espacio artístico personal. La pintura retrata un taller lleno de luz y color, donde la magia de la creación cobra vida durante los días cálidos del verano. La técnica de espátula utilizada en esta obra aporta una textura rica y dinámica, ideal para capturar los elementos del taller. La paleta de colores es luminosa y alegre, con tonos cálidos que evocan la energía del verano, mientras que los detalles de sombras añaden profundidad y dimensión a la composición. Los elementos presentes en el taller, como pinceles, lienzos, y obras en proceso, se entrelazan en un ambiente que refleja la pasión del artista. La luz que entra por las ventanas inunda el espacio, creando un juego de luces y sombras que resalta la vitalidad del entorno creativo. El fondo de la pintura puede incluir detalles que sugieren el paisaje exterior, como árboles o flores, que complementan la atmósfera alegre y desenfadada del taller. \"Mi taller de verano\" no solo es una representación visual de un espacio de trabajo, sino que también evoca sentimientos de libertad, inspiración y el deleite de crear, recordando la importancia de los momentos dedicados a la expresión artística."
     },
     {
         "id": "1126-mujer-en-traje-con-velo",
@@ -1630,7 +1750,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1126-mujer-en-traje-con-velo.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Mujer en traje con velo\" es una obra que captura la elegancia y el misterio de una figura femenina ataviada con un traje distintivo y un velo. Esta pintura, realizada en óleo sobre tela utilizando la técnica de espátula, se caracteriza por su rica textura y su aplicación expresiva del color, que otorgan un carácter sofisticado a la representación. La técnica de espátula permite una mezcla audaz de colores, creando un juego de luces y sombras que resalta los pliegues del traje y la delicadeza del velo. La paleta de colores puede incluir tonos profundos y vibrantes que evocan una sensación de sofisticación, mientras que los matices más suaves sugieren la fragilidad y la belleza de la figura femenina. En la composición, la mujer es retratada con una postura que irradia confianza y gracia. El velo, que puede fluir suavemente a su alrededor, añade un elemento de misterio y encanto, invitando al espectador a contemplar la historia detrás de su mirada. Los detalles en su rostro y la textura del fondo complementan la figura, reforzando la narrativa de la feminidad y la autoexpresión. La atmósfera de \"Mujer en traje con velo\" evoca una reflexión sobre la identidad, la cultura y la belleza en la vestimenta. Esta obra no solo es una representación visual de una figura femenina, sino también una exploración de la conexión entre la moda y la autoexpresión, así como el poder que posee una mujer al llevar su historia y su cultura con orgullo."
     },
     {
         "id": "1127-retrato-mujer-rubia",
@@ -1642,7 +1763,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1127-retrato-mujer-rubia.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Retrato de Mujer Rubia\" es una obra que captura la esencia y la belleza de una figura femenina a través de una representación vibrante y emotiva. Esta pintura, realizada en óleo sobre tela utilizando la técnica de espátula, se destaca por su rica textura y su uso expresivo del color, lo que otorga una dimensión única al retrato. La técnica de espátula permite una aplicación audaz de los colores, creando un juego de luces y sombras que resalta el cabello rubio de la mujer, así como los rasgos de su rostro. La paleta de colores puede incluir tonos cálidos y suaves que evocan la luminosidad de su cabello y la suavidad de su piel, mientras que los matices más oscuros añaden profundidad y carácter. En la composición, la mujer es retratada de manera que irradia confianza y serenidad. Su expresión puede reflejar una mezcla de introspección y alegría, invitando al espectador a conectar con su historia personal. Los detalles en su rostro, así como el fondo que la rodea, refuerzan la narrativa de la individualidad y la belleza única de cada persona. La atmósfera de \"Retrato de Mujer Rubia\" evoca una reflexión sobre la feminidad, la identidad y la autoaceptación. Esta obra no solo es una representación visual de una mujer, sino también una exploración de la diversidad de la belleza humana y la complejidad de las emociones que nos definen."
     },
     {
         "id": "1128-obras-publica-4-1",
@@ -1654,7 +1776,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1128-obras-publica-4-1.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Obras Públicas 4-1\" es una obra contemporánea que explora el tema del desarrollo urbano y la transformación del paisaje a través de la construcción. La pintura captura la esencia de una obra en curso, simbolizando el avance y la evolución de las infraestructuras que dan forma a nuestras ciudades. La técnica de espátula utilizada en esta obra proporciona una textura rica y vibrante, ideal para representar los diversos elementos de la construcción, como maquinaria, estructuras y materiales. La paleta de colores, que incluye tonos metálicos, grises y acentos de color, evoca la robustez del entorno urbano y la energía de la actividad constructiva. Las formas abstractas y geométricas que emergen en la composición sugieren un paisaje en transformación, creando una sensación de movimiento y dinamismo. Las luces y sombras juegan un papel crucial, aportando profundidad y realismo a la escena, mientras que los detalles sutiles invitan al espectador a descubrir la complejidad de las obras públicas. El fondo puede incluir elementos que remiten al entorno urbano, como edificios en construcción o herramientas de trabajo, todos ellos integrados en una narrativa visual que celebra la intersección entre la arquitectura, el arte y la funcionalidad. \"Obras Públicas 4-1\" no solo es una representación visual de la labor constructiva, sino que también invita a reflexionar sobre el impacto del desarrollo en la vida cotidiana y la importancia del diseño en la creación de espacios que enriquecen nuestras comunidades."
     },
     {
         "id": "1129-mujer-con-vaso",
@@ -1666,7 +1789,8 @@ const OBRAS = [
         "medidas": "90 × 70 cm",
         "imagen": "assets/obras/1129-mujer-con-vaso.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 70 cm",
+        "texto": "\"Mujer con Vaso\" es una obra que captura un momento de contemplación y elegancia a través de la representación de una figura femenina sosteniendo un vaso. Esta pintura, elaborada en óleo sobre tela utilizando la técnica de espátula, destaca por su rica textura y su aplicación expresiva del color, que aporta profundidad y carácter a la obra. La técnica de espátula permite una aplicación dinámica de los colores, creando un juego de luces y sombras que resalta tanto la figura de la mujer como el vaso que sostiene. La paleta de colores puede incluir tonos cálidos y vibrantes que evocan la calidez de la escena, mientras que los matices más suaves sugieren la delicadeza de la figura y su entorno. En la composición, la mujer es retratada en una postura que irradia confianza y serenidad. Su expresión puede reflejar una mezcla de introspección y alegría, invitando al espectador a reflexionar sobre el momento que está viviendo. El vaso, que puede estar lleno de flores o algún líquido, añade un elemento de interés y simbolismo, sugiriendo temas como la vida, la belleza y la celebración de lo cotidiano. La atmósfera de \"Mujer con Vaso\" evoca una reflexión sobre la feminidad, la elegancia y la conexión con los pequeños momentos de la vida. Esta obra no solo es una representación visual de una mujer, sino también una exploración de la belleza en lo cotidiano y la importancia de apreciar los detalles que nos rodean."
     },
     {
         "id": "1131-un-comienzo-realjado",
@@ -1678,7 +1802,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1131-un-comienzo-realjado.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Un Comienzo Relajado\" es una obra que captura la esencia de la tranquilidad y la serenidad a través de una representación visual que invita a la contemplación. Esta pintura, elaborada en óleo sobre tela utilizando la técnica de espátula, se distingue por su rica textura y su uso expresivo del color, que aportan una atmósfera envolvente y acogedora. La técnica de espátula permite una aplicación audaz y vibrante de colores, creando un juego de luces y sombras que evocan la calma y la paz. La paleta de colores puede incluir tonos suaves y armónicos, evocando un paisaje sereno o un ambiente íntimo que sugiere un nuevo comienzo lleno de posibilidades. En la composición, se puede percibir una escena que refleja un momento de pausa y reflexión, donde la figura central o el entorno transmiten una sensación de bienestar y conexión con uno mismo. Los detalles sutiles en el fondo y la figura pueden reforzar la narrativa de la relajación y la autoaceptación, creando un espacio visual donde el espectador pueda sumergirse en la tranquilidad del momento. La atmósfera de \"Un Comienzo Relajado\" evoca una reflexión sobre la importancia de encontrar la calma en la vida diaria y apreciar los momentos simples que nos permiten recargar energías. Esta obra no solo es una representación visual de un instante, sino también una celebración de la paz interior y la belleza que se puede encontrar en los nuevos comienzos."
     },
     {
         "id": "1132-observando-el-horizonte",
@@ -1690,7 +1815,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1132-observando-el-horizonte.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Observando el Horizonte\" es una obra que captura un momento de introspección y conexión con la naturaleza a través de la representación de una figura que contempla el paisaje ante ella. Esta pintura, realizada en óleo sobre tela utilizando la técnica de espátula, se destaca por su rica textura y su uso expresivo del color, que evocan una atmósfera de calma y reflexión. La técnica de espátula permite una aplicación vibrante y dinámica de colores, creando un juego de luces y sombras que resalta la profundidad del horizonte y la figura que lo observa. La paleta de colores puede incluir tonos cálidos y suaves que evocan la belleza del amanecer o el atardecer, sugiriendo un sentido de esperanza y nuevas oportunidades. En la composición, la figura central es retratada en una postura que irradia serenidad y contemplación. Su mirada, dirigida hacia el horizonte, invita al espectador a reflexionar sobre los sueños, las aspiraciones y el viaje personal de cada uno. Los detalles del paisaje, junto con el fondo, refuerzan la narrativa de conexión con el mundo y la búsqueda de significado. La atmósfera de \"Observando el Horizonte\" evoca una reflexión sobre la importancia de tomarse un momento para detenerse y contemplar la belleza que nos rodea. Esta obra no solo es una representación visual de un instante de introspección, sino también una celebración de la conexión entre el ser humano y la naturaleza, recordándonos la magnitud de las posibilidades que se extienden ante nosotros."
     },
     {
         "id": "1133-arbol-quemado-en-el-lago",
@@ -1702,7 +1828,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1133-arbol-quemado-en-el-lago.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Árbol quemado en el lago\" es una obra evocadora que captura la tristeza y la belleza de la naturaleza tras un incendio. La pintura presenta un árbol carbonizado que se alza solitario junto a las aguas tranquilas de un lago, simbolizando la resiliencia y la transformación que puede surgir de la adversidad. La técnica de espátula utilizada en esta obra añade una textura rica y expresiva, enfatizando los detalles del tronco quemado y la superficie del agua. Los colores oscuros y grises del árbol contrastan con los azules y verdes del lago, creando un diálogo entre la pérdida y la vida que persiste a su alrededor. El árbol, con sus ramas desprovistas de hojas, se convierte en un poderoso símbolo de lo que fue y lo que aún puede ser. La superficie del lago refleja el paisaje circundante, aportando una sensación de calma y serenidad, a pesar del dolor implícito en la imagen del árbol quemado. El fondo puede incluir un cielo despejado o nubes suaves, que añaden una atmósfera contemplativa a la obra, invitando al espectador a reflexionar sobre la cicatrización de la naturaleza y la belleza que puede surgir de la destrucción. \"Árbol quemado en el lago\" no solo es una representación visual de un momento de pérdida, sino que también evoca sentimientos de esperanza y renovación, recordando que la vida siempre encuentra una manera de continuar."
     },
     {
         "id": "1134-rio-de-lava-volcanica",
@@ -1714,7 +1841,8 @@ const OBRAS = [
         "medidas": "90 × 60 cm",
         "imagen": "assets/obras/1134-rio-de-lava-volcanica.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm",
+        "texto": "\"Río de lava volcánica\" es una obra poderosa que captura la fuerza y la majestuosidad de un fenómeno natural impresionante. La pintura representa un río de lava fluyendo desde un volcán, creando una imagen que evoca tanto la destrucción como la creación en el ciclo de la naturaleza. La técnica de espátula utilizada en esta obra otorga una textura rica y dinámica, que resalta el movimiento de la lava y su luminosidad. Los colores intensos de naranjas y rojos se combinan con tonos oscuros de negro y gris, creando un contraste dramático que refleja la energía y el calor del volcán. Las sombras y las luces juegan un papel crucial, aportando profundidad y realismo a la escena. El volcán, representado en el fondo, se eleva con majestuosidad, emanando una sensación de poder y grandeza. La lava, fluyendo con fuerza, se convierte en el elemento central de la composición, atrayendo la mirada y simbolizando tanto el peligro como la fertilidad que puede dejar a su paso. El fondo puede incluir elementos del paisaje circundante, como vegetación o montañas, que contrastan con la violencia de la lava y crean un sentido de lugar. \"Río de lava volcánica\" no solo es una representación visual de un evento natural, sino que también evoca sentimientos de admiración y respeto por la fuerza de la naturaleza, recordando la dualidad de su poder creador y destructor."
     },
     {
         "id": "1135-decorando-la-casa",
@@ -1726,7 +1854,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1135-decorando-la-casa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Decorando la casa\" es una obra que captura la calidez y la alegría de un momento dedicado a embellecer el hogar. La pintura presenta a una figura inmersa en la tarea de decorar, rodeada de colores vibrantes y elementos que reflejan la creatividad y el cuidado por el espacio personal. La técnica de espátula aplicada en esta obra proporciona una textura dinámica y rica, que resalta la vitalidad de los colores utilizados. La paleta incluye tonos cálidos y acogedores que evocan una atmósfera de familiaridad y confort, mientras que las sombras y luces añaden profundidad a la escena. La figura central, que podría ser un miembro de la familia o un amigo, muestra entusiasmo y dedicación en su labor. Los detalles de la decoración, como flores, telas o elementos artísticos, aportan un aire de frescura y estilo, reflejando la personalidad de quienes habitan el hogar. El fondo de la obra, con elementos característicos de un ambiente hogareño, complementa la acción de decorar, creando una sensación de calidez y pertenencia. \"Decorando la casa\" no solo representa una actividad cotidiana, sino que también evoca sentimientos de hogar y conexión, recordando la importancia de crear espacios que reflejen nuestra esencia y nos brinden felicidad"
     },
     {
         "id": "1136-retrato-ag",
@@ -1739,7 +1868,8 @@ const OBRAS = [
         "imagen": "assets/obras/1136-retrato-ag.jpg",
         "destacada": false,
         "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "\"Retrato A G\" es una obra que captura la esencia y la personalidad de un individuo a través de una representación artística única y emotiva. Esta pintura, elaborada en óleo sobre tela utilizando la técnica de espátula, se distingue por su rica textura y su aplicación vibrante del color, que aportan una atmósfera dinámica y auténtica al retrato. La técnica de espátula permite una aplicación audaz de los colores, creando un juego de luces y sombras que resalta los rasgos distintivos del rostro y la expresión del sujeto. La paleta de colores puede incluir tonos cálidos y sutiles que evocan la calidez de la personalidad del retratado, así como matices que añaden profundidad y carácter a la obra. En la composición, el retrato es presentado de manera que irradia confianza y singularidad. La expresión facial puede reflejar una mezcla de emociones, invitando al espectador a conectarse con la historia y la experiencia de la persona retratada. Los detalles en el fondo y los elementos circundantes complementan la figura, reforzando la narrativa de la identidad y la autoexpresión. La atmósfera de \"Retrato A G\" evoca una reflexión sobre la individualidad y la complejidad de la experiencia humana. Esta obra no solo es una representación visual de un retrato, sino también una exploración de la conexión entre el arte y la identidad, recordándonos la riqueza de las historias que cada persona lleva consigo"
     },
     {
         "id": "1137-pescador",
@@ -1751,7 +1881,8 @@ const OBRAS = [
         "medidas": "90 × 60 cm",
         "imagen": "assets/obras/1137-pescador.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm",
+        "texto": "\"Pescador\" es una obra que captura la esencia de la vida en el agua, representando a un pescador en su entorno natural. La pintura transmite la tranquilidad y la dedicación que caracterizan esta actividad, mostrando no solo la labor del pescador, sino también la conexión profunda entre el hombre y el mar. La técnica de espátula utilizada en esta obra aporta una textura rica y vibrante, que permite resaltar las olas del mar y la superficie del agua. Los tonos azules y verdes dominan la paleta, evocando la frescura del océano y la calma que ofrece. La luz del sol, que se refleja en el agua, añade un brillo especial a la escena, creando un ambiente de paz. El pescador, retratado con atención a los detalles, muestra concentración y habilidad en su tarea. Su figura se integra armoniosamente en el paisaje, rodeado de elementos naturales que refuerzan la atmósfera de serenidad. Las sombras y luces juegan un papel importante, aportando profundidad y dimensión a la composición. El fondo de la obra puede incluir elementos como barcos, vegetación costera o un cielo despejado, complementando la escena y creando un sentido de lugar. \"Pescador\" no solo es una representación visual de una ocupación, sino que también evoca sentimientos de nostalgia y respeto por la tradición, recordando la importancia de la pesca y la vida en armonía con la naturaleza"
     },
     {
         "id": "1139-navegando-frente-al-faro",
@@ -1763,7 +1894,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1139-navegando-frente-al-faro.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "\"Navegando frente al faro\" es una obra que captura la majestuosidad del mar y la serenidad de la navegación. La pintura representa un barco que avanza con gracia frente a un faro, un símbolo icónico que guía y protege a los navegantes en su travesía. La técnica de espátula utilizada en esta obra otorga una textura rica y dinámica, destacando las olas que se desplazan con fuerza y el movimiento del barco. Los colores vibrantes del mar, en tonos de azul y verde, contrastan con los cálidos matices del faro, que se alza con orgullo en la costa, irradiando luz y seguridad. El faro, pintado con atención al detalle, no solo es un punto focal en la composición, sino que también evoca una sensación de nostalgia y aventura. Las nubes en el cielo añaden un elemento dramático a la escena, mientras que la luz del sol se refleja en el agua, creando un efecto resplandeciente que invita al espectador a contemplar la belleza del paisaje marino. \"Navegando frente al faro\" es más que una simple representación de un momento en el mar; es una celebración de la conexión entre el hombre y la naturaleza. La obra evoca sentimientos de libertad y exploración, recordando la importancia de seguir adelante, guiados por la luz y la esperanza, incluso en los momentos de incertidumbre"
     },
     {
         "id": "1140-de-mar",
@@ -1775,7 +1907,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1140-de-mar.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“Bano de mar” La pintura de Pollak presenta una figura femenina emergiendo del mar, situada en primer plano y enfrentada directamente al espectador. El cuerpo, tratado con planos de color y pinceladas de espátula visibles, se integra con naturalidad al entorno marino, donde el oleaje blanco contrasta con los verdes y azules profundos del agua. La postura firme y frontal transmite una sensación de presencia y afirmación, mientras el gesto del rostro, sereno y contenido, introduce una carga emocional sutil. El paisaje de fondo —mar abierto y cielo al atardecer— se construye mediante franjas horizontales de color que van del azul al rosado y naranja, sugiriendo el tránsito de la luz y el paso del tiempo. La técnica de espátula refuerza la materialidad de la obra, dejando huellas que evocan el movimiento del agua y la rugosidad de la arena. En conjunto, Baño de mar propone una escena íntima y atemporal, donde el cuerpo humano y la naturaleza se funden en un instante de quietud y contemplación."
     },
     {
         "id": "1142-un-lago-en-el-volcan",
@@ -1787,7 +1920,8 @@ const OBRAS = [
         "medidas": "90 × 60 cm",
         "imagen": "assets/obras/1142-un-lago-en-el-volcan.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm",
+        "texto": "\"Un lago en el volcán\" es una obra que transporta al espectador a un paisaje impresionante, donde la majestuosidad de la naturaleza se manifiesta en un entorno volcánico. La pintura captura la serenidad de un lago que reposa en la ladera de un volcán, rodeado de un paisaje que evoca tanto la fuerza como la belleza del entorno natural. La técnica de espátula utilizada en esta obra aporta una textura rica y dinámica a la superficie, permitiendo que los colores se mezclen de manera vibrante. Los azules profundos del lago contrastan con los tonos terrosos y verdes de la vegetación circundante, creando un equilibrio visual que invita a la contemplación. La luz que se refleja en el agua añade un toque de luminosidad, dándole vida a la escena y resaltando la calma que emana del lugar. El volcán, imponente en el fondo, se presenta con detalles que capturan su textura y forma, mientras que las nubes que lo rodean aportan un aire de misticismo. Las sombras y luces juegan un papel importante en la composición, creando un sentido de profundidad y dimensión que hace que el paisaje cobre vida. \"Un lago en el volcán\" no solo es un retrato de un lugar, sino que también evoca sentimientos de asombro y conexión con la naturaleza. Esta obra invita al espectador a reflexionar sobre la grandeza de los paisajes naturales y a apreciar la tranquilidad que se puede encontrar en estos entornos remotos."
     },
     {
         "id": "1143-muelle-con-velero",
@@ -1799,7 +1933,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1143-muelle-con-velero.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "El cuadro \"Muelle con velero\" captura un momento sereno y evocador en un entorno costero. La composición presenta un muelle que se extiende hacia un mar tranquilo, donde un velero se encuentra anclado, creando una escena que invita a la contemplación. Los detalles del muelle muestran la textura de la madera, reflejando la luz del sol que baña la escena, lo que proporciona un sentido de calidez y acogida. El velero, con sus velas blancas ondeando suavemente al viento, añade un elemento de movimiento a la pintura, contrastando con la calma del agua. El fondo está adornado con un cielo azul claro salpicado de algunas nubes esponjosas, que complementan la paleta vibrante de la obra. Los azules y verdes del mar se entrelazan con los tonos cálidos del muelle y la luz del sol, creando una armonía visual que resalta la belleza de la vida costera. Esta obra no solo representa un paisaje, sino que también evoca sensaciones de tranquilidad y libertad, invitando al espectador a sumergirse en la paz de un día junto al mar."
     },
     {
         "id": "1144-muelle-con-aves",
@@ -1811,7 +1946,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1144-muelle-con-aves.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Muelle con aves\" es una obra que captura la esencia de la vida costera, donde el muelle se convierte en el escenario principal de una escena vibrante y llena de vida. En esta composición, se puede observar un muelle que se adentra en un lago sereno, rodeado de la belleza natural del entorno. Las aves, representadas en pleno vuelo o posadas en el muelle, añaden un elemento dinámico a la pintura. Sus plumajes coloridos contrastan con la calma del agua y la textura del muelle de madera, creando un diálogo visual que invita a la contemplación. Cada ave está pintada con atención al detalle, capturando la gracia y el movimiento de estas criaturas en su hábitat natural. El fondo presenta un cielo despejado, donde los tonos azules se mezclan con suaves nubes, reflejando la luz del sol que ilumina la escena. La paleta de colores, que incluye matices de verdes y marrones en el paisaje circundante, complementa la serenidad del entorno, mientras que las sombras y luces juegan sobre la superficie del agua, creando una atmósfera tranquila y acogedora. Esta obra no solo es un retrato de un momento cotidiano en la vida de un muelle, sino que también evoca sentimientos de paz y conexión con la naturaleza. \"Muelle con aves\" invita al espectador a sumergirse en la belleza del paisaje, ofreciendo una experiencia visual que celebra la armonía entre la vida humana y el entorno natural."
     },
     {
         "id": "1145-mujer-en-cuclillas",
@@ -1823,7 +1959,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1145-mujer-en-cuclillas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"Mujer en Cuclillas\" es una obra que captura la esencia de la feminidad y la conexión con el entorno a través de la representación de una figura femenina en una postura relajada y contemplativa. Esta pintura, realizada en óleo sobre tela utilizando la técnica de espátula, se caracteriza por su rica textura y su uso expresivo del color, creando una atmósfera íntima y reflexiva. La técnica de espátula permite una aplicación vibrante de colores, generando un juego de luces y sombras que resalta tanto la figura de la mujer como los detalles de su entorno. La paleta de colores puede incluir tonos cálidos y naturales que evocan la belleza de la piel y la sutileza de la escena, aportando una sensación de calidez y cercanía. En la composición, la mujer es retratada en cuclillas, una postura que sugiere tanto tranquilidad como conexión con la tierra. Su expresión puede transmitir una mezcla de serenidad y contemplación, invitando al espectador a reflexionar sobre el momento presente y la simplicidad de la vida cotidiana. Los detalles en el fondo pueden sugerir un paisaje o un ambiente natural que complementa la figura, reforzando la narrativa de la armonía entre la mujer y su entorno. La atmósfera de \"Mujer en Cuclillas\" evoca una reflexión sobre la conexión con la naturaleza, la introspección y la belleza de los momentos simples. Esta obra no solo presenta una representación visual de una figura femenina, sino también una celebración de la paz interior y la apreciación de la vida en sus formas más sencillas."
     },
     {
         "id": "1146-puesta-de-sol",
@@ -1835,7 +1972,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1146-puesta-de-sol.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "La obra \"Puesta de sol\" captura la magia y el esplendor del ocaso en un paisaje sereno. Esta pintura presenta un horizonte donde el sol se desliza lentamente hacia el final del día, tiñendo el cielo de una paleta cálida y vibrante que abarca tonos anaranjados, dorados y rosas. El sol, representado con un brillo radiante, se refleja en la superficie del agua, creando un camino luminoso que guía la vista del espectador hacia el horizonte. Este efecto luminoso es acentuado por las suaves olas que rompen en la orilla, aportando movimiento y vida a la escena. Los elementos del paisaje, que incluyen siluetas de árboles y montañas en el fondo, se encuentran bañados en los colores cálidos del atardecer, generando un contraste armonioso con el cielo vibrante. La técnica de óleo sobre tela permite una rica textura que resalta las transiciones de color, aportando profundidad y emoción a la obra. \"Puesta de sol\" no solo es un retrato visual de un momento fugaz en la naturaleza, sino que también evoca una sensación de calma y reflexión. Invita al espectador a detenerse y apreciar la belleza efímera de un día que llega a su fin, creando un espacio de contemplación y conexión con el entorno natural"
     },
     {
         "id": "1147-riachuelo-entre-rocas",
@@ -1847,7 +1985,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1147-riachuelo-entre-rocas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "\"Riachuelo entre rocas\" es una obra que invita al espectador a sumergirse en un entorno natural lleno de serenidad y belleza. La pintura representa un riachuelo que fluye suavemente entre una serie de rocas, creando un paisaje que destaca la armonía entre el agua y la tierra. La claridad del agua del riachuelo se refleja en una variedad de tonos azules y verdes, mientras que las rocas, con sus texturas rugosas y colores terrosos, aportan un contraste visual poderoso. La técnica de óleo sobre tela permite que cada pincelada resalte la textura de las rocas y el movimiento del agua, proporcionando una sensación de dinamismo y vida a la escena. El entorno natural está complementado por la vegetación que crece a lo largo de la orilla, con matices de verdes vibrantes que añaden frescura al paisaje. Las sombras proyectadas por las rocas y la luz que se filtra a través de las hojas crean un juego de luces y sombras que otorgan profundidad y dimensión a la obra. \"Riachuelo entre rocas\" no solo captura un momento en la naturaleza, sino que también evoca un sentimiento de paz y conexión con el mundo natural. Esta pintura invita al espectador a detenerse y disfrutar de la simplicidad y la belleza de un paisaje que puede a menudo pasarse por alto, recordando la importancia de apreciar los pequeños detalles que nos rodean."
     },
     {
         "id": "1148-el-bano-de-las-ninfas",
@@ -1859,7 +1998,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1148-el-bano-de-las-ninfas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"El baño de las Ninfas\" es una obra que evoca un mundo de fantasía y mitología, donde la belleza y la naturaleza se entrelazan en una escena cautivadora. La pintura presenta a las ninfas, figuras mitológicas asociadas con el agua y la naturaleza, disfrutando de un momento de tranquilidad en un entorno idílico. La composición está llena de vida, con las ninfas representadas en diversas poses, rodeadas de exuberante vegetación y aguas cristalinas. La técnica de óleo sobre tela permite una rica paleta de colores, donde los verdes vibrantes y los azules suaves del agua se combinan para crear una atmósfera de ensueño. Las luces y sombras juegan un papel crucial, aportando profundidad y movimiento a la escena. Las figuras de las ninfas son delicadas y etéreas, capturando la esencia de la juventud y la libertad. Cada detalle, desde sus cabellos flotantes hasta sus vestidos fluidos, está pintado con gran esmero, reflejando la gracia y la belleza de estas criaturas mitológicas. El fondo, con su paisaje natural, complementa a las ninfas, creando un refugio mágico donde la naturaleza y la fantasía coexisten. \"El baño de las Ninfas\" no solo es una representación visual de un mito, sino que también invita al espectador a sumergirse en un mundo de sueños y belleza. Esta obra invita a la reflexión sobre la conexión entre la humanidad y la naturaleza, recordando la importancia de preservar estos momentos de paz y armonía."
     },
     {
         "id": "1149-tercera-edad-caminando-al-horizonte",
@@ -1871,7 +2011,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1149-tercera-edad-caminando-al-horizonte.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "\"Tercera edad caminando al horizonte\" Este óleo sobre lienzo representa a una pareja de ancianos caminando juntos hacia el horizonte, tomados de la mano, mientras el sol se oculta en el mar. La escena transmite una sensación de calma, unión y complicidad, resaltando el paso del tiempo y la belleza de la compañía en la vejez. El uso de la espátula en la aplicación del óleo crea una textura rica y expresiva, con pinceladas gruesas que dan profundidad y movimiento a la escena. Los tonos cálidos del atardecer, con naranjas y amarillos intensos, contrastan con los fríos azulados y violetas del mar y el cielo, generando un ambiente melancólico y nostálgico. La postura de los personajes es relajada, denotando confianza y cercanía. La figura de la mujer, apoyada en un bastón, sugiere fragilidad, pero sujeta la mano de su compañero con fuerza, evocando la idea de apoyo mutuo. El reflejo rojizo en sus manos enfatiza el simbolismo del amor que perdura en el tiempo. En la composición, las figuras están ligeramente desplazadas del centro, guiando la mirada del espectador hacia el horizonte y la inmensidad del paisaje. Esto refuerza el concepto del camino recorrido y el futuro incierto, pero compartido. Es una obra emotiva, que captura la esencia del amor, la resiliencia y la paz en la etapa final de la vida."
     },
     {
         "id": "1150-sol-de-la-manana",
@@ -1883,7 +2024,8 @@ const OBRAS = [
         "medidas": "50 × 70 cm",
         "imagen": "assets/obras/1150-sol-de-la-manana.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 50 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 50 × 70 cm",
+        "texto": "\"Sol de la mañana\" En esta obra, se representa una figura humana desnuda recostada boca abajo sobre una superficie de tonalidades terrosas y verdes, bañada por la luz del sol matutino. La figura, que parece estar disfrutando del calor del sol sobre su piel, transmite una sensación de descanso, vulnerabilidad y conexión con el entorno. El uso del óleo con espátula crea una textura vibrante y expresiva, especialmente en la representación de la piel y el suelo, donde se mezclan colores cálidos y fríos en contrastes armoniosos. Los tonos anaranjados y rojizos del cuerpo resaltan sobre el fondo más apagado, enfatizando la presencia del sol y su efecto sobre la piel. En la composición, la figura se encuentra en una posición diagonal, lo que da dinamismo a la escena. El fondo arquitectónico, con una pared de tonos fríos y puertas azuladas, establece un contraste entre lo natural y lo construido, sugiriendo un espacio íntimo y privado. El cuadro invita a reflexionar sobre el placer de lo simple: la calidez del sol, la tranquilidad de un momento de descanso y la relación entre el cuerpo humano y su entorno. Es una obra que captura la belleza de la luz matutina y la sensación de libertad que esta transmite."
     },
     {
         "id": "1151-torzo-en-las-sombras",
@@ -1895,7 +2037,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1151-torzo-en-las-sombras.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "\"Torzo en las sombras\" Esta obra representa el torso desnudo de una mujer, cuya cabeza se encuentra oculta en la sombra, generando un efecto de anonimato y misterio. La figura, bañada por una luz que resalta los tonos cálidos de la piel, se encuentra en una postura relajada y natural, con una mano apoyada en la cadera y una pierna semisumergida en un fondo oscuro que sugiere agua o una superficie indefinida. El uso del óleo con espátula le otorga una textura vibrante y expresiva, con pinceladas marcadas que refuerzan la solidez y la presencia del cuerpo. Los contrastes de luz y sombra acentúan las formas, mientras que la paleta de colores, dominada por tonos carne, ocres y azules fríos, crea un equilibrio visual entre la calidez del cuerpo y la frialdad del entorno. La composición es íntima y provocativa, con un encuadre que recorta la figura y enfoca la atención en la expresión corporal. La ausencia de rostro sugiere un enfoque en la sensualidad y la fuerza de la forma humana, más allá de la identidad individual. \"Torzo en las sombras\" es una obra que evoca una sensación de misterio, introspección y belleza en la penumbra, destacando el juego entre la luz y la sombra para transmitir emociones sutiles y profundas"
     },
     {
         "id": "1152-sefora-buscando-la-pose",
@@ -1907,7 +2050,8 @@ const OBRAS = [
         "medidas": "100 × 149 cm",
         "imagen": "assets/obras/1152-sefora-buscando-la-pose.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 149 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 149 cm",
+        "texto": "\"Sefora buscando la pose\" Esta obra, compuesta por cuatro paneles en disposición cuadrangular, presenta una secuencia de poses de una mujer desnuda en un ambiente íntimo. La figura, de piel matizada por la luz y la sombra, se mueve sobre una superficie que sugiere una cama o un diván, con un fondo de cortinas marrones y paredes en tonos lilas y celestes. Cada panel capta un momento distinto en la exploración de la postura, con gestos que oscilan entre la introspección, la sensualidad y la búsqueda de una expresión corporal precisa. La primera imagen la muestra de espaldas, con un movimiento que parece un tránsito entre posiciones. En el segundo cuadro, su mirada fija hacia el espectador añade una dimensión emocional, mientras que en las siguientes imágenes se advierte una mayor tensión y dramatismo en su expresión. El uso de la espátula en óleo otorga a la composición una textura rica y vibrante, con pinceladas gruesas que definen los volúmenes de manera expresiva. La paleta de colores, con tonos cálidos en la piel contrastando con los fríos del fondo, refuerza la sensación de profundidad y el juego de luces sobre el cuerpo. En conjunto, \"Sefora buscando la pose\" no solo representa el estudio del desnudo en diferentes momentos de una misma sesión, sino que también sugiere una narrativa de introspección y autoexploración, donde la figura femenina es el centro de una atmósfera cargada de sensibilidad y presencia."
     },
     {
         "id": "1153-rio-en-las-montanas",
@@ -1919,7 +2063,8 @@ const OBRAS = [
         "medidas": "150 × 120 cm",
         "imagen": "assets/obras/1153-rio-en-las-montanas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm",
+        "texto": "\"Río en las montañas\" Esta obra en óleo sobre tela con espátula captura un paisaje de montaña donde un río de aguas cristalinas fluye entre formaciones rocosas imponentes. La escena transmite una sensación de frescura y profundidad, con un enfoque especial en la transparencia del agua, que revela los contornos de las piedras sumergidas y crea un juego de luces y reflejos en la superficie. En la parte inferior izquierda, dos figuras humanas pequeñas descansan sobre una gran roca pulida por la corriente. Su presencia introduce una escala que enfatiza la majestuosidad del entorno natural y sugiere una relación de contemplación y armonía con el paisaje. Las montañas en el fondo, cubiertas de vegetación, enmarcan la composición y aportan un contraste entre la dureza de la roca y la suavidad de los árboles. La textura gruesa generada por la espátula añade dinamismo a los elementos naturales, resaltando los volúmenes y creando una sensación táctil que potencia la materialidad de la piedra y el agua. En su conjunto, \"Río en las montañas\" es una exploración de la naturaleza en su estado más puro, capturando la energía del paisaje con una técnica expresiva que enfatiza la fuerza y la belleza de los elementos naturales."
     },
     {
         "id": "1154-obra-1154",
@@ -1931,7 +2076,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1154-obra-1154.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Contrastes\" es una pintura en óleo sobre tela, realizada con espátula, que retrata la intimidad y la conexión entre dos cuerpos en una bañera. La composición destaca por el uso de colores y texturas que enfatizan la diferencia entre los tonos de piel de los personajes, resaltando el concepto de contraste tanto en lo visual como en lo simbólico. La escena se centra en el abrazo de dos figuras desnudas: una de piel oscura con cabello negro, y la otra de piel clara con cabello rubio. El gesto de la persona de piel oscura, sosteniendo con delicadeza la cabeza de la otra, sugiere un momento de afecto y complicidad. El agua de la bañera, oscura y enigmática, envuelve los cuerpos, reforzando una sensación de intimidad y fusión. El fondo, con tonalidades rojizas y grises, genera un ambiente cargado de emoción, mientras que la técnica de espátula aporta una textura áspera que contrasta con la suavidad del momento representado. En conjunto, \"Contrastes\" no solo es un estudio del cuerpo humano y sus diferencias, sino también una exploración de la conexión y la armonía dentro de la diversidad."
     },
     {
         "id": "1155-inversos",
@@ -1943,7 +2089,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1155-inversos.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Contrastes Inversos\" Este cuadro presenta una escena íntima donde dos figuras, una de piel clara y otra de piel oscura, comparten un momento de cercanía en una bañera. A diferencia de la obra \"Contrastes\", en esta composición los tonos de piel se invierten, destacando la dualidad y el juego de opuestos. La textura creada con la espátula resalta la fuerza expresiva de la escena, con trazos gruesos y una paleta que enfatiza los contrastes cromáticos. Los cuerpos, dispuestos en una postura envolvente, transmiten una sensación de conexión y equilibrio, mientras que el fondo en tonos fríos y apagados dirige toda la atención a la interacción de los protagonistas. Esta obra explora la armonía entre diferencias, evocando temas de diversidad, sensualidad y unidad a través del lenguaje pictórico."
     },
     {
         "id": "1156-fin-del-mundo-en-el-artico",
@@ -1955,7 +2102,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1156-fin-del-mundo-en-el-artico.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "“ Fin del mundo en el Artico” Este cuadro representa un paisaje ártico vasto y desolado, donde el hielo se extiende hasta el horizonte, interrumpido por fracturas y grietas oscuras que sugieren un ecosistema en transformación. En primer plano, una abrupta pared de hielo se desploma con textura rugosa, resaltada por los tonos azulados y grises que evocan el frío extremo y la majestuosidad del entorno. El uso de la espátula refuerza la sensación de crudeza y dramatismo, con capas gruesas de pintura que transmiten la solidez del hielo y su fragilidad al mismo tiempo. La franja rosada en el horizonte añade un matiz poético, sugiriendo la luz de un sol distante que apenas calienta esta región inhóspita. La obra transmite una reflexión sobre el aislamiento, la inmensidad y los efectos del cambio climático en los paisajes más remotos del planeta."
     },
     {
         "id": "1157-las-bailarinas",
@@ -1967,7 +2115,8 @@ const OBRAS = [
         "medidas": "90 × 60 cm",
         "imagen": "assets/obras/1157-las-bailarinas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm",
+        "texto": "Las Bailarinas captura un momento íntimo y expresivo en los bastidores de un teatro. Dos figuras femeninas, ataviadas con tutús blancos, parecen sumergidas en una conversación o en un instante de preparación antes de salir al escenario. La composición se equilibra entre luces y sombras, con un fondo de cortinas rojas vibrantes que contrastan con la oscuridad del entorno, sugiriendo la energía y la emoción del mundo del ballet. El uso de la espátula confiere una textura marcada, especialmente en las faldas, otorgando volumen y movimiento a la escena. La pincelada suelta y expresiva en los cuerpos de las bailarinas sugiere dinamismo, mientras que la paleta de colores, dominada por rojos, negros y blancos, transmite una atmósfera teatral y dramática. La obra no solo representa la estética del ballet, sino que también evoca la intensidad emocional y la disciplina que se esconde tras la elegancia de la danza."
     },
     {
         "id": "1158-a-fire",
@@ -1979,7 +2128,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1158-a-fire.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "En L.A. Fire, la intensidad del fuego y la devastación urbana se plasman a través de una composición vibrante y expresiva. La paleta de colores cálidos y ardientes—con predominio de rojos, naranjas y amarillos—transmite la fuerza incontrolable de las llamas que envuelven la ciudad. El cielo se muestra incendiado en un rojo abrasador, mientras que la silueta de los edificios en tonos oscuros contrasta dramáticamente con la luminosidad del fuego. El uso de la espátula crea una textura rica y dinámica, acentuando el movimiento del incendio y la crudeza del momento. Las formas geométricas de la arquitectura se perciben fragmentadas, casi consumidas por la intensidad del calor y el caos del evento. A través de esta obra, el artista logra capturar no solo la destrucción física, sino también la emoción cruda y la sensación de inminente peligro que un incendio de tal magnitud puede generar."
     },
     {
         "id": "1159-la-cerca",
@@ -1991,7 +2141,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1159-la-cerca.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "En La Cerca, el paisaje cobra vida a través de una composición evocadora y una paleta de colores dominada por tonos oscuros y fríos. El cielo, cargado de nubes densas y pesadas, anticipa una atmósfera de introspección y misterio. La luz tenue del horizonte crea un contraste sutil con la oscuridad del primer plano, sugiriendo el final del día o la inminencia de una tormenta. El elemento central, una cerca de madera con alambres que atraviesa la escena, guía la mirada del espectador a lo largo del lienzo, estableciendo una barrera entre el espacio cercano y la inmensidad del paisaje al fondo. La vegetación rojiza que se aferra a la cerca aporta un toque vibrante, rompiendo la sobriedad del entorno y sugiriendo la persistencia de la vida en medio de la melancolía del paisaje. El uso de la espátula otorga textura y profundidad a la obra, acentuando la rudeza del terreno y la fuerza de los elementos naturales. Esta pintura transmite una sensación de soledad y contemplación, invitando al espectador a reflexionar sobre la relación entre el ser humano y la naturaleza."
     },
     {
         "id": "1160-en-la-selva",
@@ -2003,7 +2154,8 @@ const OBRAS = [
         "medidas": "90 × 60 cm",
         "imagen": "assets/obras/1160-en-la-selva.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 90 × 60 cm",
+        "texto": "\"Desnudo en la Selva\" es una obra figurativa realizada con la técnica de espátula, donde la textura y el uso expresivo del color juegan un papel fundamental en la composición. La escena presenta a una mujer desnuda, de piel cálida y rosada, sentada en las aguas de un río en medio de una densa vegetación tropical. Su expresión introspectiva y la postura recogida de su cuerpo transmiten una sensación de vulnerabilidad y conexión con la naturaleza. El fondo, compuesto por ramas y follaje en tonos verdes, marrones y ocres, se construye con pinceladas gruesas y marcadas, otorgando dinamismo a la composición. El agua, reflejando luces y sombras, complementa la escena con un efecto de profundidad y movimiento. La obra captura la armonía entre la figura humana y el entorno natural, evocando un instante de contemplación y serenidad."
     },
     {
         "id": "1161-lago-de-los-cisnes",
@@ -2015,7 +2167,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1161-lago-de-los-cisnes.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "“ Lago de los Cisnes” Inspirada en la icónica obra de ballet El Lago de los Cisnes, esta pintura captura la esencia del movimiento y la elegancia de la danza clásica. Con una aplicación expresiva de óleo mediante espátula, el artista logra una textura vibrante que resalta la fluidez y energía de las bailarinas en escena. Los tonos rosados y lilas de los trajes contrastan con un fondo oscuro y profundo, evocando la teatralidad y el dramatismo del escenario. A la derecha, la figura etérea de Odette vestida de blanco se desliza con gracia, mientras que en la izquierda, un personaje imponente con tridente observa la escena, sugiriendo la presencia de Rothbart, el hechicero antagonista de la historia. El uso de la espátula confiere una sensación de dinamismo, capturando el instante fugaz del ballet con una estética que combina lo figurativo y lo expresionista."
     },
     {
         "id": "1162-el-espejo-del-deseo",
@@ -2027,7 +2180,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1162-el-espejo-del-deseo.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“EL espejo del deseo” . En esta obra, el artista explora la dualidad entre la percepción y la realidad, utilizando la imagen reflejada como un símbolo de la introspección y el deseo. La figura femenina se enfrenta a su propio reflejo con una mirada intensa, en un juego de confrontación y misterio. El uso de la espátula otorga una textura expresiva, destacando los volúmenes del cuerpo y la crudeza del entorno. La paleta de tonos fríos refuerza la sensación de profundidad y aislamiento, mientras que la composición simétrica genera una tensión entre la modelo y su reflejo. Los elementos de la escena sugieren un diálogo interno entre la mujer y su imagen proyectada, evocando temas de identidad, autoexploración y el poder de la mirada. La presencia de los tacones negros acentúa la sensualidad de la figura, contrastando con la sobriedad del fondo y la dureza de la técnica. A través de esta pintura, el artista invita al espectador a cuestionar lo que vemos en el espejo: ¿Es solo una imagen o una manifestación de nuestros deseos más profundos?"
     },
     {
         "id": "1163-la-garza-perdida-en-la-playa",
@@ -2039,7 +2193,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1163-la-garza-perdida-en-la-playa.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "“La Garza perdida en la playa” Óleo sobre tela, técnica con espátula – Peter Pollak, 2025 En esta obra, la naturaleza detenida en un instante evoca la calma de lo inesperado. Una garza blanca, solitaria y elegante, se alza entre las rocas como figura central en un paisaje aparentemente abandonado. A su lado, una pequeña embarcación yace sobre la arena seca, desgastada por el tiempo, insinuando una historia olvidada. El entorno se compone de densos follajes y rocas grises, trabajados con la fuerza expresiva de la espátula, que da textura y relieve a cada plano de la escena. La elección de una paleta serena —verdes apagados, ocres y grises— acentúa el silencio de este rincón escondido donde lo natural y lo humano conviven sin ruido. La espátula no solo construye formas, sino que también transmite el carácter orgánico del paisaje, permitiendo al espectador casi sentir el viento costero y el crujir de la vegetación seca bajo los pies. “La Garza perdida en la playa” invita a contemplar el encuentro sutil entre lo vivo y lo inerte, lo pasajero y lo permanente."
     },
     {
         "id": "1164-l-a-fire",
@@ -2051,7 +2206,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1164-l-a-fire.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"L A Fire 2\" Óleo sobre tela, técnica con espátula – Peter Pollak, 2025 La escena arde con una fuerza brutal. Una casa en lo alto de una pendiente queda envuelta en llamas, silueteada contra un cielo encendido de rojos intensos y naranjas incandescentes. El fuego avanza con violencia, como un monstruo de luz y calor que devora todo a su paso. La espátula, herramienta central de esta obra, arrastra el óleo con energía contenida, generando texturas densas, crudas, que replican la materia viva del incendio. El uso de contrastes —oscuros absolutos y colores candentes— refleja la lucha entre estructura y destrucción, entre lo humano y lo natural desbordado. Los cables que atraviesan la composición acentúan la tensión: una red frágil en medio del caos. “L A Fire 2” es más que una escena dramática; es una expresión visceral del poder descontrolado del fuego, y también un símbolo de vulnerabilidad urbana frente a lo indomable."
     },
     {
         "id": "1165-l-a-fires",
@@ -2063,7 +2219,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1165-l-a-fires.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "“L A Fire 3” Óleo sobre tela, técnica con espátula Una carretera vacía se adentra en una escena apocalíptica, donde el cielo se transforma en un océano de fuego. Las llamas y el humo tiñen el horizonte de tonos intensos: rojos abrasadores, naranjas incandescentes y un fulgor amarillo que anuncia la devastación. La espátula arrastra el óleo con decisión, creando texturas que acentúan la violencia del fuego y el desconcierto del entorno. Los postes eléctricos y las señales viales —representadas con precisión dentro del caos— parecen pequeños testigos de una catástrofe inminente. La carretera vacía intensifica la sensación de huida o abandono, como si el espectador se encontrara justo en el umbral del desastre. “L A Fire 3” es una pintura que no solo captura un instante visual, sino también un estado emocional: el asombro frente a la furia de la naturaleza, y la fragilidad del mundo construido por el hombre ante su poder."
     },
     {
         "id": "1166-l-a-fires",
@@ -2075,7 +2232,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1166-l-a-fires.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"L A Fire 4\" Óleo sobre tela, técnica con espátula En medio de un paisaje urbano invadido por el fuego, las siluetas verticales de los árboles y postes eléctricos se elevan como testigos mudos de una catástrofe. Las llamas devoran el fondo con una intensidad abrasadora que tiñe todo de rojos, naranjas y amarillos fulminantes. La espátula, usada con vigor, construye formas vivas y texturadas que evocan el movimiento implacable del fuego y el caos del momento. Una casa verde, casi fantasmal, se mantiene a la izquierda, atrapada en la oscuridad entre las sombras del desastre. La calle en primer plano parece derretirse bajo el calor, mientras los reflejos del incendio iluminan el asfalto como brasas. “L A Fire 4” es un testimonio visual de la furia indomable de la naturaleza. La escena captura no solo la violencia del fuego, sino también el desconcierto humano frente a su poder. Un paisaje nocturno que arde, donde la belleza del color contrasta con la tragedia implícita."
     },
     {
         "id": "1167-esquila-en-la-patagonia",
@@ -2087,7 +2245,8 @@ const OBRAS = [
         "medidas": "150 × 120 cm",
         "imagen": "assets/obras/1167-esquila-en-la-patagonia.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm",
+        "texto": "“Esquila en la Patagonia” Óleo sobre tela, técnica con espátula En esta escena de gran carga humana y territorial, Peter Pollak nos transporta al sur austral de Chile, donde el trabajo rural cobra protagonismo. La pintura retrata un instante cotidiano y ancestral: la esquila de ovejas en una estancia patagónica. Los movimientos concentrados de los esquiladores, la quietud de los observadores y la estructura rústica del galpón evocan una atmósfera de oficio, dignidad y tradición. La técnica con espátula otorga volumen a las lanas apiladas, textura a la tierra, y una cierta dureza en las figuras, reforzando el esfuerzo físico de la faena. Los tonos terrosos predominan, contrastando con los blancos inmaculados de la lana, que parecen absorber la luz del entorno. “Esquila en la Patagonia” es más que una representación; es una crónica visual del trabajo rural en el fin del mundo, donde el paisaje humano y natural se funden en una sola materia pictórica."
     },
     {
         "id": "1168-torso-de-mujer",
@@ -2099,7 +2258,8 @@ const OBRAS = [
         "medidas": "120 × 150 cm",
         "imagen": "assets/obras/1168-torso-de-mujer.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm",
+        "texto": "“Torso de mujer” Óleo sobre tela, técnica con espátula En esta pintura, Peter Pollak presenta una visión íntima, serena y potente del cuerpo femenino, capturado desde la espalda con una honestidad casi escultórica. La figura desnuda, sentada sobre un banco rojo que contrasta con el fondo oscuro, se revela con una economía de elementos que acentúa la fuerza expresiva del cuerpo. La técnica de espátula refuerza la textura de la piel, dejando entrever cada trazo como una huella del gesto pictórico. Las tonalidades tierra y marfil delinean con maestría las formas musculares y óseas, dotando a la figura de una presencia viva y monumental. La cabeza recogida y levemente inclinada sugiere introspección o recogimiento, mientras las manos apoyadas reflejan estabilidad y tensión contenida. “Torso de mujer” celebra el cuerpo humano como paisaje emocional, como estructura vital y como símbolo de la belleza real, sin artificios, en una composición de quietud cargada de significado."
     },
     {
         "id": "1169-la-minga",
@@ -2111,7 +2271,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1169-la-minga.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“La Minga” es una pintura al óleo realizada con espátula que representa una tradicional escena del sur de Chile: la antigua práctica comunitaria de trasladar una casa entera utilizando yuntas de bueyes. Desde una perspectiva elevada, la obra retrata con fuerza y detalle el momento en que múltiples equipos de bueyes, guiados por hombres y mujeres, arrastran una vivienda de madera sobre un camino de tierra, rodeado de un paisaje verde y colinas que descienden hacia un lago o mar en el fondo. El uso de la espátula otorga textura y vigor a cada elemento del cuadro: la madera de la casa, el suelo arcilloso marcado por las huellas de los animales, la vegetación viva y ondulante, y la masa orgánica de los bueyes en movimiento. Las figuras humanas, aunque simplificadas, transmiten acción colectiva, esfuerzo compartido y una profunda conexión con las costumbres ancestrales del territorio. La composición no solo documenta una costumbre rural cargada de simbolismo, sino que también rinde homenaje al valor de la colaboración y el arraigo cultural. La paleta de colores terrosos y verdes, junto a la luz difusa del sur, evocan el clima y espíritu de la Patagonia chilota."
     },
     {
         "id": "1170-bailarina",
@@ -2123,7 +2284,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1170-bailarina.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“Bailarina”en esta obra, el artista Peter Pollak H. retrata el instante suspendido de una danzarina en pleno salto, capturando con energía y precisión la belleza del movimiento. La figura femenina se proyecta con fuerza hacia lo alto, con los brazos extendidos y el rostro entregado a la emoción del arte. El gesto corporal evoca ligereza, pero también disciplina y control, cualidades esenciales del ballet. La técnica de espátula otorga a la escena una textura vibrante, reforzando la tensión muscular del cuerpo y la fluidez del gesto. Los tonos grisáceos del fondo contrastan con el vestido burdeos de la bailarina, logrando que la figura emerja con protagonismo en un espacio que parece aludir tanto al escenario como al universo interior de la artista. La luz que baña su piel y las sombras proyectadas crean un juego expresivo de volumen, donde lo matérico del óleo dialoga con la espiritualidad del instante capturado. Bailarina es una celebración de la danza como lenguaje del cuerpo y como forma sublime de expresión humana."
     },
     {
         "id": "1172-desnudo-en-sofa",
@@ -2135,7 +2297,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1172-desnudo-en-sofa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“Desnudo en el sofá” es una pintura que captura la intimidad y la fuerza serena del cuerpo femenino en estado de reposo. La figura yace desnuda sobre un sofá claro, en una actitud de entrega y contemplación, con la mirada elevada y el rostro bañado por la luz, que acentúa los contrastes entre piel, sombra y fondo. Peter Pollak H. emplea la espátula con determinación, generando texturas robustas que enriquecen la materialidad de la piel, el cabello y las superficies del entorno. La paleta cálida, dominada por ocres, rosados y tierras, transmite una atmósfera de quietud y calidez. El fondo neutro y el cielo gris azulado, casi abstracto, refuerzan el protagonismo de la figura, aislándola en su propio mundo emocional. Esta obra se inscribe en la tradición del desnudo artístico como celebración del cuerpo humano, no desde la idealización, sino desde una expresión auténtica y directa. La modelo parece desafiar la mirada del espectador con su postura abierta, segura, en un gesto que evoca tanto vulnerabilidad como poder."
     },
     {
         "id": "1173-la-cosecha",
@@ -2147,7 +2310,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1173-la-cosecha.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
+        "texto": "“La cosecha” retrata con fuerza y autenticidad a un hombre del campo en plena labor agrícola, encorvado sobre una pila de trigo mientras ata las gavillas con destreza. La figura central, con camisa blanca y sombrero de paja, emerge con contundencia sobre un cielo claro que acentúa la atmósfera rural y luminosa de la escena. Mediante el uso de la espátula, Peter Pollak H. logra una textura poderosa que refuerza la sensación de movimiento, polvo y esfuerzo físico. Cada trazo denso aporta volumen y vida a la camisa arrugada, al rostro curtido por el sol y al rastrojo que ocupa el primer plano. La paleta terrosa, en tonos ocres, beige y marrón, dialoga con los azules apagados del cielo, en una armonía cromática que transmite naturalidad y nobleza. La obra rinde homenaje a la dignidad del trabajo manual y a los hombres que, con sus manos, moldean la tierra y el alimento. La expresión del personaje, concentrada y silenciosa, conecta al espectador con una escena atemporal donde el cuerpo, la tierra y la acción se funden en una misma unidad."
     },
     {
         "id": "1174-arboles-en-el-lago",
@@ -2160,7 +2324,8 @@ const OBRAS = [
         "imagen": "assets/obras/1174-arboles-en-el-lago.jpg",
         "destacada": true,
         "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
-        "vendido": true
+        "vendido": true,
+        "texto": "En “Árboles en el lago”, Peter Pollak H. nos transporta a un paisaje sereno y silencioso donde delgados árboles desnudos se alzan como columnas etéreas sobre las aguas calmas de un lago. La escena está envuelta en una atmósfera neblinosa y fría, que sugiere el comienzo del invierno o el despertar de un día húmedo y callado. La espátula ha sido empleada con delicadeza y precisión, generando capas planas, texturas sutiles y reflejos verticales que refuerzan la simetría natural del paisaje. La elección cromática gira en torno a una gama fría de azules, grises y lilas, que otorgan profundidad y una sensación de contemplación meditativa. Los troncos, casi flotando sobre el agua, se reflejan con exactitud y ritmo, generando una cadencia visual que invita al recogimiento. Esta obra es un ejercicio de síntesis y sensibilidad, donde la ausencia de detalle enfatiza la belleza del vacío, el silencio del entorno y la pureza del instante capturado. Con un lenguaje plástico sobrio y poético, Pollak construye una imagen suspendida entre la realidad y la ensoñación."
     },
     {
         "id": "1175-arboles-en-el-lago",
@@ -2172,7 +2337,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1175-arboles-en-el-lago.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "En “Árboles en el lago 2”, Peter Pollak H. retoma el tema del bosque sumergido para ofrecernos una visión más abierta, lírica y contemplativa, donde la presencia humana irrumpe con sutileza en el paisaje. Un pequeño bote blanco, apenas esbozado con espátula, flota entre los árboles desnudos sobre aguas tranquilas, llevando a una figura solitaria vestida de rojo que añade un punto de tensión poética y escala a la escena. Los tonos pasteles, predominantes en la obra, generan una atmósfera crepuscular o de amanecer, donde el cielo rosado y los cerros verdes se funden con las aguas en una composición casi monocromática, de gran serenidad. Las formas alargadas de los troncos y sus reflejos verticales en el lago crean un ritmo visual suave y repetitivo, evocando una sensación de quietud y ensueño. El uso de la espátula aporta textura y espontaneidad, especialmente en la superficie del agua y el cielo, donde las capas de óleo se superponen con gestos controlados pero expresivos. Esta obra equilibra lo figurativo con lo sugerente, invitando al espectador a detenerse, respirar y habitar ese instante suspendido entre el paisaje y la introspección."
     },
     {
         "id": "1176-tornero",
@@ -2184,7 +2350,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1176-tornero.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
+        "texto": "\"El Tornero\" En esta obra, el artista rinde homenaje al trabajo manual y a la figura del artesano, representando a un tornero en pleno acto creativo. La composición se centra en un hombre de pie frente a su torno, vestido con una chaqueta blanca de trabajo, rodeado de bloques de madera recién trabajados. La aplicación del óleo con espátula da a la escena una textura rugosa y sólida, acentuando la materialidad del entorno y evocando la resistencia y la nobleza del oficio. Los tonos fríos y terrosos refuerzan el ambiente industrial y austero del taller, mientras que la luz cae sobre el personaje con intención, destacando su concentración y presencia. Más allá del retrato de una profesión, la pintura plantea una reflexión sobre el valor del trabajo humano, el vínculo entre el hombre y la materia, y la belleza contenida en los gestos cotidianos. La figura del tornero se eleva así como símbolo de dedicación, destreza y creación tangible"
     },
     {
         "id": "1177-e-la-penumbra",
@@ -2196,7 +2363,8 @@ const OBRAS = [
         "medidas": "50 × 70 cm",
         "imagen": "assets/obras/1177-e-la-penumbra.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 50 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 50 × 70 cm",
+        "texto": "\"Barco en la Penumbra\" En esta pintura, el artista construye una atmósfera de silencio y contemplación, donde un barco iluminado flota sobre aguas profundas envueltas en penumbra. Con una paleta dominada por tonos azules, morados y reflejos dorados, la escena transmite una sensación de calma y misterio. La espátula, aplicada con maestría, permite crear capas de textura que dan vida a la superficie del agua, generando efectos de luz y sombra que evocan la quietud del crepúsculo o de una noche sin tiempo. El barco, apenas sugerido, se convierte en un símbolo de tránsito, de espera o de introspección en medio de lo incierto. La obra invita al espectador a sumergirse en un instante suspendido, donde lo visible y lo oculto se entrelazan, y donde el vacío se llena de significado emocional. \"Barco en la Penumbra\" es una metáfora visual del viaje interior, de la soledad serena y del encuentro con uno mismo en el umbral del silencio."
     },
     {
         "id": "1178-el-maquinista",
@@ -2208,7 +2376,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1178-el-maquinista.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 50 cm",
+        "texto": "\"El Maquinista\" es una obra que destaca la figura del trabajador técnico, aquel que opera la máquina con precisión, conocimiento y oficio. A través de la aplicación enérgica del óleo con espátula, el artista logra una representación potente y texturada de un hombre en plena labor, centrado en el manejo de una herramienta mecánica de gran tamaño. El rostro del personaje, definido con expresión serena y mirada atenta, transmite dignidad y concentración. El entorno industrial, sobrio y funcional, contrasta con la calidez humana del retratado, dando lugar a una narrativa visual que pone en valor al sujeto y su rol dentro del engranaje productivo. La paleta de colores fríos y terrosos refuerza el carácter técnico de la escena, mientras que los trazos gruesos de la espátula aportan dinamismo y volumen, capturando la solidez de la maquinaria y la presencia física del operario. Más que un simple retrato de oficio, esta pintura es un homenaje al conocimiento práctico, a la herencia del trabajo bien hecho, y a la relación íntima entre el hombre y la máquina."
     },
     {
         "id": "1179-pesca-industrial",
@@ -2220,7 +2389,8 @@ const OBRAS = [
         "medidas": "120 × 150 cm",
         "imagen": "assets/obras/1179-pesca-industrial.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm",
+        "texto": "\"Pesca Industrial\" En esta pintura, el artista captura un instante silencioso pero lleno de tensión en el contexto de la pesca industrial. La figura humana, de espaldas y parcialmente sumida en la sombra, contrasta con el entorno mecánico y geométrico del barco, cruzado por cuerdas, tensores y estructuras metálicas. La obra está construida sobre una paleta de tonos azules que evoca la atmósfera fría del amanecer en alta mar, así como la rutina dura y persistente del trabajo marítimo. El uso de la espátula crea una textura vibrante y fragmentada, que transmite tanto el movimiento como la solidez de la escena. La mirada del espectador se desliza entre los volúmenes industriales y los pliegues de la tela, en un diálogo visual entre lo humano y lo técnico, entre la presencia del trabajador y la maquinaria que lo rodea. \"Pesca Industrial\" habla de oficio, de aislamiento y de resistencia, resaltando el vínculo entre el hombre y el mar en un escenario donde lo natural ha sido transformado por la escala productiva."
     },
     {
         "id": "1180-artesanal",
@@ -2232,7 +2402,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1180-artesanal.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“Pesca artesanal” En esta obra, Peter Pollak captura con fuerza y sensibilidad el oficio ancestral de la pesca artesanal. Desde un punto de vista elevado y central, el espectador contempla la cubierta de un barco repleto de cajas rebosantes de sardinas brillantes, dispuestas con rigor casi escenográfico. Dos figuras humanas —pescadores en plena faena— manipulan las cajas con destreza y concentración, envueltos en una atmósfera de trabajo sincronizado y silencioso. La espátula, en manos del artista, confiere textura vibrante tanto al mar como a la madera del barco y a los cuerpos de los trabajadores. El agua, plasmada con una paleta de azules y blancos empastados, sugiere movimiento y luz. La escena se abre hacia un horizonte suave de cielos rosados y montañas distantes, que contrastan con la densidad del primer plano, aportando profundidad y un cierto lirismo al conjunto. Esta pintura es una celebración de la dignidad del trabajo humano en contacto directo con la naturaleza. Pollak combina estructura compositiva, detalle matérico y sentido narrativo en una imagen que es, a la vez, homenaje, documento y poesía visual."
     },
     {
         "id": "1181-calle-de-santiago-del-1900",
@@ -2244,7 +2415,8 @@ const OBRAS = [
         "medidas": "120 × 150 cm",
         "imagen": "assets/obras/1181-calle-de-santiago-del-1900.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm",
+        "texto": "“Calle de Santiago del 1900” En esta obra, Peter Pollak reconstruye con precisión emocional una escena urbana del Santiago de comienzos del siglo XX. La calle vacía, flanqueada por fachadas sencillas de arquitectura lineal, nos transporta a un momento de quietud detenida en el tiempo. La perspectiva central y profunda lleva la mirada hacia el horizonte, donde una torre lejana se erige como punto de fuga y ancla simbólica del paisaje. La técnica de espátula da cuerpo y textura a cada superficie: los muros de adobe, los techos de tejas rojas y el pavimento se sienten casi táctiles, reforzando la presencia sólida de lo cotidiano. La luz clara y limpia de la escena, sin sombras duras, acentúa la sensación de silencio y contemplación. A través de una estética sobria, casi minimalista, Pollak evoca la memoria urbana con un enfoque poético. No hay figuras humanas: solo la arquitectura como testigo del paso del tiempo. La obra habla de historia, de identidad, y de la belleza contenida en lo simple, rescatando una postal perdida del Santiago antiguo con mirada contemporánea."
     },
     {
         "id": "1182-riachuelo-entre-rocas",
@@ -2256,7 +2428,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1182-riachuelo-entre-rocas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "En “Riachuelo entre rocas”, Peter Pollak nos introduce en una escena de naturaleza serena y contenida, donde la piedra y el agua dialogan en silencio bajo una atmósfera grisácea y fría. Las rocas, angulosas y monumentales, se presentan como cuerpos firmes, esculpidos por el tiempo, mientras que el riachuelo, de reflejos rosados y marrones, suaviza la escena con su paso silencioso. La técnica de espátula empleada con maestría da vida a las texturas rugosas de las piedras y a la profundidad cromática del paisaje. Las capas de óleo construyen volúmenes con ritmo pictórico y expresividad contenida, capturando el carácter mineral del entorno con una paleta sobria dominada por grises, verdes y tierras. El bosque del fondo, apenas insinuado por manchas verticales de pigmento, acentúa la sensación de aislamiento y contemplación. La composición evita el dramatismo; en su lugar, se impone una pausa reflexiva, un momento de quietud natural. Esta obra evoca el vínculo íntimo entre lo sólido y lo fluido, entre permanencia y transitoriedad, un tema recurrente en el universo pictórico de Poll"
     },
     {
         "id": "1183-bosquejo-sobrecargo-avion",
@@ -2268,7 +2441,8 @@ const OBRAS = [
         "medidas": "60 × 40 cm",
         "imagen": "assets/obras/1183-bosquejo-sobrecargo-avion.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 40 cm",
+        "texto": "En “Bosquejo sobrecargo avió”, Peter Pollak presenta un bosquejo expresivo de una sobrecargo de avión, utilizando la espátula como instrumento principal para construir una imagen poderosa, fragmentaria y gestual. El personaje, que posa de pie con una expresión tenue y sonriente, parece surgir entre manchas de color y formas geométricas apenas sugeridas. Los tonos ocres, azul petróleo y terracotas, junto al blanco del lienzo que aún permanece expuesto en varias zonas, refuerzan el carácter inacabado e introspectivo de la obra. El rostro, de una intensa cromaticidad rojiza, transmite calidez humana pese a su estilización casi tosca. El uniforme se intuye a través de trazos enérgicos que delinean apenas los detalles formales: un pañuelo al cuello, un broche, y una cadena que sugiere elegancia y profesionalismo. La escena se desarrolla frente a un fondo abstracto de verdes y negros, sin elementos figurativos, lo que centra la atención del espectador en la figura humana y su lenguaje corporal. El trazo grueso, la economía de medios y la espontaneidad del color transmiten una energía contenida, como si el retrato captara un instante previo a una acción. Pollak propone aquí no una imagen realista, sino una evocación. Este bosquejo pictórico valora el gesto y la impresión sobre el detalle, en una obra que dialoga con la estética moderna del retrato expresivo."
     },
     {
         "id": "1184-veleros-en-la-playa",
@@ -2280,7 +2454,8 @@ const OBRAS = [
         "medidas": "89.5 × 73 cm",
         "imagen": "assets/obras/1184-veleros-en-la-playa.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 89.5 × 73 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 89.5 × 73 cm",
+        "texto": "En “Velerso en la playa”, Peter Pollak plasma una escena marítima de poderosa simplicidad y energía visual. Dos embarcaciones de velas rojas, varadas sobre la arena, se recortan contra un cielo dramático que alterna nubes densas y claros azules. La composición, construida íntegramente con espátula, transmite la textura áspera de la madera, la solidez de las velas tensas y la irregularidad de la arena y el agua. La paleta se articula en contrastes vibrantes: el rojo intenso de las velas, símbolo de vitalidad y movimiento, se enfrenta al cielo gris-azulado cargado de matices y al marrón profundo de los cascos. El juego de sombras en la playa y la disposición de las embarcaciones generan una sensación de quietud expectante, como si el momento captado fuera una pausa antes de zarpar. La técnica a espátula aporta espesura y relieve a la pintura, permitiendo que la luz se refleje de forma distinta en cada trazo, dotando a la escena de dinamismo y corporeidad. La perspectiva y el trazo simplificado enfatizan la fuerza de las formas y el equilibrio compositivo, en un homenaje a la vida marinera y a la contemplación serena del paisaje costero."
     },
     {
         "id": "1185-patagonia-virgen",
@@ -2292,7 +2467,8 @@ const OBRAS = [
         "medidas": "120 × 150 cm",
         "imagen": "assets/obras/1185-patagonia-virgen.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 120 × 150 cm",
+        "texto": "“Patagonia Virgen” captura la inmensidad y la pureza de un paisaje austral intacto, donde el hielo, el agua y la tierra se encuentran en una composición de fuerza serena. La escena muestra una costa amplia y abierta, bañada por un río que se abre paso entre extensiones de nieve y témpanos, bajo un cielo limpio y suave. La técnica a espátula otorga textura y volumen a cada elemento: las capas de hielo se sienten frías y rugosas, las aguas azules adquieren profundidad y movimiento, y la vegetación seca vibra con la luz dorada del sur. Los contrastes entre el blanco puro del hielo, el ocre cálido de la tierra y el azul intenso del agua transmiten la dureza y, a la vez, la belleza prístina de la región. En esta obra, Peter Pollak no solo representa un rincón remoto de la Patagonia, sino que evoca la sensación de estar en un lugar donde el hombre aún no ha dejado huella, invitando al espectador a contemplar y preservar este territorio indómito."
     },
     {
         "id": "1186-oscuro-tras-el-rio",
@@ -2304,7 +2480,8 @@ const OBRAS = [
         "medidas": "150 × 120 cm",
         "imagen": "assets/obras/1186-oscuro-tras-el-rio.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm",
+        "texto": "“Bosque oscuro tras el río” Esta obra de Pollak representa la intensidad de un paisaje detenido en el contraste entre la luz y la sombra. En primer plano, las piedras blancas, modeladas con gruesos empastes de espátula, reflejan la claridad del día y conducen la mirada hacia el cauce del río, donde el agua oscura guarda destellos verdes y dorados. Al fondo, un bosque profundo se levanta como un muro en penumbra, apenas interrumpido por troncos verticales que resaltan la densidad del entorno. La pintura trasciende la descripción naturalista para convertirse en una metáfora visual: la tensión entre lo luminoso y lo oscuro, entre lo cercano y lo impenetrable. En ella, la naturaleza es al mismo tiempo refugio y misterio."
     },
     {
         "id": "1187-osechando-la-uva",
@@ -2316,7 +2493,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1187-osechando-la-uva.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
+        "texto": "“Cosechando Uvas” Esta obra de Pollak captura el instante preciso en que un trabajador corta racimos de uvas maduras bajo la luz del sol. Con trazos firmes y texturas creadas por la espátula, la escena transmite la fuerza y dignidad del oficio campesino. El contraste entre los tonos oscuros de los racimos y el cielo claro enmarca la figura, resaltando el vínculo entre el ser humano y la naturaleza. Más allá de lo costumbrista, la pintura se convierte en un homenaje a la vendimia: un momento de esfuerzo colectivo y de tradición, donde la tierra y el trabajo se unen para dar fruto."
     },
     {
         "id": "1188-casas-de-piedra-abandonadas",
@@ -2328,7 +2506,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1188-casas-de-piedra-abandonadas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "“Casas de piedra abandonadas” Esta obra de Peter Pollak representa un conjunto de viviendas rurales de piedra, alineadas en una calle desierta que se pierde en la montaña. La paleta de tonos terrosos y grises, junto con las texturas creadas por la espátula, transmiten la sensación áspera del paisaje y el paso del tiempo sobre las construcciones. Los muros y tejados, erosionados pero firmes, evocan historias de vidas pasadas, de comunidades que alguna vez habitaron este lugar y que hoy permanecen solo como memoria silenciosa. La composición, con sus volúmenes geométricos y perspectivas marcadas, refuerza la atmósfera de soledad y abandono, convirtiendo a las casas en testigos mudos de un entorno inhóspito y bello a la vez."
     },
     {
         "id": "1189-muelle-en-el-lago",
@@ -2340,7 +2519,8 @@ const OBRAS = [
         "medidas": "150 × 120 cm",
         "imagen": "assets/obras/1189-muelle-en-el-lago.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm",
+        "texto": "“Muelle en el lago” la pintura de Pollak representa un instante de quietud y equilibrio absoluto entre la naturaleza y el agua. El muelle, suspendido sobre un lago de superficie cristalina, parece flotar entre reflejos que duplican el paisaje circundante: montañas, árboles y cielo se funden en una armonía serena. Mediante la técnica de espátula, el artista logra una textura rica y profunda, donde los planos de color transmiten la transparencia del agua y la solidez de las rocas. La composición, dominada por tonos azules y verdes, invita al espectador a un estado de contemplación silenciosa, evocando la calma del entorno natural y la sensación de tiempo detenido."
     },
     {
         "id": "1190-lago-con-neblina",
@@ -2352,7 +2532,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1190-lago-con-neblina.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "“Lago con neblina” Pollak captura la atmósfera silenciosa y misteriosa de un amanecer donde el agua y el cielo parecen confundirse bajo un velo de bruma. La escena transmite calma y profundidad, mientras la neblina suaviza los contornos del paisaje y envuelve el entorno en una luz difusa. La técnica de espátula acentúa la textura del óleo, creando matices sutiles que sugieren el movimiento leve del aire y la humedad suspendida. En esta obra, Peter Pollak logra expresar la serenidad de la naturaleza en su estado más puro, invitando al espectador a sumergirse en la quietud del instante."
     },
     {
         "id": "1191-pueblo-frente-al-mar",
@@ -2364,7 +2545,8 @@ const OBRAS = [
         "medidas": "150 × 120 cm",
         "imagen": "assets/obras/1191-pueblo-frente-al-mar.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 120 cm",
+        "texto": "“Pueblo frente al mar” Esta obra de Pollak representa un luminoso paisaje costero mediterráneo, donde un pequeño pueblo de casas blancas con techos rojos se extiende junto a la orilla del mar. La intensidad del azul del agua contrasta con la calidez de las colinas áridas y los tonos ocres de la montaña, creando una armonía visual que transmite serenidad y equilibrio. La técnica a espátula se aprecia en las texturas vigorosas de las construcciones y en las variaciones cromáticas del terreno, aportando profundidad y movimiento a la escena. El cielo despejado, de un azul intenso, acentúa la atmósfera soleada y limpia del lugar, mientras la disposición escalonada de las viviendas sugiere un asentamiento antiguo, tranquilo y en armonía con la naturaleza. La pintura invita al espectador a contemplar el silencio y la calma del paisaje, evocando la quietud de un día de verano junto al mar."
     },
     {
         "id": "1192-puesta-de-sol-en-chicureo",
@@ -2376,7 +2558,8 @@ const OBRAS = [
         "medidas": "150 × 220 cm",
         "imagen": "assets/obras/1192-puesta-de-sol-en-chicureo.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 220 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 150 × 220 cm",
+        "texto": "“ Puesta de sol en Chicureo 2025” En esta obra, Peter Pollak captura la fuerza emocional de una puesta de sol en Chicureo, donde la luz se convierte en protagonista y transforma el paisaje en un escenario dramático y poético. La técnica de espátula, aplicada con maestría, permite construir un relieve pictórico que transmite la energía del instante y otorga volumen a cada plano del terreno. En primer plano, la vegetación aparece con texturas ricas y variadas, representada en tonos verdes, ocres y grisáceos que revelan la diversidad del paisaje chileno. Al fondo, los cerros se iluminan con una intensidad dorada y anaranjada casi incandescente, como si el sol se despidiera incendiando suavemente las laderas. Esta franja de luz cálida contrasta con un cielo de nubes densas y tonos fríos —grises, azules y violetas— creando un equilibrio visual que sugiere calma y tensión a la vez. Las manchas de color, aplicadas mediante espátula, generan un efecto de movimiento y vibración lumínica. Hay una sensación de vastedad, pero también de intimidad: la naturaleza se vuelve símbolo de introspección, observada desde una distancia emocional, casi meditativa. “Puesta de sol en Chicureo” es más que un paisaje real; es un momento suspendido en el tiempo, donde el color se vuelve emoción y la memoria del lugar se convierte en pintura."
     },
     {
         "id": "1193-pescadores-en-la-playa",
@@ -2388,7 +2571,8 @@ const OBRAS = [
         "medidas": "37 × 58 cm",
         "imagen": "assets/obras/1193-pescadores-en-la-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 58 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 58 cm",
+        "texto": "“Pescadores en la playa 2025” es una pintura al óleo de Pollaak trabajada con espátula que transmite una escena cotidiana cargada de serenidad y memoria. En primer plano, tres figuras humanas —dos adultos y un niño— aparecen de espaldas, concentradas en la acción simple y ancestral de la pesca desde la orilla. Sus gestos mínimos y la ausencia de detalles faciales refuerzan el carácter universal de la escena, donde importa más el acto compartido que la identidad individual. La composición se estructura en franjas horizontales bien definidas: la arena clara y texturada del primer plano, el mar profundo en tonos azules y, al fondo, la silueta oscura de una ciudad costera que se recorta contra un cielo luminoso. Este contraste entre lo natural y lo urbano introduce una tensión sutil entre dos mundos que coexisten: la vida simple y el paisaje construido. El uso de la espátula es evidente en las superficies rugosas y en los empastes que construyen rocas, arena y cielo, aportando materialidad y ritmo al conjunto. La paleta cromática es contenida pero expresiva: azules, ocres y grises dominan el paisaje, mientras los colores más vivos de la vestimenta de los pescadores —rojos y azules— actúan como puntos focales que animan la escena. En conjunto, la obra evoca calma, contemplación y una cierta nostalgia, capturando un instante detenido en el tiempo donde la relación del ser humano con el mar se presenta como algo íntimo, sencillo y profundamente humano."
     },
     {
         "id": "1194-paseo-por-le-playa",
@@ -2400,7 +2584,8 @@ const OBRAS = [
         "medidas": "37 × 58 cm",
         "imagen": "assets/obras/1194-paseo-por-le-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 58 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 58 cm",
+        "texto": "“ Paseo por la playa 2025” Esta pintura al óleo realizada por Pollak con técnica de espátula presenta una escena costera serena y contemplativa, donde la figura humana se integra con naturalidad al paisaje marino. En primer plano, tres personas se agrupan sobre una franja clara de arena, detenidas en un momento de pausa y observación frente al mar. Sus cuerpos, tratados de manera sintética y sin detalles anecdóticos, sugieren más una presencia que una identidad, reforzando el carácter universal de la escena. La composición se organiza en grandes planos horizontales: la arena, el mar y el cielo, construidos mediante capas de color aplicadas con empastes visibles que otorgan textura y profundidad. El mar, en un azul intenso y calmo, actúa como eje visual que separa y equilibra la escena, mientras el cielo, trabajado en tonos suaves y quebrados, aporta luminosidad y una atmósfera abierta. A la derecha, un conjunto de rocas de formas sólidas y colores terrosos introduce peso visual y contraste, equilibrando la ligereza del cielo y el espacio abierto del mar. La espátula deja huellas marcadas en toda la superficie, enfatizando la materialidad del óleo y aportando un ritmo gestual que dinamiza el paisaje. En conjunto, la obra transmite una sensación de calma, introspección y cotidianeidad, capturando un instante simple —un paseo junto al mar— que se transforma en una experiencia atemporal, donde naturaleza y presencia humana dialogan en equilibrio"
     },
     {
         "id": "1195-casas-blancas-frente-a-mar",
@@ -2412,7 +2597,8 @@ const OBRAS = [
         "medidas": "37 × 58 cm",
         "imagen": "assets/obras/1195-casas-blancas-frente-a-mar.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 58 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 58 cm",
+        "texto": "“Casas Blancas frente a mar 2025” Esta pintura al óleo realizada por Pollak con técnica de espátula, presenta un paisaje costero de fuerte carácter mediterráneo, donde la arquitectura y la naturaleza conviven en un equilibrio sereno y luminoso. En primer plano, el mar de un azul profundo y uniforme actúa como base visual, aportando calma y estabilidad a la composición. Sobre la franja costera se dispone un conjunto de casas blancas de volúmenes simples, alineadas y escalonadas suavemente, cuyos muros claros contrastan con los techos rojizos y con la intensidad cromática del entorno. Las edificaciones, tratadas de manera sintética y geométrica, evocan un poblado costero atemporal, más sugerido que descrito, reforzando una lectura poética del lugar. El fondo se estructura en planos sucesivos de colinas y montañas, trabajadas con empastes densos y trazos amplios de espátula, donde predominan tonos ocres, verdes y tierras. El cielo, amplio y vibrante, se despliega en azules degradados que aportan profundidad y atmósfera, reforzando la sensación de espacio abierto y luz intensa. La espátula deja huellas visibles en toda la superficie, otorgando textura, movimiento y materialidad a la obra. Este tratamiento gestual no solo define formas, sino que también transmite la energía del paisaje y la presencia del artista en el proceso. En conjunto, la pintura comunica una sensación de quietud, armonía y contemplación, donde el blanco de las casas frente al azul del mar se convierte en un diálogo cromático esencial, evocando la relación ancestral entre el habitar humano y el paisaje costero."
     },
     {
         "id": "1196-torres-del-paine",
@@ -2424,7 +2610,8 @@ const OBRAS = [
         "medidas": "37 × 58 cm",
         "imagen": "assets/obras/1196-torres-del-paine.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 58 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 58 cm",
+        "texto": "“Torres del Paine, 2025” es una pintura al óleo por Pollak realizada con técnica de espátula que captura la fuerza monumental y la atmósfera indómita del paisaje patagónico. La obra se construye a partir de planos superpuestos y gestos decididos, donde la materia pictórica adquiere protagonismo y transmite la rudeza del terreno. Las montañas emergen con volúmenes rotundos, modeladas mediante capas densas de color gris, ocre y azul acerado, que evocan la roca desnuda y la presencia imponente de las Torres. Las cumbres, apenas iluminadas por tonos cálidos y blanquecinos, contrastan con las sombras profundas, reforzando la sensación de altura y lejanía. La nieve y el hielo se sugieren con blancos quebrados y grises fríos, aplicados con espátula en trazos amplios que aportan textura y movimiento. En primer plano, el lago de aguas turquesas introduce un contrapunto de calma, reflejando sutilmente el paisaje y equilibrando la composición. El cielo, trabajado en tonos claros y fríos, se integra al conjunto sin restar protagonismo a la cordillera, envolviendo la escena en una atmósfera silenciosa y austera. La obra transmite una profunda conexión con la naturaleza, destacando la inmensidad, la soledad y la belleza agreste de Torres del Paine, donde la materia, el color y el gesto pictórico dialogan para ofrecer una interpretación intensa y contemporánea del paisaje austral."
     },
     {
         "id": "1197-bahia-con-playa",
@@ -2436,7 +2623,8 @@ const OBRAS = [
         "medidas": "38 × 59 cm",
         "imagen": "assets/obras/1197-bahia-con-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 38 × 59 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 38 × 59 cm",
+        "texto": "“Bahía con playa 2025” es una pintura al óleo Por Pollak realizada con técnica de espátula que interpreta el paisaje costero a través de una construcción sólida y gestual. La obra se organiza en franjas horizontales que estructuran la escena: la arena en primer plano, el mar en el centro y las colinas que cierran el horizonte. La playa se extiende con tonos arena y blancos quebrados, aplicados con capas espesas que sugieren la huella del oleaje y la textura húmeda de la orilla. El mar, en un azul luminoso y sereno, aparece contenido y estable, con leves toques de espuma que aportan ritmo y movimiento sin romper la calma general de la escena. Al fondo, las colinas se levantan en una sucesión de verdes, ocres y tierras profundas, modeladas con espátula en trazos amplios y superpuestos que evocan la vegetación y la geografía irregular del paisaje. Estos volúmenes contrastan con la suavidad del cielo, trabajado en tonos claros y fríos, que envuelve la escena con una atmósfera abierta y silenciosa. La materia pictórica, protagonista en toda la obra, refuerza la sensación de presencia física del lugar y transmite una visión directa y esencial del paisaje. Bahía con playa invita a una contemplación pausada, donde el equilibrio entre color, textura y gesto construye una imagen de quietud, amplitud y contacto profundo con la naturaleza costera."
     },
     {
         "id": "1198-playa-al-sur-de-pto-montt",
@@ -2448,7 +2636,8 @@ const OBRAS = [
         "medidas": "38 × 59 cm",
         "imagen": "assets/obras/1198-playa-al-sur-de-pto-montt.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 38 × 59 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 38 × 59 cm",
+        "texto": "“Playa al sur de Puerto Montt 2025” es una pintura al óleo poe Pollak realizada con técnica de espátula que captura la fuerza silenciosa y el carácter austero del paisaje costero del sur de Chile. La composición se construye a partir de amplios planos horizontales que organizan el espacio y conducen la mirada desde la tierra hacia el mar y el cielo. En primer plano, la playa aparece modelada con tonos tierra, grises y ocres, aplicados con capas densas y texturadas que sugieren la humedad del suelo y las huellas dejadas por el viento y el agua. Pequeños toques claros, casi blancos, aportan ritmo y luminosidad, evocando reflejos de luz sobre la arena y restos de espuma. El mar se abre hacia la derecha con un azul profundo y frío, trabajado con espátula en gestos curvos y enérgicos que transmiten movimiento y la persistente acción de las olas. Este dinamismo contrasta con la solidez de la playa y con las formas más contenidas del fondo. Al fondo, las colinas y promontorios se superponen en una gama de azules y verdes apagados, creando una sensación de profundidad y atmósfera húmeda, característica del sur austral. El cielo, amplio y cargado de matices, envuelve la escena con una luz difusa que refuerza el clima contemplativo de la obra. La materia pictórica es protagonista en toda la composición, convirtiendo el paisaje en una experiencia sensorial más que descriptiva. Playa al sur de Puerto Montt transmite quietud, aislamiento y respeto por la naturaleza, invitando a una mirada pausada sobre un territorio donde el mar y la tierra se encuentran en permanente diálogo."
     },
     {
         "id": "1199-playa-al-sur-de-pto-montt",
@@ -2460,7 +2649,8 @@ const OBRAS = [
         "medidas": "38 × 59 cm",
         "imagen": "assets/obras/1199-playa-al-sur-de-pto-montt.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 38 × 59 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 38 × 59 cm",
+        "texto": "“Playa al sur de Puerto Montt 2” es una pintura al óleo de Pollak realizada con técnica de espátula que transmite la amplitud y el carácter sobrio del paisaje costero austral. La composición se construye a partir de franjas horizontales superpuestas que ordenan el espacio y refuerzan la sensación de calma y distancia. En primer plano, la playa aparece trabajada con una materia espesa y rica en textura, donde predominan los tonos grises, pardos y ocres. Las pasadas de espátula dejan huellas visibles que evocan arena húmeda, sedimentos y restos de espuma, otorgando al suelo una presencia física y casi táctil. El mar ocupa una amplia franja central en intensos azules, modulados con variaciones más oscuras y claras que sugieren profundidad y movimiento contenido. La superficie del agua, resuelta con trazos horizontales, refleja una energía tranquila, propia de un paisaje frío y abierto. Al fondo, las colinas se recortan suavemente en tonos verdes apagados, tierras y grises azulados, creando una línea de horizonte baja que dialoga con el cielo. Este último, de azules claros y pinceladas amplias, aporta una luz difusa que envuelve toda la escena y refuerza la atmósfera silenciosa del sur de Chile. La obra privilegia la síntesis formal y la fuerza del gesto, más que el detalle descriptivo. Playa al sur de Puerto Montt 2 es una evocación poética del litoral austral, donde la materia, el color y la textura se convierten en los protagonistas de una experiencia visual serena y contemplativa."
     },
     {
         "id": "1200-castillo-en-el-mar",
@@ -2472,7 +2662,8 @@ const OBRAS = [
         "medidas": "38 × 59 cm",
         "imagen": "assets/obras/1200-castillo-en-el-mar.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 38 × 59 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 38 × 59 cm",
+        "texto": "“Castillo en el mar” es una pintura al óleo de Pollak realizada con técnica de espátula que destaca por su fuerte carácter constructivo y la intensidad del color. La obra presenta una escena costera donde una edificación pétrea, semejante a un castillo o fortaleza, se asienta firmemente sobre rocas blancas, emergiendo entre el mar y la montaña. El primer plano está dominado por el agua, trabajada en amplias pasadas horizontales de azules profundos y turquesas, que transmiten calma y profundidad. La textura espesa de la pintura sugiere el movimiento lento del mar y refleja la luz del cielo, generando una superficie vibrante y dinámica. En el plano medio, las rocas y la construcción se resuelven con tonos claros, grises y ocres, aplicados con espátula en capas gruesas que enfatizan la solidez y el peso de la arquitectura frente al entorno natural. La edificación aparece integrada al paisaje, casi como una prolongación de la roca, reforzando la sensación de permanencia y resistencia. Al fondo, una ladera verde y gris se eleva suavemente bajo un cielo de azul intenso y limpio. El contraste entre el cielo luminoso, el mar profundo y las masas sólidas de tierra y piedra aporta equilibrio a la composición y potencia la lectura espacial. En conjunto, Castillo en el mar es una obra de atmósfera serena y contemplativa, donde la materia pictórica y el gesto de la espátula construyen un diálogo entre arquitectura y naturaleza, evocando aislamiento, fortaleza y silencio frente a la inmensidad del paisaje marino."
     },
     {
         "id": "1201-bahia-mar-dia-sol",
@@ -2484,7 +2675,8 @@ const OBRAS = [
         "medidas": "37 × 78 cm",
         "imagen": "assets/obras/1201-bahia-mar-dia-sol.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 78 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 78 cm",
+        "texto": "“Bahía, mar, día, sol” es una pintura al óleo de Pollak realizada con técnica de espátula que transmite una sensación de amplitud, luz y serenidad. La composición se construye a partir de un amplio plano de mar azul profundo, aplicado con capas densas y horizontales que refuerzan la calma del agua y la inmensidad del paisaje marino. La bahía se abre suavemente hacia la izquierda, donde rocas claras y un pequeño promontorio delimitan la entrada del mar. La espuma blanca, resuelta con gestos firmes de espátula, marca el encuentro entre el agua y la arena, aportando ritmo y contraste al conjunto. En primer plano, la playa de tonos claros se extiende de manera generosa, trabajada con texturas suaves y empastes controlados que sugieren la calidez de la arena bajo la luz del sol. Un pequeño grupo de figuras humanas, apenas insinuadas, introduce escala y vida a la escena, reforzando la idea de contemplación y disfrute del entorno. El cielo, de un azul limpio y luminoso, se integra al mar en una continuidad cromática que acentúa la claridad del día. En conjunto, la obra propone una visión sencilla y poderosa del paisaje costero, donde la materia pictórica, el color y la luz se combinan para evocar un momento de quietud, sol y horizonte abierto frente al mar."
     },
     {
         "id": "1202-bahia-mar-dia-nublado",
@@ -2496,7 +2688,8 @@ const OBRAS = [
         "medidas": "37 × 78 cm",
         "imagen": "assets/obras/1202-bahia-mar-dia-nublado.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 78 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 78 cm",
+        "texto": "“Bahía, mar, día nublado” es una pintura al óleo realizada con técnica de espátula que evoca una atmósfera silenciosa y contemplativa. La escena se organiza en grandes planos horizontales donde el mar, de azules profundos y grises matizados, ocupa el centro de la composición, trabajado con empastes densos que sugieren el movimiento pausado del agua bajo un cielo cubierto. La bahía se cierra suavemente hacia la izquierda con un borde de rocas claras y un promontorio lejano, construidos con trazos firmes y texturas marcadas que contrastan con la superficie más uniforme del mar. La línea de espuma, aplicada con gestos breves y decididos, define el encuentro entre el agua y la arena, aportando ritmo y continuidad visual. En primer plano, la playa de tonos claros y fríos se extiende de manera amplia y silenciosa. Dos pequeñas figuras humanas, apenas insinuadas, caminan junto a la orilla; su presencia introduce escala y un sutil relato de intimidad frente a la inmensidad del paisaje. El cielo, cubierto de nubes espesas resueltas con capas superpuestas de grises y blancos, envuelve la escena en una luz difusa que suaviza los contrastes y refuerza el carácter introspectivo de la obra. En conjunto, la pintura propone una mirada serena y reflexiva del litoral, donde la materia, el color y la atmósfera se funden para transmitir la calma melancólica de un día nublado frente al mar."
     },
     {
         "id": "1203-mar-puesta-de-sol",
@@ -2508,7 +2701,8 @@ const OBRAS = [
         "medidas": "37 × 78 cm",
         "imagen": "assets/obras/1203-mar-puesta-de-sol.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 78 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 37 × 78 cm",
+        "texto": "“Bahía, mar, puesta de sol” es una pintura al óleo de Pollak realizada con técnica de espátula que captura la transición silenciosa entre el día y la noche en un paisaje costero. La composición se estructura en amplios planos horizontales donde el mar, de azules profundos y densos, refleja la luz decreciente del atardecer, trabajado con empastes firmes que transmiten peso y profundidad. En el horizonte, el cielo se tiñe de tonos cálidos —ocres, amarillos y naranjas suaves— que se funden gradualmente, sugiriendo el resplandor final del sol ocultándose tras la línea lejana. Este contraste entre los colores cálidos del cielo y los fríos del mar genera una tensión armónica que define el carácter de la obra. La bahía se cierra hacia la izquierda con un conjunto de rocas y una franja de arena clara, resueltas con trazos decididos y texturas marcadas. La línea de espuma, aplicada con gestos breves de blanco, delimita el encuentro entre el agua y la playa, aportando ritmo y continuidad visual. En primer plano, pequeñas figuras humanas caminan junto a la orilla. Apenas sugeridas, introducen escala y humanidad en la escena, reforzando la sensación de contemplación y recogimiento frente a la vastedad del paisaje. En conjunto, la obra transmite una atmósfera serena y reflexiva, donde la materia pictórica y la luz del atardecer se conjugan para evocar la calma melancólica de una bahía al caer el sol."
     },
     {
         "id": "1204-rocas-de-orilla-marcando-nuveles-del-lago",
@@ -2520,7 +2714,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1204-rocas-de-orilla-marcando-nuveles-del-lago.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "“Rocas de orilla marcando niveles del lago” La obra de Pollak presenta un primer plano de grandes rocas en la orilla de un lago, trabajadas con una pintura densa y matérica que evidencia el uso decidido de la espátula. Los volúmenes pétreos se superponen en planos horizontales y oblicuos, construyendo una geología casi escultórica donde cada estrato queda claramente definido por cambios sutiles de color y textura. La paleta está dominada por una gama de grises fríos, azules acerados y blancos quebrados, que sugieren la humedad permanente de la roca y el desgaste producido por el agua a lo largo del tiempo. En contraste, leves toques de ocres y verdes apagados aparecen en las zonas superiores, insinuando sedimentos minerales y restos de vegetación que delatan antiguas variaciones del nivel del lago. Las marcas horizontales, casi lineales, que atraviesan las rocas funcionan como un registro natural del paso del tiempo: huellas del ascenso y descenso del agua que han ido “escribiendo” su historia sobre la piedra. En la franja inferior, el blanco más luminoso y quebrado señala el contacto directo con el agua actual, donde la erosión es más reciente y visible. El fondo, tratado con verdes grisáceos y pinceladas verticales más sueltas, sugiere la vegetación ribereña y aporta profundidad sin restar protagonismo al conjunto rocoso. La composición, sobria y equilibrada, transmite una sensación de silencio y permanencia, invitando a contemplar la relación entre naturaleza, tiempo y memoria. La obra se convierte así en una reflexión visual sobre la huella persistente del agua y la lenta transformación del paisaje lacustre."
     },
     {
         "id": "1205-camino-al-puente-post-terremoto",
@@ -2532,7 +2727,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1205-camino-al-puente-post-terremoto.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "“Camino al puente post terremoto 1985” Esta obra de Pollak captura un paisaje intervenido por la catástrofe, donde la naturaleza y la infraestructura se encuentran fracturadas. La escena representa un camino dañado tras el terremoto de 1985, convertido en un terreno quebrado, irregular y profundamente agrietado. Sin dramatismo explícito, la pintura transmite una tensión silenciosa y una memoria colectiva. La composición se estructura en profundidad, con un punto de fuga alto y central que conduce la mirada hacia el horizonte. El camino destruido ocupa casi toda la superficie inferior y media del cuadro, abriéndose en grietas y planos desplazados que generan un ritmo quebrado. Las fisuras negras y grises funcionan como líneas dinámicas que atraviesan la escena en diagonales abruptas. Estas fracturas no solo describen el daño físico, sino que organizan visualmente el espacio. En el tercio superior, una línea de vegetación verde con árboles verticales introduce estabilidad frente al caos del primer plano. Más atrás, una cordillera suave en tonos grisáceos cierra la escena con una atmósfera lejana y apagada. Tres figuras caminan sobre el terreno irregular. En primer plano, un hombre visto de espaldas, con sombrero y mochila, avanza con paso firme. Su postura es erguida, decidida. La mochila roja introduce un acento cromático cálido que contrasta con los grises dominantes. Más adelante, dos figuras —una con prenda roja— se desplazan hacia el mismo destino. Son pequeñas en escala, lo que enfatiza la vastedad del terreno dañado. La presencia humana aporta dimensión narrativa: no se trata solo de ruina, sino de tránsito, de reconstrucción implícita. La paleta está dominada por grises, blancos quebrados y tierras frías en el camino. Las grietas están marcadas con negros y tonos oscuros que acentúan la ruptura. El verde del paisaje lateral es denso y trabajado con mayor carga de materia, contrastando con la superficie erosionada del camino. El cielo es claro, levemente grisáceo, sin dramatismo tormentoso, lo que intensifica la sensación de realidad cotidiana más que de tragedia épica. Los pequeños toques rojos en las figuras aportan vida y humanidad al conjunto. La espátula es protagonista en la representación del terreno fracturado. Las capas gruesas, los arrastres y las superposiciones generan una textura casi táctil que refuerza la idea de superficie quebrada. Las grietas están construidas con gestos decididos, dejando huella física en la pintura. El relieve pictórico acompaña el relieve representado. En contraste, el cielo y las montañas están tratados con mayor suavidad, creando profundidad y reposo visual. La obra no se centra en el momento del desastre, sino en el después. El título sitúa la escena en un contexto histórico concreto, pero la pintura trasciende el hecho puntual. El camino, símbolo de continuidad y conexión, aparece roto. Sin embargo, las figuras avanzan. La imagen sugiere resiliencia, adaptación y la persistencia humana frente a la fractura del entorno. El contraste entre la línea vertical de los árboles y las grietas horizontales del suelo refuerza la tensión entre estabilidad y ruptura. “Camino al puente post terremoto 1985” es una obra de memoria y tránsito. La espátula no solo describe materia; la encarna. El terreno se vuelve físico, pesado, real. En conjunto, la pintura equilibra devastación y esperanza. No hay espectacularidad ni exageración, sino una mirada sobria y humana ante un paisaje transformado por la fuerza de la naturaleza."
     },
     {
         "id": "1205-rocas-en-el-rio",
@@ -2544,7 +2740,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1205-rocas-en-el-rio.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "“Camino al puente post terremoto 1985” Esta obra de Pollak captura un paisaje intervenido por la catástrofe, donde la naturaleza y la infraestructura se encuentran fracturadas. La escena representa un camino dañado tras el terremoto de 1985, convertido en un terreno quebrado, irregular y profundamente agrietado. Sin dramatismo explícito, la pintura transmite una tensión silenciosa y una memoria colectiva. La composición se estructura en profundidad, con un punto de fuga alto y central que conduce la mirada hacia el horizonte. El camino destruido ocupa casi toda la superficie inferior y media del cuadro, abriéndose en grietas y planos desplazados que generan un ritmo quebrado. Las fisuras negras y grises funcionan como líneas dinámicas que atraviesan la escena en diagonales abruptas. Estas fracturas no solo describen el daño físico, sino que organizan visualmente el espacio. En el tercio superior, una línea de vegetación verde con árboles verticales introduce estabilidad frente al caos del primer plano. Más atrás, una cordillera suave en tonos grisáceos cierra la escena con una atmósfera lejana y apagada. Tres figuras caminan sobre el terreno irregular. En primer plano, un hombre visto de espaldas, con sombrero y mochila, avanza con paso firme. Su postura es erguida, decidida. La mochila roja introduce un acento cromático cálido que contrasta con los grises dominantes. Más adelante, dos figuras —una con prenda roja— se desplazan hacia el mismo destino. Son pequeñas en escala, lo que enfatiza la vastedad del terreno dañado. La presencia humana aporta dimensión narrativa: no se trata solo de ruina, sino de tránsito, de reconstrucción implícita. La paleta está dominada por grises, blancos quebrados y tierras frías en el camino. Las grietas están marcadas con negros y tonos oscuros que acentúan la ruptura. El verde del paisaje lateral es denso y trabajado con mayor carga de materia, contrastando con la superficie erosionada del camino. El cielo es claro, levemente grisáceo, sin dramatismo tormentoso, lo que intensifica la sensación de realidad cotidiana más que de tragedia épica. Los pequeños toques rojos en las figuras aportan vida y humanidad al conjunto. La espátula es protagonista en la representación del terreno fracturado. Las capas gruesas, los arrastres y las superposiciones generan una textura casi táctil que refuerza la idea de superficie quebrada. Las grietas están construidas con gestos decididos, dejando huella física en la pintura. El relieve pictórico acompaña el relieve representado. En contraste, el cielo y las montañas están tratados con mayor suavidad, creando profundidad y reposo visual. La obra no se centra en el momento del desastre, sino en el después. El título sitúa la escena en un contexto histórico concreto, pero la pintura trasciende el hecho puntual. El camino, símbolo de continuidad y conexión, aparece roto. Sin embargo, las figuras avanzan. La imagen sugiere resiliencia, adaptación y la persistencia humana frente a la fractura del entorno. El contraste entre la línea vertical de los árboles y las grietas horizontales del suelo refuerza la tensión entre estabilidad y ruptura. “Camino al puente post terremoto 1985” es una obra de memoria y tránsito. La espátula no solo describe materia; la encarna. El terreno se vuelve físico, pesado, real. En conjunto, la pintura equilibra devastación y esperanza. No hay espectacularidad ni exageración, sino una mirada sobria y humana ante un paisaje transformado por la fuerza de la naturaleza."
     },
     {
         "id": "1206-rio-correntoso",
@@ -2556,7 +2753,8 @@ const OBRAS = [
         "medidas": "60 × 80 cm",
         "imagen": "assets/obras/1206-rio-correntoso.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 80 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 80 cm",
+        "texto": "“Rocas en el río” La obra de Pollak presenta un primer plano del cauce de un río, centrado en un conjunto de grandes rocas parcialmente sumergidas, representadas con una marcada técnica de espátula que otorga gran fuerza material y expresiva a la escena. Las rocas, de formas irregulares y volúmenes sólidos, emergen y se hunden en el agua, creando un diálogo constante entre masa y movimiento. La paleta cromática está dominada por grises profundos, verdes oliva, tierras oscuras y sutiles matices violáceos en las piedras, contrastados con blancos rotos y verdes azulados que describen la corriente del agua. El río no es un plano uniforme: se percibe dinámico, agitado, con remolinos y quiebres que rodean las rocas, enfatizados por gestos rápidos y direccionales de la espátula. El agua se representa mediante capas superpuestas y trazos enérgicos que sugieren velocidad y turbulencia. Los blancos aplicados con mayor carga de pintura marcan la espuma y los choques del flujo contra las superficies pétreas, mientras que los tonos más oscuros indican profundidad y continuidad del cauce. La dirección del movimiento conduce la mirada del espectador a través de la composición, generando una sensación constante de desplazamiento. Las texturas son protagonistas: la rugosidad de las rocas contrasta con la fluidez del agua, aunque ambos elementos comparten una materialidad casi escultórica. No hay referencias humanas ni paisajísticas amplias; el encuadre cerrado refuerza una lectura íntima y casi abstracta del paisaje natural, donde lo esencial es la relación entre agua, piedra y energía. En conjunto, el cuadro transmite una sensación de fuerza natural y permanencia, donde las rocas simbolizan estabilidad y resistencia frente al paso incesante del río. La obra invita a una contemplación cercana, casi táctil, destacando la naturaleza no como postal, sino como experiencia física y viva."
     },
     {
         "id": "1208-hofbauer-artista-en-londres-uk",
@@ -2568,7 +2766,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1208-hofbauer-artista-en-londres-uk.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
+        "texto": "“Imre Hofbauer, artista en Londres UK” La obra de Pollak presenta un retrato de medio cuerpo de Imre Hofbauer, representado bajo un paraguas abierto que domina gran parte de la composición. La figura se sitúa frontalmente, ocupando el eje central del cuadro, estableciendo una relación directa y silenciosa con el espectador. El encuadre cerrado intensifica la presencia psicológica del personaje y elimina distracciones narrativas externas. El paraguas negro, estructurado mediante líneas radiales claramente marcadas con espátula, genera una geometría envolvente que contrasta con la suavidad del rostro. Sus varillas convergen hacia un punto central ligeramente desplazado, creando tensión compositiva y aportando dinamismo interno a una escena aparentemente estática. La superficie del paraguas está trabajada con capas densas y gestuales, donde la materia pictórica deja huellas visibles que acentúan su textura y peso visual. El rostro del artista es el foco emocional de la pintura. La espátula modela los planos faciales mediante superposiciones de tonos rosados, ocres claros y grises fríos, evitando el detalle minucioso y privilegiando una construcción volumétrica sintética. La frente amplia, el cabello blanco en los laterales y la mirada serena transmiten experiencia, introspección y dignidad. No hay dramatismo exagerado; la expresión es contenida, reflexiva, casi melancólica. La vestimenta —un abrigo azul profundo con matices violáceos— está resuelta con amplios planos de color aplicados con espátula, donde las variaciones tonales construyen volumen sin recurrir a un modelado académico tradicional. Las manos, también tratadas con materia visible, sostienen el paraguas y se recogen sobre el torso en un gesto que sugiere resguardo y recogimiento interior. La paleta cromática está dominada por azules, grises y negros, reforzando la atmósfera londinense lluviosa que el paraguas evoca simbólicamente. El fondo neutro, trabajado en planos verticales suaves y desaturados, permite que la figura se destaque sin competir visualmente. Desde el punto de vista técnico, la espátula cumple un papel esencial: no solo define las texturas —especialmente en el paraguas y el abrigo— sino que aporta una materialidad casi escultórica. La pintura adquiere relieve, y la superficie vibra con pequeñas irregularidades que capturan la luz de manera cambiante. En conjunto, el cuadro no solo retrata a un artista, sino que sugiere una biografía implícita: el exilio, la resiliencia y la vida creativa en una ciudad lluviosa. Es un retrato sobrio, íntimo y respetuoso, donde la técnica matérica refuerza el carácter humano del personaje y convierte la lluvia en metáfora de memoria y permanencia."
     },
     {
         "id": "1209-rio-con-rocas",
@@ -2580,7 +2779,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1209-rio-con-rocas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“Río con rocas” La obra de Pollak presenta un paisaje fluvial de atmósfera serena e introspectiva, donde el protagonista no es solo el río, sino el diálogo entre agua, piedra y vegetación. La composición se estructura en planos superpuestos que conducen la mirada desde el primer plano rocoso hasta el fondo boscoso, generando profundidad sin recurrir a artificios perspectivos evidentes. En primer plano, grandes rocas claras ocupan la base del cuadro. Están construidas con espátula en amplios planos grises, blancos y ocres suaves. La materia es visible, espesa, casi escultórica, otorgando peso y volumen a cada piedra. Las aristas no están delineadas con rigidez, sino sugeridas mediante cambios tonales que capturan la incidencia de la luz. Estas rocas establecen una base sólida y estable, un anclaje visual que contrasta con la fluidez del agua. El río atraviesa horizontalmente la composición en un plano medio. El agua, trabajada con verdes profundos, azules oscuros y reflejos oliváceos, revela transparencias sutiles que permiten entrever piedras sumergidas. La espátula aquí no solo deposita pintura, sino que arrastra y mezcla capas, creando vibraciones que sugieren corriente suave y movimiento contenido. Pequeñas manchas claras insinúan espuma y reflejos luminosos. En la ribera opuesta, una franja de rocas medianas crea una transición hacia el fondo. Más allá, el paisaje se eleva en un bosque denso de verdes variados: esmeraldas, verdes grisáceos y toques terrosos. Las masas arbóreas están resueltas con pinceladas amplias y superpuestas, donde la textura matérica sugiere follaje sin describir hoja por hoja. La luz parece filtrarse desde arriba, generando claros y sombras que aportan profundidad atmosférica. Un elemento vertical destacado son los delgados troncos en el lado derecho del cuadro. Estos trazos oscuros, finos y firmes, introducen ritmo y equilibrio compositivo, contrapesando la horizontalidad dominante del río. Actúan como marco natural y como pausa visual, aportando tensión lineal dentro de la suavidad general del paisaje. La paleta cromática es armónica y contenida, dominada por verdes, grises y tierras. No hay estridencias; la pintura transmite calma, contemplación y recogimiento. La luz no es dramática, sino difusa, como en un día templado donde el bosque amortigua el resplandor. Desde el punto de vista técnico, la espátula es esencial: construye volúmenes sólidos en las rocas, genera texturas densas en el follaje y crea superficies vibrantes en el agua. La materia pictórica es protagonista, dejando huellas visibles que refuerzan la presencia física del paisaje. En conjunto, la obra no busca espectacularidad, sino intimidad. Es un paisaje de observación atenta, donde la naturaleza se presenta en equilibrio silencioso: permanencia en la piedra, tránsito en el agua y vida latente en el bosque."
     },
     {
         "id": "1210-mi-taller-de-pintura-en-escuela-de-arte-londres-bosquejo-a-color",
@@ -2592,7 +2792,8 @@ const OBRAS = [
         "medidas": "70 × 150 cm",
         "imagen": "assets/obras/1210-mi-taller-de-pintura-en-escuela-de-arte-londres-bosquejo-a-color.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela · 70 × 150 cm"
+        "descripcion": "Óleo sobre tela · 70 × 150 cm",
+        "texto": "“Mi taller de pintura en escuela de arte, Londres – Bosquejo a color” Óleo (bosquejo cromático) · 2026 La obra de Pollak representa una escena interior de taller académico, captando la atmósfera de estudio y concentración propia de una escuela de arte. Se trata de un bosquejo a color donde la síntesis formal y la economía de medios son protagonistas, privilegiando la estructura compositiva y la memoria visual por sobre el detalle acabado. La escena se organiza en un espacio amplio, poblado por caballetes verticales que estructuran el plano pictórico como una sucesión de líneas doradas y ocres. Estas verticales generan ritmo y profundidad, dividiendo el espacio en compartimentos donde se sitúan los estudiantes y sus trabajos. En el centro se destaca una figura femenina de pie, vestida con un delantal claro. Su postura activa —con el brazo elevado hacia el lienzo— sugiere el acto mismo de pintar o corregir. Ella funciona como eje compositivo y narrativo: es el punto de convergencia de miradas y de energía visual. A la izquierda se agrupan varios estudiantes sentados o de perfil, apenas sugeridos con manchas suaves. Sus rostros y cuerpos no están detallados; son presencias captadas en gestos mínimos, reforzando el carácter evocativo del recuerdo. En el lado derecho aparece un modelo masculino sobre un pedestal. Su figura está tratada con mayor contraste tonal, especialmente en la zona del torso y la cabeza, donde las masas oscuras definen volumen y peso. Junto a él, otro personaje vestido con tonos azul verdosos aporta un contrapunto cromático más intenso dentro de la paleta general sobria. El lenguaje es suelto y sintético. Predominan los tonos tierra —ocres, sepias, grises cálidos— con intervenciones puntuales en azul y negro. El color no busca naturalismo, sino establecer jerarquías espaciales y rítmicas. El dibujo subyacente es visible en varias zonas, especialmente en las figuras apenas esbozadas. Las pinceladas son amplias, a veces casi gestuales, dejando áreas del soporte prácticamente sin cubrir. Esta transparencia refuerza la idea de estudio preliminar o memoria reconstruida. Las líneas verticales de los caballetes, aplicadas con tonos dorados, actúan como columnas que sostienen la composición y ordenan el espacio. El suelo y los planos de apoyo están apenas insinuados con manchas grises y marrones que sugieren volumen sin describirlo. La iluminación es difusa y homogénea, propia de un taller con luz natural filtrada. No hay sombras dramáticas; la atmósfera es tranquila, reflexiva, casi silenciosa. El blanco predominante del fondo contribuye a esa sensación de amplitud y claridad. Más que un registro literal, la obra transmite la experiencia emocional del taller: el aprendizaje, la observación del modelo, el intercambio silencioso entre profesor y alumnos. El bosquejo a color funciona como evocación de un período formativo, donde el espacio académico se convierte en escenario de descubrimiento artístico. La pintura posee un carácter íntimo y autobiográfico. La simplificación formal, lejos de restar fuerza, concentra la atención en la estructura y en la vivencia interior del artista. Es una memoria visual condensada, donde lo esencial permanece y lo accesorio desaparece."
     },
     {
         "id": "1211-al-aterdecer",
@@ -2604,7 +2805,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1211-al-aterdecer.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 70 × 100 cm",
+        "texto": "“Bahía al atardecer” La obra de Pollak representa una bahía en el instante crepuscular, cuando el día se retira lentamente y el cielo aún conserva una vibración cálida sobre el horizonte. La composición está estructurada en tres grandes franjas horizontales —cielo, cordillera y mar— que otorgan estabilidad y serenidad al conjunto, mientras los mástiles verticales de los veleros introducen ritmo y tensión sutil. El horizonte se sitúa en el tercio superior, permitiendo que el mar ocupe la mayor parte del plano pictórico. En primer plano, ligeramente desplazada hacia la izquierda, una lancha blanca anclada rompe la quietud con su presencia cercana y luminosa. Su volumen está construido con planos firmes de espátula, que modelan la proa y la cabina mediante contrastes de blancos y grises azulados. En el centro, un velero de mayor tamaño se convierte en el eje visual de la escena. Sus mástiles y jarcias se recortan en silueta oscura contra la claridad del agua y el cielo anaranjado. Alrededor, pequeñas embarcaciones dispersas generan profundidad y conducen la mirada hacia el fondo. A la derecha, una ladera oscura desciende hacia el mar. Sobre ella se insinúan pequeñas construcciones rectangulares en tonos grisáceos y azul pálido, sugeridas con toques densos y fragmentados de espátula. Estas luces mínimas evocan casas que comienzan a iluminarse al caer la tarde, aportando una dimensión humana y urbana al paisaje natural. El cielo es el gran protagonista emocional. Se despliega en una gradación que va desde ocres claros y amarillos suaves en la parte superior, hasta naranjas y rosados intensos sobre el horizonte. Bajo esa franja cálida aparece una banda gris violácea que sugiere nubes bajas o bruma costera, generando un contraste armónico con la calidez superior. El mar, en cambio, está dominado por azules fríos y turquesas. La espátula crea planos superpuestos que capturan el movimiento leve del agua. Las variaciones de tono —desde azules profundos hasta reflejos más claros— transmiten la vibración de la superficie marina bajo la luz cambiante del crepúsculo. El contraste entre el cielo cálido y el mar frío produce una tensión cromática equilibrada, característica del instante en que el calor del día aún persiste mientras la noche comienza a insinuarse. La aplicación con espátula es evidente en toda la superficie. Las capas son densas, especialmente en el agua y en la ladera derecha, donde la textura aporta corporeidad y relieve. Las marcas horizontales en el mar refuerzan la sensación de extensión y calma, mientras que las zonas del cielo presentan transiciones más suaves, aunque igualmente construidas con materia visible. La pintura no busca un detalle minucioso, sino una síntesis estructural y lumínica. Las embarcaciones están definidas por masas y siluetas más que por líneas descriptivas, lo que intensifica la sensación atmosférica. La obra transmite serenidad y contemplación. No hay dramatismo en el mar; todo parece suspendido en un instante de quietud. Las embarcaciones ancladas sugieren pausa, descanso, espera. La luz cálida del horizonte evoca el cierre del día, quizás incluso una dimensión introspectiva. “Bahía al atardecer” es una pintura donde la materia y el color dialogan para capturar un momento fugaz. La espátula no solo construye forma, sino también emoción: cada plano de color contribuye a esa atmósfera de calma profunda y reflexión que caracteriza la escena."
     },
     {
         "id": "1212-cata-y-peter-en-temuco",
@@ -2616,7 +2818,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1212-cata-y-peter-en-temuco.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“Cata y Peter en Temuco” La obra de Pollak representa una escena íntima y cotidiana: una mujer joven y un niño posan frente a una ventana de marcos blancos, apoyados en el umbral exterior de una casa. El entorno sugiere una arquitectura tradicional del sur de Chile, con zócalo rojizo y muro lateral de ladrillo, evocando un contexto urbano residencial propio de Temuco. La composición es vertical y está organizada en torno a la ventana, cuyos travesaños blancos generan una estructura geométrica clara que divide el fondo en cuatro planos verde oscuro. Esta retícula otorga estabilidad visual y enmarca a las figuras, que se sitúan levemente desplazadas hacia la derecha. El niño, a la izquierda, aparece erguido y contenido, con las manos detrás de la espalda. Su postura transmite cierta timidez o serenidad. La mujer, en cambio, adopta una actitud más dinámica: su cuerpo se inclina suavemente, una pierna adelantada, el brazo derecho apoyado en el marco de la puerta o muro. Este contraste gestual crea diálogo entre ambas figuras: quietud y movimiento, infancia y adultez. El modelado de los rostros está resuelto con espátula en planos amplios, evitando el detalle minucioso y privilegiando la síntesis expresiva. El niño muestra una leve sonrisa y una mirada dirigida hacia la izquierda del espectador, como si algo externo captara su atención. La mujer aparece con los ojos cerrados y una sonrisa amplia, transmitiendo espontaneidad y alegría. La construcción anatómica no busca realismo académico sino carácter y presencia emocional. Las transiciones de luz y sombra se logran mediante superposición de capas densas, visibles en mejillas, cabello y brazos. La paleta está dominada por azules profundos y verdes oscuros, equilibrados por los tonos cálidos del zócalo rojizo y los matices rosados de la piel. Ambos personajes comparten un elemento distintivo: botas de agua azul intenso, que se convierten en un punto focal cromático. Estas botas, trabajadas con capas espesas y reflejos blancos, aportan brillo y materialidad. El niño viste pantalón beige y sweater azul. La mujer lleva blusa azul sin mangas y pantalón oscuro con franja blanca lateral, detalle que estiliza la figura y refuerza la verticalidad. El contraste entre los azules fríos de la vestimenta y el verde profundo del fondo intensifica la presencia de las figuras en primer plano. La aplicación con espátula es evidente en toda la superficie. Se perciben capas gruesas, especialmente en ropa y fondo, donde la textura crea vibración lumínica. Los planos no están completamente fundidos; conservan bordes visibles que dan energía a la composición. El fondo verde oscuro está trabajado en capas relativamente uniformes, lo que permite que las figuras destaquen con mayor claridad. En cambio, el muro lateral y el zócalo muestran variaciones tonales que enriquecen la sensación espacial. La escena transmite cercanía y complicidad. La sonrisa relajada de la mujer y la actitud más reservada del niño sugieren un vínculo afectivo —posiblemente familiar— capturado en un momento cotidiano, quizás después de la lluvia, dado el uso de botas. Hay una atmósfera de naturalidad y recuerdo: la obra parece más una evocación emocional que una simple representación. La espátula, con su materia visible y directa, refuerza esa idea de memoria construida a partir de impresiones y sensaciones más que de detalles fotográficos. “Cata y Peter en Temuco” es un retrato doble donde lo arquitectónico estructura la escena, pero lo humano la define. La pintura logra equilibrio entre solidez compositiva y frescura expresiva, destacando el vínculo y la identidad compartida dentro de un entorno cotidiano del sur chileno"
     },
     {
         "id": "1213-autoretrato",
@@ -2628,7 +2831,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1213-autoretrato.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
+        "texto": "“Autorretrato” Este autorretrato de Pollak presenta una imagen frontal, directa y sin artificios, donde el rostro ocupa el centro absoluto de la composición. La figura emerge con firmeza desde un fondo abstracto que sugiere cartografía, paisaje aéreo o memoria geográfica, estableciendo un diálogo entre identidad personal y territorio. La obra está estructurada verticalmente, con el busto ocupando casi la totalidad del plano. El sombrero claro, de ala ancha y cinta oscura, introduce una poderosa línea horizontal que equilibra la verticalidad del rostro y del cuello. Este elemento no solo define carácter, sino que también enmarca la mirada, concentrando la atención en los ojos. El encuadre es cercano: no hay distracciones narrativas, solo presencia. El fondo, aunque abstracto, no es neutro; está compuesto por manchas de verdes, azules, ocres y negros que recuerdan mapas, ríos o fragmentos de tierra vistos desde altura. Esa sugerencia espacial amplía el retrato más allá de lo físico. La expresión es contenida y reflexiva. La mirada, frontal y estable, transmite conciencia y autoobservación. No hay sonrisa explícita, sino un gesto sereno que mezcla introspección con afirmación personal. El modelado del rostro está construido en planos definidos por la espátula: Tonos rosados y rojizos en mejillas y nariz aportan calidez. Sombras violáceas y ocres estructuran pómulos y mandíbula. Transiciones visibles entre luces y sombras refuerzan la materialidad. La división lumínica del rostro —con un lado ligeramente más iluminado que el otro— crea profundidad psicológica, casi como si mostrara dos estados internos coexistiendo. La espátula es protagonista absoluta. La superficie muestra capas densas, con marcas evidentes que no buscan disimularse. La piel no está suavizada; se percibe como construcción pictórica, como territorio trabajado. El sombrero está resuelto con planos amplios y contrastes claros-oscuros bien definidos. La cinta negra, aplicada con mayor densidad, aporta peso visual y ancla la composición. En el fondo, las manchas están aplicadas con libertad gestual. No describen un lugar concreto, pero evocan geografía, memoria y desplazamiento. La pintura mantiene un equilibrio entre figuración clara en el rostro y abstracción sugerente detrás. La paleta combina tonos cálidos en la figura con verdes y azules más fríos en el fondo. Este contraste separa al sujeto del entorno y, al mismo tiempo, lo integra simbólicamente. La piel, trabajada en capas superpuestas, contiene matices ocres, rosados y tierras que refuerzan la sensación de humanidad tangible. No hay dramatismo cromático extremo; predomina una armonía contenida que favorece la introspección. Este autorretrato no parece buscar idealización, sino autenticidad. La frontalidad, la mirada directa y la materia visible revelan una postura honesta frente al acto de pintarse a sí mismo. El fondo abstracto puede interpretarse como memoria, biografía o territorio emocional: el individuo en diálogo con su historia. La obra transmite madurez, conciencia y afirmación personal. La espátula, con su fuerza constructiva, no solo modela el rostro sino que afirma identidad: cada plano es decisión, cada trazo es presencia. En conjunto, es un retrato que conjuga figura y geografía interior, donde la materia pictórica se convierte en lenguaje de introspección y permanencia."
     },
     {
         "id": "1214-vista-al-volcan-villarica",
@@ -2640,7 +2844,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1214-vista-al-volcan-villarica.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 70 × 100 cm",
+        "texto": "\"Vista al volcan Villarica\" Esta obra de Pollak presenta un paisaje de gran serenidad y profundidad atmosférica, donde el protagonista es el volcán Villarrica, visible a lo lejos con su cima nevada, enmarcado por montañas laterales y reflejado en un lago de aguas quietas. La pintura transmite una sensación de silencio absoluto, casi meditativo. La estructura compositiva está organizada con un eje central perfectamente definido: el volcán y su reflejo forman una línea vertical imaginaria que divide la obra en dos mitades simétricas. El lago funciona como espejo, duplicando el paisaje y generando un efecto de equilibrio casi geométrico. Las montañas laterales —más oscuras y cercanas— enmarcan la escena como alas que conducen la mirada hacia el fondo. Esta disposición crea profundidad y perspectiva aérea. El horizonte se sitúa levemente por encima del centro, otorgando protagonismo al reflejo y a la masa azul del agua. En el primer plano, discretas manchas de vegetación en las esquinas inferiores rompen la simetría y aportan un anclaje terrenal, evitando que la composición se vuelva excesivamente rígida. El color dominante es el azul, trabajado en múltiples gradaciones: Azul profundo e intenso en el agua del primer plano. Azul más claro y luminoso hacia el horizonte. Azul frío y limpio en el cielo despejado. La montaña derecha está tratada con tonos violáceos y grisáceos, mientras que la izquierda presenta verdes y tierras más oscuros. Estos contrastes laterales enriquecen la composición sin romper la armonía general. La cima nevada del volcán introduce un punto de luz blanco que actúa como foco visual. Ese pequeño triángulo claro equilibra la masa cromática dominante. La espátula es claramente visible en la superficie. En el cielo, las transiciones son amplias y suaves, pero conservan textura. En el agua, la aplicación es más homogénea, generando una superficie que sugiere quietud absoluta. En las montañas se perciben planos superpuestos, con cortes y arrastres de pintura que describen laderas y relieves sin caer en el detalle minucioso. La textura aporta corporeidad al paisaje. El reflejo no es una copia exacta, sino una interpretación ligeramente difuminada, lo que evita la rigidez y añade naturalidad. La luz parece provenir de un momento temprano o tardío del día, cuando el aire es limpio y la visibilidad amplia. No hay dramatismo ni tormenta; la escena transmite calma profunda. La perspectiva aérea está lograda mediante la disminución de contraste hacia el fondo: las montañas lejanas son más suaves y azuladas, reforzando la distancia. Más que una representación topográfica, la obra parece una meditación visual. El espejo del lago duplica la realidad y sugiere introspección: el paisaje exterior reflejando un paisaje interior. El volcán, símbolo de fuerza contenida, aparece tranquilo, integrado en una naturaleza equilibrada. La quietud del agua elimina toda tensión y convierte la escena en un espacio de contemplación. En conjunto, “Vista al volcán Villarrica” es un paisaje de gran pureza estructural y cromática, donde la espátula construye materia y atmósfera, y el color azul se transforma en vehículo de silencio, profundidad y equilibrio."
     },
     {
         "id": "1215-mujer-desnuda-en-la-cabana",
@@ -2652,7 +2857,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1215-mujer-desnuda-en-la-cabana.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 70 cm",
+        "texto": "“Mujer desnuda en la cabaña” La obra de Pollak presenta una figura femenina de pie en el interior de una cabaña, situada junto a una estructura de madera —probablemente una escalera o soporte vertical— que introduce una fuerte línea compositiva en el lado izquierdo del cuadro. La escena combina intimidad, arquitectura interior y una ventana abierta al paisaje, creando un contraste entre espacio cerrado y naturaleza exterior. La figura ocupa el eje central-izquierdo del plano, en posición vertical y ligeramente girada hacia la izquierda. Su torso rota suavemente mientras el rostro se orienta hacia el exterior, sugiriendo atención o contemplación de algo fuera de campo. La estructura de madera vertical equilibra visualmente el cuerpo y genera un marco interno. A la derecha, una ventana rectangular abre la composición hacia un paisaje de cielo azul, nubes blancas, vegetación verde y una franja de agua azul intenso. Este recurso crea profundidad y establece un diálogo entre interior y exterior. El suelo, trabajado en diagonales marrones y beige, introduce dinamismo en contraste con las líneas verticales predominantes. El cuerpo está modelado mediante planos amplios de espátula, con transiciones visibles entre luces y sombras. La anatomía no busca hiperrealismo, sino una síntesis estructural y volumétrica. Los tonos predominantes son rosados, ocres y blancos quebrados, que se superponen generando textura y corporeidad. Las sombras están sugeridas con matices más cálidos y algunos toques grisáceos, especialmente en la zona abdominal y en las piernas. El rostro muestra una expresión atenta y ligeramente expectante. La mirada se dirige hacia el exterior, reforzando la narrativa implícita. El cabello, trabajado en tonos castaños con pinceladas densas, cae hacia un lado, aportando asimetría y movimiento. El fondo interior está dominado por un azul verdoso suave que contrasta con los tonos cálidos del cuerpo. Este contraste cromático hace que la figura destaque con claridad. La ventana introduce un azul más vibrante y luminoso, junto a verdes espesos aplicados con mayor carga de materia. La diferencia entre el azul interior y el azul exterior intensifica la sensación de profundidad espacial. La paleta general mantiene un equilibrio entre fríos y cálidos, otorgando armonía a la escena. La espátula es claramente visible en la superficie pictórica. Las capas son densas, especialmente en la piel y en el paisaje exterior. Las marcas no están suavizadas, lo que aporta carácter expresivo y evidencia el gesto del artista. La textura contribuye a la sensación táctil de la obra, reforzando la presencia física del cuerpo y de los elementos arquitectónicos. La escena transmite intimidad y naturalidad. No hay dramatismo ni teatralidad; la figura aparece integrada en el espacio doméstico. La apertura hacia el paisaje sugiere una conexión entre la intimidad del interior y la amplitud del mundo exterior. La obra parece reflexionar sobre la relación entre cuerpo, espacio y naturaleza. La figura no se presenta como objeto, sino como presencia consciente dentro de un entorno cotidiano. En conjunto, “Mujer desnuda en la cabaña” es una pintura de carácter contemplativo, donde la espátula construye volumen y emoción, y donde la interacción entre arquitectura y paisaje amplía la dimensión simbólica de la escena."
     },
     {
         "id": "1216-la-escala",
@@ -2664,7 +2870,8 @@ const OBRAS = [
         "medidas": "80 × 60 cm",
         "imagen": "assets/obras/1216-la-escala.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 60 cm",
+        "texto": "“La Escala” Esta obra de Pollak se construye desde la síntesis y la depuración formal. El motivo es simple: una escalera blanca que asciende en diagonal hacia la parte superior derecha, donde se encuentra con un borde de tierra y vegetación bajo un cielo intensamente azul. Sin embargo, dentro de esta economía de elementos, la pintura alcanza una fuerte potencia simbólica y espacial. La composición está dominada por una gran diagonal ascendente que organiza todo el cuadro. La escalera nace en el ángulo inferior izquierdo y se proyecta hacia la esquina superior derecha, generando una sensación clara de movimiento y dirección. Un plano blanco inclinado ocupa casi toda la superficie izquierda, funcionando como muro o talud. Este plano contrasta con el cielo azul superior, cuya curva suave establece una tensión geométrica entre recta y arco. La escena está deliberadamente despojada: no hay figuras humanas ni elementos narrativos. La arquitectura y el espacio son los protagonistas. La perspectiva está cuidadosamente construida. Cada peldaño está definido mediante planos de luz y sombra que sugieren volumen sin recurrir al detalle minucioso. Las aristas están levemente suavizadas por la materia de la espátula, lo que aporta organicidad a la geometría. La escalera crea profundidad a través de la repetición rítmica de los peldaños. Este ritmo visual conduce la mirada hacia el horizonte superior, donde aparece una franja de tierra y vegetación que introduce un punto de llegada. La paleta es restringida y armónica: Blancos y azules muy claros en la escalera y el muro. Azul intenso y limpio en el cielo. Un toque terroso y verde en la parte superior, apenas sugerido. El predominio del blanco genera una atmósfera luminosa, casi mediterránea. La luz parece plena, directa, sin dramatismo. Las sombras suaves en azul claro evitan el contraste fuerte y mantienen la serenidad general. El azul del cielo es vibrante pero uniforme, aportando estabilidad y profundidad. La espátula es claramente visible en la textura del muro y de los peldaños. Se perciben arrastres horizontales y verticales que enriquecen la superficie sin recargarla. La materia no es excesiva, pero sí suficiente para que la pintura conserve cuerpo. Las imperfecciones sutiles en los planos blancos aportan humanidad y evitan una frialdad excesiva. La técnica equilibra precisión arquitectónica con gesto manual. La escalera es un símbolo universal de ascenso, tránsito y transformación. Aquí no se muestra el destino final, solo el recorrido. La ausencia de figura humana refuerza el carácter introspectivo: la subida es implícita, abierta a quien contempla. El contraste entre el amplio muro blanco y el cielo azul puede interpretarse como tensión entre límite y libertad. La llegada a la franja superior sugiere esperanza, meta o trascendencia. “La Escala” es una obra de silencio y claridad. Minimalista en su planteamiento, logra profundidad conceptual mediante la pureza de formas y el dominio del espacio. La espátula no busca dramatismo sino estructura y luz. En conjunto, la pintura transmite calma, elevación y una invitación a avanzar, paso a paso, hacia un horizonte luminoso."
     },
     {
         "id": "1217-mi-amiga-anne-lise-de-nyon-suiza",
@@ -2676,7 +2883,8 @@ const OBRAS = [
         "medidas": "70 × 50 cm",
         "imagen": "assets/obras/1217-mi-amiga-anne-lise-de-nyon-suiza.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula y pinceles · 70 × 50 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula y pinceles · 70 × 50 cm",
+        "texto": "“Mi amiga Anne Lise de Nyon, Suiza 1971. Óleo con espátula y pincel · 2026 Este retrato de Pollak presenta una figura femenina en perfil casi absoluto, captada en un momento de introspección silenciosa. La composición es sobria, concentrada en el rostro y el hombro, con un fondo neutro que permite que la psicología del personaje sea el verdadero centro de la obra. La figura ocupa la mayor parte del plano, desplazada ligeramente hacia la derecha. El rostro está orientado hacia la derecha, generando una línea clara de dirección visual que sugiere atención hacia algo fuera de campo. El encuadre es cercano: vemos cabeza, cuello y hombro desnudo. No hay elementos narrativos que distraigan. El fondo es un plano claro, suavemente texturado, con una forma geométrica azulada detrás que podría ser el respaldo de una silla. Esta forma introduce un contrapunto cromático y estructural sin competir con la figura. La economía de elementos refuerza la intensidad del retrato. El perfil está construido con una síntesis formal notable. La nariz, el mentón y la frente están definidos con planos amplios, sin exceso de detalle, pero con suficiente modelado para transmitir volumen. Los tonos de piel combinan rosados, ocres y marrones suaves. Las transiciones no son completamente fundidas; se perciben las marcas de espátula y pincel, lo que aporta textura y vida. La mejilla muestra zonas cálidas que contrastan con sombras más frías bajo el pómulo y la mandíbula. La mirada es serena, concentrada. El ojo, aunque tratado con sencillez, está cuidadosamente colocado y da carácter a la expresión: reflexiva, contenida, digna. El cabello oscuro, con matices castaños y reflejos más claros, está trabajado con mayor energía gestual. Aquí la pincelada y la espátula se hacen más visibles, creando ritmo y movimiento en contraste con la calma del rostro. Los toques más claros sobre el flequillo aportan profundidad y volumen. La masa oscura del cabello equilibra la luminosidad del fondo y enmarca la cara. La paleta es moderada y armónica. Predominan tonos suaves: gris claro en el fondo, azules apagados en el elemento posterior y tonos cálidos en la piel. El contraste entre el fondo frío y la piel cálida genera una separación clara del plano pictórico. No hay dramatismo lumínico; la iluminación es pareja, casi difusa, lo que favorece la introspección. La combinación de espátula y pincel se percibe en la diferencia de texturas: En la piel, la espátula aporta planos estructurales y materia visible. En el cabello, la pincelada introduce fluidez y detalle lineal. El fondo presenta una aplicación más lisa pero con ligera vibración superficial. La superficie no está pulida; conserva la huella del gesto pictórico, reforzando la autenticidad del retrato. La obra transmite cercanía y respeto hacia la retratada. No hay idealización excesiva ni dramatización; se percibe una intención de capturar presencia más que apariencia. El perfil acentúa el carácter introspectivo. La figura parece suspendida en pensamiento, ajena al espectador, lo que añade profundidad psicológica. En conjunto, “Mi amiga Anne Lise de Nyon, Suiza” es un retrato sobrio y honesto, donde la síntesis formal y la textura pictórica se combinan para expresar personalidad y memoria. La obra privilegia la esencia sobre el detalle, logrando una presencia silenciosa pero intensa."
     },
     {
         "id": "1218-mujer-entre-las-rocas",
@@ -2688,7 +2896,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1218-mujer-entre-las-rocas.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 100 × 70 cm",
+        "texto": "“Mujer entre las rocas” es una obra de Pollak realizada al óleo con técnica de espátula, donde la composición se construye a partir de grandes masas de color y una marcada simplificación de las formas. La escena presenta un conjunto de rocas voluminosas que dominan el espacio pictórico, creando una estructura casi abstracta, de tonos terrosos, grises y verdosos, aplicada con empastes densos que enfatizan la materialidad de la pintura. En medio de esta geografía pétrea, aparece sutilmente la figura femenina, apenas insinuada, integrada al paisaje más que destacada de él. Su presencia es discreta, casi oculta entre los bloques rocosos, lo que genera un juego visual entre figura y fondo. Esta integración sugiere una fusión entre lo humano y lo natural, donde la mujer parece formar parte del mismo entorno mineral. El uso de la espátula aporta una textura áspera y expresiva, con planos angulares y cortes definidos que refuerzan la solidez de las rocas. La paleta contenida y armónica, junto con la composición cerrada, transmite una sensación de quietud, introspección y cierta tensión contenida, invitando al espectador a descubrir lentamente la figura y a reflexionar sobre su relación con el espacio que la rodea."
     },
     {
         "id": "1219-remanso-en-el-trafanpulli",
@@ -2700,7 +2909,8 @@ const OBRAS = [
         "medidas": "70 × 100 cm",
         "imagen": "assets/obras/1219-remanso-en-el-trafanpulli.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 70 × 100 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 70 × 100 cm",
+        "texto": "“Remanso en el Trafanpulli” La obra de pollkpresenta un paisaje fluvial contenido y silencioso, donde el agua se aquieta tras un breve salto, generando un remanso de tonalidades profundas y transparentes. La composición se organiza en planos claramente definidos: en primer término, la superficie del agua —trabajada con espátula en capas horizontales— despliega una gama de verdes, turquesas y ocres que sugieren profundidad, movimiento lento y reflejos fragmentados. La materia pictórica se abre aquí, más diluida y extendida, en contraste con la densidad del resto de la escena. Hacia el centro, una pequeña caída de agua introduce ritmo y quiebre. El blanco espeso aplicado con espátula corta la masa oscura del río, generando un foco dinámico que articula la transición entre la quietud del remanso y la energía contenida del flujo. Este gesto, breve pero contundente, organiza la lectura visual. En el lateral derecho, las rocas emergen como volúmenes sólidos y angulares, construidos mediante empastes gruesos y direccionales. Los verdes ácidos, tierras y grises se superponen en planos facetados, donde la luz no se describe sino que se sugiere a través del contraste matérico. La espátula deja huella visible, afirmando la estructura del paisaje más que su detalle. El fondo, con laderas y vegetación, se resuelve en una síntesis de manchas y ritmos oblicuos, donde el gesto domina sobre la descripción. En la parte superior izquierda, la vegetación colgante introduce un contrapunto luminoso, filtrando la luz y enmarcando la escena con una vibración más suelta. La obra, en su conjunto, no busca la fidelidad topográfica sino la experiencia del lugar: un equilibrio entre quietud y movimiento, entre masa y transparencia. La técnica de espátula refuerza esta intención, otorgando al paisaje una presencia física, casi táctil, donde el color y la materia construyen una visión directa, intensa y esencial del remanso."
     },
     {
         "id": "1220-bote-en-la-boya",
@@ -2712,7 +2922,8 @@ const OBRAS = [
         "medidas": "60 × 80 cm",
         "imagen": "assets/obras/1220-bote-en-la-boya.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 80 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 80 cm",
+        "texto": "“Bote en la Boya 2026” Escena: Un pequeño bote de madera permanece amarrado y en reposo sobre aguas tranquilas. La composición aísla la embarcación del paisaje, convirtiéndola en el único protagonista y evocando una sensación de espera, silencio y permanencia. Técnica: Óleo sobre tela aplicado con espátula y pincel, utilizando una pincelada gestual y texturada que aporta riqueza material a la superficie. El tratamiento simplificado de las formas y el marcado contraste entre planos de color realzan la estructura del bote y su presencia escultórica. Color: Predominan los profundos tonos azules del agua, contrastados por el blanco cálido del casco y los intensos naranjos y ocres del interior de la embarcación. Los acentos oscuros aportan profundidad, mientras que los claros generan luminosidad y equilibrio cromático. Atmósfera: Serena y contemplativa, la obra transmite una sensación de quietud y aislamiento. El bote, suspendido entre el reflejo del agua y el amplio espacio azul, sugiere descanso, espera y una íntima conexión con el paisaje marino. Esta descripción refleja el carácter naturalista de la obra, incorporando una interpretación contemporánea basada en el color, la textura y la simplicidad compositiva, elementos característicos de su estilo pictórico."
     },
     {
         "id": "1221-mar-patagonico",
@@ -2724,7 +2935,8 @@ const OBRAS = [
         "medidas": "80 × 100 cm",
         "imagen": "assets/obras/1221-mar-patagonico.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 80 × 100 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 80 × 100 cm",
+        "texto": "“Mar Patagónico 2026” Escena: Un amplio paisaje del litoral patagónico donde el mar serpentea entre islas y promontorios rocosos, creando una sucesión de canales que se pierden en el horizonte. La composición, observada desde un punto elevado, transmite la inmensidad del territorio austral y la fuerza silenciosa de una naturaleza prácticamente inalterada. Técnica: Óleo sobre tela aplicado con espátula y pincel, utilizando una pincelada amplia y texturada que aporta riqueza material al cielo, el agua y las formaciones rocosas. La simplificación de las formas y el manejo de grandes planos de color enfatizan la profundidad espacial y la monumentalidad del paisaje. Color: Predominan los azules turquesa y celestes del mar, contrastados con los negros y verdes profundos de las islas rocosas. El cielo, trabajado en suaves blancos, grises y tonos cálidos, filtra una luz difusa que unifica la composición y refuerza la atmósfera característica de la Patagonia. Atmósfera: Majestuosa y contemplativa, la obra transmite la inmensidad, el silencio y la belleza austera del extremo sur. La combinación de luz, agua y roca evoca una sensación de libertad, aislamiento y profundo respeto por la naturaleza, invitando al espectador a recorrer visualmente un paisaje donde el tiempo parece detenerse."
     },
     {
         "id": "1222-rocas-en-la-playa",
@@ -2736,7 +2948,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1222-rocas-en-la-playa.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 100 × 70 cm",
+        "texto": "“Rocas en la Playa 2 2026” Escena: Una playa de arenas claras se abre paso entre grandes formaciones rocosas modeladas por el tiempo y el mar. En el centro de la composición, una figura femenina de pequeña escala recorre el lugar, aportando dimensión humana al paisaje y enfatizando la monumentalidad de las rocas que la rodean. Al fondo, una franja de vegetación costera refuerza el carácter natural y aislado de la escena. Técnica: Óleo sobre tela trabajado con espátula y pincel, utilizando una aplicación de pintura rica en textura que otorga volumen y solidez a las rocas. Las formas se simplifican en grandes planos de color y luz, mientras las pinceladas visibles aportan dinamismo y una fuerte presencia material a toda la superficie pictórica. Color: La obra se construye sobre un intenso contraste cromático. El azul luminoso del cielo domina la parte superior de la composición, mientras los negros, grises y ocres de las rocas generan profundidad y fuerza visual. Los tonos claros de la arena equilibran la escena y aportan luminosidad, mientras los verdes oscuros de la vegetación añaden un contrapunto natural que enmarca el paisaje. Atmósfera: La pintura transmite una sensación de descubrimiento y contemplación. La presencia solitaria de la figura humana sugiere una experiencia íntima frente a la inmensidad de la naturaleza. El contraste entre la escala humana y las enormes rocas evoca respeto, serenidad y una conexión profunda con el entorno costero, invitando al espectador a recorrer visualmente los senderos de arena y explorar los secretos del paisaje. Interpretación: Más allá de la representación de una playa, la obra puede entenderse como una reflexión sobre la relación entre el ser humano y la naturaleza. Las rocas, firmes y permanentes, contrastan con la fragilidad de la figura humana, recordando la escala del tiempo geológico frente a la brevedad de la experiencia individual. La composición celebra la belleza de los espacios naturales y la sensación de libertad que surge al encontrarse a solas frente a ellos."
     },
     {
         "id": "1223-bote-con-boero",
@@ -2748,7 +2961,8 @@ const OBRAS = [
         "medidas": "60 × 80 cm",
         "imagen": "assets/obras/1223-bote-con-boero.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 80 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 60 × 80 cm",
+        "texto": "“Bote con Botero 2026” Escena Un pequeño bote navega lentamente sobre aguas serenas, conducido por un solitario remero que se convierte en el punto focal de la composición. A su alrededor se despliega un paisaje austral de gran amplitud, donde témpanos flotantes, montañas y glaciares delinean el horizonte. La inmensidad del entorno contrasta con la escala humana del navegante, transmitiendo la relación íntima entre el hombre y la naturaleza patagónica. Técnica Óleo sobre tela trabajado con espátula y pincel, utilizando una pincelada amplia y texturada que aporta relieve tanto al agua como a las masas de hielo y al cielo. La simplificación de las formas, junto con el uso de planos cromáticos bien definidos, otorga a la obra un carácter contemporáneo sin perder su esencia figurativa. La composición horizontal enfatiza la amplitud del paisaje y la serenidad de la navegación. Color Predominan los intensos azules del cielo y del agua, que envuelven toda la escena y generan una sensación de profundidad. Los blancos luminosos de los glaciares, las nubes y los témpanos contrastan con los tonos oscuros de las montañas, mientras que el bote incorpora discretos acentos rojizos y granates que enriquecen la armonía cromática y atraen la mirada hacia la figura del remero. Atmósfera Silenciosa, majestuosa y profundamente contemplativa. La quietud del agua, los reflejos del hielo y la inmensidad del paisaje evocan una sensación de paz y aislamiento. La presencia del botero introduce una dimensión humana que sugiere perseverancia, respeto y convivencia con un entorno natural imponente, donde el tiempo parece transcurrir con absoluta calma. Síntesis curatoria Bote con Botero representa la inmensidad de los paisajes australes a través de una escena de navegación solitaria. La obra contrapone la fragilidad de la figura humana con la monumentalidad de glaciares, montañas y aguas cristalinas, creando una imagen de equilibrio entre el hombre y la naturaleza. La riqueza textural del óleo, la luminosidad de la paleta y la simplicidad compositiva invitan al espectador a contemplar el silencio y la belleza del extremo sur, uno de los temas recurrentes en la pintura de Peter Pollak."
     },
     {
         "id": "1224-bote-en-el-lago",
@@ -2760,7 +2974,8 @@ const OBRAS = [
         "medidas": "80 × 100 cm",
         "imagen": "assets/obras/1224-bote-en-el-lago.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 100 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 80 × 100 cm",
+        "texto": "Bote en el Lago 2026 Escena Un bote de madera descansa inmóvil sobre las tranquilas aguas de un lago, ocupando el primer plano y guiando la mirada hacia un paisaje de montañas, bosques y extensas praderas que se reflejan con nitidez en la superficie. La composición invita al espectador a situarse dentro de la embarcación, estableciendo una conexión directa con el entorno y la experiencia de contemplar un paisaje de absoluta calma. Técnica Óleo sobre tela trabajado con espátula y pincel. La pincelada, amplia y texturada, aporta riqueza material a la madera del bote, al agua y a las montañas del fondo. El empleo de planos simplificados y una perspectiva envolvente confiere solidez a la composición, mientras los reflejos en el lago refuerzan la profundidad y el equilibrio visual. Color Predominan los azules suaves y grises del agua y del cielo, contrastados con los ocres dorados de la vegetación y los verdes oscuros de los bosques. Los marrones y azules del bote aportan calidez y estructura, convirtiéndolo en el elemento central de la obra. La paleta, sobria y armoniosa, transmite la luminosidad característica de los paisajes lacustres del sur de Chile. Atmósfera Silenciosa, serena y profundamente contemplativa. La quietud del lago y la precisión de los reflejos evocan un instante donde el tiempo parece suspendido. La ausencia de movimiento convierte al bote en un símbolo de pausa, invitando al espectador a detenerse y contemplar la inmensidad del paisaje y la estrecha relación entre el ser humano y la naturaleza. Síntesis curatorial Bote en el Lago propone una experiencia inmersiva en el paisaje austral, situando al observador a bordo de una embarcación detenida sobre aguas cristalinas. La composición privilegia la perspectiva, los reflejos y la amplitud del horizonte para transmitir una sensación de equilibrio y serenidad. Mediante una paleta contenida y una marcada riqueza textural, la obra expresa la belleza silenciosa de los lagos del sur, donde la naturaleza se convierte en protagonista y el bote actúa como puente entre el espectador y el paisaje."
     },
     {
         "id": "1225-bote-en-el-lago",
@@ -2772,7 +2987,8 @@ const OBRAS = [
         "medidas": "100 × 80 cm",
         "imagen": "assets/obras/1225-bote-en-el-lago.jpg",
         "destacada": true,
-        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 80 cm"
+        "descripcion": "Óleo sobre tela, técnica espátula · 100 × 80 cm",
+        "texto": "“Bote en el Lago 2 2026” Escena Un bote de madera reposa en la orilla de un lago mientras un hombre, inclinado sobre la embarcación, prepara sus implementos antes de iniciar la navegación o al regresar de su jornada. La escena se desarrolla en un entorno lacustre de gran tranquilidad, donde los juncos, el agua en calma y las suaves colinas del fondo construyen un paisaje de profunda conexión con la naturaleza. Técnica Óleo sobre tela trabajado con espátula y pincel. La pincelada texturada aporta riqueza material al agua, la vegetación y el bote, mientras que las formas simplificadas y los amplios planos de color refuerzan la composición y dirigen la atención hacia la figura humana y su interacción con el paisaje. Color Predominan los verdes grisáceos y los azules suaves del lago y del cielo, armonizados con los ocres dorados de los juncos y las riberas. El bote, de tonos oscuros con un acento azul en la proa, se convierte en el centro visual de la obra, aportando contraste y profundidad. Atmósfera Apacible e íntima, la pintura transmite la serenidad de los paisajes lacustres del sur de Chile. La presencia del hombre aporta un sentido de vida cotidiana y de trabajo silencioso, evocando la relación respetuosa entre el ser humano y el entorno natural. Síntesis curatorial Bote en el Lago 2 retrata un instante de quietud en la vida cotidiana de un navegante. La embarcación varada en la orilla y la figura concentrada en sus preparativos simbolizan el vínculo entre el hombre y el paisaje. Mediante una paleta de colores suaves, una composición equilibrada y una marcada riqueza textural, la obra invita a contemplar la belleza serena de los lagos del sur, donde el tiempo parece transcurrir al ritmo de la naturaleza."
     },
     {
         "id": "1226-arboles-en-la-nieve",
@@ -2784,7 +3000,8 @@ const OBRAS = [
         "medidas": "100 × 70 cm",
         "imagen": "assets/obras/1226-arboles-en-la-nieve.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 100 × 70 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 100 × 70 cm",
+        "texto": "“Árboles en la Nieve 2026” Escena Un grupo de árboles desnudos se alza sobre un paisaje cubierto por un manto de nieve, dejando entrever un bosque que se desvanece en la bruma del fondo. Las ramas, extendidas como delicados trazos sobre el cielo invernal, crean una composición de gran verticalidad y ritmo visual. La ausencia de follaje dirige la atención hacia la estructura de los troncos y la serenidad del paisaje. Técnica Óleo sobre tela trabajado con espátula y pincel. La pintura combina superficies suavemente modeladas en el cielo y la nieve con pinceladas precisas en troncos y ramas. La textura del óleo aporta profundidad y una sutil riqueza material, mientras que la simplificación de las formas enfatiza la atmósfera y el equilibrio compositivo. Color Predominan los blancos y azules fríos de la nieve y el cielo, enriquecidos con suaves matices violáceos y grises que sugieren la neblina del bosque distante. Los troncos oscuros generan un marcado contraste y estructuran la composición, aportando fuerza y elegancia al paisaje. Atmósfera Silenciosa, introspectiva y profundamente serena. La luz difusa del invierno y la quietud del bosque transmiten una sensación de paz y recogimiento, invitando al espectador a contemplar la belleza austera de la naturaleza durante la estación más fría del año. Síntesis curatorial Árboles en la Nieve explora la esencia del paisaje invernal mediante una composición de gran sencillez y equilibrio. Los troncos desnudos, recortados sobre un fondo de suaves veladuras azules y violáceas, evocan el silencio y la quietud del bosque cubierto de nieve. La riqueza textural del óleo y la economía de elementos convierten la obra en una invitación a contemplar la belleza de la naturaleza en su estado más puro, donde la luz, el espacio y el vacío adquieren un especial protagonismo"
     },
     {
         "id": "1227-tres-botes-en-el-mar",
@@ -2796,7 +3013,8 @@ const OBRAS = [
         "medidas": "60 × 80 cm",
         "imagen": "assets/obras/1227-tres-botes-en-el-mar.jpg",
         "destacada": false,
-        "descripcion": "Óleo sobre cartón, técnica espátula · 60 × 80 cm"
+        "descripcion": "Óleo sobre cartón, técnica espátula · 60 × 80 cm",
+        "texto": "“Tres Botes en el Mar 2026” Escena Tres pequeñas embarcaciones flotan tranquilamente cerca de la orilla, alineadas sobre un mar en calma. La suave rompiente y el amplio horizonte crean una composición equilibrada, donde los botes parecen descansar entre la tierra y el mar. La ausencia de figuras humanas acentúa la sensación de quietud y convierte a las embarcaciones en las protagonistas de la escena. Técnica Óleo sobre tela trabajado con espátula y pincel. La superficie presenta una rica textura, especialmente en el cielo y en las olas, donde las pinceladas amplias y gestuales aportan movimiento y luminosidad. La simplificación de las formas y el tratamiento de los planos de color refuerzan el carácter contemporáneo de la composición sin perder su esencia figurativa. Color Predominan los suaves azules y grises del cielo y del mar, armonizados con blancos luminosos que describen las nubes y la espuma de las olas. Los cascos blancos, acentuados con franjas rojizas, generan un contraste cálido que atrae la mirada y aporta dinamismo a una paleta serena y equilibrada. Atmósfera La obra transmite una profunda sensación de calma y contemplación. El suave movimiento del agua, la luz difusa y el horizonte abierto evocan un momento de descanso y silencio, donde el mar se presenta como un espacio de serenidad y reflexión. Los tres botes sugieren la presencia humana sin mostrarla directamente, invitando al espectador a imaginar las historias que los rodean. Síntesis curatorial Tres Botes en el Mar celebra la sencillez y la belleza del paisaje costero mediante una composición depurada y equilibrada. Las embarcaciones, suspendidas entre la orilla y el horizonte, simbolizan el vínculo permanente entre el hombre y el mar. La riqueza textural del óleo, la luminosidad de la paleta y la economía de elementos convierten la obra en una invitación a contemplar la tranquilidad del litoral, donde la luz, el agua y el silencio adquieren un especial protagonismo."
     },
     {
         "id": "dsc",

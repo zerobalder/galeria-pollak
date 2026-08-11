@@ -940,6 +940,18 @@ main { min-height: 60vh; }
   color: var(--ink-soft);
   max-width: 48ch;
 }
+/* Descripción curatorial de la obra */
+.work-text {
+  margin-top: 26px;
+  max-width: 64ch;
+}
+.work-text p {
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.78;
+  margin-bottom: 1.05em;
+}
+.work-text p:last-child { margin-bottom: 0; }
 /* Ficha técnica */
 .spec {
   border-top: 1px solid var(--line);
