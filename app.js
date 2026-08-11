@@ -10,15 +10,11 @@
   /* ---------- Utilidades ---------- */
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const bySlug = (slug) => CATEGORIAS.find((c) => c.slug === slug);
-  // nº de catálogo (prefijo del id)
+  // nº de catálogo (prefijo del id) — es cronológico: más bajo = más antiguo
   const nroCatalogo = (o) => parseInt(o.id, 10) || 0;
-  // orden cronológico: primero por año (reciente→antiguo), luego por nº de catálogo
-  const porRecientes = (arr) => arr.slice().sort((a, b) => {
-    const ay = a.anio || 0, by = b.anio || 0;
-    if (by !== ay) return by - ay;
-    return nroCatalogo(b) - nroCatalogo(a);
-  });
-  const obrasDeCategoria = (slug) => porRecientes(OBRAS.filter((o) => o.categoria === slug));
+  // orden cronológico: por nº de catálogo ascendente (antiguo → nuevo)
+  const cronologico = (arr) => arr.slice().sort((a, b) => nroCatalogo(a) - nroCatalogo(b));
+  const obrasDeCategoria = (slug) => cronologico(OBRAS.filter((o) => o.categoria === slug));
   const obraPorId = (id) => OBRAS.find((o) => o.id === id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
 
@@ -186,17 +182,17 @@
      VISTA: HOME
      ============================================================ */
   function viewHome() {
-    const destacadas = porRecientes(OBRAS.filter((o) => o.destacada));
+    const destacadas = cronologico(OBRAS.filter((o) => o.destacada));
     const heroObras = (destacadas.length ? destacadas : OBRAS).slice(0, 4);
 
     const bandas = TEMATICAS.slice(0, 2).map((t, i) => {
-      const obras = porRecientes(OBRAS.filter((o) => o.tematica === t)).slice(0, 4);
+      const obras = cronologico(OBRAS.filter((o) => o.tematica === t)).slice(0, 4);
       if (!obras.length) return "";
       return sectionRow(`Temática`, t, obras, `#/tema/${encodeURIComponent(t)}`, i);
     }).join("");
 
     const bandasTec = TECNICAS.slice(0, 2).map((t) => {
-      const obras = porRecientes(OBRAS.filter((o) => o.tecnica === t)).slice(0, 4);
+      const obras = cronologico(OBRAS.filter((o) => o.tecnica === t)).slice(0, 4);
       if (!obras.length) return "";
       return sectionRow(`Técnica`, t, obras, `#/tecnica/${encodeURIComponent(t)}`);
     }).join("");
@@ -351,7 +347,7 @@
      ============================================================ */
   function viewEje(tipo, valor) {
     const key = tipo === "tema" ? "tematica" : "tecnica";
-    const obras = porRecientes(OBRAS.filter((o) => o[key] === valor));
+    const obras = cronologico(OBRAS.filter((o) => o[key] === valor));
     const etiqueta = tipo === "tema" ? "Temática" : "Técnica";
     if (!obras.length) return viewNotFound();
     return `
@@ -393,7 +389,7 @@
     const obra = obraPorId(id);
     if (!obra) return viewNotFound();
     const cat = bySlug(obra.categoria);
-    const similares = porRecientes(OBRAS.filter(
+    const similares = cronologico(OBRAS.filter(
       (o) => o.id !== id && (o.categoria === obra.categoria || o.tematica === obra.tematica)
     )).slice(0, 4);
 
