@@ -234,6 +234,7 @@
       <!-- CURATORÍA -->
       <section class="curatoria wrap">
         <div class="section-eyebrow reveal" data-reveal>Curatoría</div>
+        <h2 class="curatoria-titulo reveal" data-reveal>Curatorial Statement by ${esc(CURATORIA.autor)}, ${esc(CURATORIA.lugar)} ${esc(CURATORIA.anio)}</h2>
         <div class="curatoria-body reveal" data-reveal data-delay="1">
           ${CURATORIA.parrafos.map((p) => `<p>${p}</p>`).join("")}
         </div>

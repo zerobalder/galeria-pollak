@@ -749,6 +749,15 @@ main { min-height: 60vh; }
   padding: clamp(50px, 8vw, 110px) var(--gutter);
   border-top: 1px solid var(--line-soft);
 }
+.curatoria-titulo {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  margin-top: clamp(14px, 2vw, 22px);
+  max-width: 26ch;
+}
 .curatoria-body {
   max-width: 66ch;
   margin: clamp(24px, 3vw, 40px) 0 0;
