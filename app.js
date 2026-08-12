@@ -12,8 +12,8 @@
   const bySlug = (slug) => CATEGORIAS.find((c) => c.slug === slug);
   // nº de catálogo (prefijo del id) — es cronológico: más bajo = más antiguo
   const nroCatalogo = (o) => parseInt(o.id, 10) || 0;
-  // orden cronológico: por nº de catálogo ascendente (antiguo → nuevo)
-  const cronologico = (arr) => arr.slice().sort((a, b) => nroCatalogo(a) - nroCatalogo(b));
+  // orden: por nº de catálogo descendente (más actual → más antigua)
+  const cronologico = (arr) => arr.slice().sort((a, b) => nroCatalogo(b) - nroCatalogo(a));
   const obrasDeCategoria = (slug) => cronologico(OBRAS.filter((o) => o.categoria === slug));
   const obraPorId = (id) => OBRAS.find((o) => o.id === id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]));
