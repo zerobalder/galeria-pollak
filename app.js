@@ -136,7 +136,7 @@
       <a class="art-card reveal" href="#/obra/${obra.id}" data-reveal>
         <div class="art-plus">+</div>
         ${obra.vendido ? `<span class="art-badge">Vendido</span>` : ""}
-        <div class="frame" ${styleFrame}>${media(obra, ratio, { thumb: true })}</div>
+        <div class="frame" ${styleFrame}>${media(obra, ratio, { thumb: true, eager: opts.eager })}</div>
         <div class="art-meta">
           <div class="art-title">${esc(obra.titulo)}</div>
           <div class="art-sub"><span class="art-nro">№ ${nroCatalogo(obra)}</span><span class="dot">·</span>${esc(obra.tecnica)}${obra.anio ? `<span class="dot">/</span>${obra.anio}` : ""}</div>
@@ -999,8 +999,10 @@
     const hits = buscarObras(nq);
     meta.textContent = hits.length ? `${hits.length} obra${hits.length !== 1 ? "s" : ""}` : "";
     res.innerHTML = hits.length
-      ? hits.map((o) => artCard(o)).join("")
+      ? hits.map((o) => artCard(o, { eager: true })).join("")
       : `<p class="search-empty">Sin resultados para «${esc(nq)}». Prueba con otro título o año.</p>`;
+    // las tarjetas traen la clase reveal (empiezan invisibles): en el buscador las mostramos de una
+    res.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
     res.querySelectorAll("img.pic").forEach((i) => { if (i.complete && i.naturalWidth > 0) i.classList.add("loaded"); });
   }
   function initSearch() {
