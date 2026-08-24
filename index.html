@@ -48,6 +48,9 @@
       </a>
       <div class="topbar-right">
         <nav class="mainnav" id="mainnav"></nav>
+        <button class="icon-btn" id="searchBtn" aria-label="Buscar obras" title="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </button>
         <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema"></button>
         <button class="menu-toggle" id="menuToggle" aria-label="Menú">
           <span></span><span></span><span></span>
@@ -56,6 +59,17 @@
     </div>
     <div class="mega" id="mega" aria-hidden="true"></div>
   </header>
+
+  <!-- Buscador -->
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <div class="search-head wrap">
+      <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input class="search-input" id="searchInput" type="search" placeholder="Buscar por título, año o nº…" autocomplete="off" spellcheck="false" />
+      <button class="search-close" id="searchClose" aria-label="Cerrar">&times;</button>
+    </div>
+    <div class="search-meta wrap" id="searchMeta"></div>
+    <div class="search-results wrap" id="searchResults"></div>
+  </div>
 
   <!-- Etiqueta que sigue al cursor sobre las obras -->
   <div class="cursor-label" id="cursorLabel" aria-hidden="true">Ver</div>

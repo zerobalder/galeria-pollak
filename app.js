@@ -22,6 +22,9 @@
   const parrafos = (t) => String(t).split(/\n+/).map((p) => p.trim()).filter(Boolean)
     .map((p) => `<p>${esc(p)}</p>`).join("");
 
+  // normaliza para buscar sin acentos ni mayúsculas
+  const normal = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+
   // Enlace a WhatsApp con mensaje prellenado
   const waLink = (texto) => {
     const num = (ARTIST.whatsapp || "").replace(/\D/g, "");
@@ -629,6 +632,7 @@
     setActiveNav(a, b);
     closeMobileNav();
     closeMega();
+    closeSearch();
   }
 
   function viewSobre() {
@@ -955,6 +959,70 @@
     }, { passive: true });
   }
 
+  /* ---------- Buscador (por título, año o nº) ---------- */
+  function buscarObras(q) {
+    const nq = normal(q.trim());
+    if (!nq) return [];
+    const soloNum = /^\d+$/.test(nq);
+    return cronologico(OBRAS.filter((o) => {
+      if (normal(o.titulo).includes(nq)) return true;
+      if (soloNum) {
+        if (String(o.anio || "").includes(nq)) return true;
+        if (String(nroCatalogo(o)).includes(nq)) return true;
+      }
+      return false;
+    }));
+  }
+  let searchOpen = false;
+  function openSearch() {
+    const ov = document.getElementById("searchOverlay");
+    if (!ov) return;
+    ov.classList.add("open"); ov.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    searchOpen = true;
+    const inp = document.getElementById("searchInput");
+    if (inp) setTimeout(() => inp.focus(), 60);
+  }
+  function closeSearch() {
+    const ov = document.getElementById("searchOverlay");
+    if (!ov || !searchOpen) return;
+    ov.classList.remove("open"); ov.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    searchOpen = false;
+  }
+  function renderSearch(q) {
+    const res = document.getElementById("searchResults");
+    const meta = document.getElementById("searchMeta");
+    if (!res) return;
+    const nq = q.trim();
+    if (!nq) { res.innerHTML = ""; meta.textContent = ""; return; }
+    const hits = buscarObras(nq);
+    meta.textContent = hits.length ? `${hits.length} obra${hits.length !== 1 ? "s" : ""}` : "";
+    res.innerHTML = hits.length
+      ? hits.map((o) => artCard(o)).join("")
+      : `<p class="search-empty">Sin resultados para «${esc(nq)}». Prueba con otro título o año.</p>`;
+    res.querySelectorAll("img.pic").forEach((i) => { if (i.complete && i.naturalWidth > 0) i.classList.add("loaded"); });
+  }
+  function initSearch() {
+    const btn = document.getElementById("searchBtn");
+    const inp = document.getElementById("searchInput");
+    const cls = document.getElementById("searchClose");
+    const ov = document.getElementById("searchOverlay");
+    if (btn) btn.addEventListener("click", openSearch);
+    if (cls) cls.addEventListener("click", closeSearch);
+    if (inp) inp.addEventListener("input", () => renderSearch(inp.value));
+    if (ov) ov.addEventListener("click", (e) => {
+      if (e.target === ov) closeSearch();                 // clic fuera cierra
+      if (e.target.closest && e.target.closest("a[href]")) closeSearch(); // clic en resultado
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && searchOpen) closeSearch();
+      if (e.key === "/" && !searchOpen && !/^(input|textarea)$/i.test((e.target && e.target.tagName) || "")) {
+        e.preventDefault(); openSearch();
+      }
+    });
+  }
+
   /* ---------- Init ---------- */
   // Guardar la posición de scroll al hacer clic en un enlace interno de una vista
   // (obras, categorías, similares…) para poder restaurarla al volver atrás.
@@ -969,6 +1037,7 @@
 
   initTheme();
   initCursorLabel();
+  initSearch();
   buildNav();
   buildFooter();
   window.addEventListener("hashchange", render);
