@@ -14,10 +14,12 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "JSON inválido" });
   }
 
+  // ping = solo prueba de contraseña (no toca la base, para diagnósticos claros)
+  if (body.action === "ping") return res.status(200).json({ ok: true });
+
   try {
     await ensureSchema();
     switch (body.action) {
-      case "ping":   return res.status(200).json({ ok: true });
       case "seed":   return await seed(body, res);
       case "create": return await upsert(body, res, true);
       case "update": return await upsert(body, res, false);
