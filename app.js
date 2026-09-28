@@ -1055,11 +1055,20 @@
       const r = await fetch("/api/obras", { cache: "no-store" });
       if (!r.ok) return;
       const data = await r.json();
-      if (Array.isArray(data) && data.length) {
-        OBRAS.length = 0;
-        OBRAS.push.apply(OBRAS, data);
-        buildNav();
-        buildFooter();
+      if (!Array.isArray(data) || !data.length) return;
+      // Firma para detectar cambios REALES frente al catálogo estático (data.js).
+      const firma = (arr) => arr
+        .map((o) => `${o.id}|${o.titulo}|${o.vendido ? 1 : 0}|${o.destacada ? 1 : 0}|${o.categoria}|${o.medidas || ""}`)
+        .sort().join("~");
+      // Sin cambios → NO re-renderizar: evita cerrar el menú móvil y saltos de scroll
+      // cuando la base tarda en responder (arranque en frío de Neon).
+      if (firma(data) === firma(OBRAS)) return;
+      OBRAS.length = 0;
+      OBRAS.push.apply(OBRAS, data);
+      buildNav();
+      buildFooter();
+      // No interrumpir si el usuario tiene el menú móvil abierto; se verá al navegar.
+      if (!document.body.classList.contains("nav-open")) {
         render();
         onScroll();
       }
