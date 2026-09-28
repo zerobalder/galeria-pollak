@@ -106,8 +106,10 @@
     return { portrait: "4 / 5", square: "1 / 1", landscape: "5 / 4", tall: "3 / 4.4" }[kind] || "4 / 5";
   }
 
-  // ruta a la miniatura (~600px) a partir de la imagen completa
+  // ruta a la miniatura (~600px): usa obra.thumb si viene (imágenes en Blob),
+  // si no, la deriva de la imagen completa (obras del repo)
   function thumbSrc(obra) {
+    if (obra.thumb) return obra.thumb;
     return obra.imagen.replace("assets/obras/", "assets/obras/thumb/");
   }
 
@@ -1045,4 +1047,25 @@
   window.addEventListener("hashchange", render);
   render();
   onScroll();
+
+  // Carga las obras desde la base (panel de Peter). Si hay datos, reemplaza el
+  // catálogo estático (data.js queda como respaldo) y refresca la vista actual.
+  async function cargarObrasRemotas() {
+    try {
+      const r = await fetch("/api/obras", { cache: "no-store" });
+      if (!r.ok) return;
+      const data = await r.json();
+      if (Array.isArray(data) && data.length) {
+        OBRAS.length = 0;
+        OBRAS.push.apply(OBRAS, data);
+        buildNav();
+        buildFooter();
+        render();
+        onScroll();
+      }
+    } catch (e) {
+      /* sin conexión con la base: se mantiene el catálogo de data.js */
+    }
+  }
+  cargarObrasRemotas();
 })();

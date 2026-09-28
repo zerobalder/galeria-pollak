@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Panel · Peter Pollak</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #14120f; --panel: #1d1a16; --panel2: #26221d; --line: #37312a;
+      --ink: #f3ece2; --muted: #a99f92; --accent: #c98a3a; --accent2:#e0a95a;
+      --ok: #5fa463; --bad: #c9584b; --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink);
+      font-family: Inter, system-ui, sans-serif; font-weight: 300; line-height: 1.5; }
+    h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 400; margin: 0; }
+    a { color: var(--accent2); }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 20px 80px; }
+    header.bar { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      border-bottom: 1px solid var(--line); padding-bottom: 18px; margin-bottom: 26px; }
+    header.bar h1 { font-size: 26px; letter-spacing: .3px; }
+    header.bar .sub { color: var(--muted); font-size: 13px; }
+    .btn { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--panel2);
+      color: var(--ink); padding: 10px 16px; border-radius: 10px; transition: .15s; }
+    .btn:hover { border-color: var(--accent); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: #1a1206; font-weight: 500; }
+    .btn.primary:hover { background: var(--accent2); }
+    .btn.ghost { background: transparent; }
+    .btn.small { padding: 6px 10px; font-size: 13px; border-radius: 8px; }
+    .btn.danger:hover { border-color: var(--bad); color: #f0b3ab; }
+    .btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+    /* Login */
+    .gate { max-width: 380px; margin: 12vh auto; background: var(--panel); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 34px 30px; text-align: center; }
+    .gate h1 { font-size: 30px; margin-bottom: 6px; }
+    .gate p { color: var(--muted); font-size: 14px; margin: 0 0 22px; }
+    .gate input { width: 100%; }
+
+    input, select, textarea { width: 100%; font: inherit; color: var(--ink); background: var(--panel2);
+      border: 1px solid var(--line); border-radius: 10px; padding: 11px 13px; margin-top: 6px; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
+    textarea { resize: vertical; min-height: 96px; }
+    label { display: block; font-size: 13px; color: var(--muted); margin-top: 14px; }
+    label.inline { display: flex; align-items: center; gap: 9px; margin-top: 16px; color: var(--ink); font-size: 14px; }
+    label.inline input { width: auto; margin: 0; }
+
+    .tabs { display: flex; gap: 8px; margin-bottom: 22px; }
+    .tab { padding: 9px 16px; border-radius: 999px; border: 1px solid var(--line);
+      background: transparent; color: var(--muted); cursor: pointer; font: inherit; font-size: 14px; }
+    .tab.active { background: var(--panel2); color: var(--ink); border-color: var(--accent); }
+
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+    @media (max-width: 640px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+
+    .dropzone { margin-top: 6px; border: 1.5px dashed var(--line); border-radius: 12px; padding: 18px;
+      text-align: center; color: var(--muted); cursor: pointer; transition: .15s; }
+    .dropzone:hover { border-color: var(--accent); color: var(--ink); }
+    .preview { margin-top: 12px; display: none; }
+    .preview img { max-height: 220px; border-radius: 10px; border: 1px solid var(--line); }
+    .preview .dim { color: var(--muted); font-size: 12px; margin-top: 6px; }
+
+    .formactions { display: flex; gap: 10px; margin-top: 22px; align-items: center; }
+    .msg { font-size: 14px; }
+    .msg.ok { color: var(--ok); } .msg.bad { color: var(--bad); }
+
+    .toolbar { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+    .toolbar input[type=search] { flex: 1; min-width: 200px; margin: 0; }
+    .count { color: var(--muted); font-size: 13px; }
+
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: middle; }
+    th { color: var(--muted); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+    td.thumb-c { width: 60px; }
+    td.thumb-c img { width: 46px; height: 46px; object-fit: cover; border-radius: 7px; border: 1px solid var(--line); background:var(--panel2); }
+    .pill { display: inline-block; font-size: 11px; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+    .pill.sold { color: #f0b3ab; border-color: var(--bad); }
+    .pill.star { color: var(--accent2); border-color: var(--accent); }
+    .rowbtns { display: flex; gap: 6px; justify-content: flex-end; }
+    .banner { background: var(--panel2); border: 1px solid var(--accent); border-radius: 12px;
+      padding: 16px 18px; margin-bottom: 20px; display: flex; gap: 14px; align-items: center; justify-content: space-between; }
+    .banner .t { font-size: 14px; }
+    .hidden { display: none !important; }
+    .spinner { display:inline-block; width:15px; height:15px; border:2px solid rgba(255,255,255,.25);
+      border-top-color: var(--accent2); border-radius:50%; animation: spin .7s linear infinite; vertical-align:-2px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <!-- LOGIN -->
+  <div id="gate" class="gate">
+    <h1>Panel de obra</h1>
+    <p>Peter Pollak · acceso privado</p>
+    <input id="pass" type="password" placeholder="Contraseña" autocomplete="current-password" />
+    <div style="margin-top:16px"><button class="btn primary" id="enter" style="width:100%">Entrar</button></div>
+    <p id="gateMsg" class="msg bad" style="margin-top:14px"></p>
+  </div>
+
+  <!-- APP -->
+  <div id="appwrap" class="wrap hidden">
+    <header class="bar">
+      <div>
+        <h1>Panel de obra</h1>
+        <div class="sub">Peter Pollak · las obras se publican al instante en el sitio</div>
+      </div>
+      <div style="display:flex; gap:10px">
+        <a class="btn ghost small" href="/" target="_blank" rel="noopener">Ver sitio ↗</a>
+        <button class="btn ghost small" id="logout">Salir</button>
+      </div>
+    </header>
+
+    <div id="seedBanner" class="banner hidden">
+      <div class="t"><strong>Primera vez:</strong> aún no has migrado tu catálogo actual a la base. Hazlo una sola vez para poder editar todas tus obras desde aquí.</div>
+      <button class="btn primary small" id="seedBtn">Migrar catálogo (<span id="seedCount">…</span>)</button>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="nueva">＋ Nueva obra</button>
+      <button class="tab" data-tab="lista">Catálogo</button>
+    </div>
+
+    <!-- NUEVA / EDITAR -->
+    <section id="tab-nueva" class="card">
+      <h2 id="formTitle" style="font-size:22px; margin-bottom:6px">Nueva obra</h2>
+      <div class="sub" style="color:var(--muted); font-size:13px; margin-bottom:18px">La foto se recorta y optimiza sola (1800px + miniatura).</div>
+
+      <form id="obraForm">
+        <input type="hidden" id="f_slug" />
+
+        <div id="dropWrap">
+          <label>Foto del cuadro</label>
+          <div class="dropzone" id="dropzone">Haz clic o arrastra la imagen aquí</div>
+          <input type="file" id="f_file" accept="image/*" class="hidden" />
+          <div class="preview" id="preview"><img id="previewImg" alt="" /><div class="dim" id="previewDim"></div></div>
+        </div>
+
+        <div class="grid2">
+          <div><label>Título</label><input id="f_titulo" required placeholder="Ej: Río entre rocas" /></div>
+          <div><label>Sección</label><select id="f_categoria" required></select></div>
+        </div>
+
+        <div class="grid3">
+          <div><label>Año</label><input id="f_anio" type="number" min="1960" max="2100" placeholder="2026" /></div>
+          <div><label>Nº de catálogo</label><input id="f_catalogo" type="number" min="1" placeholder="auto" /></div>
+          <div><label>Medidas</label><input id="f_medidas" placeholder="Ej: 100 × 80 cm" /></div>
+        </div>
+
+        <div class="grid2">
+          <div><label>Técnica</label><select id="f_tecnica"></select></div>
+          <div><label>Temática</label><select id="f_tematica"></select></div>
+        </div>
+
+        <div><label>Descripción corta (bajo el cuadro)</label><input id="f_descripcion" placeholder="Ej: Óleo sobre lienzo, técnica espátula" /></div>
+        <div><label>Texto curatorial (opcional)</label><textarea id="f_texto" placeholder="Descripción larga para la página de la obra…"></textarea></div>
+
+        <label class="inline"><input type="checkbox" id="f_destacada" /> Destacar en la portada</label>
+        <label class="inline"><input type="checkbox" id="f_vendido" /> Marcar como vendida</label>
+
+        <div class="formactions">
+          <button type="submit" class="btn primary" id="saveBtn">Publicar obra</button>
+          <button type="button" class="btn ghost hidden" id="cancelEdit">Cancelar edición</button>
+          <span class="msg" id="formMsg"></span>
+        </div>
+      </form>
+    </section>
+
+    <!-- LISTA -->
+    <section id="tab-lista" class="card hidden">
+      <div class="toolbar">
+        <input type="search" id="q" placeholder="Buscar por título, año o nº…" />
+        <span class="count" id="listCount"></span>
+        <button class="btn ghost small" id="reload">Recargar</button>
+      </div>
+      <div style="overflow-x:auto">
+        <table>
+          <thead><tr><th></th><th>Nº</th><th>Título</th><th>Sección</th><th>Año</th><th>Estado</th><th></th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- data.js aporta CATEGORIAS / TEMATICAS / TECNICAS / OBRAS (para migrar) -->
+  <script src="data.js"></script>
+  <script>
+  (function () {
+    "use strict";
+    const $ = (s) => document.querySelector(s);
+    const KEY = "pp-admin-key";
+    let obras = [];      // lista actual desde la base
+    let editing = null;  // slug en edición
+
+    /* ---------- API ---------- */
+    async function api(action, payload) {
+      const r = await fetch("/api/admin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-admin-key": sessionStorage.getItem(KEY) || "" },
+        body: JSON.stringify(Object.assign({ action }, payload || {})),
+      });
+      if (r.status === 401) { sessionStorage.removeItem(KEY); location.reload(); throw new Error("Sesión expirada"); }
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(data.error || ("Error " + r.status));
+      return data;
+    }
+    async function getObras() {
+      const r = await fetch("/api/obras", { cache: "no-store" });
+      return r.ok ? r.json() : [];
+    }
+
+    /* ---------- Login ---------- */
+    async function tryEnter(pass) {
+      sessionStorage.setItem(KEY, pass);
+      try { await api("ping"); return true; }
+      catch (e) { sessionStorage.removeItem(KEY); return false; }
+    }
+    $("#enter").addEventListener("click", doEnter);
+    $("#pass").addEventListener("keydown", (e) => { if (e.key === "Enter") doEnter(); });
+    async function doEnter() {
+      const p = $("#pass").value.trim();
+      if (!p) return;
+      $("#gateMsg").textContent = "";
+      $("#enter").disabled = true; $("#enter").innerHTML = '<span class="spinner"></span>';
+      const ok = await tryEnter(p);
+      $("#enter").disabled = false; $("#enter").textContent = "Entrar";
+      if (ok) startApp();
+      else $("#gateMsg").textContent = "Contraseña incorrecta.";
+    }
+    $("#logout").addEventListener("click", () => { sessionStorage.removeItem(KEY); location.reload(); });
+
+    /* ---------- Arranque ---------- */
+    async function startApp() {
+      $("#gate").classList.add("hidden");
+      $("#appwrap").classList.remove("hidden");
+      fillSelects();
+      await refresh();
+    }
+    function fillSelects() {
+      const cat = $("#f_categoria");
+      cat.innerHTML = (window.CATEGORIAS || []).map((c) => `<option value="${c.slug}">${c.nombre}</option>`).join("");
+      $("#f_tecnica").innerHTML = (window.TECNICAS || []).map((t) => `<option>${t}</option>`).join("");
+      $("#f_tematica").innerHTML = (window.TEMATICAS || []).map((t) => `<option>${t}</option>`).join("");
+    }
+
+    async function refresh() {
+      obras = await getObras();
+      // Banner de migración: si la base está vacía pero data.js tiene obras
+      const staticN = (window.OBRAS || []).length;
+      if (obras.length === 0 && staticN > 0) {
+        $("#seedBanner").classList.remove("hidden");
+        $("#seedCount").textContent = staticN + " obras";
+      } else {
+        $("#seedBanner").classList.add("hidden");
+      }
+      renderList();
+      suggestCatalogo();
+    }
+
+    function suggestCatalogo() {
+      const base = (obras.length ? obras : (window.OBRAS || []));
+      let max = 0;
+      base.forEach((o) => { const n = parseInt(o.id || o.slug, 10) || 0; if (n > max) max = n; });
+      if (!editing) $("#f_catalogo").placeholder = "auto → " + (max + 1);
+      return max + 1;
+    }
+
+    /* ---------- Tabs ---------- */
+    document.querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach((x) => x.classList.remove("active"));
+      t.classList.add("active");
+      const tab = t.dataset.tab;
+      $("#tab-nueva").classList.toggle("hidden", tab !== "nueva");
+      $("#tab-lista").classList.toggle("hidden", tab !== "lista");
+    }));
+    function goTab(name) { document.querySelector(`.tab[data-tab="${name}"]`).click(); }
+
+    /* ---------- Migración ---------- */
+    $("#seedBtn").addEventListener("click", async () => {
+      const btn = $("#seedBtn");
+      btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Migrando…';
+      try {
+        const res = await api("seed", { obras: window.OBRAS || [] });
+        alert("Listo. Catálogo migrado: " + res.total + " obras en la base.");
+        await refresh();
+      } catch (e) { alert("Error al migrar: " + e.message); btn.disabled = false; btn.textContent = "Reintentar"; }
+    });
+
+    /* ---------- Imagen (recorte en el navegador) ---------- */
+    let fileFull = null, fileThumb = null;
+    $("#dropzone").addEventListener("click", () => $("#f_file").click());
+    $("#dropzone").addEventListener("dragover", (e) => { e.preventDefault(); });
+    $("#dropzone").addEventListener("drop", (e) => { e.preventDefault(); if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]); });
+    $("#f_file").addEventListener("change", (e) => { if (e.target.files[0]) handleFile(e.target.files[0]); });
+
+    async function handleFile(file) {
+      if (!file.type.startsWith("image/")) { alert("Selecciona una imagen."); return; }
+      $("#formMsg").textContent = "Procesando imagen…"; $("#formMsg").className = "msg";
+      try {
+        const bmp = await createImageBitmap(file, { imageOrientation: "from-image" }).catch(() => createImageBitmap(file));
+        const full = await scale(bmp, 1800, 0.86);
+        const thumb = await scale(bmp, 600, 0.82);
+        fileFull = await toB64(full.blob);
+        fileThumb = await toB64(thumb.blob);
+        $("#previewImg").src = URL.createObjectURL(full.blob);
+        $("#previewDim").textContent = `original ${bmp.width}×${bmp.height}px → ${full.w}×${full.h}px (${Math.round(full.blob.size/1024)} KB)`;
+        $("#preview").style.display = "block";
+        $("#formMsg").textContent = "";
+      } catch (e) { $("#formMsg").textContent = "No se pudo procesar la imagen."; $("#formMsg").className = "msg bad"; }
+    }
+    function scale(bmp, edge, q) {
+      const s = Math.min(1, edge / Math.max(bmp.width, bmp.height));
+      const w = Math.round(bmp.width * s), h = Math.round(bmp.height * s);
+      const c = document.createElement("canvas"); c.width = w; c.height = h;
+      c.getContext("2d").drawImage(bmp, 0, 0, w, h);
+      return new Promise((res) => c.toBlob((b) => res({ blob: b, w, h }), "image/jpeg", q));
+    }
+    function toB64(blob) {
+      return new Promise((res) => { const fr = new FileReader(); fr.onload = () => res(fr.result.split(",")[1]); fr.readAsDataURL(blob); });
+    }
+
+    /* ---------- Guardar (crear / editar) ---------- */
+    $("#obraForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const btn = $("#saveBtn"), msg = $("#formMsg");
+      const payload = {
+        slug: editing || undefined,
+        titulo: $("#f_titulo").value.trim(),
+        categoria: $("#f_categoria").value,
+        anio: parseInt($("#f_anio").value, 10) || null,
+        catalogo: parseInt($("#f_catalogo").value, 10) || suggestCatalogo(),
+        medidas: $("#f_medidas").value.trim(),
+        tecnica: $("#f_tecnica").value,
+        tematica: $("#f_tematica").value,
+        descripcion: $("#f_descripcion").value.trim(),
+        texto: $("#f_texto").value.trim(),
+        destacada: $("#f_destacada").checked,
+        vendido: $("#f_vendido").checked,
+      };
+      if (fileFull) { payload.fullB64 = fileFull; payload.thumbB64 = fileThumb; }
+      if (!editing && !payload.fullB64) { msg.textContent = "Falta la foto del cuadro."; msg.className = "msg bad"; return; }
+      if (!payload.titulo) { msg.textContent = "Falta el título."; msg.className = "msg bad"; return; }
+
+      btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Publicando…';
+      msg.textContent = ""; msg.className = "msg";
+      try {
+        await api(editing ? "update" : "create", payload);
+        msg.textContent = editing ? "✓ Cambios guardados." : "✓ Obra publicada."; msg.className = "msg ok";
+        resetForm();
+        await refresh();
+        setTimeout(() => { msg.textContent = ""; }, 3000);
+      } catch (e) { msg.textContent = "Error: " + e.message; msg.className = "msg bad"; }
+      btn.disabled = false; btn.textContent = editing ? "Guardar cambios" : "Publicar obra";
+    });
+
+    $("#cancelEdit").addEventListener("click", resetForm);
+    function resetForm() {
+      editing = null; fileFull = fileThumb = null;
+      $("#obraForm").reset();
+      $("#preview").style.display = "none"; $("#previewImg").src = "";
+      $("#formTitle").textContent = "Nueva obra";
+      $("#saveBtn").textContent = "Publicar obra";
+      $("#cancelEdit").classList.add("hidden");
+      $("#dropWrap").querySelector("label").textContent = "Foto del cuadro";
+      suggestCatalogo();
+    }
+
+    function editObra(o) {
+      editing = o.id;
+      $("#f_titulo").value = o.titulo || "";
+      $("#f_categoria").value = o.categoria || "";
+      $("#f_anio").value = o.anio || "";
+      $("#f_catalogo").value = parseInt(o.id, 10) || "";
+      $("#f_medidas").value = o.medidas || "";
+      $("#f_tecnica").value = o.tecnica || (window.TECNICAS || [])[0] || "";
+      $("#f_tematica").value = o.tematica || (window.TEMATICAS || [])[0] || "";
+      $("#f_descripcion").value = o.descripcion || "";
+      $("#f_texto").value = o.texto || "";
+      $("#f_destacada").checked = !!o.destacada;
+      $("#f_vendido").checked = !!o.vendido;
+      fileFull = fileThumb = null;
+      $("#preview").style.display = o.thumb || o.imagen ? "block" : "none";
+      $("#previewImg").src = o.thumb || o.imagen || "";
+      $("#previewDim").textContent = "Imagen actual — sube una nueva solo si quieres reemplazarla.";
+      $("#formTitle").textContent = "Editar: " + o.titulo;
+      $("#saveBtn").textContent = "Guardar cambios";
+      $("#cancelEdit").classList.remove("hidden");
+      $("#dropWrap").querySelector("label").textContent = "Reemplazar foto (opcional)";
+      goTab("nueva");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    /* ---------- Lista ---------- */
+    const catName = (slug) => ((window.CATEGORIAS || []).find((c) => c.slug === slug) || {}).nombre || slug || "—";
+    function renderList() {
+      const q = ($("#q").value || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+      const norm = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+      const list = obras.filter((o) => !q || norm(o.titulo).includes(q) || String(o.anio || "").includes(q) || String(parseInt(o.id, 10)).includes(q));
+      $("#listCount").textContent = list.length + " de " + obras.length;
+      $("#rows").innerHTML = list.map((o) => {
+        const th = o.thumb || o.imagen || "";
+        return `<tr>
+          <td class="thumb-c"><img loading="lazy" src="${th}" alt="" /></td>
+          <td>${parseInt(o.id, 10) || "—"}</td>
+          <td>${escapeHtml(o.titulo)}</td>
+          <td>${escapeHtml(catName(o.categoria))}</td>
+          <td>${o.anio || "—"}</td>
+          <td>${o.vendido ? '<span class="pill sold">Vendida</span>' : '<span class="pill">Disponible</span>'} ${o.destacada ? '<span class="pill star">★</span>' : ""}</td>
+          <td><div class="rowbtns">
+            <button class="btn small ghost" data-act="edit" data-slug="${o.id}">Editar</button>
+            <button class="btn small ghost" data-act="sold" data-slug="${o.id}">${o.vendido ? "Marcar disponible" : "Marcar vendida"}</button>
+            <button class="btn small ghost danger" data-act="del" data-slug="${o.id}">Borrar</button>
+          </div></td>
+        </tr>`;
+      }).join("") || `<tr><td colspan="7" style="color:var(--muted); padding:24px">Sin resultados.</td></tr>`;
+    }
+    function escapeHtml(s) { return String(s || "").replace(/[&<>"]/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m])); }
+
+    $("#q").addEventListener("input", renderList);
+    $("#reload").addEventListener("click", refresh);
+    $("#rows").addEventListener("click", async (e) => {
+      const b = e.target.closest("button[data-act]"); if (!b) return;
+      const slug = b.dataset.slug; const o = obras.find((x) => x.id === slug); if (!o) return;
+      if (b.dataset.act === "edit") return editObra(o);
+      if (b.dataset.act === "sold") {
+        b.disabled = true;
+        try { await api("flag", { slug, field: "vendido", value: !o.vendido }); await refresh(); }
+        catch (err) { alert("Error: " + err.message); b.disabled = false; }
+      }
+      if (b.dataset.act === "del") {
+        if (!confirm(`¿Borrar «${o.titulo}»? Esta acción no se puede deshacer.`)) return;
+        b.disabled = true;
+        try { await api("delete", { slug }); await refresh(); }
+        catch (err) { alert("Error: " + err.message); b.disabled = false; }
+      }
+    });
+
+    /* ---------- Auto-login si ya hay clave en la sesión ---------- */
+    (async function boot() {
+      if (sessionStorage.getItem(KEY)) {
+        try { await api("ping"); startApp(); return; } catch (e) { sessionStorage.removeItem(KEY); }
+      }
+      $("#pass").focus();
+    })();
+  })();
+  </script>
+</body>
+</html>

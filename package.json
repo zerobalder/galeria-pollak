@@ -1,0 +1,11 @@
+{
+  "name": "galeria-pollak",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Catálogo de obra de Peter Pollak — sitio estático + panel de carga (Vercel Postgres + Blob)",
+  "dependencies": {
+    "@vercel/blob": "^0.27.1",
+    "@vercel/postgres": "^0.10.0"
+  }
+}
