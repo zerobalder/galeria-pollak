@@ -197,6 +197,13 @@
     let obras = [];      // lista actual desde la base
     let editing = null;  // slug en edición
 
+    // data.js define CATEGORIAS/TECNICAS/TEMATICAS/OBRAS con `const` (globales léxicos,
+    // NO propiedades de window). Se referencian directo, con guarda por si faltaran.
+    const CATS = (typeof CATEGORIAS !== "undefined") ? CATEGORIAS : [];
+    const TECS = (typeof TECNICAS !== "undefined") ? TECNICAS : [];
+    const TEMS = (typeof TEMATICAS !== "undefined") ? TEMATICAS : [];
+    const OBRS = (typeof OBRAS !== "undefined") ? OBRAS : [];
+
     /* ---------- API ---------- */
     async function api(action, payload) {
       const r = await fetch("/api/admin", {
@@ -243,15 +250,15 @@
     }
     function fillSelects() {
       const cat = $("#f_categoria");
-      cat.innerHTML = (window.CATEGORIAS || []).map((c) => `<option value="${c.slug}">${c.nombre}</option>`).join("");
-      $("#f_tecnica").innerHTML = (window.TECNICAS || []).map((t) => `<option>${t}</option>`).join("");
-      $("#f_tematica").innerHTML = (window.TEMATICAS || []).map((t) => `<option>${t}</option>`).join("");
+      cat.innerHTML = (CATS || []).map((c) => `<option value="${c.slug}">${c.nombre}</option>`).join("");
+      $("#f_tecnica").innerHTML = (TECS || []).map((t) => `<option>${t}</option>`).join("");
+      $("#f_tematica").innerHTML = (TEMS || []).map((t) => `<option>${t}</option>`).join("");
     }
 
     async function refresh() {
       obras = await getObras();
       // Banner de migración: si la base está vacía pero data.js tiene obras
-      const staticN = (window.OBRAS || []).length;
+      const staticN = (OBRS || []).length;
       if (obras.length === 0 && staticN > 0) {
         $("#seedBanner").classList.remove("hidden");
         $("#seedCount").textContent = staticN + " obras";
@@ -263,7 +270,7 @@
     }
 
     function suggestCatalogo() {
-      const base = (obras.length ? obras : (window.OBRAS || []));
+      const base = (obras.length ? obras : (OBRS || []));
       let max = 0;
       base.forEach((o) => { const n = parseInt(o.id || o.slug, 10) || 0; if (n > max) max = n; });
       if (!editing) $("#f_catalogo").placeholder = "auto → " + (max + 1);
@@ -285,7 +292,7 @@
       const btn = $("#seedBtn");
       btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Migrando…';
       try {
-        const res = await api("seed", { obras: window.OBRAS || [] });
+        const res = await api("seed", { obras: OBRS || [] });
         alert("Listo. Catálogo migrado: " + res.total + " obras en la base.");
         await refresh();
       } catch (e) { alert("Error al migrar: " + e.message); btn.disabled = false; btn.textContent = "Reintentar"; }
@@ -377,8 +384,8 @@
       $("#f_anio").value = o.anio || "";
       $("#f_catalogo").value = parseInt(o.id, 10) || "";
       $("#f_medidas").value = o.medidas || "";
-      $("#f_tecnica").value = o.tecnica || (window.TECNICAS || [])[0] || "";
-      $("#f_tematica").value = o.tematica || (window.TEMATICAS || [])[0] || "";
+      $("#f_tecnica").value = o.tecnica || (TECS || [])[0] || "";
+      $("#f_tematica").value = o.tematica || (TEMS || [])[0] || "";
       $("#f_descripcion").value = o.descripcion || "";
       $("#f_texto").value = o.texto || "";
       $("#f_destacada").checked = !!o.destacada;
@@ -396,7 +403,7 @@
     }
 
     /* ---------- Lista ---------- */
-    const catName = (slug) => ((window.CATEGORIAS || []).find((c) => c.slug === slug) || {}).nombre || slug || "—";
+    const catName = (slug) => ((CATS || []).find((c) => c.slug === slug) || {}).nombre || slug || "—";
     function renderList() {
       const q = ($("#q").value || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
       const norm = (s) => String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
