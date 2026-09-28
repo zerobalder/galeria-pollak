@@ -1230,6 +1230,15 @@ img.pic.loaded { opacity: 1; }
   .mainnav.open { transform: translateX(0); pointer-events: auto; }
   .mainnav a { font-size: 1.2rem; width: 100%; text-align: center; padding: 14px 0; }
   body.nav-open { overflow: hidden; }   /* bloquea el scroll de fondo con el menú abierto */
+  /* CLAVE: al hacer scroll, .topbar.scrolled aplica backdrop-filter, que crea un
+     "containing block" y rompe el position:fixed del menú → los toques caían en el
+     contenido de atrás. Se anula mientras el menú está abierto para que el menú
+     vuelva a anclarse a la pantalla completa. */
+  body.nav-open .topbar,
+  body.nav-open .topbar.scrolled {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
   body.nav-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   body.nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
   body.nav-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
