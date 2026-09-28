@@ -217,7 +217,8 @@
       return data;
     }
     async function getObras() {
-      const r = await fetch("/api/obras", { cache: "no-store" });
+      // cache-bust para ver los cambios al instante (el endpoint público tiene s-maxage)
+      const r = await fetch("/api/obras?_=" + Date.now(), { cache: "no-store" });
       return r.ok ? r.json() : [];
     }
 
@@ -261,7 +262,7 @@
       const staticN = (OBRS || []).length;
       if (obras.length === 0 && staticN > 0) {
         $("#seedBanner").classList.remove("hidden");
-        $("#seedCount").textContent = staticN + " obras";
+        const sc = $("#seedCount"); if (sc) sc.textContent = staticN + " obras";
       } else {
         $("#seedBanner").classList.add("hidden");
       }
