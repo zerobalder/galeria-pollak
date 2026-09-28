@@ -1213,22 +1213,23 @@ img.pic.loaded { opacity: 1; }
 
 /* ---------- Responsive nav (8 categorías: hamburguesa < 1024) ---------- */
 @media (max-width: 1024px) {
-  .menu-toggle { display: flex; }
+  .menu-toggle { display: flex; position: relative; z-index: 1002; }
   .mainnav {
     position: fixed;
     inset: 0;
-    background: var(--bg);                                 /* fallback sólido opaco (todo navegador) */
-    background: color-mix(in srgb, var(--bg) 96%, #000);  /* mejora si soporta color-mix */
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
+    z-index: 1001;
+    background: var(--bg);            /* sólido y opaco: sin color-mix ni backdrop-filter (glitches en móvil) */
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 4px;
     transform: translateX(100%);
-    transition: transform 0.5s var(--ease);
+    transition: transform 0.32s var(--ease);
+    pointer-events: none;            /* cerrado: no intercepta toques del contenido */
+    overflow-y: auto;
   }
-  .mainnav.open { transform: translateX(0); }
-  .mainnav a { font-size: 1.1rem; }
+  .mainnav.open { transform: translateX(0); pointer-events: auto; }
+  .mainnav a { font-size: 1.2rem; width: 100%; text-align: center; padding: 14px 0; }
+  body.nav-open { overflow: hidden; }   /* bloquea el scroll de fondo con el menú abierto */
   body.nav-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   body.nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
   body.nav-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
