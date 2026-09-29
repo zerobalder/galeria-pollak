@@ -899,18 +899,24 @@
     mainnav.classList.remove("open");
     document.body.classList.remove("nav-open");
   }
-  // Navegación explícita del menú móvil: en Chrome de Android el enlace por defecto
-  // a veces no navegaba con el toque. Aquí controlamos el destino a mano (fiable) y
-  // cerramos el menú, sin depender del comportamiento por defecto ni del re-render.
-  mainnav.addEventListener("click", (e) => {
+  // Navegación explícita del menú móvil. En Chrome de Android el toque a veces no
+  // generaba un "click" utilizable, así que respondemos también a "pointerup" (que sí
+  // se dispara con el dedo). Anti-doble-disparo por tiempo. Controlamos el destino a
+  // mano (fiable) y cerramos el menú, sin depender de la acción por defecto.
+  let ultimaNavMenu = 0;
+  function navegarDesdeMenu(e) {
     const a = e.target.closest('a[href^="#/"]');
     if (!a) return;
     e.preventDefault();
+    if (Date.now() - ultimaNavMenu < 600) return; // evita pointerup + click duplicados
+    ultimaNavMenu = Date.now();
     const destino = a.getAttribute("href"); // p.ej. "#/categoria/lagos"
     closeMobileNav();
     if (location.hash === destino) render();   // mismo destino: re-render manual
     else location.hash = destino;               // dispara hashchange -> render()
-  });
+  }
+  mainnav.addEventListener("pointerup", navegarDesdeMenu);
+  mainnav.addEventListener("click", navegarDesdeMenu);
 
   /* ---------- Hero: crossfade entre destacadas ---------- */
   let heroTimer = null;
