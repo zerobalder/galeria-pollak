@@ -1222,18 +1222,17 @@ img.pic.loaded { opacity: 1; }
     flex-direction: column;
     justify-content: center;
     gap: 4px;
-    /* Mostrar/ocultar con OPACIDAD (no con transform): la transición de transform se
-       quedaba atascada tras hacer scroll y el menú no entraba a la pantalla. */
+    /* Mostrar/ocultar INSTANTÁNEO (sin transición): en móvil, tras hacer scroll, las
+       transiciones (transform u opacity) se quedaban "pegadas" y el menú no aparecía o
+       no se iba. Sin animación no hay nada que se pueda atascar. */
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.25s var(--ease), visibility 0s linear 0.25s;
     pointer-events: none;            /* cerrado: no intercepta toques del contenido */
   }
   .mainnav.open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transition: opacity 0.25s var(--ease);
   }
   .mainnav a { font-size: 1.2rem; width: 100%; text-align: center; padding: 14px 0; }
   body.nav-open { overflow: hidden; }   /* bloquea el scroll de fondo con el menú abierto */
