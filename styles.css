@@ -1228,7 +1228,6 @@ img.pic.loaded { opacity: 1; }
     visibility: hidden;
     transition: opacity 0.25s var(--ease), visibility 0s linear 0.25s;
     pointer-events: none;            /* cerrado: no intercepta toques del contenido */
-    overflow-y: auto;
   }
   .mainnav.open {
     opacity: 1;
