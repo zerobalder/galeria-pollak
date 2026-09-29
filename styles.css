@@ -1222,22 +1222,30 @@ img.pic.loaded { opacity: 1; }
     flex-direction: column;
     justify-content: center;
     gap: 4px;
-    transform: translateX(100%);
-    transition: transform 0.32s var(--ease);
+    /* Mostrar/ocultar con OPACIDAD (no con transform): la transición de transform se
+       quedaba atascada tras hacer scroll y el menú no entraba a la pantalla. */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s var(--ease), visibility 0s linear 0.25s;
     pointer-events: none;            /* cerrado: no intercepta toques del contenido */
     overflow-y: auto;
   }
-  .mainnav.open { transform: translateX(0); pointer-events: auto; }
+  .mainnav.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.25s var(--ease);
+  }
   .mainnav a { font-size: 1.2rem; width: 100%; text-align: center; padding: 14px 0; }
   body.nav-open { overflow: hidden; }   /* bloquea el scroll de fondo con el menú abierto */
-  /* CLAVE: al hacer scroll, .topbar.scrolled aplica backdrop-filter, que crea un
-     "containing block" y rompe el position:fixed del menú → los toques caían en el
-     contenido de atrás. Se anula mientras el menú está abierto para que el menú
-     vuelva a anclarse a la pantalla completa. */
-  body.nav-open .topbar,
-  body.nav-open .topbar.scrolled {
-    -webkit-backdrop-filter: none !important;
-    backdrop-filter: none !important;
+  /* CLAVE: en móvil la barra NO usa backdrop-filter. Ese filtro crea un "containing block"
+     que hace que el position:fixed del menú se ancle a la barra (no a la pantalla) tras
+     hacer scroll → el menú se salía de la pantalla y los toques caían en el contenido de
+     atrás. Con fondo sólido y sin filtro, el menú siempre cubre la pantalla completa. */
+  .topbar.scrolled {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: var(--bg);
   }
   body.nav-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   body.nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
