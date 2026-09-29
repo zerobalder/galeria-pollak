@@ -899,6 +899,18 @@
     mainnav.classList.remove("open");
     document.body.classList.remove("nav-open");
   }
+  // Navegación explícita del menú móvil: en Chrome de Android el enlace por defecto
+  // a veces no navegaba con el toque. Aquí controlamos el destino a mano (fiable) y
+  // cerramos el menú, sin depender del comportamiento por defecto ni del re-render.
+  mainnav.addEventListener("click", (e) => {
+    const a = e.target.closest('a[href^="#/"]');
+    if (!a) return;
+    e.preventDefault();
+    const destino = a.getAttribute("href"); // p.ej. "#/categoria/lagos"
+    closeMobileNav();
+    if (location.hash === destino) render();   // mismo destino: re-render manual
+    else location.hash = destino;               // dispara hashchange -> render()
+  });
 
   /* ---------- Hero: crossfade entre destacadas ---------- */
   let heroTimer = null;
