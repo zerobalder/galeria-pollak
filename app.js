@@ -899,10 +899,6 @@
     mainnav.classList.remove("open");
     document.body.classList.remove("nav-open");
   }
-  // Cierra el menú apenas se toca un enlace (categoría / Sobre mí), sin esperar al re-render.
-  mainnav.addEventListener("click", (e) => {
-    if (e.target.closest("a")) closeMobileNav();
-  });
 
   /* ---------- Hero: crossfade entre destacadas ---------- */
   let heroTimer = null;
