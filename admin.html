@@ -117,8 +117,8 @@
     </header>
 
     <div id="seedBanner" class="banner hidden">
-      <div class="t"><strong>Primera vez:</strong> aún no has migrado tu catálogo actual a la base. Hazlo una sola vez para poder editar todas tus obras desde aquí.</div>
-      <button class="btn primary small" id="seedBtn">Migrar catálogo (<span id="seedCount">…</span>)</button>
+      <div class="t"><strong>Obras nuevas por sincronizar:</strong> hay obras en el catálogo que todavía no están en la base. Sincronízalas para publicarlas en el sitio.</div>
+      <button class="btn primary small" id="seedBtn">Sincronizar (<span id="seedCount">…</span>)</button>
     </div>
 
     <div class="tabs">
@@ -258,11 +258,12 @@
 
     async function refresh() {
       obras = await getObras();
-      // Banner de migración: si la base está vacía pero data.js tiene obras
-      const staticN = (OBRS || []).length;
-      if (obras.length === 0 && staticN > 0) {
+      // Banner de sincronización: obras del catálogo (data.js) que aún no están en la base.
+      const dbIds = new Set(obras.map((o) => o.id));
+      const faltan = (OBRS || []).filter((o) => !dbIds.has(o.id));
+      if (faltan.length > 0) {
         $("#seedBanner").classList.remove("hidden");
-        const sc = $("#seedCount"); if (sc) sc.textContent = staticN + " obras";
+        const sc = $("#seedCount"); if (sc) sc.textContent = faltan.length + (faltan.length === 1 ? " obra" : " obras");
       } else {
         $("#seedBanner").classList.add("hidden");
       }
@@ -291,12 +292,12 @@
     /* ---------- Migración ---------- */
     $("#seedBtn").addEventListener("click", async () => {
       const btn = $("#seedBtn");
-      btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Migrando…';
+      btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Sincronizando…';
       try {
         const res = await api("seed", { obras: OBRS || [] });
-        alert("Listo. Catálogo migrado: " + res.total + " obras en la base.");
+        alert("Listo. La base tiene ahora " + res.total + " obras.");
         await refresh();
-      } catch (e) { alert("Error al migrar: " + e.message); btn.disabled = false; btn.textContent = "Reintentar"; }
+      } catch (e) { alert("Error al sincronizar: " + e.message); btn.disabled = false; btn.textContent = "Reintentar"; }
     });
 
     /* ---------- Imagen (recorte en el navegador) ---------- */
