@@ -1101,6 +1101,13 @@ main { min-height: 60vh; }
   color: var(--ink-faint);
   letter-spacing: 0.04em;
 }
+.footer-admin {
+  color: var(--ink-faint);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--line);
+  transition: color 0.2s;
+}
+.footer-admin:hover { color: var(--ink); }
 
 /* ---------- Lightbox ---------- */
 .lightbox {

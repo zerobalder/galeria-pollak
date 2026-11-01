@@ -589,7 +589,7 @@
         </div>
         <div class="footer-bottom">
           <span>© ${new Date().getFullYear()} ${esc(ARTIST.nombre)}. Todas las obras son propiedad del artista.</span>
-          <span>Catálogo — hecho con luz y trementina</span>
+          <span>Catálogo — hecho con luz y trementina · <a class="footer-admin" href="/admin">Panel</a></span>
         </div>
       </div>`;
   }
